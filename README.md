@@ -28,8 +28,6 @@ Installing the SDK
 
 ### Swift Package Manager
 
-#### Importing QuickPoseSDK into Project
-
 __Step 1__: Click on Xcode project file
 
 __Step 2__: Click on Swift Packages and click on the plus to add a package
