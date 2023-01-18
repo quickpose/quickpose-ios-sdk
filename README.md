@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/github/license/quickpose/quickpose-ios-sdk)](https://raw.githubusercontent.com/quickpose/quickpose-ios-sdk/main/LICENSE) 
 [![Swift Package Manager](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 
-QuickPose provides developer-oriented cutting edge ML features with easy integration and production ready code.
+QuickPose provides developer-oriented cutting edge ML features of MediaPipe and BlazePose. with easy integration, production ready code. Dramatically improveing the speed of implementation of MediaPipe and BlazePose into mobile applications.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
