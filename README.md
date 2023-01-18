@@ -1,5 +1,5 @@
 
-# QuickPoseiOS
+# quickpose-ios-sdk
 
 [![License](https://img.shields.io/github/license/quickpose/quickpose-ios-sdk)](https://raw.githubusercontent.com/quickpose/quickpose-ios-sdk/main/LICENSE) 
 [![Swift Package Manager](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
