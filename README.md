@@ -22,7 +22,8 @@ Features
 
 | Feature       | Example       | Supported |
 | ------------- |:-------------:| ---------:|
-| Overlay       |  | v1        |
+| MediaPipe Landmarks  |  | v0.1        |
+| Overlay       |  | v0.1        |
 
 
 Requirements
