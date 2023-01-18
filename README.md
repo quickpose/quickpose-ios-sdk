@@ -1,6 +1,6 @@
 # QuickPoseiOS
 
-[![License](https://img.shields.io/github/license/quickpose/QuickPoseiOS)](https://raw.githubusercontent.com/quickpose/QuickPoseiOS/LICENSE) 
+[![License](https://img.shields.io/github/license/quickpose/QuickPoseiOS)](https://raw.githubusercontent.com/quickpose/QuickPoseiOS/main/LICENSE) 
 [![Swift Package Manager](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 
 QuickPose provides developer-oriented cutting edge ML features with easy integration and production ready code.
