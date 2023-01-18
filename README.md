@@ -1,3 +1,4 @@
+
 # QuickPoseiOS
 
 [![License](https://img.shields.io/github/license/quickpose/QuickPoseiOS)](https://raw.githubusercontent.com/quickpose/QuickPoseiOS/main/LICENSE) 
@@ -5,17 +6,17 @@
 
 QuickPose provides developer-oriented cutting edge ML features with easy integration and production ready code.
 
-QuickPose iOS SDK
-- [Requirements](#requirements)
-- [Installing the SDK](#installing-the-sdk)
-- [Swift Package Manager](#swift-package-manager)
-  - [Importing QuickPoseSDK into Project](#importing-quickposesdk-into-project)
-- [Getting Started](#getting-started)
-- [Sample Apps](#sample-apps)
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents** 
 
+- [QuickPoseiOS](#quickposeios)
+  - [Requirements](#requirements)
+  - [Installing the SDK](#installing-the-sdk)
+    - [Swift Package Manager](#swift-package-manager)
+      - [Importing QuickPoseSDK into Project](#importing-quickposesdk-into-project)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 
 
 Requirements
@@ -37,6 +38,6 @@ __Step 2__: Click on Swift Packages and click on the plus to add a package
 
 __Step 3__: Enter the following repository url `https://github.com/quickpose/QuickPoseiOS.git` and click next
 
-![Import Package](docs/img/QuickPoseSDKSetup.gif)
+![Import Package](docs/img/import-sdk-spm.gif)
 
 
