@@ -5,8 +5,6 @@
 
 QuickPose provides developer-oriented cutting edge ML features with easy integration and production ready code.
 
-============================
-
 QuickPose iOS SDK
 - [Requirements](#requirements)
 - [Installing the SDK](#installing-the-sdk)
