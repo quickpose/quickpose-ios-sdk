@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "QuickPoseiOS",
+    name: "quickpose-ios-sdk",
     platforms: [
         .iOS(.v14)
     ],
