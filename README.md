@@ -10,12 +10,9 @@ QuickPose iOS SDK
 - [Installing the SDK](#installing-the-sdk)
 - [Swift Package Manager](#swift-package-manager)
   - [Importing QuickPoseSDK into Project](#importing-quickposesdk-into-project)
-  - [Adding QuickPoseSDK as a Dependency](#adding-quickposesdk-as-a-dependency)
 - [Getting Started](#getting-started)
 - [Sample Apps](#sample-apps)
 
-- [Version schedule](#version-schedule)
-- [Copyright and License](#copyright-and-license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -42,7 +39,4 @@ __Step 3__: Enter the following repository url `https://github.com/quickpose/Qui
 
 ![Import Package](docs/img/QuickPoseSDKSetup.gif)
 
-#### Adding QuickPoseSDK as a Dependency
-
-For detailed instructions, please see the [official documentation for SPM](https://swift.org/package-manager/). 
 
