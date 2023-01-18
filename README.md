@@ -8,13 +8,11 @@ QuickPose provides developer-oriented cutting edge ML features with easy integra
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents** 
 
-- [QuickPoseiOS](#quickposeios)
-  - [Requirements](#requirements)
-  - [Installing the SDK](#installing-the-sdk)
-    - [Swift Package Manager](#swift-package-manager)
-      - [Importing QuickPoseSDK into Project](#importing-quickposesdk-into-project)
+- [Requirements](#requirements)
+- [Installing the SDK](#installing-the-sdk)
+  - [Swift Package Manager](#swift-package-manager)
+    - [Importing QuickPoseSDK into Project](#importing-quickposesdk-into-project)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
