@@ -40,6 +40,7 @@ __Step 2__: Click on Swift Packages and click on the plus to add a package
 
 __Step 3__: Enter the following repository url `https://github.com/quickpose/QuickPoseiOS.git` and click next
 
+![Import Package](docs/img/QuickPoseSDKSetup.gif)
 
 #### Adding QuickPoseSDK as a Dependency
 
