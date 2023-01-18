@@ -1,7 +1,7 @@
 
 # QuickPoseiOS
 
-[![License](https://img.shields.io/github/license/quickpose/QuickPoseiOS)](https://raw.githubusercontent.com/quickpose/QuickPoseiOS/main/LICENSE) 
+[![License](https://img.shields.io/github/license/quickpose/quickpose-ios-sdk)](https://raw.githubusercontent.com/quickpose/quickpose-ios-sdk/main/LICENSE) 
 [![Swift Package Manager](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 
 QuickPose provides developer-oriented cutting edge ML features with easy integration and production ready code.
@@ -40,7 +40,7 @@ __Step 1__: Click on Xcode project file
 
 __Step 2__: Click on Swift Packages and click on the plus to add a package
 
-__Step 3__: Enter the following repository url `https://github.com/quickpose/QuickPoseiOS.git` and click next
+__Step 3__: Enter the following repository url `https://github.com/quickpose/quickpose-ios-sdk.git` and click next
 
 ![Import Package](docs/img/import-sdk-spm.gif)
 
