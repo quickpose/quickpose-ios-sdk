@@ -13,6 +13,7 @@ QuickPose provides developer-oriented cutting edge ML features of MediaPipe and 
 - [Requirements](#requirements)
 - [Installing the SDK](#installing-the-sdk)
   - [Swift Package Manager](#swift-package-manager)
+- [Troubleshooting](#troubleshooting)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -43,6 +44,17 @@ __Step 2__: Click on Swift Packages and click on the plus to add a package
 
 __Step 3__: Enter the following repository url `https://github.com/quickpose/quickpose-ios-sdk.git` and click next
 
+<details><summary>See Guide</summary>
 ![Import Package](docs/img/import-sdk-spm.gif)
+</details>
 
+Troubleshooting
+------------------
 
+![xcode troubleshooting no such module error](docs/img/xcode-troubleshooting-no-such-module-error.png)
+
+![xcode troubleshooting no such module guide](docs/img/xcode-troubleshooting-no-such-module.gif)
+
+![xcode troubleshooting unsupported swift architecture error](docs/img/xcode-troubleshooting-unsupported-swift-architecture-error.png)
+
+![xcode troubleshooting unsupported swift architecture guide](docs/img/xcode-troubleshooting-unsupported-swift-architecture.gif)
