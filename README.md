@@ -63,7 +63,7 @@ Troubleshooting
 
 Xcode reports error no such module `QuickPoseCore` or no such module `QuickPoseSwiftUI`
 
-This happens when the linker cannot find the provided XCFrameworks. These needs to be included in the build. 
+> This happens when the linker cannot find the provided XCFrameworks. These needs to be included in the build. 
 
 ![xcode troubleshooting no such module error](docs/img/xcode-troubleshooting-no-such-module-error.png)
 
@@ -73,7 +73,7 @@ This happens when the linker cannot find the provided XCFrameworks. These needs 
 
 Xcode reports error Could not build Objective-C module `QuickPoseCore` and `Unsupported Swift Architecture`.
 
-This happens when Xcode is trying to build for unsupported architectures probably, the iOS Simulator. Until these are supported choose `Build for Any iOS Device`.
+> This happens when Xcode is trying to build for unsupported architectures probably, the iOS Simulator. Until these are supported choose `Build for Any iOS Device`.
 
 ![xcode troubleshooting unsupported swift architecture error](docs/img/xcode-troubleshooting-unsupported-swift-architecture-error.png)
 
