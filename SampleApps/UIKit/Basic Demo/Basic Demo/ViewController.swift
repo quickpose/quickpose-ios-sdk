@@ -21,9 +21,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        overlayView.contentMode = .scaleAspectFill // keep overlays in same scale as camera output
-        overlayView.frame.size = view.frame.size
-        
+        // setup camera
         camera = QuickPoseCamera(useFrontCamera: true)
         try? camera?.start(delegate: quickPose)
         
@@ -31,6 +29,10 @@ class ViewController: UIViewController {
         customPreviewLayer.videoGravity = .resizeAspectFill
         customPreviewLayer.frame.size = view.frame.size
         cameraView.layer.addSublayer(customPreviewLayer)
+        
+        // setup overlay
+        overlayView.contentMode = .scaleAspectFill // keep overlays in same scale as camera output
+        overlayView.frame.size = view.frame.size
     }
     
     override func viewDidAppear(_ animated: Bool) {
