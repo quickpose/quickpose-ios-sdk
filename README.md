@@ -63,7 +63,7 @@ __Step 4__: Choose all modules and click add package.
 Getting Started
 ------------------
 
-See code examples below or download our [Sample Apps](SampleApps/README.md).
+See code examples below or download our [Sample Apps](/SampleApps).
 
 ### Integrating into SwiftUI App
 
