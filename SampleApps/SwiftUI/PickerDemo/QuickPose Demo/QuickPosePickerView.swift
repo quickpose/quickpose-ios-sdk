@@ -1,7 +1,5 @@
 
-import Foundation
 import SwiftUI
-import AVFoundation
 import QuickPoseCore
 import QuickPoseSwiftUI
 
@@ -25,7 +23,6 @@ struct QuickPosePickerView: View {
     var body: some View {
         ZStack(alignment: .top) {
             QuickPoseCameraSwitchView(useFrontCamera: $useFrontCamera, delegate: quickPose)
-            
             QuickPoseOverlayView(overlayImage: $overlayImage)
         }
         .overlay(alignment: .top) {
@@ -141,14 +138,11 @@ extension QuickPose.Feature{
         switch self {
         case .overlay(let limb):
             return limb.rawValue
-//        case .measureAngle(_, _, _, _):
-//            return "Measuring Angle"
         @unknown default:
             fatalError()
         }
     }
     public static func allFeatures() -> [QuickPose.Feature] {
         QuickPose.Landmarks.Group.commonLimbs().map { overlay($0)}
-        //+ [.measureAngle(pivot: .userRightShoulder, p1: .userRightHip, p2: .userRightElbow, true)]
     }
 }
