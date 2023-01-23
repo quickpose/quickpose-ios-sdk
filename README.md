@@ -51,7 +51,7 @@ __Step 3__: Enter the following repository url `https://github.com/quickpose/qui
 __Step 4__: Choose all modules and click add package.
 
 | Module        | Description         |
-| --------------|:-------------------:|
+| --------------|--------------------:|
 | QuickPoseCore | Core SDK (required) |
 | QuickPoseMP   | Mediapipe Library (required) |
 | QuickPoseSwiftUI | Utility Classes for SwiftUI Integration  (optional) |
