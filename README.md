@@ -46,7 +46,7 @@ __Step 2__: Click on Swift Packages and click on the plus to add a package
 
 __Step 3__: Enter the following repository url `https://github.com/quickpose/quickpose-ios-sdk.git` and click next
 
-![Import Package](docs/img/import-sdk-spm.gif)
+![Import Package](docs/img/import-sdk-spm-fix.png)
 
 __Step 4__: Choose all modules and click add package.
 
@@ -67,7 +67,7 @@ Xcode reports error no such module `QuickPoseCore` or no such module `QuickPoseS
 
 ![xcode troubleshooting no such module error](docs/img/xcode-troubleshooting-no-such-module-error.png)
 
-![xcode troubleshooting no such module guide](docs/img/xcode-troubleshooting-no-such-module.gif)
+![xcode troubleshooting no such module guide](docs/img/xcode-troubleshooting-no-such-module-fix.png)
 
 ### Unsupported Architecture
 
@@ -77,4 +77,4 @@ Xcode reports error Could not build Objective-C module `QuickPoseCore` and `Unsu
 
 ![xcode troubleshooting unsupported swift architecture error](docs/img/xcode-troubleshooting-unsupported-swift-architecture-error.png)
 
-![xcode troubleshooting unsupported swift architecture guide](docs/img/xcode-troubleshooting-unsupported-swift-architecture.gif)
+![xcode troubleshooting unsupported swift architecture guide](docs/img/xcode-troubleshooting-unsupported-swift-architecture-fix.png)
