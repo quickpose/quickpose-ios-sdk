@@ -8,9 +8,9 @@
 import Foundation
 import AVFoundation
 
-/// QuickPose provides developer-oriented cutting edge ML features with easy integration and production ready code.
+/// QuickPose Camera prepares an AVCaptureSession of the device's camera and sets a delegate.
 ///
-/// Use QuickPose when you want to process a camera's output frame and perform a common ML feature to the image,
+/// QuickPose itself accepts the camera's output frame and perform an ML feature to the image,
 /// such as overlaying markings to the output image to highlight the user.
 ///
 ///       +----------+          +-------------+          +-------------+
@@ -19,8 +19,58 @@ import AVFoundation
 ///       |          |          |             |          |   Results   |
 ///       +----------+          +-------------+          +-------------+
 ///
-/// For performance and developer-centricity reasons QuickPose does not render the camera's output
-/// or display the output annotations itself, for SwiftUI it uses a ``QuickPoseCameraView`` and ``QuickPoseOverlayView``.
+/// For performance and developer-centricity reasons QuickPose uses an native Camera rendering view ``AVCaptureVideoPreviewLayer`` to show the camera output, and a ImageView to display the results.
+///
+///       +----------+          +-------------+
+///       |          |          |             |
+///       |  Camera  |--------->|  QuickPose  |
+///       |          |          |             |
+///       +----------+          +-------------+
+///            |                     |
+///            |                     |  Overlay, Reading
+///           \/                    \/
+///       +----------+          +-------------+
+///       |          |          |             |
+///       |  Camera  |          |   Overlay   |
+///       |   View   |          |  ImageView  |
+///       |          |          |             |
+///       +----------+          +-------------+
+///
+///
+/// For SwiftUI use our provided ``QuickPoseCameraView`` and ``QuickPoseOverlayView`` views for setup  (for an example see our demo apps)
+///
+///     private var quickPose = QuickPose()
+///     @State private var overlayImage: UIImage?
+///
+///     var body: some View {
+///         ZStack(alignment: .top) {
+///             QuickPoseCameraView(useFrontCamera: true, delegate: quickPose)
+///             QuickPoseOverlayView(overlayImage: $overlayImage)
+///         }
+///     }
+///     
+/// For UIKit use setup as following (for an example see our demo apps)
+///
+///      var camera: QuickPoseCamera?
+///      var quickPose = QuickPose()
+///
+///      @IBOutlet var cameraView: UIView!
+///      @IBOutlet var overlayView: UIImageView!
+///
+///      ....
+///
+///      // setup camera
+///      camera = QuickPoseCamera(useFrontCamera: true)
+///      try? camera?.start(delegate: quickPose)
+///
+///      let customPreviewLayer = AVCaptureVideoPreviewLayer(session: camera!.session!)
+///      customPreviewLayer.videoGravity = .resizeAspectFill
+///      customPreviewLayer.frame.size = view.frame.size
+///      cameraView.layer.addSublayer(customPreviewLayer)
+///
+///      // setup overlay
+///      overlayView.contentMode = .scaleAspectFill // keep overlays in same scale as camera output
+///      overlayView.frame.size = view.frame.size
 ///
 public class QuickPoseCamera {
     
