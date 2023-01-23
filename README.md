@@ -48,16 +48,32 @@ __Step 3__: Enter the following repository url `https://github.com/quickpose/qui
 
 ![Import Package](docs/img/import-sdk-spm.gif)
 
+__Step 4__: Choose all modules and click add package.
+
+| Module        | Description         |
+| --------------|:-------------------:|
+| QuickPoseCore | Core SDK (required) |
+| QuickPoseMP   | Mediapipe Library (required) |
+| QuickPoseSwiftUI | Utility Classes for SwiftUI Integration  (optional) |
+
 Troubleshooting
 ------------------
 
 ### No Such Module
+
+Xcode reports error no such module `QuickPoseCore` or no such module `QuickPoseSwiftUI`
+
+This happens when the linker cannot find the provided XCFrameworks. These needs to be included in the build. 
 
 ![xcode troubleshooting no such module error](docs/img/xcode-troubleshooting-no-such-module-error.png)
 
 ![xcode troubleshooting no such module guide](docs/img/xcode-troubleshooting-no-such-module.gif)
 
 ### Unsupported Architecture
+
+Xcode reports error Could not build Objective-C module `QuickPoseCore` and `Unsupported Swift Architecture`.
+
+This happens when Xcode is trying to build for unsupported architectures probably, the iOS Simulator. Until these are supported choose `Build for Any iOS Device`.
 
 ![xcode troubleshooting unsupported swift architecture error](docs/img/xcode-troubleshooting-unsupported-swift-architecture-error.png)
 
