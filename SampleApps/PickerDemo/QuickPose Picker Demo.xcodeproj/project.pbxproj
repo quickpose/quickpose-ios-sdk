@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		D04D25782965F4C700362FA6 /* QuickPosePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04D25772965F4C700362FA6 /* QuickPosePickerView.swift */; };
+		D077474C297EABD70092D0BF /* QuickPoseCore in Frameworks */ = {isa = PBXBuildFile; productRef = D077474B297EABD70092D0BF /* QuickPoseCore */; };
+		D077474E297EABD80092D0BF /* QuickPoseMP in Frameworks */ = {isa = PBXBuildFile; productRef = D077474D297EABD70092D0BF /* QuickPoseMP */; };
+		D0774750297EABD80092D0BF /* QuickPoseSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = D077474F297EABD80092D0BF /* QuickPoseSwiftUI */; };
 		D096814A29475BF800E00306 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D096814929475BF800E00306 /* Assets.xcassets */; };
 		D0BB67C72976FCB000901A47 /* QuickPose_PickerDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BB67C62976FCB000901A47 /* QuickPose_PickerDemoApp.swift */; };
-		D0BB67D02977FB8900901A47 /* QuickPoseCore in Frameworks */ = {isa = PBXBuildFile; productRef = D0BB67CF2977FB8900901A47 /* QuickPoseCore */; };
-		D0BB67D22977FB8900901A47 /* QuickPoseMP in Frameworks */ = {isa = PBXBuildFile; productRef = D0BB67D12977FB8900901A47 /* QuickPoseMP */; };
-		D0BB67D42977FB8900901A47 /* QuickPoseSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = D0BB67D32977FB8900901A47 /* QuickPoseSwiftUI */; };
 		D0F9CB6F2949146500C4CB24 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F9CB6E2949138100C4CB24 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -31,8 +31,8 @@
 
 /* Begin PBXFileReference section */
 		D04D25772965F4C700362FA6 /* QuickPosePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickPosePickerView.swift; sourceTree = "<group>"; };
-		D058E7BA2977FDD500982DF1 /* QuickPoseiOS */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = QuickPoseiOS; path = ../..; sourceTree = "<group>"; };
 		D058E7BB2977FE0900982DF1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D077474A297EABCD0092D0BF /* quickpose-ios-sdk */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "quickpose-ios-sdk"; path = ../..; sourceTree = "<group>"; };
 		D096814229475BF700E00306 /* QuickPose Picker Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QuickPose Picker Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D096814929475BF800E00306 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0BB67C62976FCB000901A47 /* QuickPose_PickerDemoApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickPose_PickerDemoApp.swift; sourceTree = "<group>"; };
@@ -44,9 +44,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0BB67D22977FB8900901A47 /* QuickPoseMP in Frameworks */,
-				D0BB67D42977FB8900901A47 /* QuickPoseSwiftUI in Frameworks */,
-				D0BB67D02977FB8900901A47 /* QuickPoseCore in Frameworks */,
+				D077474E297EABD80092D0BF /* QuickPoseMP in Frameworks */,
+				D0774750297EABD80092D0BF /* QuickPoseSwiftUI in Frameworks */,
+				D077474C297EABD70092D0BF /* QuickPoseCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +56,7 @@
 		D02AE6EB2970161500EB5081 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				D058E7BA2977FDD500982DF1 /* QuickPoseiOS */,
+				D077474A297EABCD0092D0BF /* quickpose-ios-sdk */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -117,9 +117,9 @@
 			);
 			name = "QuickPose Picker Demo";
 			packageProductDependencies = (
-				D0BB67CF2977FB8900901A47 /* QuickPoseCore */,
-				D0BB67D12977FB8900901A47 /* QuickPoseMP */,
-				D0BB67D32977FB8900901A47 /* QuickPoseSwiftUI */,
+				D077474B297EABD70092D0BF /* QuickPoseCore */,
+				D077474D297EABD70092D0BF /* QuickPoseMP */,
+				D077474F297EABD80092D0BF /* QuickPoseSwiftUI */,
 			);
 			productName = "QuickPose Health";
 			productReference = D096814229475BF700E00306 /* QuickPose Picker Demo.app */;
@@ -406,15 +406,15 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = QuickPoseiOS;
 		};
-		D0BB67CF2977FB8900901A47 /* QuickPoseCore */ = {
+		D077474B297EABD70092D0BF /* QuickPoseCore */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = QuickPoseCore;
 		};
-		D0BB67D12977FB8900901A47 /* QuickPoseMP */ = {
+		D077474D297EABD70092D0BF /* QuickPoseMP */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = QuickPoseMP;
 		};
-		D0BB67D32977FB8900901A47 /* QuickPoseSwiftUI */ = {
+		D077474F297EABD80092D0BF /* QuickPoseSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = QuickPoseSwiftUI;
 		};

@@ -23,7 +23,7 @@ Features
 | Feature       | Example       | Supported |
 | ------------- |:-------------:| ---------:|
 | MediaPipe Landmarks  |  | v0.1        |
-| Overlay       |  | v0.1        |
+| Overlay       |  ![Whole Body Overlay](docs/v0.1/overlay-whole-body.gif) ![Lower Body Overlay](docs/v0.1/overlay-lower-body.gif)| v0.1        |
 
 
 Requirements
