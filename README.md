@@ -54,6 +54,7 @@ __Step 4__: Choose all modules and click add package.
 | --------------|--------------------:|
 | QuickPoseCore | Core SDK (required) |
 | QuickPoseMP   | Mediapipe Library (required) |
+| QuickPoseCamera | Utility Class for UIKit Integration  (optional) |
 | QuickPoseSwiftUI | Utility Classes for SwiftUI Integration  (optional) |
 
 Troubleshooting
