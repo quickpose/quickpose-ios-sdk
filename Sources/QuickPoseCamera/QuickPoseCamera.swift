@@ -7,8 +7,6 @@
 
 import Foundation
 import AVFoundation
-import UIKit
-import SwiftUI
 
 /// QuickPose provides developer-oriented cutting edge ML features with easy integration and production ready code.
 ///
