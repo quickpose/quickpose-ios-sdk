@@ -3,95 +3,88 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D04D25782965F4C700362FA6 /* QuickPosePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04D25772965F4C700362FA6 /* QuickPosePickerView.swift */; };
-		D077474C297EABD70092D0BF /* QuickPoseCore in Frameworks */ = {isa = PBXBuildFile; productRef = D077474B297EABD70092D0BF /* QuickPoseCore */; };
-		D077474E297EABD80092D0BF /* QuickPoseMP in Frameworks */ = {isa = PBXBuildFile; productRef = D077474D297EABD70092D0BF /* QuickPoseMP */; };
-		D0774750297EABD80092D0BF /* QuickPoseSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = D077474F297EABD80092D0BF /* QuickPoseSwiftUI */; };
-		D096814A29475BF800E00306 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D096814929475BF800E00306 /* Assets.xcassets */; };
-		D0BB67C72976FCB000901A47 /* QuickPose_PickerDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BB67C62976FCB000901A47 /* QuickPose_PickerDemoApp.swift */; };
-		D0F9CB6F2949146500C4CB24 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F9CB6E2949138100C4CB24 /* Launch Screen.storyboard */; };
+		D003502B297EE54A0009AFDA /* QuickPoseCamera in Frameworks */ = {isa = PBXBuildFile; productRef = D003502A297EE54A0009AFDA /* QuickPoseCamera */; };
+		D0341176297ED13400289B0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0341175297ED13400289B0E /* AppDelegate.swift */; };
+		D0341178297ED13400289B0E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0341177297ED13400289B0E /* SceneDelegate.swift */; };
+		D034117A297ED13400289B0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0341179297ED13400289B0E /* ViewController.swift */; };
+		D034117D297ED13400289B0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D034117B297ED13400289B0E /* Main.storyboard */; };
+		D034117F297ED13500289B0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D034117E297ED13500289B0E /* Assets.xcassets */; };
+		D0341182297ED13500289B0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0341180297ED13500289B0E /* LaunchScreen.storyboard */; };
+		D03B2AA9297ED54200FB5F48 /* QuickPoseCore in Frameworks */ = {isa = PBXBuildFile; productRef = D03B2AA8297ED54200FB5F48 /* QuickPoseCore */; };
+		D03B2AAB297ED54200FB5F48 /* QuickPoseMP in Frameworks */ = {isa = PBXBuildFile; productRef = D03B2AAA297ED54200FB5F48 /* QuickPoseMP */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		D0F9CA772947922500C4CB24 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		D04D25772965F4C700362FA6 /* QuickPosePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickPosePickerView.swift; sourceTree = "<group>"; };
-		D058E7BB2977FE0900982DF1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D077474A297EABCD0092D0BF /* quickpose-ios-sdk */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "quickpose-ios-sdk"; path = ../..; sourceTree = "<group>"; };
-		D096814229475BF700E00306 /* QuickPose Picker Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QuickPose Picker Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D096814929475BF800E00306 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D0BB67C62976FCB000901A47 /* QuickPose_PickerDemoApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickPose_PickerDemoApp.swift; sourceTree = "<group>"; };
-		D0F9CB6E2949138100C4CB24 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		D0341172297ED13400289B0E /* Basic Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Basic Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0341175297ED13400289B0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D0341177297ED13400289B0E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D0341179297ED13400289B0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D034117C297ED13400289B0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D034117E297ED13500289B0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0341181297ED13500289B0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D0341183297ED13500289B0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0A5B0CA297EE51100346519 /* quickpose-ios-sdk */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "quickpose-ios-sdk"; path = ../../..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D096813F29475BF700E00306 /* Frameworks */ = {
+		D034116F297ED13400289B0E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D077474E297EABD80092D0BF /* QuickPoseMP in Frameworks */,
-				D0774750297EABD80092D0BF /* QuickPoseSwiftUI in Frameworks */,
-				D077474C297EABD70092D0BF /* QuickPoseCore in Frameworks */,
+				D03B2AAB297ED54200FB5F48 /* QuickPoseMP in Frameworks */,
+				D03B2AA9297ED54200FB5F48 /* QuickPoseCore in Frameworks */,
+				D003502B297EE54A0009AFDA /* QuickPoseCamera in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D02AE6EB2970161500EB5081 /* Packages */ = {
+		D0341169297ED13400289B0E = {
 			isa = PBXGroup;
 			children = (
-				D077474A297EABCD0092D0BF /* quickpose-ios-sdk */,
-			);
-			name = Packages;
-			sourceTree = "<group>";
-		};
-		D096813929475BF700E00306 = {
-			isa = PBXGroup;
-			children = (
-				D02AE6EB2970161500EB5081 /* Packages */,
-				D096814429475BF700E00306 /* QuickPose Demo */,
-				D0F9CB6E2949138100C4CB24 /* Launch Screen.storyboard */,
-				D096814329475BF700E00306 /* Products */,
-				D0BEEC7E29702C6A00158CBD /* Frameworks */,
-				D058E7BB2977FE0900982DF1 /* Info.plist */,
+				D03B2AA4297ED4FB00FB5F48 /* Packages */,
+				D0341174297ED13400289B0E /* Basic Demo */,
+				D0341173297ED13400289B0E /* Products */,
+				D03B2AA7297ED54200FB5F48 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		D096814329475BF700E00306 /* Products */ = {
+		D0341173297ED13400289B0E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D096814229475BF700E00306 /* QuickPose Picker Demo.app */,
+				D0341172297ED13400289B0E /* Basic Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D096814429475BF700E00306 /* QuickPose Demo */ = {
+		D0341174297ED13400289B0E /* Basic Demo */ = {
 			isa = PBXGroup;
 			children = (
-				D0BB67C62976FCB000901A47 /* QuickPose_PickerDemoApp.swift */,
-				D04D25772965F4C700362FA6 /* QuickPosePickerView.swift */,
-				D096814929475BF800E00306 /* Assets.xcassets */,
+				D0341175297ED13400289B0E /* AppDelegate.swift */,
+				D0341177297ED13400289B0E /* SceneDelegate.swift */,
+				D0341179297ED13400289B0E /* ViewController.swift */,
+				D034117B297ED13400289B0E /* Main.storyboard */,
+				D034117E297ED13500289B0E /* Assets.xcassets */,
+				D0341180297ED13500289B0E /* LaunchScreen.storyboard */,
+				D0341183297ED13500289B0E /* Info.plist */,
 			);
-			path = "QuickPose Demo";
+			path = "Basic Demo";
 			sourceTree = "<group>";
 		};
-		D0BEEC7E29702C6A00158CBD /* Frameworks */ = {
+		D03B2AA4297ED4FB00FB5F48 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				D0A5B0CA297EE51100346519 /* quickpose-ios-sdk */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		D03B2AA7297ED54200FB5F48 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -101,99 +94,108 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D096814129475BF700E00306 /* QuickPose Picker Demo */ = {
+		D0341171297ED13400289B0E /* Basic Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D096815029475BF800E00306 /* Build configuration list for PBXNativeTarget "QuickPose Picker Demo" */;
+			buildConfigurationList = D0341186297ED13500289B0E /* Build configuration list for PBXNativeTarget "Basic Demo" */;
 			buildPhases = (
-				D096813E29475BF700E00306 /* Sources */,
-				D096813F29475BF700E00306 /* Frameworks */,
-				D096814029475BF700E00306 /* Resources */,
-				D0F9CA772947922500C4CB24 /* Embed Frameworks */,
+				D034116E297ED13400289B0E /* Sources */,
+				D034116F297ED13400289B0E /* Frameworks */,
+				D0341170297ED13400289B0E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D02AE6EE2970169300EB5081 /* PBXTargetDependency */,
 			);
-			name = "QuickPose Picker Demo";
+			name = "Basic Demo";
 			packageProductDependencies = (
-				D077474B297EABD70092D0BF /* QuickPoseCore */,
-				D077474D297EABD70092D0BF /* QuickPoseMP */,
-				D077474F297EABD80092D0BF /* QuickPoseSwiftUI */,
+				D03B2AA8297ED54200FB5F48 /* QuickPoseCore */,
+				D03B2AAA297ED54200FB5F48 /* QuickPoseMP */,
+				D003502A297EE54A0009AFDA /* QuickPoseCamera */,
 			);
-			productName = "QuickPose Health";
-			productReference = D096814229475BF700E00306 /* QuickPose Picker Demo.app */;
+			productName = "Basic Demo";
+			productReference = D0341172297ED13400289B0E /* Basic Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D096813A29475BF700E00306 /* Project object */ = {
+		D034116A297ED13400289B0E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1410;
-				LastUpgradeCheck = 1410;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					D096814129475BF700E00306 = {
-						CreatedOnToolsVersion = 14.1;
-						LastSwiftMigration = 1410;
+					D0341171297ED13400289B0E = {
+						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
-			buildConfigurationList = D096813D29475BF700E00306 /* Build configuration list for PBXProject "QuickPose Picker Demo" */;
-			compatibilityVersion = "Xcode 12.0";
+			buildConfigurationList = D034116D297ED13400289B0E /* Build configuration list for PBXProject "Basic Demo" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = D096813929475BF700E00306;
-			packageReferences = (
-			);
-			productRefGroup = D096814329475BF700E00306 /* Products */;
+			mainGroup = D0341169297ED13400289B0E;
+			productRefGroup = D0341173297ED13400289B0E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D096814129475BF700E00306 /* QuickPose Picker Demo */,
+				D0341171297ED13400289B0E /* Basic Demo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D096814029475BF700E00306 /* Resources */ = {
+		D0341170297ED13400289B0E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D096814A29475BF800E00306 /* Assets.xcassets in Resources */,
-				D0F9CB6F2949146500C4CB24 /* Launch Screen.storyboard in Resources */,
+				D0341182297ED13500289B0E /* LaunchScreen.storyboard in Resources */,
+				D034117F297ED13500289B0E /* Assets.xcassets in Resources */,
+				D034117D297ED13400289B0E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D096813E29475BF700E00306 /* Sources */ = {
+		D034116E297ED13400289B0E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D04D25782965F4C700362FA6 /* QuickPosePickerView.swift in Sources */,
-				D0BB67C72976FCB000901A47 /* QuickPose_PickerDemoApp.swift in Sources */,
+				D034117A297ED13400289B0E /* ViewController.swift in Sources */,
+				D0341176297ED13400289B0E /* AppDelegate.swift in Sources */,
+				D0341178297ED13400289B0E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		D02AE6EE2970169300EB5081 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			productRef = D02AE6ED2970169300EB5081 /* QuickPoseiOS */;
+/* Begin PBXVariantGroup section */
+		D034117B297ED13400289B0E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D034117C297ED13400289B0E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
 		};
-/* End PBXTargetDependency section */
+		D0341180297ED13500289B0E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0341181297ED13500289B0E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D096814E29475BF800E00306 /* Debug */ = {
+		D0341184297ED13500289B0E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -243,7 +245,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -253,7 +255,7 @@
 			};
 			name = Debug;
 		};
-		D096814F29475BF800E00306 /* Release */ = {
+		D0341185297ED13500289B0E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -297,7 +299,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -307,71 +309,56 @@
 			};
 			name = Release;
 		};
-		D096815129475BF800E00306 /* Debug */ = {
+		D0341187297ED13500289B0E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 22W63VGZT5;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = Info.plist;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Basic Demo/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ai.quickpose.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = "ai.quickpose.Basic-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		D096815229475BF800E00306 /* Release */ = {
+		D0341188297ED13500289B0E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 22W63VGZT5;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = Info.plist;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Basic Demo/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ai.quickpose.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = "ai.quickpose.Basic-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -381,20 +368,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D096813D29475BF700E00306 /* Build configuration list for PBXProject "QuickPose Picker Demo" */ = {
+		D034116D297ED13400289B0E /* Build configuration list for PBXProject "Basic Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D096814E29475BF800E00306 /* Debug */,
-				D096814F29475BF800E00306 /* Release */,
+				D0341184297ED13500289B0E /* Debug */,
+				D0341185297ED13500289B0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D096815029475BF800E00306 /* Build configuration list for PBXNativeTarget "QuickPose Picker Demo" */ = {
+		D0341186297ED13500289B0E /* Build configuration list for PBXNativeTarget "Basic Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D096815129475BF800E00306 /* Debug */,
-				D096815229475BF800E00306 /* Release */,
+				D0341187297ED13500289B0E /* Debug */,
+				D0341188297ED13500289B0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -402,23 +389,19 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D02AE6ED2970169300EB5081 /* QuickPoseiOS */ = {
+		D003502A297EE54A0009AFDA /* QuickPoseCamera */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = QuickPoseiOS;
+			productName = QuickPoseCamera;
 		};
-		D077474B297EABD70092D0BF /* QuickPoseCore */ = {
+		D03B2AA8297ED54200FB5F48 /* QuickPoseCore */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = QuickPoseCore;
 		};
-		D077474D297EABD70092D0BF /* QuickPoseMP */ = {
+		D03B2AAA297ED54200FB5F48 /* QuickPoseMP */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = QuickPoseMP;
 		};
-		D077474F297EABD80092D0BF /* QuickPoseSwiftUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = QuickPoseSwiftUI;
-		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = D096813A29475BF700E00306 /* Project object */;
+	rootObject = D034116A297ED13400289B0E /* Project object */;
 }
