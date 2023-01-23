@@ -14,6 +14,8 @@ QuickPose provides developer-oriented cutting edge ML features of MediaPipe and 
 - [Installing the SDK](#installing-the-sdk)
   - [Swift Package Manager](#swift-package-manager)
 - [Troubleshooting](#troubleshooting)
+  - [No Such Module](#no-such-module)
+  - [Unsupported Architecture](#unsupported-architecture)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
