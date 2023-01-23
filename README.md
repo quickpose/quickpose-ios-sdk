@@ -23,7 +23,7 @@ Features
 | Feature       | Example       | Supported |
 | ------------- |:-------------:| ---------:|
 | MediaPipe Landmarks  |  | v0.1        |
-| Overlay       |  ![Whole Body Overlay](docs/v0.1/overlay-whole-body.gif) ![Lower Body Overlay](docs/v0.1/overlay-lower-body.gif)| v0.1        |
+| Overlay       |  ![Whole Body Overlay](docs/v0.1/overlay-whole-body.gif) ![Upper Body Overlay](docs/v0.1/overlay-upper-body.gif) ![Lower Body Overlay](docs/v0.1/overlay-lower-body.gif)  ![Shoulders Overlay](docs/v0.1/overlay-shoulders.gif)  ![Left Leg Overlay](docs/v0.1/overlay-left-leg.gif)  ![Right Leg Overlay](docs/v0.1/overlay-right-leg.gif)| v0.1        |
 
 
 Requirements
