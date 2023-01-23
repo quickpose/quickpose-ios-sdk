@@ -70,27 +70,29 @@ import QuickPoseSwiftUI
 ....
 
 struct QuickPoseBasicView: View {
-    @Environment(\.geometry) private var geometrySize
     
     private var quickPose = QuickPose()
     @State private var overlayImage: UIImage?
     
     var body: some View {
-        ZStack(alignment: .top) {
-            QuickPoseCameraView(useFrontCamera: true, delegate: quickPose)
-            QuickPoseOverlayView(overlayImage: $overlayImage)
+        GeometryReader { geometry in
+            ZStack(alignment: .top) {
+                QuickPoseCameraView(useFrontCamera: true, delegate: quickPose)
+                QuickPoseOverlayView(overlayImage: $overlayImage)
+            }
+            .frame(width: geometry.size.width)
+            .edgesIgnoringSafeArea(.all)
+            .onAppear {
+                quickPose.start(features: [.overlay(.userLeftArm)], onFrame: { status, image, features, landmarks in
+                    if case .success(_) = status {
+                        overlayImage = image
+                    }
+                })
+            }.onDisappear {
+                quickPose.stop()
+            }
+            
         }
-        .onAppear {
-            quickPose.start(features: [.overlay(.userLeftArm)], onFrame: { status, image, features, landmarks in
-                if case .success(_) = status {
-                    overlayImage = image
-                }
-            })
-        }.onDisappear {
-            quickPose.stop()
-        }
-        .frame(width: geometrySize.width)
-        .edgesIgnoringSafeArea(.all)
     }
 }
 
