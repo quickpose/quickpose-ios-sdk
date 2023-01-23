@@ -57,6 +57,106 @@ __Step 4__: Choose all modules and click add package.
 | QuickPoseCamera | Utility Class for UIKit Integration  (optional) |
 | QuickPoseSwiftUI | Utility Classes for SwiftUI Integration  (optional) |
 
+Getting Started
+------------------
+
+### Integrating into SwiftUI App
+
+```swift
+import SwiftUI
+import QuickPoseCore
+import QuickPoseSwiftUI
+
+....
+
+struct QuickPoseBasicView: View {
+    @Environment(\.geometry) private var geometrySize
+    @Environment(\.safeAreaInsets) private var safeAreaInsets
+    
+    private var quickPose = QuickPose()
+    @State private var overlayImage: UIImage?
+    
+    var body: some View {
+        ZStack(alignment: .top) {
+            QuickPoseCameraView(useFrontCamera: true, delegate: quickPose)
+            QuickPoseOverlayView(overlayImage: $overlayImage)
+        }
+        .overlay(alignment: .bottom) {
+            Text("Powered by QuickPose.ai") // remove logo here, but attribution appreciated
+                .font(.system(size: 16, weight: .semibold)).foregroundColor(.white)
+                .frame(maxHeight:  32 + safeAreaInsets.bottom, alignment: .center)
+                .padding(.bottom, 0)
+        }
+        .onAppear {
+            quickPose.start(features: [.overlay(.userLeftArm)], onFrame: { status, image, features, landmarks in
+                if case .success(_) = status {
+                    overlayImage = image
+                }
+            })
+        }.onDisappear {
+            quickPose.stop()
+        }
+        .frame(width: geometrySize.width)
+        .edgesIgnoringSafeArea(.all)
+    }
+}
+
+
+```
+
+### Integrating into UIKit App
+
+```swift
+import QuickPoseCore
+import QuickPoseCamera
+...
+
+class ViewController: UIViewController {
+    
+    var camera: QuickPoseCamera?
+    var quickPose = QuickPose()
+    
+    @IBOutlet var cameraView: UIView!
+    @IBOutlet var overlayView: UIImageView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // setup camera
+        camera = QuickPoseCamera(useFrontCamera: true)
+        try? camera?.start(delegate: quickPose)
+        
+        let customPreviewLayer = AVCaptureVideoPreviewLayer(session: camera!.session!)
+        customPreviewLayer.videoGravity = .resizeAspectFill
+        customPreviewLayer.frame.size = view.frame.size
+        cameraView.layer.addSublayer(customPreviewLayer)
+        
+        // setup overlay
+        overlayView.contentMode = .scaleAspectFill // keep overlays in same scale as camera output
+        overlayView.frame.size = view.frame.size
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        quickPose.start(features: [.overlay(.userLeftArm)], onFrame: { status, image, features, landmarks in
+            if case .success(_) = status {
+                DispatchQueue.main.async {
+                    self.overlayView.image = image
+                }
+            }
+        })
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        camera?.stop()
+        quickPose.stop()
+    }
+}
+```
+
+
 Troubleshooting
 ------------------
 
