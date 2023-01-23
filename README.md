@@ -49,9 +49,13 @@ __Step 3__: Enter the following repository url `https://github.com/quickpose/qui
 Troubleshooting
 ------------------
 
+### No Such Module
+
 ![xcode troubleshooting no such module error](docs/img/xcode-troubleshooting-no-such-module-error.png)
 
 ![xcode troubleshooting no such module guide](docs/img/xcode-troubleshooting-no-such-module.gif)
+
+### Unsupported Architecture
 
 ![xcode troubleshooting unsupported swift architecture error](docs/img/xcode-troubleshooting-unsupported-swift-architecture-error.png)
 
