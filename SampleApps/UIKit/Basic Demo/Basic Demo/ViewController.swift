@@ -49,7 +49,6 @@ class ViewController: UIViewController {
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        
         camera?.stop()
         quickPose.stop()
     }

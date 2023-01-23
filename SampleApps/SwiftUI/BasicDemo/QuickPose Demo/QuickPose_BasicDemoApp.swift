@@ -12,12 +12,8 @@ import AVFoundation
 struct QuickPose_DemoApp: App {
     var body: some Scene {
         WindowGroup {
-            GeometryReader { fullScreenGeometry in
-                DemoAppView().edgesIgnoringSafeArea(.all)
-                    .environment(\.geometry, fullScreenGeometry.size)
-                    .environment(\.safeAreaInsets, fullScreenGeometry.safeAreaInsets)
-                    .background(Color("AccentColor"))
-            }
+            DemoAppView().edgesIgnoringSafeArea(.all)
+                .background(Color("AccentColor"))
         }
     }
 }
@@ -38,24 +34,4 @@ struct DemoAppView: View {
         }
     }
 }
-
-
-extension EnvironmentValues {
-    private struct GeometryEnvironmentKey: EnvironmentKey {
-        static let defaultValue: CGSize = CGSize(width: 0, height: 0)
-    }
-    private struct SafeAreaInsetEnvironmentKey: EnvironmentKey {
-        static let defaultValue: EdgeInsets = EdgeInsets()
-        
-    }
-    var geometry: CGSize {
-        get { self[GeometryEnvironmentKey.self] }
-        set { self[GeometryEnvironmentKey.self] = newValue }
-    }
-    var safeAreaInsets: EdgeInsets {
-        get { self[SafeAreaInsetEnvironmentKey.self] }
-        set { self[SafeAreaInsetEnvironmentKey.self] = newValue }
-    }
-}
-
 

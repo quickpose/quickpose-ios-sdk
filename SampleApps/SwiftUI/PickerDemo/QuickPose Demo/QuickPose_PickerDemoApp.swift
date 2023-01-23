@@ -13,7 +13,7 @@ struct QuickPose_DemoApp: App {
     var body: some Scene {
         WindowGroup {
             GeometryReader { fullScreenGeometry in
-                DemoAppView().edgesIgnoringSafeArea(.all)
+                DemoAppView()
                     .environment(\.geometry, fullScreenGeometry.size)
                     .environment(\.safeAreaInsets, fullScreenGeometry.safeAreaInsets)
                     .background(Color("AccentColor"))
