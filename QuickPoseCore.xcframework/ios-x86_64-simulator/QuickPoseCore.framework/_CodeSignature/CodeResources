@@ -4,37 +4,139 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Frameworks/QuickPoseMP.framework/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			r6gSvnMOvcyPCVRBNdUR3wbmha8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/QuickPoseMP.framework/Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			n2t8gsDpfE6XkhG31p7IQJRxTxU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/QuickPoseMP.framework/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			U0x8EM0781fCPb62BbZIXKeDlZ4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/QuickPoseMP.framework/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1vUK4QodroUt6u2sj8+5ogROFU8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/QuickPoseMP.framework/Base.lproj/Main.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MDrKFvFWroTb0+KEbQShBcoBvo4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/QuickPoseMP.framework/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Vkzy1L6juZRKZ3H0ZGldqymhq04=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/QuickPoseMP.framework/Info.plist</key>
+		<data>
+		Ro0DhnhJzA8e7lO5H0eXSc1XXzY=
+		</data>
+		<key>Frameworks/QuickPoseMP.framework/QuickPoseMP</key>
+		<data>
+		OtSagNLMSJ0qwuy0NL969lQb/Dc=
+		</data>
+		<key>Frameworks/QuickPoseMP.framework/_CodeSignature/CodeResources</key>
+		<data>
+		MrSNrnOoNbbgyzAlvMhQ969Wa68=
+		</data>
+		<key>Frameworks/QuickPoseMP.framework/face_detection_short_range.tflite</key>
+		<data>
+		6PdJ+vwju4jarIW8n34GmENvKaA=
+		</data>
+		<key>Frameworks/QuickPoseMP.framework/face_landmark.tflite</key>
+		<data>
+		zIFh+5oRLJAwAtMjo7qCc3pGJWw=
+		</data>
+		<key>Frameworks/QuickPoseMP.framework/hand_landmark_full.tflite</key>
+		<data>
+		kQh2DrBifNc1PvDrLIXonOmfNYY=
+		</data>
+		<key>Frameworks/QuickPoseMP.framework/hand_landmark_lite.tflite</key>
+		<data>
+		dZLBiOC7EkzVR7jtRqPFRBgQrqE=
+		</data>
+		<key>Frameworks/QuickPoseMP.framework/hand_recrop.tflite</key>
+		<data>
+		H3S6SDvHEKhPO2i/IhI+J3bs1C8=
+		</data>
+		<key>Frameworks/QuickPoseMP.framework/handedness.txt</key>
+		<data>
+		9YCC2KA9Uho1k+/1hzW4PKL4Y9U=
+		</data>
+		<key>Frameworks/QuickPoseMP.framework/holistic_tracking_gpu.binarypb</key>
+		<data>
+		cPMq1jKQ1M5GtkxXuzWaDEkhE48=
+		</data>
+		<key>Frameworks/QuickPoseMP.framework/pose_detection.tflite</key>
+		<data>
+		jk1WDJelBH/oA36WdcJ9lz1x0bM=
+		</data>
+		<key>Frameworks/QuickPoseMP.framework/pose_landmark_full.tflite</key>
+		<data>
+		E0RYyaGuwl5XX+Ibor61Uk298BU=
+		</data>
 		<key>Headers/QuickPose.h</key>
 		<data>
 		R+5zzDGLVtk5OETNKFVgq+a9WAE=
 		</data>
 		<key>Headers/QuickPoseCore-Swift.h</key>
 		<data>
-		oqT3fa0JvU+iHcXOVxK5vmaDxxE=
+		rW0Hsw54inWGW9dOJ0exqIIRO8c=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zbX5fDMTzXip+bZw3Gbf2Zd45xc=
+		yF1W8xPBT23RUN/QIMfYnQPA9gE=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		b7J7bnSAEFYoRUC0FKtFRSLfyOU=
+		N8nA4hoDbQLEHAeepIqRMIDGE4s=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		L0C2Pxc2uoCfGcnjt3JvwnaNjt0=
+		VUSqo9OLcxz2lcBitVpkAO8zeBw=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		hGatyzK6/g1LI/dJuovF9jQQqUE=
+		2Le0aqlEo3RUGl7TUzJtHRbvZ5w=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		L0C2Pxc2uoCfGcnjt3JvwnaNjt0=
+		VUSqo9OLcxz2lcBitVpkAO8zeBw=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		PZ6sNrVpgdD6hLjT69OqC2Qoztk=
+		cihUugLWLrPaF/iLxZ8FRO6oyVg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -43,6 +145,144 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/QuickPoseMP.framework/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EOmrbyEILYHXDMeAOH9FK9GxNMd53+mIQ7DWaqLqiKM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/QuickPoseMP.framework/Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HyVdXMU7Ux4/KalAao30mpWOK/lEPT4gvYN09wf31cg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/QuickPoseMP.framework/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			cWq7q+iQcmpSoaFGecnyPdKFEPFwRD3slgUmxFADkVs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/QuickPoseMP.framework/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SEkalvMx0eTdGBVGfAv1SwPk/E7bZAOs+zxegKrKZIQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/QuickPoseMP.framework/Base.lproj/Main.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			PpvapAjR62rl6Ym4E6hkTgpKmBICxTaQXeUqcpHmmqQ=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/QuickPoseMP.framework/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Q0c4FjXic1buTOpqdBRmYuDiUSTgZnNcjuCD0IVEzuE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/QuickPoseMP.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JNXg5c2CcMBIXGljRBTgR6OCWAO4sFOYUXONiOnv+To=
+			</data>
+		</dict>
+		<key>Frameworks/QuickPoseMP.framework/QuickPoseMP</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jtEmt5nydOMjxNvOoZPX7wcti7yW+ET3FR/DSnJmBj8=
+			</data>
+		</dict>
+		<key>Frameworks/QuickPoseMP.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zWn/5g8us91jE8EKAvpC025RSXohifSUL9Fl72Z5HFA=
+			</data>
+		</dict>
+		<key>Frameworks/QuickPoseMP.framework/face_detection_short_range.tflite</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			O8GC658zkl2eWLXI1ZMIp2D0reqPKCNw5CjFEhLCZjM=
+			</data>
+		</dict>
+		<key>Frameworks/QuickPoseMP.framework/face_landmark.tflite</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xgP6YUkhmj6Uh9yavXoMJEdMdyYyc9JIaDeM30CqJtE=
+			</data>
+		</dict>
+		<key>Frameworks/QuickPoseMP.framework/hand_landmark_full.tflite</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jAJogsnsBZzg+OdSZr7lqaI8NBpA4AAN91U3TT0bm2g=
+			</data>
+		</dict>
+		<key>Frameworks/QuickPoseMP.framework/hand_landmark_lite.tflite</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1/3orBH4zgP4Zjd1v8Mj9PyfKjgGK09O+hQodO9bKkg=
+			</data>
+		</dict>
+		<key>Frameworks/QuickPoseMP.framework/hand_recrop.tflite</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Z9mWzpb502/hfSaTAixtqTFoAmqy8Cj54jZTmNisfV0=
+			</data>
+		</dict>
+		<key>Frameworks/QuickPoseMP.framework/handedness.txt</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			O4LwJGhw/sRWyGMtRVpOHVZI0oNqelE6JxeBFE9SWRY=
+			</data>
+		</dict>
+		<key>Frameworks/QuickPoseMP.framework/holistic_tracking_gpu.binarypb</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			UFmIMmx6Dx9PBz1/zcCRN+8LlzPpW8ogK3zR2QaSpkM=
+			</data>
+		</dict>
+		<key>Frameworks/QuickPoseMP.framework/pose_detection.tflite</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pjxhS+8w01lH8TvjYYILHk477Jz+6/TREhahg3MQjoU=
+			</data>
+		</dict>
+		<key>Frameworks/QuickPoseMP.framework/pose_landmark_full.tflite</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			6aXFyxf3Nvr9TC7B2js9Mx1u2+ig0yOVhVrrLN/WS58=
+			</data>
+		</dict>
 		<key>Headers/QuickPose.h</key>
 		<dict>
 			<key>hash2</key>
@@ -54,42 +294,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Uk6crdFsLSPh1DdAFtlDTcI1/PZZxLFyVP0jt3xs9Yk=
+			lmQpO7xb83fVC1/VIgMBeHG1V4KR/YEqCI7xr6vmWKI=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			g6gVZFWCglKIGIr9Yaaeua792iK+lluYLUyrvuZC6uQ=
+			nJIblepudcSMhcWS4wXfsgXjc2P7WknOdcy/SCAA2S4=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OJ76Hx025OlK2qrk/wGkyJcDlOxwGRCQwf5nUrDiwHg=
+			W9OeiINHrY0TVKmXN8szuWudHH6cVZudLJg4DOEpKr8=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HskwRXzSWuAWhLne5YhqBYjgVu97bSngb3NsFsb7zME=
+			mtd2+j3HjLUycMWi6IVhabzZ6nLJw7jbCAf57NcUi9k=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OJ76Hx025OlK2qrk/wGkyJcDlOxwGRCQwf5nUrDiwHg=
+			W9OeiINHrY0TVKmXN8szuWudHH6cVZudLJg4DOEpKr8=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cgBjd+E1zGV/MdvsBrOwcyP/MENb3IrlUXJMz0EibKk=
+			XgCI7rFtlqGnXBo8WyKM3318Fvi4CB+dOCGXD08nyGU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

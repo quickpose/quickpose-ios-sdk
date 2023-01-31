@@ -17,13 +17,17 @@ struct QuickPoseBasicView: View {
     var body: some View {
         GeometryReader { geometry in
             ZStack(alignment: .top) {
-                QuickPoseCameraView(useFrontCamera: true, delegate: quickPose)
+                if ProcessInfo.processInfo.isiOSAppOnMac, let url = Bundle.main.url(forResource: "happy-dance", withExtension: "mov") {
+                    QuickPoseSimulatedCameraView(useFrontCamera: true, delegate: quickPose, video: url)
+                } else {
+                    QuickPoseCameraView(useFrontCamera: true, delegate: quickPose)
+                }
                 QuickPoseOverlayView(overlayImage: $overlayImage)
             }
             .overlay(alignment: .bottom) {
                 Text("Powered by QuickPose.ai") // remove logo here, but attribution appreciated
                     .font(.system(size: 16, weight: .semibold)).foregroundColor(.white)
-                    .frame(maxHeight:  32 + geometry.safeAreaInsets.bottom, alignment: .center)
+                    .frame(maxHeight:  40 + geometry.safeAreaInsets.bottom, alignment: .center)
                     .padding(.bottom, 0)
             }
             .frame(width: geometry.size.width)

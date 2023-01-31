@@ -28,9 +28,16 @@ Features
 
 | Feature       | Example       | Supported |
 | ------------- |:-------------:| ---------:|
-| MediaPipe Landmarks  |  | v0.1        |
+| MediaPipe Landmarks  | ![MediaPipe Landmarks](docs/v0.2/overlay-all-points.gif) | v0.1        |
 | <p><b>Overlays</b></p><p>Whole Body</p><p>Upper Body</p><p>Lower Body</p><p>Shoulder</p><p>Left Arm</p><p>Right Arm</p><p>Left Leg</p><p>Right Leg</p>       |  ![Whole Body Overlay](docs/v0.1/overlay-whole-body.gif) ![Upper Body Overlay](docs/v0.1/overlay-upper-body.gif) ![Lower Body Overlay](docs/v0.1/overlay-lower-body.gif)  ![Shoulders Overlay](docs/v0.1/overlay-shoulders.gif)  ![Left Leg Overlay](docs/v0.1/overlay-left-leg.gif)  ![Right Leg Overlay](docs/v0.1/overlay-right-leg.gif)| v0.1        |
 
+
+Supported Platforms
+------------------
+
+| iOS Device | M1/M2 Mac (Running as Designed for iPad) | iOS Simulator x86_64 | iOS Simulator arm64  | 
+| ----------:| ----------------------------------------:|---------------------:|---------------------:|
+| ✅ Runs    |                                 ✅ Runs |            ⚙ Compiles |         ⚙ Compiles  |
 
 Requirements
 ------------------
@@ -63,7 +70,7 @@ __Step 4__: Choose all modules and click add package.
 Getting Started
 ------------------
 
-See code examples below or run our [Sample Apps](/SampleApps).
+See code examples below or download our [Sample Apps](/SampleApps).
 
 ### Integrating into SwiftUI App
 
@@ -170,10 +177,3 @@ Xcode reports error no such module `QuickPoseCore` or no such module `QuickPoseS
 
 ![xcode troubleshooting no such module guide](docs/img/xcode-troubleshooting-no-such-module-fix.png)
 
-### Unsupported Architecture
-
-Xcode reports error Could not build Objective-C module `QuickPoseCore` and `Unsupported Swift Architecture`.
-
-> This happens when Xcode is trying to build for unsupported architectures probably, the iOS Simulator. Until these are supported choose `Build for Any iOS Device`.
-
-![xcode troubleshooting unsupported swift architecture guide](docs/img/xcode-troubleshooting-unsupported-swift-architecture-fix.png)
