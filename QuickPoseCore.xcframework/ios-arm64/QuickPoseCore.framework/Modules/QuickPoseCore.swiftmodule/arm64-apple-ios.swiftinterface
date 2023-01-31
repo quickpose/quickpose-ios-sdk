@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name QuickPoseCore
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name QuickPoseCore
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
 import AVKit
@@ -12,20 +12,37 @@ import UIKit
 import VideoToolbox
 import _Concurrency
 import _StringProcessing
-@objc @_inheritsConvenienceInitializers public class QuickPose : ObjectiveC.NSObject, AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate {
+public protocol QuickPoseCaptureAVAssetOutputSampleBufferDelegate : ObjectiveC.NSObjectProtocol {
+  func captureAVOutput(didOutput sampleBuffer: CoreVideo.CVBuffer, timestamp: CoreMedia.CMTime, isFrontCamera: Swift.Bool)
+}
+@objc @_inheritsConvenienceInitializers public class QuickPose : ObjectiveC.NSObject, AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate, QuickPoseCore.QuickPoseCaptureAVAssetOutputSampleBufferDelegate {
   @objc override dynamic public init()
   public func start(features: [QuickPoseCore.QuickPose.Feature], onStart: (() -> ())? = nil, onFrame: @escaping ((QuickPoseCore.QuickPose.Status, UIKit.UIImage?, [QuickPoseCore.QuickPose.Feature : QuickPoseCore.QuickPose.FeatureResult], QuickPoseCore.QuickPose.Landmarks?) -> ()))
+  public func disableLogging()
+  public func enableLogging()
   public func update(features: [QuickPoseCore.QuickPose.Feature])
   public func stop()
   public func libVersion() -> Swift.String
+  public func quickPoseVersion() -> Swift.String
+  public func captureAVOutput(didOutput sampleBuffer: CoreVideo.CVBuffer, timestamp: CoreMedia.CMTime, isFrontCamera: Swift.Bool)
   @objc public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
   @objc deinit
 }
 extension QuickPoseCore.QuickPose {
   public enum Feature : Swift.Hashable {
+    case showPoints
     case overlay(QuickPoseCore.QuickPose.Landmarks.Group)
     public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: QuickPoseCore.QuickPose.Feature, b: QuickPoseCore.QuickPose.Feature) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum Side : Swift.Hashable {
+    case left
+    case right
+    public static func == (a: QuickPoseCore.QuickPose.Side, b: QuickPoseCore.QuickPose.Side) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
@@ -115,6 +132,8 @@ extension QuickPoseCore.QuickPose {
       case userRightHeel
       case userLeftFootIndex
       case userRightFootIndex
+      case userMidHip
+      case userMidShoulder
       public static func parse(rawValue: Swift.String) -> QuickPoseCore.QuickPose.Landmarks.Body?
       public init?(rawValue: Swift.Int)
       public typealias RawValue = Swift.Int

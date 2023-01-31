@@ -1,7 +1,9 @@
 
 import SwiftUI
 import QuickPoseCore
+import QuickPoseCamera
 import QuickPoseSwiftUI
+
 
 struct QuickPosePickerView: View {
     @Environment(\.geometry) private var geometrySize
@@ -22,7 +24,11 @@ struct QuickPosePickerView: View {
     
     var body: some View {
         ZStack(alignment: .top) {
-            QuickPoseCameraSwitchView(useFrontCamera: $useFrontCamera, delegate: quickPose)
+            if ProcessInfo.processInfo.isiOSAppOnMac, let url = Bundle.main.url(forResource: "happy-dance", withExtension: "mov") {
+                QuickPoseSimulatedCameraView(useFrontCamera: true, delegate: quickPose, video: url)
+            } else {
+                QuickPoseCameraSwitchView(useFrontCamera: $useFrontCamera, delegate: quickPose)
+            }
             QuickPoseOverlayView(overlayImage: $overlayImage)
         }
         .overlay(alignment: .top) {
@@ -87,7 +93,7 @@ struct QuickPosePickerView: View {
         .overlay(alignment: .bottom) {
             Text("Powered by QuickPose.ai - \(lastFPS) fps") // remove logo here, but attribution appreciated
                 .font(.system(size: 16, weight: .semibold)).foregroundColor(.white)
-                .frame(maxHeight:  32 + safeAreaInsets.bottom, alignment: .center)
+                .frame(height: 40 + safeAreaInsets.bottom, alignment: .center)
                 .padding(.bottom, 0)
         }
        
@@ -138,11 +144,13 @@ extension QuickPose.Feature{
         switch self {
         case .overlay(let limb):
             return limb.rawValue
+        case .showPoints:
+            return "All Points"
         @unknown default:
             fatalError()
         }
     }
     public static func allFeatures() -> [QuickPose.Feature] {
-        QuickPose.Landmarks.Group.commonLimbs().map { overlay($0)}
+        [.showPoints] + QuickPose.Landmarks.Group.commonLimbs().map { overlay($0) }
     }
 }
