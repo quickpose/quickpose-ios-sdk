@@ -9,16 +9,23 @@ QuickPose provides developer-oriented cutting edge ML features of MediaPipe and 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
+- [How it works](#how-it-works)
 - [Features](#features)
+- [Supported Platforms](#supported-platforms)
 - [Requirements](#requirements)
 - [Installing the SDK](#installing-the-sdk)
   - [Swift Package Manager](#swift-package-manager)
 - [Getting Started](#getting-started)
+  - [Getting Started with Newer Macs M1/M2](#getting-started-with-newer-macs-m1m2)
+  - [Getting Started with Older Intel Macs](#getting-started-with-older-intel-macs)
   - [Integrating into SwiftUI App](#integrating-into-swiftui-app)
+    - [Device Camera only](#device-camera-only)
+    - [Device Camera and Running Video on Mac (Recommended)](#device-camera-and-running-video-on-mac-recommended)
   - [Integrating into UIKit App](#integrating-into-uikit-app)
+    - [Device Camera only](#device-camera-only-1)
+    - [Device Camera and Running Video on Mac (Recommended)](#device-camera-and-running-video-on-mac-recommended-1)
 - [Troubleshooting](#troubleshooting)
   - [No Such Module](#no-such-module)
-  - [Unsupported Architecture](#unsupported-architecture)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -48,9 +55,9 @@ Features
 Supported Platforms
 ------------------
 
-| iOS Device | M1/M2 Mac (Running as Designed for iPad) | iOS Simulator x86_64 | iOS Simulator arm64  | 
-| ----------:| ----------------------------------------:|---------------------:|---------------------:|
-| ✅ Runs    |                                 ✅ Runs |            ⚙ Compiles |         ⚙ Compiles  |
+| iOS Device | Silicon Mac (M1, M2, etc) | iOS Simulator x86_64 | iOS Simulator arm64  | 
+| ----------:| -------------------------:|---------------------:|---------------------:|
+| ✅ Runs    |                   ✅ Runs |          ⚙ Compiles |          ⚙ Compiles  |
 
 Requirements
 ------------------
