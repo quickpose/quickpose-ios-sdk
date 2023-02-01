@@ -33,7 +33,7 @@ QuickPose provides developer-oriented cutting edge ML features of MediaPipe and 
 How it works
 ------------------
 
-QuickPose process's a camera's or video's output frame and make it easy for developers to perform complex AI features to the image, such as overlaying markings to the output image to highlight the user's pose.
+QuickPose process a video frame and makes it easy for developers to perform complex AI features to the image, such as overlaying markings to the output image to highlight the user's pose.
 
 ```swift
 +----------+          +-------------+          +-----------------+
