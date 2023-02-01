@@ -13,6 +13,7 @@ import QuickPoseCamera
 class ViewController: UIViewController {
     
     var camera: QuickPoseCamera?
+    var simulatedCamera: QuickPoseSimulatedCamera?
     var quickPose = QuickPose()
     
     @IBOutlet var cameraView: UIView!
@@ -21,14 +22,24 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // setup camera
-        camera = QuickPoseCamera(useFrontCamera: true)
-        try? camera?.start(delegate: quickPose)
+        if ProcessInfo.processInfo.isiOSAppOnMac, let url = Bundle.main.url(forResource: "happy-dance", withExtension: "mov") {
+            simulatedCamera = QuickPoseSimulatedCamera(useFrontCamera: true, asset: AVAsset(url: url)) // setup simulated camera
+            try? simulatedCamera?.start(delegate: quickPose)
+            
+            let customPreviewLayer = AVPlayerLayer(player: simulatedCamera?.player)
+            customPreviewLayer.videoGravity = .resizeAspectFill
+            customPreviewLayer.frame.size = view.frame.size
+            cameraView.layer.addSublayer(customPreviewLayer)
+        } else {
+            camera = QuickPoseCamera(useFrontCamera: true) // setup camera
+            try? camera?.start(delegate: quickPose)
+            
+            let customPreviewLayer = AVCaptureVideoPreviewLayer(session: camera!.session!)
+            customPreviewLayer.videoGravity = .resizeAspectFill
+            customPreviewLayer.frame.size = view.frame.size
+            cameraView.layer.addSublayer(customPreviewLayer)
+        }
         
-        let customPreviewLayer = AVCaptureVideoPreviewLayer(session: camera!.session!)
-        customPreviewLayer.videoGravity = .resizeAspectFill
-        customPreviewLayer.frame.size = view.frame.size
-        cameraView.layer.addSublayer(customPreviewLayer)
         
         // setup overlay
         overlayView.contentMode = .scaleAspectFill // keep overlays in same scale as camera output
@@ -38,7 +49,7 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        quickPose.start(features: [.overlay(.userLeftArm)], onFrame: { status, image, features, landmarks in
+        quickPose.start(features: [.overlay(.upperBody)], onFrame: { status, image, features, landmarks in
             if case .success(_) = status {
                 DispatchQueue.main.async {
                     self.overlayView.image = image
@@ -50,6 +61,7 @@ class ViewController: UIViewController {
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         camera?.stop()
+        simulatedCamera?.stop()
         quickPose.stop()
     }
 }

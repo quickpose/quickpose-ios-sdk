@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/github/license/quickpose/quickpose-ios-sdk)](https://raw.githubusercontent.com/quickpose/quickpose-ios-sdk/main/LICENSE) 
 [![Swift Package Manager](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 
-QuickPose provides developer-oriented cutting edge ML features of MediaPipe and BlazePose. with easy integration, production ready code. Dramatically improving the speed of implementation of MediaPipe and BlazePose into mobile applications.
+QuickPose provides developer-oriented cutting edge ML features of MediaPipe and BlazePose, with easy integration and production ready code. Dramatically improving the speed of implementation of MediaPipe and BlazePose's pose estimation and skeleton tracking features into mobile applications.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -22,6 +22,19 @@ QuickPose provides developer-oriented cutting edge ML features of MediaPipe and 
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+
+How it works
+------------------
+
+QuickPose process's a camera's or video's output frame and make it easy for developers to perform complex AI features to the image, such as overlaying markings to the output image to highlight the user's pose.
+
+```swift
++----------+          +-------------+          +-----------------+
+|          |          |             |          |  Overlay Image  |
+|  Camera  |--------->|  QuickPose  |--------->|        +        |
+|          |          |             |          |     Results     |
++----------+          +-------------+          +-----------------+
+```
 
 Features
 ------------------
@@ -72,8 +85,53 @@ Getting Started
 
 See code examples below or download our [Sample Apps](/SampleApps).
 
+### Getting Started with Newer Macs M1/M2
+
+__Step 1__: Download/Clone Repo
+
+__Step 2__: Open Basic Demo
+
+__Step 3__: Choose Build Target "My Mac (Designed For iPad/iPhone)"
+
+__Step 4__: Run
+
+![Getting Started With Mac Picture](docs/img/silicon-mac-get-started-upperbody.png)
+
+__Step 5__: Explore the features and returned results
+
+```swift
+quickPose.start(features: [.overlay(.upperBody)], onFrame: { status, image, features, landmarks in
+    if case .success(_) = status {
+        overlayImage = image
+    }
+})
+```
+
+### Getting Started with Older Intel Macs
+
+__Step 1__: Download/Clone Repo
+
+__Step 2__: Open Basic Demo
+
+__Step 3__: Choose Build Target as your physical device
+
+__Step 5__: You will need to change the bundleid and register with apple if you haven't already.
+
+__Step 5__: Run
+
+__Step 6__: Explore the features and returned results
+
+```swift
+quickPose.start(features: [.overlay(.upperBody)], onFrame: { status, image, features, landmarks in
+    if case .success(_) = status {
+        overlayImage = image
+    }
+})
+```
+
 ### Integrating into SwiftUI App
 
+#### Device Camera only
 ```swift
 import SwiftUI
 import QuickPoseCore
@@ -107,12 +165,46 @@ struct QuickPoseBasicView: View {
         }
     }
 }
-
-
 ```
+#### Device Camera and Running Video on Mac (Recommended)
+```swift
+import SwiftUI
+import QuickPoseCore
+import QuickPoseSwiftUI
+...
+struct QuickPoseBasicView: View {
 
+    private var quickPose = QuickPose()
+    @State private var overlayImage: UIImage?
+    
+    var body: some View {
+        GeometryReader { geometry in
+            ZStack(alignment: .top) {
+                if ProcessInfo.processInfo.isiOSAppOnMac, let url = Bundle.main.url(forResource: "happy-dance", withExtension: "mov") {
+                    QuickPoseSimulatedCameraView(useFrontCamera: true, delegate: quickPose, video: url)
+                } else {
+                    QuickPoseCameraView(useFrontCamera: true, delegate: quickPose)
+                }
+                QuickPoseOverlayView(overlayImage: $overlayImage)
+            }
+            .frame(width: geometry.size.width)
+            .edgesIgnoringSafeArea(.all)
+            .onAppear {
+                quickPose.start(features: [.overlay(.upperBody)], onFrame: { status, image, features, landmarks in
+                    if case .success(_) = status {
+                        overlayImage = image
+                    }
+                })
+            }.onDisappear {
+                quickPose.stop()
+            }
+            
+        }
+    }
+```
 ### Integrating into UIKit App
 
+#### Device Camera only
 ```swift
 import QuickPoseCore
 import QuickPoseCamera
@@ -161,6 +253,68 @@ class ViewController: UIViewController {
         quickPose.stop()
     }
 }
+```
+#### Device Camera and Running Video on Mac (Recommended)
+```swift
+import QuickPoseCore
+import QuickPoseCamera
+...
+class ViewController: UIViewController {
+    
+    var camera: QuickPoseCamera?
+    var simulatedCamera: QuickPoseSimulatedCamera?
+    var quickPose = QuickPose()
+    
+    @IBOutlet var cameraView: UIView!
+    @IBOutlet var overlayView: UIImageView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        if ProcessInfo.processInfo.isiOSAppOnMac, let url = Bundle.main.url(forResource: "happy-dance", withExtension: "mov") {
+            simulatedCamera = QuickPoseSimulatedCamera(useFrontCamera: true, asset: AVAsset(url: url)) // setup simulated camera
+            try? simulatedCamera?.start(delegate: quickPose)
+            
+            let customPreviewLayer = AVPlayerLayer(player: simulatedCamera?.player)
+            customPreviewLayer.videoGravity = .resizeAspectFill
+            customPreviewLayer.frame.size = view.frame.size
+            cameraView.layer.addSublayer(customPreviewLayer)
+        } else {
+            camera = QuickPoseCamera(useFrontCamera: true) // setup camera
+            try? camera?.start(delegate: quickPose)
+            
+            let customPreviewLayer = AVCaptureVideoPreviewLayer(session: camera!.session!)
+            customPreviewLayer.videoGravity = .resizeAspectFill
+            customPreviewLayer.frame.size = view.frame.size
+            cameraView.layer.addSublayer(customPreviewLayer)
+        }
+        
+        
+        // setup overlay
+        overlayView.contentMode = .scaleAspectFill // keep overlays in same scale as camera output
+        overlayView.frame.size = view.frame.size
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        quickPose.start(features: [.overlay(.upperBody)], onFrame: { status, image, features, landmarks in
+            if case .success(_) = status {
+                DispatchQueue.main.async {
+                    self.overlayView.image = image
+                }
+            }
+        })
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        camera?.stop()
+        simulatedCamera?.stop()
+        quickPose.stop()
+    }
+}
+
 ```
 
 

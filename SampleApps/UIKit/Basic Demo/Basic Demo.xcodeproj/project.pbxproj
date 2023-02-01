@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D003502B297EE54A0009AFDA /* QuickPoseCamera in Frameworks */ = {isa = PBXBuildFile; productRef = D003502A297EE54A0009AFDA /* QuickPoseCamera */; };
+		D01D9D12298A74BF00643071 /* happy-dance.mov in Resources */ = {isa = PBXBuildFile; fileRef = D01D9D11298A74BF00643071 /* happy-dance.mov */; };
 		D0341176297ED13400289B0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0341175297ED13400289B0E /* AppDelegate.swift */; };
 		D0341178297ED13400289B0E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0341177297ED13400289B0E /* SceneDelegate.swift */; };
 		D034117A297ED13400289B0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0341179297ED13400289B0E /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D01D9D11298A74BF00643071 /* happy-dance.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = "happy-dance.mov"; path = "../../../SwiftUI/PickerDemo/QuickPose Demo/happy-dance.mov"; sourceTree = "<group>"; };
 		D0341172297ED13400289B0E /* Basic Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Basic Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0341175297ED13400289B0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0341177297ED13400289B0E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				D0341179297ED13400289B0E /* ViewController.swift */,
 				D034117B297ED13400289B0E /* Main.storyboard */,
 				D034117E297ED13500289B0E /* Assets.xcassets */,
+				D01D9D11298A74BF00643071 /* happy-dance.mov */,
 				D0341180297ED13500289B0E /* LaunchScreen.storyboard */,
 				D0341183297ED13500289B0E /* Info.plist */,
 			);
@@ -155,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0341182297ED13500289B0E /* LaunchScreen.storyboard in Resources */,
+				D01D9D12298A74BF00643071 /* happy-dance.mov in Resources */,
 				D034117F297ED13500289B0E /* Assets.xcassets in Resources */,
 				D034117D297ED13400289B0E /* Main.storyboard in Resources */,
 			);
