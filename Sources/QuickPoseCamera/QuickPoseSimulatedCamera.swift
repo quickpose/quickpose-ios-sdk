@@ -10,18 +10,19 @@ import AVFoundation
 import UIKit
 import SwiftUI
 import QuickPoseCore
-/// QuickPose Camera prepares an AVCaptureSession of the device's camera and sets a delegate.
+
+/// QuickPoseSimulatedCamera prepares an asset reader for a provided avasset and sets a delegate.
 ///
-/// QuickPose itself accepts the camera's output frame and perform an ML feature to the image,
+/// QuickPose itself accepts the video's output frame and perform an ML feature to the image,
 /// such as overlaying markings to the output image to highlight the user.
 ///
 ///       +----------+          +-------------+          +-------------+
 ///       |          |          |             |          |    Image    |
-///       |  Camera  |--------->|  QuickPose  |--------->|      +      |
+///       |  AVAsset |--------->|  QuickPose  |--------->|      +      |
 ///       |          |          |             |          |   Results   |
 ///       +----------+          +-------------+          +-------------+
 ///
-/// For performance and developer-centricity reasons QuickPose uses an native Camera rendering view ``AVCaptureVideoPreviewLayer`` to show the camera output, and a ImageView to display the results.
+/// For performance and developer-centricity reasons QuickPose uses an native asset rendering view ``AVCaptureVideoPreviewLayer`` to show the video output, and a ImageView to display the results.
 ///
 ///       +----------+          +-------------+
 ///       |          |          |             |
@@ -39,14 +40,18 @@ import QuickPoseCore
 ///       +----------+          +-------------+
 ///
 ///
-/// For SwiftUI use our provided ``QuickPoseCameraView`` and ``QuickPoseOverlayView`` views for setup  (for an example see our demo apps)
+/// For SwiftUI use our provided ``QuickPoseSimulatedCameraView`` , ``QuickPoseCameraView`` and ``QuickPoseOverlayView`` views for setup  (for an example see our demo apps)
 ///
 ///     private var quickPose = QuickPose()
 ///     @State private var overlayImage: UIImage?
 ///
 ///     var body: some View {
 ///         ZStack(alignment: .top) {
-///             QuickPoseCameraView(useFrontCamera: true, delegate: quickPose)
+///             if ProcessInfo.processInfo.isiOSAppOnMac, let url = Bundle.main.url(forResource: "happy-dance", withExtension: "mov") {
+///                 QuickPoseSimulatedCameraView(useFrontCamera: true, delegate: quickPose, video: url)
+///             } else {
+///                 QuickPoseCameraView(useFrontCamera: true, delegate: quickPose)
+///             }
 ///             QuickPoseOverlayView(overlayImage: $overlayImage)
 ///         }
 ///     }
@@ -54,6 +59,7 @@ import QuickPoseCore
 /// For UIKit use setup as following (for an example see our demo apps)
 ///
 ///      var camera: QuickPoseCamera?
+///      var simulatedCamera: QuickPoseSimulatedCamera?
 ///      var quickPose = QuickPose()
 ///
 ///      @IBOutlet var cameraView: UIView!
@@ -61,19 +67,23 @@ import QuickPoseCore
 ///
 ///      ....
 ///
-///      // setup camera
-///      camera = QuickPoseCamera(useFrontCamera: true)
-///      try? camera?.start(delegate: quickPose)
+///      if ProcessInfo.processInfo.isiOSAppOnMac, let url = Bundle.main.url(forResource: "happy-dance", withExtension: "mov") {
+///              simulatedCamera = QuickPoseSimulatedCamera(useFrontCamera: true, asset: AVAsset(url: url)) // setup simulated camera
+///              try? simulatedCamera?.start(delegate: quickPose)
 ///
-///      let customPreviewLayer = AVCaptureVideoPreviewLayer(session: camera!.session!)
-///      customPreviewLayer.videoGravity = .resizeAspectFill
-///      customPreviewLayer.frame.size = view.frame.size
-///      cameraView.layer.addSublayer(customPreviewLayer)
+///              let customPreviewLayer = AVPlayerLayer(player: simulatedCamera?.player)
+///              customPreviewLayer.videoGravity = .resizeAspectFill
+///              customPreviewLayer.frame.size = view.frame.size
+///              cameraView.layer.addSublayer(customPreviewLayer)
+///       } else {
+///              camera = QuickPoseCamera(useFrontCamera: true) // setup camera
+///              try? camera?.start(delegate: quickPose)
 ///
-///      // setup overlay
-///      overlayView.contentMode = .scaleAspectFill // keep overlays in same scale as camera output
-///      overlayView.frame.size = view.frame.size
-///
+///              let customPreviewLayer = AVCaptureVideoPreviewLayer(session: camera!.session!)
+///              customPreviewLayer.videoGravity = .resizeAspectFill
+///              customPreviewLayer.frame.size = view.frame.size
+///              cameraView.layer.addSublayer(customPreviewLayer)
+///        }
 ///
 public class QuickPoseSimulatedCamera {
     
@@ -129,7 +139,7 @@ public class QuickPoseSimulatedCamera {
             orientation = 1
         }
         videoFileBufferOrientation = CGImagePropertyOrientation(rawValue: orientation)!
-        print("native video rotation \(angleInDegrees) degrees")
+//        print("native video rotation \(angleInDegrees) degrees")
         playerItem.add(output)
         player.actionAtItemEnd = .pause
         videoFileReadingQueue.async {
@@ -143,11 +153,6 @@ public class QuickPoseSimulatedCamera {
         videoFileFrameDuration = track.minFrameDuration
         print(track.nominalFrameRate)
         displayLink.isPaused = false
-        
-        //        [_videoDisplayLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
-        //        qpProcessingQueue.async {
-        
-        //        }
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(restartVideo),
                                                name: .AVPlayerItemDidPlayToEndTime,
