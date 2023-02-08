@@ -256,12 +256,123 @@ using UInt = size_t;
 @class AVCaptureOutput;
 @class AVCaptureConnection;
 
+/// QuickPose provides developer-oriented cutting edge AI features with easy integration and production ready code.
+/// Use QuickPose when you want to process a camera’s output frame and perform a common AI feature to the image,
+/// such as overlaying markings to the output image to highlight the user.
+/// \code
+///   +----------+          +-------------+          +-------------+
+///   |          |          |             |          |    Image    |
+///   |  Camera  |--------->|  QuickPose  |--------->|      +      |
+///   |          |          |             |          |   Results   |
+///   +----------+          +-------------+          +-------------+
+///
+/// \endcodeFor performance and developer-centricity reasons QuickPose does not render the camera’s output
+/// or display the output annotations itself, for SwiftUI it uses a Camera View and Overlay View.
+/// \code
+///   +----------+          +-------------+
+///   |          |          |             |
+///   |  Camera  |--------->|  QuickPose  |
+///   |          |          |             |
+///   +----------+          +-------------+
+///        |                     |
+///        |                     |  Overlay, Reading
+///       \/                    \/
+///   +----------+          +-------------+
+///   |          |          |             |
+///   |  Camera  |          |   Overlay   |
+///   |   View   |          |    View     |
+///   |          |          |             |
+///   +----------+          +-------------+
+///
+/// \endcodeThe <code>QuickPoseCameraView</code> wraps AVFoundation’s <code>AVCaptureVideoPreviewLayer</code> for SwiftUI and connects the QuickPose as a delegate
+/// \code
+/// QuickPoseCameraView(useFrontCamera: true, delegate: quickPose)
+///
+/// \endcodeAlso available is the <code>QuickPoseCameraSwitchView</code>, which does the same, but allows the camera to be swapped efficiently using a <code>Binding<Bool></code>
+/// \code
+/// @State var useFrontCamera: Bool = true
+/// ...
+/// QuickPoseCameraSwitchView(useFrontCamera: $useFrontCamera, delegate: quickPose)
+///
+/// \endcodeThe <code>QuickPoseOverlayView</code> just displays the overlay image but avoids triggering SwiftUI redraws which is expensive.
+/// \code
+///  QuickPoseOverlayView(overlayImage: $overlayImage)
+///
+/// \endcodeAnd in a full example rending an overlay over the left arm
+/// \code
+/// private var quickPose = QuickPose(sdkKey: "YOUR SDK KEY HERE")
+/// @State private var overlayImage: UIImage?
+///
+/// var body: some View {
+///     ZStack(alignment: .top) {
+///         QuickPoseCameraView(useFrontCamera: true, delegate: quickPose)
+///         QuickPoseOverlayView(overlayImage: $overlayImage)
+///     }
+///     .onAppear {
+///         quickPose.start(features: [.overlay(.userLeftArm)], onFrame: { status, image, features, landmarks in
+///             overlayImage = image
+///         })
+///     }
+///     .onDisappear {
+///         quickPose.stop()
+///     }
+///     .frame(width: geometrySize.width)
+///     .edgesIgnoringSafeArea(.all)
+/// }
+///
+/// \endcodeAbove the QuickPose class is initialised with the parent view, and started in the <code>onAppear(action:)</code> action with <code>start(features:onStart:onFrame:)</code>.
+/// It’s important to match the starting with <code>stop()</code> in the <code>onDisappear(action:)</code>.
+/// Applying AI to camera feed is memory intensive and requires releasing for production use.
+/// The <code>start(features:onStart:onFrame:)</code> accepts a <code>Feature</code> array, and two closures one to asynchronously return when the camera has started, and second for each processed frame. Here only the onFrame image is read and applied the the view’s state, which triggers a SwiftUI refresh of the <code>QuickPoseOverlayView</code>.
+/// \code
+/// quickPose.start(features: [.overlay(.userLeftArm)], onFrame: { _, image, _, _ in
+///     overlayImage = image
+///   })
+///
+/// \endcodeFor a more advanced example we can reference the <code>Status</code> state to log if the user is found and current performance via the returned frames-per-second.
+/// \code
+/// quickPose.start(features: [.overlay(.userLeftArm)], onFrame: { status, image, _, _ in
+///     if case let .success(fps) = status {
+///         print("fps: \(fps)")
+///         overlayImage = image
+///     } else {
+///         print("No one found")
+///     }
+/// })
+///
+/// \endcodeAnd a real world production example, where a capture button is unhidden when a result is available
+/// \code
+/// @State private var captureButtonOpacity: Double = 0
+/// ...
+///
+/// .onAppear {
+///     quickPose.start(features: [selectedFeature], onStart: {
+///         withAnimation { cameraViewOpacity = 1.0 } // unhide the camera when loaded
+///     }, onFrame: { status, image, features, _ in
+///         if case let .success(fps) = status {
+///             if case let .reading(_, displayString) = features[selectedFeature] {
+///                 lastResult = displayString
+///                 if captureButtonOpacity == 0 { // only show button when reading available
+///                     withAnimation { captureButtonOpacity = 1 }
+///                 }
+///             } else if captureButtonOpacity == 1 {
+///                 withAnimation { captureButtonOpacity = 0 }
+///             }
+///             overlayImage = image
+///         }
+///     })
+///
+///     UIApplication.shared.isIdleTimerDisabled = true // keep screen on when in use
+///     }
+///
+/// \endcode
 SWIFT_CLASS("_TtC13QuickPoseCore9QuickPose")
 @interface QuickPose : NSObject <AVCaptureVideoDataOutputSampleBufferDelegate>
-/// Initialization. This is lightweight and does not allocate any memory.
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)captureOutput:(AVCaptureOutput * _Nonnull)output didOutputSampleBuffer:(CMSampleBufferRef _Nonnull)sampleBuffer fromConnection:(AVCaptureConnection * _Nonnull)connection;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 
 
