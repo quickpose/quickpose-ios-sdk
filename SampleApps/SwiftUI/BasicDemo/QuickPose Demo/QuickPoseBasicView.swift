@@ -11,7 +11,7 @@ import QuickPoseSwiftUI
 
 struct QuickPoseBasicView: View {
 
-    private var quickPose = QuickPose()
+    private var quickPose = QuickPose(sdkKey: "01GS5J4JEQQZDZZB0EYSE974BV")
     @State private var overlayImage: UIImage?
     
     var body: some View {
@@ -25,7 +25,7 @@ struct QuickPoseBasicView: View {
                 QuickPoseOverlayView(overlayImage: $overlayImage)
             }
             .overlay(alignment: .bottom) {
-                Text("Powered by QuickPose.ai") // remove logo here, but attribution appreciated
+                Text("Powered by QuickPose.ai v\(quickPose.quickPoseVersion())") // remove logo here, but attribution appreciated
                     .font(.system(size: 16, weight: .semibold)).foregroundColor(.white)
                     .frame(maxHeight:  40 + geometry.safeAreaInsets.bottom, alignment: .center)
                     .padding(.bottom, 0)

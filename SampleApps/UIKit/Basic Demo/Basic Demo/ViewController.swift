@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     
     var camera: QuickPoseCamera?
     var simulatedCamera: QuickPoseSimulatedCamera?
-    var quickPose = QuickPose()
+    var quickPose = QuickPose(sdkKey: "YOUR SDK KEY HERE")
     
     @IBOutlet var cameraView: UIView!
     @IBOutlet var overlayView: UIImageView!

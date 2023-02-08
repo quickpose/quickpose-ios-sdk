@@ -1,0 +1,62 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "outputSchema" : [
+      {
+        "isOptional" : "0",
+        "formattedType" : "String",
+        "type" : "String",
+        "name" : "pose",
+        "shortDescription" : ""
+      },
+      {
+        "isOptional" : "0",
+        "keyType" : "String",
+        "formattedType" : "Dictionary (String → Double)",
+        "type" : "Dictionary",
+        "name" : "classProbability",
+        "shortDescription" : ""
+      }
+    ],
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 1,
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.13",
+      "tvOS" : "11.0",
+      "watchOS" : "4.0",
+      "iOS" : "11.0",
+      "macCatalyst" : "11.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_treeEnsembleClassifier"
+    },
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "6.1",
+      "com.github.apple.coremltools.source" : "scikit-learn==1.1.2"
+    },
+    "classLabels" : [
+      "jumping_jack",
+      "plank",
+      "push_up",
+      "sit",
+      "stand"
+    ],
+    "generatedClassName" : "fitness_rep_clf",
+    "inputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Double",
+        "formattedType" : "MultiArray (Double 66)",
+        "shortDescription" : "",
+        "shape" : "[66]",
+        "name" : "input",
+        "type" : "MultiArray"
+      }
+    ],
+    "method" : "predict"
+  }
+]

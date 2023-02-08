@@ -23,7 +23,7 @@ struct QuickPose_DemoApp: App {
 }
 
 struct DemoAppView: View {
-    @State var cameraPermissionGranted = false
+    @State var cameraPermissionGranted = !ProcessInfo.processInfo.isiOSAppOnMac
     var body: some View {
         GeometryReader { geometry in
             if cameraPermissionGranted {

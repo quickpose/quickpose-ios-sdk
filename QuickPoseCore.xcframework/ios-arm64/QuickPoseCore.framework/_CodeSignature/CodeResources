@@ -4,115 +4,13 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Frameworks/QuickPoseMP.framework/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			r6gSvnMOvcyPCVRBNdUR3wbmha8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/QuickPoseMP.framework/Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			n2t8gsDpfE6XkhG31p7IQJRxTxU=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/QuickPoseMP.framework/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			U0x8EM0781fCPb62BbZIXKeDlZ4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/QuickPoseMP.framework/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			1vUK4QodroUt6u2sj8+5ogROFU8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/QuickPoseMP.framework/Base.lproj/Main.storyboardc/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			MDrKFvFWroTb0+KEbQShBcoBvo4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/QuickPoseMP.framework/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Vkzy1L6juZRKZ3H0ZGldqymhq04=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/QuickPoseMP.framework/Info.plist</key>
-		<data>
-		23Lo4nN66qh/EXLTu09E8K2+8vk=
-		</data>
-		<key>Frameworks/QuickPoseMP.framework/QuickPoseMP</key>
-		<data>
-		EShXWtRS3NSZqEWhjSkoxPUs4pI=
-		</data>
-		<key>Frameworks/QuickPoseMP.framework/_CodeSignature/CodeResources</key>
-		<data>
-		shO2LTXloXbFXkKdhsOII3t9Q+g=
-		</data>
-		<key>Frameworks/QuickPoseMP.framework/face_detection_short_range.tflite</key>
-		<data>
-		6PdJ+vwju4jarIW8n34GmENvKaA=
-		</data>
-		<key>Frameworks/QuickPoseMP.framework/face_landmark.tflite</key>
-		<data>
-		zIFh+5oRLJAwAtMjo7qCc3pGJWw=
-		</data>
-		<key>Frameworks/QuickPoseMP.framework/hand_landmark_full.tflite</key>
-		<data>
-		kQh2DrBifNc1PvDrLIXonOmfNYY=
-		</data>
-		<key>Frameworks/QuickPoseMP.framework/hand_landmark_lite.tflite</key>
-		<data>
-		dZLBiOC7EkzVR7jtRqPFRBgQrqE=
-		</data>
-		<key>Frameworks/QuickPoseMP.framework/hand_recrop.tflite</key>
-		<data>
-		H3S6SDvHEKhPO2i/IhI+J3bs1C8=
-		</data>
-		<key>Frameworks/QuickPoseMP.framework/handedness.txt</key>
-		<data>
-		9YCC2KA9Uho1k+/1hzW4PKL4Y9U=
-		</data>
-		<key>Frameworks/QuickPoseMP.framework/holistic_tracking_gpu.binarypb</key>
-		<data>
-		cPMq1jKQ1M5GtkxXuzWaDEkhE48=
-		</data>
-		<key>Frameworks/QuickPoseMP.framework/pose_detection.tflite</key>
-		<data>
-		jk1WDJelBH/oA36WdcJ9lz1x0bM=
-		</data>
-		<key>Frameworks/QuickPoseMP.framework/pose_landmark_full.tflite</key>
-		<data>
-		E0RYyaGuwl5XX+Ibor61Uk298BU=
-		</data>
 		<key>Headers/QuickPose.h</key>
 		<data>
 		R+5zzDGLVtk5OETNKFVgq+a9WAE=
 		</data>
 		<key>Headers/QuickPoseCore-Swift.h</key>
 		<data>
-		4C4afjcSOp1te/zIntGdfM6Ec2Q=
+		B2SdzvX+72a7SeN4I433thKxAjs=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -120,169 +18,47 @@
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		N8nA4hoDbQLEHAeepIqRMIDGE4s=
+		B8NuQfXCBuScUFZNdZkAA/DNq2Y=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		ymCwcUCT6zJvfhzLLrLkPMe6G80=
+		aOa3EVlx8mLv7bTcpK5O+kADQEc=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		ZK2CSpybFd59zmWJrdYkqE4SAcY=
+		ucbCrOk7DIlwturS3Y5h3HZgzzo=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		ymCwcUCT6zJvfhzLLrLkPMe6G80=
+		aOa3EVlx8mLv7bTcpK5O+kADQEc=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		m/3D/nBA6IZns6SGm1jX9gULwEw=
+		aKnYo+PCkWotgho5J3hw/nqq59Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		GthXHYcy1Sr3SvJIxzgeA4RXCxA=
 		</data>
+		<key>fitness_rep_clf.mlmodelc/_B0000.DAT</key>
+		<data>
+		OdaEx32QJBfhLrfNcJerkdtX6T0=
+		</data>
+		<key>fitness_rep_clf.mlmodelc/analytics/coremldata.bin</key>
+		<data>
+		X5krqkxEiW0ZLGfQEyDjGkqYWSo=
+		</data>
+		<key>fitness_rep_clf.mlmodelc/coremldata.bin</key>
+		<data>
+		pYS8VMro+BwqFtP+4iWMxVz8CFg=
+		</data>
+		<key>fitness_rep_clf.mlmodelc/metadata.json</key>
+		<data>
+		oJK/QiHusOzCFKBAxvAE35THb4c=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Frameworks/QuickPoseMP.framework/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			EOmrbyEILYHXDMeAOH9FK9GxNMd53+mIQ7DWaqLqiKM=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/QuickPoseMP.framework/Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			HyVdXMU7Ux4/KalAao30mpWOK/lEPT4gvYN09wf31cg=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/QuickPoseMP.framework/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			cWq7q+iQcmpSoaFGecnyPdKFEPFwRD3slgUmxFADkVs=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/QuickPoseMP.framework/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			SEkalvMx0eTdGBVGfAv1SwPk/E7bZAOs+zxegKrKZIQ=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/QuickPoseMP.framework/Base.lproj/Main.storyboardc/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			PpvapAjR62rl6Ym4E6hkTgpKmBICxTaQXeUqcpHmmqQ=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/QuickPoseMP.framework/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Q0c4FjXic1buTOpqdBRmYuDiUSTgZnNcjuCD0IVEzuE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/QuickPoseMP.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			dvnJZw5dQUfJDfrzEyRMVcrtJLlia2cUDiTpszunjLM=
-			</data>
-		</dict>
-		<key>Frameworks/QuickPoseMP.framework/QuickPoseMP</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			7x7pXMlY6q5N79Z9PvCxbPqn3yyifA0v0SUVMAla2+k=
-			</data>
-		</dict>
-		<key>Frameworks/QuickPoseMP.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Ru8Tfz0c7am57KOSoKl7yfL4ZFMHnL5hs3dtVvU/vw4=
-			</data>
-		</dict>
-		<key>Frameworks/QuickPoseMP.framework/face_detection_short_range.tflite</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			O8GC658zkl2eWLXI1ZMIp2D0reqPKCNw5CjFEhLCZjM=
-			</data>
-		</dict>
-		<key>Frameworks/QuickPoseMP.framework/face_landmark.tflite</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			xgP6YUkhmj6Uh9yavXoMJEdMdyYyc9JIaDeM30CqJtE=
-			</data>
-		</dict>
-		<key>Frameworks/QuickPoseMP.framework/hand_landmark_full.tflite</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			jAJogsnsBZzg+OdSZr7lqaI8NBpA4AAN91U3TT0bm2g=
-			</data>
-		</dict>
-		<key>Frameworks/QuickPoseMP.framework/hand_landmark_lite.tflite</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			1/3orBH4zgP4Zjd1v8Mj9PyfKjgGK09O+hQodO9bKkg=
-			</data>
-		</dict>
-		<key>Frameworks/QuickPoseMP.framework/hand_recrop.tflite</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Z9mWzpb502/hfSaTAixtqTFoAmqy8Cj54jZTmNisfV0=
-			</data>
-		</dict>
-		<key>Frameworks/QuickPoseMP.framework/handedness.txt</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			O4LwJGhw/sRWyGMtRVpOHVZI0oNqelE6JxeBFE9SWRY=
-			</data>
-		</dict>
-		<key>Frameworks/QuickPoseMP.framework/holistic_tracking_gpu.binarypb</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			UFmIMmx6Dx9PBz1/zcCRN+8LlzPpW8ogK3zR2QaSpkM=
-			</data>
-		</dict>
-		<key>Frameworks/QuickPoseMP.framework/pose_detection.tflite</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			pjxhS+8w01lH8TvjYYILHk477Jz+6/TREhahg3MQjoU=
-			</data>
-		</dict>
-		<key>Frameworks/QuickPoseMP.framework/pose_landmark_full.tflite</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			6aXFyxf3Nvr9TC7B2js9Mx1u2+ig0yOVhVrrLN/WS58=
-			</data>
-		</dict>
 		<key>Headers/QuickPose.h</key>
 		<dict>
 			<key>hash2</key>
@@ -294,42 +70,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zcJSf0yk8QLTmqKawNxaKVU4rlgs9+wDsHYNiFt9/94=
+			O0+ER988lBpzp+xsZPb/ANCegTqURlBJ1PKuhNcPMco=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nJIblepudcSMhcWS4wXfsgXjc2P7WknOdcy/SCAA2S4=
+			OhVBs0sRW9z31589QALzUW8yVl8cTuHMWdkR6yhN3+A=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oDPjXOEXB2MtitMf5y2Dd2zk42iGioA0Ub/cAyXRJGw=
+			FaErMVY5HcczXd/IoD36Ll12K84kj+tWzxN59uZZwbo=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7Y1JyGnavBiBwDMI8HYjNGmNKzqbSnd0N1rZCXPWAkI=
+			OB9S+ve/7W69zQPs7k3XyC7Nps3zTAupPs1O/PezXaQ=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oDPjXOEXB2MtitMf5y2Dd2zk42iGioA0Ub/cAyXRJGw=
+			FaErMVY5HcczXd/IoD36Ll12K84kj+tWzxN59uZZwbo=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5f3U5Bo/MJZhPbLbfv5MYrnOLla8DSv5NemzSwaR2uw=
+			oREToKaTu+XLbSNFG3eL5Pxr6n4t1rsnphVx4cP4GDA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -337,6 +113,34 @@
 			<key>hash2</key>
 			<data>
 			J9BkVMgOCG7BfBY4zbNM57BqO9Y5PwVWwQ/YqRP99+0=
+			</data>
+		</dict>
+		<key>fitness_rep_clf.mlmodelc/_B0000.DAT</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			aJalQTGs9DD+Q53XNvCdqpkAERM77ev1qEO5j2Fdv2c=
+			</data>
+		</dict>
+		<key>fitness_rep_clf.mlmodelc/analytics/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			51WAYx2zCbu7VcQcPUa5ESYJiAImFC2XxYVegn/7u4M=
+			</data>
+		</dict>
+		<key>fitness_rep_clf.mlmodelc/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			W1ZPn88XoiBsE5P7MGHlIi+fgYSvEWAJ5p2dwDUcrRY=
+			</data>
+		</dict>
+		<key>fitness_rep_clf.mlmodelc/metadata.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZL8xzEN3iPA/pwr6WC0WO7IXvhvAaQjez7md1ErPlpc=
 			</data>
 		</dict>
 	</dict>
