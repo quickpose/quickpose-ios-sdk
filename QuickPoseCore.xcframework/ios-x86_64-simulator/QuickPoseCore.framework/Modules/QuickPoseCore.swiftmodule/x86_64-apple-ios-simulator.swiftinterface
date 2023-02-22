@@ -66,11 +66,11 @@ extension QuickPoseCore.QuickPose {
   }
   public enum Feature : Swift.Hashable {
     case showPoints(style: QuickPoseCore.QuickPose.Style = Style())
-    case overlay(QuickPoseCore.QuickPose.Landmarks.Group, style: QuickPoseCore.QuickPose.Style = Style())
+    case overlay(_: QuickPoseCore.QuickPose.Landmarks.Group, style: QuickPoseCore.QuickPose.Style = Style())
     case measureAngleBody(origin: QuickPoseCore.QuickPose.Landmarks.Body, p1: QuickPoseCore.QuickPose.Landmarks.Body, p2: QuickPoseCore.QuickPose.Landmarks.Body?, clockwiseDirection: Swift.Bool, style: QuickPoseCore.QuickPose.Style = Style())
     case measureAngleFace(origin: QuickPoseCore.QuickPose.Landmarks.Face, p1: QuickPoseCore.QuickPose.Landmarks.Face, clockwiseDirection: Swift.Bool, style: QuickPoseCore.QuickPose.Style = Style())
-    case rangeOfMotion(QuickPoseCore.QuickPose.RangeOfMotion, style: QuickPoseCore.QuickPose.Style = Style())
-    case fitness(QuickPoseCore.QuickPose.FitnessFeature, style: QuickPoseCore.QuickPose.Style = Style())
+    case rangeOfMotion(_: QuickPoseCore.QuickPose.RangeOfMotion, style: QuickPoseCore.QuickPose.Style = Style())
+    case fitness(_: QuickPoseCore.QuickPose.FitnessFeature, style: QuickPoseCore.QuickPose.Style = Style())
     public var displayString: Swift.String {
       get
     }
