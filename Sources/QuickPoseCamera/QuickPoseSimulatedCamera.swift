@@ -184,7 +184,8 @@ public class QuickPoseSimulatedCamera {
     }
     
     public func stop(){
-        
+        self.displayLink?.invalidate()
+        self.displayLink = nil
     }
 }
 

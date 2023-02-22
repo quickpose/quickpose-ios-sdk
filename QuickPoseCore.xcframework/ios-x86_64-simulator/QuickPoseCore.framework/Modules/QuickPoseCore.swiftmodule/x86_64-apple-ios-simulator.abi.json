@@ -722,6 +722,388 @@
           },
           {
             "kind": "TypeDecl",
+            "name": "Style",
+            "printedName": "Style",
+            "children": [
+              {
+                "kind": "TypeDecl",
+                "name": "ConditionalColor",
+                "printedName": "ConditionalColor",
+                "children": [
+                  {
+                    "kind": "Constructor",
+                    "name": "init",
+                    "printedName": "init(min:max:color:)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ConditionalColor",
+                        "printedName": "QuickPoseCore.QuickPose.Style.ConditionalColor",
+                        "usr": "s:13QuickPoseCore0aB0C5StyleV16ConditionalColorV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Double?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Double?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "declKind": "Constructor",
+                    "usr": "s:13QuickPoseCore0aB0C5StyleV16ConditionalColorV3min3max5colorAGSdSg_AKSo7UIColorCtcfc",
+                    "mangledName": "$s13QuickPoseCore0aB0C5StyleV16ConditionalColorV3min3max5colorAGSdSg_AKSo7UIColorCtcfc",
+                    "moduleName": "QuickPoseCore",
+                    "declAttributes": [
+                      "AccessControl"
+                    ],
+                    "init_kind": "Designated"
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "hashValue",
+                    "printedName": "hashValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:13QuickPoseCore0aB0C5StyleV16ConditionalColorV9hashValueSivp",
+                    "mangledName": "$s13QuickPoseCore0aB0C5StyleV16ConditionalColorV9hashValueSivp",
+                    "moduleName": "QuickPoseCore",
+                    "implicit": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:13QuickPoseCore0aB0C5StyleV16ConditionalColorV9hashValueSivg",
+                        "mangledName": "$s13QuickPoseCore0aB0C5StyleV16ConditionalColorV9hashValueSivg",
+                        "moduleName": "QuickPoseCore",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Function",
+                    "name": "hash",
+                    "printedName": "hash(into:)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Hasher",
+                        "printedName": "Swift.Hasher",
+                        "paramValueOwnership": "InOut",
+                        "usr": "s:s6HasherV"
+                      }
+                    ],
+                    "declKind": "Func",
+                    "usr": "s:13QuickPoseCore0aB0C5StyleV16ConditionalColorV4hash4intoys6HasherVz_tF",
+                    "mangledName": "$s13QuickPoseCore0aB0C5StyleV16ConditionalColorV4hash4intoys6HasherVz_tF",
+                    "moduleName": "QuickPoseCore",
+                    "implicit": true,
+                    "funcSelfKind": "NonMutating"
+                  },
+                  {
+                    "kind": "Function",
+                    "name": "==",
+                    "printedName": "==(_:_:)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ConditionalColor",
+                        "printedName": "QuickPoseCore.QuickPose.Style.ConditionalColor",
+                        "usr": "s:13QuickPoseCore0aB0C5StyleV16ConditionalColorV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ConditionalColor",
+                        "printedName": "QuickPoseCore.QuickPose.Style.ConditionalColor",
+                        "usr": "s:13QuickPoseCore0aB0C5StyleV16ConditionalColorV"
+                      }
+                    ],
+                    "declKind": "Func",
+                    "usr": "s:13QuickPoseCore0aB0C5StyleV16ConditionalColorV2eeoiySbAG_AGtFZ",
+                    "mangledName": "$s13QuickPoseCore0aB0C5StyleV16ConditionalColorV2eeoiySbAG_AGtFZ",
+                    "moduleName": "QuickPoseCore",
+                    "static": true,
+                    "implicit": true,
+                    "funcSelfKind": "NonMutating"
+                  }
+                ],
+                "declKind": "Struct",
+                "usr": "s:13QuickPoseCore0aB0C5StyleV16ConditionalColorV",
+                "mangledName": "$s13QuickPoseCore0aB0C5StyleV16ConditionalColorV",
+                "moduleName": "QuickPoseCore",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Hashable",
+                    "printedName": "Hashable",
+                    "usr": "s:SH",
+                    "mangledName": "$sSH"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Equatable",
+                    "printedName": "Equatable",
+                    "usr": "s:SQ",
+                    "mangledName": "$sSQ"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(relativeFontSize:relativeArcSize:relativeLineWidth:color:conditionalColors:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Style",
+                    "printedName": "QuickPoseCore.QuickPose.Style",
+                    "usr": "s:13QuickPoseCore0aB0C5StyleV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "hasDefaultArg": true,
+                    "usr": "s:Sd"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "hasDefaultArg": true,
+                    "usr": "s:Sd"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "hasDefaultArg": true,
+                    "usr": "s:Sd"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "hasDefaultArg": true,
+                    "usr": "c:objc(cs)UIColor"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[QuickPoseCore.QuickPose.Style.ConditionalColor]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[QuickPoseCore.QuickPose.Style.ConditionalColor]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ConditionalColor",
+                            "printedName": "QuickPoseCore.QuickPose.Style.ConditionalColor",
+                            "usr": "s:13QuickPoseCore0aB0C5StyleV16ConditionalColorV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:13QuickPoseCore0aB0C5StyleV16relativeFontSize0e3ArcG00E9LineWidth5color17conditionalColorsAESd_S2dSo7UIColorCSayAE16ConditionalColorVGSgtcfc",
+                "mangledName": "$s13QuickPoseCore0aB0C5StyleV16relativeFontSize0e3ArcG00E9LineWidth5color17conditionalColorsAESd_S2dSo7UIColorCSayAE16ConditionalColorVGSgtcfc",
+                "moduleName": "QuickPoseCore",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13QuickPoseCore0aB0C5StyleV9hashValueSivp",
+                "mangledName": "$s13QuickPoseCore0aB0C5StyleV9hashValueSivp",
+                "moduleName": "QuickPoseCore",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13QuickPoseCore0aB0C5StyleV9hashValueSivg",
+                    "mangledName": "$s13QuickPoseCore0aB0C5StyleV9hashValueSivg",
+                    "moduleName": "QuickPoseCore",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:13QuickPoseCore0aB0C5StyleV4hash4intoys6HasherVz_tF",
+                "mangledName": "$s13QuickPoseCore0aB0C5StyleV4hash4intoys6HasherVz_tF",
+                "moduleName": "QuickPoseCore",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Style",
+                    "printedName": "QuickPoseCore.QuickPose.Style",
+                    "usr": "s:13QuickPoseCore0aB0C5StyleV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Style",
+                    "printedName": "QuickPoseCore.QuickPose.Style",
+                    "usr": "s:13QuickPoseCore0aB0C5StyleV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:13QuickPoseCore0aB0C5StyleV2eeoiySbAE_AEtFZ",
+                "mangledName": "$s13QuickPoseCore0aB0C5StyleV2eeoiySbAE_AEtFZ",
+                "moduleName": "QuickPoseCore",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:13QuickPoseCore0aB0C5StyleV",
+            "mangledName": "$s13QuickPoseCore0aB0C5StyleV",
+            "moduleName": "QuickPoseCore",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
             "name": "Feature",
             "printedName": "Feature",
             "children": [
@@ -733,99 +1115,12 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(QuickPoseCore.QuickPose.Feature.Type) -> QuickPoseCore.QuickPose.Feature",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Feature",
-                        "printedName": "QuickPoseCore.QuickPose.Feature",
-                        "usr": "s:13QuickPoseCore0aB0C7FeatureO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "QuickPoseCore.QuickPose.Feature.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Feature",
-                            "printedName": "QuickPoseCore.QuickPose.Feature",
-                            "usr": "s:13QuickPoseCore0aB0C7FeatureO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:13QuickPoseCore0aB0C7FeatureO10showPointsyA2EmF",
-                "mangledName": "$s13QuickPoseCore0aB0C7FeatureO10showPointsyA2EmF",
-                "moduleName": "QuickPoseCore"
-              },
-              {
-                "kind": "Var",
-                "name": "overlay",
-                "printedName": "overlay",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(QuickPoseCore.QuickPose.Feature.Type) -> (QuickPoseCore.QuickPose.Landmarks.Group) -> QuickPoseCore.QuickPose.Feature",
+                    "printedName": "(QuickPoseCore.QuickPose.Feature.Type) -> (QuickPoseCore.QuickPose.Style) -> QuickPoseCore.QuickPose.Feature",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(QuickPoseCore.QuickPose.Landmarks.Group) -> QuickPoseCore.QuickPose.Feature",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Feature",
-                            "printedName": "QuickPoseCore.QuickPose.Feature",
-                            "usr": "s:13QuickPoseCore0aB0C7FeatureO"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Group",
-                            "printedName": "QuickPoseCore.QuickPose.Landmarks.Group",
-                            "usr": "s:13QuickPoseCore0aB0C9LandmarksV5GroupO"
-                          }
-                        ]
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "QuickPoseCore.QuickPose.Feature.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Feature",
-                            "printedName": "QuickPoseCore.QuickPose.Feature",
-                            "usr": "s:13QuickPoseCore0aB0C7FeatureO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:13QuickPoseCore0aB0C7FeatureO7overlayyAeC9LandmarksV5GroupOcAEmF",
-                "mangledName": "$s13QuickPoseCore0aB0C7FeatureO7overlayyAeC9LandmarksV5GroupOcAEmF",
-                "moduleName": "QuickPoseCore"
-              },
-              {
-                "kind": "Var",
-                "name": "measureAngleBody",
-                "printedName": "measureAngleBody",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(QuickPoseCore.QuickPose.Feature.Type) -> (QuickPoseCore.QuickPose.Landmarks.Body, QuickPoseCore.QuickPose.Landmarks.Body, QuickPoseCore.QuickPose.Landmarks.Body?, Swift.Bool) -> QuickPoseCore.QuickPose.Feature",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "(QuickPoseCore.QuickPose.Landmarks.Body, QuickPoseCore.QuickPose.Landmarks.Body, QuickPoseCore.QuickPose.Landmarks.Body?, Swift.Bool) -> QuickPoseCore.QuickPose.Feature",
+                        "printedName": "(QuickPoseCore.QuickPose.Style) -> QuickPoseCore.QuickPose.Feature",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -836,7 +1131,127 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Tuple",
-                            "printedName": "(origin: QuickPoseCore.QuickPose.Landmarks.Body, p1: QuickPoseCore.QuickPose.Landmarks.Body, p2: QuickPoseCore.QuickPose.Landmarks.Body?, clockwiseDirection: Swift.Bool)",
+                            "printedName": "(style: QuickPoseCore.QuickPose.Style)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Style",
+                                "printedName": "QuickPoseCore.QuickPose.Style",
+                                "usr": "s:13QuickPoseCore0aB0C5StyleV"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "QuickPoseCore.QuickPose.Feature.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Feature",
+                            "printedName": "QuickPoseCore.QuickPose.Feature",
+                            "usr": "s:13QuickPoseCore0aB0C7FeatureO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:13QuickPoseCore0aB0C7FeatureO10showPointsyAeC5StyleV_tcAEmF",
+                "mangledName": "$s13QuickPoseCore0aB0C7FeatureO10showPointsyAeC5StyleV_tcAEmF",
+                "moduleName": "QuickPoseCore"
+              },
+              {
+                "kind": "Var",
+                "name": "overlay",
+                "printedName": "overlay",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(QuickPoseCore.QuickPose.Feature.Type) -> (QuickPoseCore.QuickPose.Landmarks.Group, QuickPoseCore.QuickPose.Style) -> QuickPoseCore.QuickPose.Feature",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(QuickPoseCore.QuickPose.Landmarks.Group, QuickPoseCore.QuickPose.Style) -> QuickPoseCore.QuickPose.Feature",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Feature",
+                            "printedName": "QuickPoseCore.QuickPose.Feature",
+                            "usr": "s:13QuickPoseCore0aB0C7FeatureO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(QuickPoseCore.QuickPose.Landmarks.Group, style: QuickPoseCore.QuickPose.Style)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Group",
+                                "printedName": "QuickPoseCore.QuickPose.Landmarks.Group",
+                                "usr": "s:13QuickPoseCore0aB0C9LandmarksV5GroupO"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Style",
+                                "printedName": "QuickPoseCore.QuickPose.Style",
+                                "usr": "s:13QuickPoseCore0aB0C5StyleV"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "QuickPoseCore.QuickPose.Feature.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Feature",
+                            "printedName": "QuickPoseCore.QuickPose.Feature",
+                            "usr": "s:13QuickPoseCore0aB0C7FeatureO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:13QuickPoseCore0aB0C7FeatureO7overlayyAeC9LandmarksV5GroupO_AC5StyleVtcAEmF",
+                "mangledName": "$s13QuickPoseCore0aB0C7FeatureO7overlayyAeC9LandmarksV5GroupO_AC5StyleVtcAEmF",
+                "moduleName": "QuickPoseCore"
+              },
+              {
+                "kind": "Var",
+                "name": "measureAngleBody",
+                "printedName": "measureAngleBody",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(QuickPoseCore.QuickPose.Feature.Type) -> (QuickPoseCore.QuickPose.Landmarks.Body, QuickPoseCore.QuickPose.Landmarks.Body, QuickPoseCore.QuickPose.Landmarks.Body?, Swift.Bool, QuickPoseCore.QuickPose.Style) -> QuickPoseCore.QuickPose.Feature",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(QuickPoseCore.QuickPose.Landmarks.Body, QuickPoseCore.QuickPose.Landmarks.Body, QuickPoseCore.QuickPose.Landmarks.Body?, Swift.Bool, QuickPoseCore.QuickPose.Style) -> QuickPoseCore.QuickPose.Feature",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Feature",
+                            "printedName": "QuickPoseCore.QuickPose.Feature",
+                            "usr": "s:13QuickPoseCore0aB0C7FeatureO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(origin: QuickPoseCore.QuickPose.Landmarks.Body, p1: QuickPoseCore.QuickPose.Landmarks.Body, p2: QuickPoseCore.QuickPose.Landmarks.Body?, clockwiseDirection: Swift.Bool, style: QuickPoseCore.QuickPose.Style)",
                             "children": [
                               {
                                 "kind": "TypeNominal",
@@ -869,6 +1284,12 @@
                                 "name": "Bool",
                                 "printedName": "Swift.Bool",
                                 "usr": "s:Sb"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Style",
+                                "printedName": "QuickPoseCore.QuickPose.Style",
+                                "usr": "s:13QuickPoseCore0aB0C5StyleV"
                               }
                             ]
                           }
@@ -891,8 +1312,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:13QuickPoseCore0aB0C7FeatureO16measureAngleBodyyAeC9LandmarksV0G0O_A2JSgSbtcAEmF",
-                "mangledName": "$s13QuickPoseCore0aB0C7FeatureO16measureAngleBodyyAeC9LandmarksV0G0O_A2JSgSbtcAEmF",
+                "usr": "s:13QuickPoseCore0aB0C7FeatureO16measureAngleBodyyAeC9LandmarksV0G0O_A2JSgSbAC5StyleVtcAEmF",
+                "mangledName": "$s13QuickPoseCore0aB0C7FeatureO16measureAngleBodyyAeC9LandmarksV0G0O_A2JSgSbAC5StyleVtcAEmF",
                 "moduleName": "QuickPoseCore"
               },
               {
@@ -903,12 +1324,12 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(QuickPoseCore.QuickPose.Feature.Type) -> (QuickPoseCore.QuickPose.Landmarks.Face, QuickPoseCore.QuickPose.Landmarks.Face, Swift.Bool) -> QuickPoseCore.QuickPose.Feature",
+                    "printedName": "(QuickPoseCore.QuickPose.Feature.Type) -> (QuickPoseCore.QuickPose.Landmarks.Face, QuickPoseCore.QuickPose.Landmarks.Face, Swift.Bool, QuickPoseCore.QuickPose.Style) -> QuickPoseCore.QuickPose.Feature",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(QuickPoseCore.QuickPose.Landmarks.Face, QuickPoseCore.QuickPose.Landmarks.Face, Swift.Bool) -> QuickPoseCore.QuickPose.Feature",
+                        "printedName": "(QuickPoseCore.QuickPose.Landmarks.Face, QuickPoseCore.QuickPose.Landmarks.Face, Swift.Bool, QuickPoseCore.QuickPose.Style) -> QuickPoseCore.QuickPose.Feature",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -919,7 +1340,7 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Tuple",
-                            "printedName": "(origin: QuickPoseCore.QuickPose.Landmarks.Face, p1: QuickPoseCore.QuickPose.Landmarks.Face, clockwiseDirection: Swift.Bool)",
+                            "printedName": "(origin: QuickPoseCore.QuickPose.Landmarks.Face, p1: QuickPoseCore.QuickPose.Landmarks.Face, clockwiseDirection: Swift.Bool, style: QuickPoseCore.QuickPose.Style)",
                             "children": [
                               {
                                 "kind": "TypeNominal",
@@ -938,6 +1359,12 @@
                                 "name": "Bool",
                                 "printedName": "Swift.Bool",
                                 "usr": "s:Sb"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Style",
+                                "printedName": "QuickPoseCore.QuickPose.Style",
+                                "usr": "s:13QuickPoseCore0aB0C5StyleV"
                               }
                             ]
                           }
@@ -960,8 +1387,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:13QuickPoseCore0aB0C7FeatureO16measureAngleFaceyAeC9LandmarksV0G0O_AJSbtcAEmF",
-                "mangledName": "$s13QuickPoseCore0aB0C7FeatureO16measureAngleFaceyAeC9LandmarksV0G0O_AJSbtcAEmF",
+                "usr": "s:13QuickPoseCore0aB0C7FeatureO16measureAngleFaceyAeC9LandmarksV0G0O_AJSbAC5StyleVtcAEmF",
+                "mangledName": "$s13QuickPoseCore0aB0C7FeatureO16measureAngleFaceyAeC9LandmarksV0G0O_AJSbAC5StyleVtcAEmF",
                 "moduleName": "QuickPoseCore"
               },
               {
@@ -972,12 +1399,12 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(QuickPoseCore.QuickPose.Feature.Type) -> (QuickPoseCore.QuickPose.RangeOfMotion) -> QuickPoseCore.QuickPose.Feature",
+                    "printedName": "(QuickPoseCore.QuickPose.Feature.Type) -> (QuickPoseCore.QuickPose.RangeOfMotion, QuickPoseCore.QuickPose.Style) -> QuickPoseCore.QuickPose.Feature",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(QuickPoseCore.QuickPose.RangeOfMotion) -> QuickPoseCore.QuickPose.Feature",
+                        "printedName": "(QuickPoseCore.QuickPose.RangeOfMotion, QuickPoseCore.QuickPose.Style) -> QuickPoseCore.QuickPose.Feature",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -987,9 +1414,22 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "RangeOfMotion",
-                            "printedName": "QuickPoseCore.QuickPose.RangeOfMotion",
-                            "usr": "s:13QuickPoseCore0aB0C13RangeOfMotionO"
+                            "name": "Tuple",
+                            "printedName": "(QuickPoseCore.QuickPose.RangeOfMotion, style: QuickPoseCore.QuickPose.Style)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "RangeOfMotion",
+                                "printedName": "QuickPoseCore.QuickPose.RangeOfMotion",
+                                "usr": "s:13QuickPoseCore0aB0C13RangeOfMotionO"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Style",
+                                "printedName": "QuickPoseCore.QuickPose.Style",
+                                "usr": "s:13QuickPoseCore0aB0C5StyleV"
+                              }
+                            ]
                           }
                         ]
                       },
@@ -1010,8 +1450,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:13QuickPoseCore0aB0C7FeatureO13rangeOfMotionyAeC05RangefG0OcAEmF",
-                "mangledName": "$s13QuickPoseCore0aB0C7FeatureO13rangeOfMotionyAeC05RangefG0OcAEmF",
+                "usr": "s:13QuickPoseCore0aB0C7FeatureO13rangeOfMotionyAeC05RangefG0O_AC5StyleVtcAEmF",
+                "mangledName": "$s13QuickPoseCore0aB0C7FeatureO13rangeOfMotionyAeC05RangefG0O_AC5StyleVtcAEmF",
                 "moduleName": "QuickPoseCore",
                 "declAttributes": [
                   "RawDocComment"
@@ -1025,12 +1465,12 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(QuickPoseCore.QuickPose.Feature.Type) -> (QuickPoseCore.QuickPose.FitnessFeature) -> QuickPoseCore.QuickPose.Feature",
+                    "printedName": "(QuickPoseCore.QuickPose.Feature.Type) -> (QuickPoseCore.QuickPose.FitnessFeature, QuickPoseCore.QuickPose.Style) -> QuickPoseCore.QuickPose.Feature",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(QuickPoseCore.QuickPose.FitnessFeature) -> QuickPoseCore.QuickPose.Feature",
+                        "printedName": "(QuickPoseCore.QuickPose.FitnessFeature, QuickPoseCore.QuickPose.Style) -> QuickPoseCore.QuickPose.Feature",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -1040,9 +1480,22 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "FitnessFeature",
-                            "printedName": "QuickPoseCore.QuickPose.FitnessFeature",
-                            "usr": "s:13QuickPoseCore0aB0C14FitnessFeatureO"
+                            "name": "Tuple",
+                            "printedName": "(QuickPoseCore.QuickPose.FitnessFeature, style: QuickPoseCore.QuickPose.Style)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "FitnessFeature",
+                                "printedName": "QuickPoseCore.QuickPose.FitnessFeature",
+                                "usr": "s:13QuickPoseCore0aB0C14FitnessFeatureO"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Style",
+                                "printedName": "QuickPoseCore.QuickPose.Style",
+                                "usr": "s:13QuickPoseCore0aB0C5StyleV"
+                              }
+                            ]
                           }
                         ]
                       },
@@ -1063,8 +1516,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:13QuickPoseCore0aB0C7FeatureO7fitnessyAeC07FitnessD0OcAEmF",
-                "mangledName": "$s13QuickPoseCore0aB0C7FeatureO7fitnessyAeC07FitnessD0OcAEmF",
+                "usr": "s:13QuickPoseCore0aB0C7FeatureO7fitnessyAeC07FitnessD0O_AC5StyleVtcAEmF",
+                "mangledName": "$s13QuickPoseCore0aB0C7FeatureO7fitnessyAeC07FitnessD0O_AC5StyleVtcAEmF",
                 "moduleName": "QuickPoseCore",
                 "declAttributes": [
                   "RawDocComment"
@@ -1602,6 +2055,69 @@
               },
               {
                 "kind": "Var",
+                "name": "elbow",
+                "printedName": "elbow",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(QuickPoseCore.QuickPose.RangeOfMotion.Type) -> (QuickPoseCore.QuickPose.Side, Swift.Bool) -> QuickPoseCore.QuickPose.RangeOfMotion",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(QuickPoseCore.QuickPose.Side, Swift.Bool) -> QuickPoseCore.QuickPose.RangeOfMotion",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "RangeOfMotion",
+                            "printedName": "QuickPoseCore.QuickPose.RangeOfMotion",
+                            "usr": "s:13QuickPoseCore0aB0C13RangeOfMotionO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(side: QuickPoseCore.QuickPose.Side, clockwiseDirection: Swift.Bool)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Side",
+                                "printedName": "QuickPoseCore.QuickPose.Side",
+                                "usr": "s:13QuickPoseCore0aB0C4SideO"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Bool",
+                                "printedName": "Swift.Bool",
+                                "usr": "s:Sb"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "QuickPoseCore.QuickPose.RangeOfMotion.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "RangeOfMotion",
+                            "printedName": "QuickPoseCore.QuickPose.RangeOfMotion",
+                            "usr": "s:13QuickPoseCore0aB0C13RangeOfMotionO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:13QuickPoseCore0aB0C13RangeOfMotionO5elbowyAeC4SideO_SbtcAEmF",
+                "mangledName": "$s13QuickPoseCore0aB0C13RangeOfMotionO5elbowyAeC4SideO_SbtcAEmF",
+                "moduleName": "QuickPoseCore"
+              },
+              {
+                "kind": "Var",
                 "name": "hip",
                 "printedName": "hip",
                 "children": [
@@ -1718,10 +2234,7 @@
                 "declKind": "EnumElement",
                 "usr": "s:13QuickPoseCore0aB0C13RangeOfMotionO4backyAESb_tcAEmF",
                 "mangledName": "$s13QuickPoseCore0aB0C13RangeOfMotionO4backyAESb_tcAEmF",
-                "moduleName": "QuickPoseCore",
-                "declAttributes": [
-                  "RawDocComment"
-                ]
+                "moduleName": "QuickPoseCore"
               },
               {
                 "kind": "Var",
@@ -1784,10 +2297,70 @@
                 "declKind": "EnumElement",
                 "usr": "s:13QuickPoseCore0aB0C13RangeOfMotionO4kneeyAeC4SideO_SbtcAEmF",
                 "mangledName": "$s13QuickPoseCore0aB0C13RangeOfMotionO4kneeyAeC4SideO_SbtcAEmF",
-                "moduleName": "QuickPoseCore",
-                "declAttributes": [
-                  "RawDocComment"
-                ]
+                "moduleName": "QuickPoseCore"
+              },
+              {
+                "kind": "Var",
+                "name": "ankle",
+                "printedName": "ankle",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(QuickPoseCore.QuickPose.RangeOfMotion.Type) -> (QuickPoseCore.QuickPose.Side, Swift.Bool) -> QuickPoseCore.QuickPose.RangeOfMotion",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(QuickPoseCore.QuickPose.Side, Swift.Bool) -> QuickPoseCore.QuickPose.RangeOfMotion",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "RangeOfMotion",
+                            "printedName": "QuickPoseCore.QuickPose.RangeOfMotion",
+                            "usr": "s:13QuickPoseCore0aB0C13RangeOfMotionO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(side: QuickPoseCore.QuickPose.Side, clockwiseDirection: Swift.Bool)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Side",
+                                "printedName": "QuickPoseCore.QuickPose.Side",
+                                "usr": "s:13QuickPoseCore0aB0C4SideO"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Bool",
+                                "printedName": "Swift.Bool",
+                                "usr": "s:Sb"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "QuickPoseCore.QuickPose.RangeOfMotion.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "RangeOfMotion",
+                            "printedName": "QuickPoseCore.QuickPose.RangeOfMotion",
+                            "usr": "s:13QuickPoseCore0aB0C13RangeOfMotionO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:13QuickPoseCore0aB0C13RangeOfMotionO5ankleyAeC4SideO_SbtcAEmF",
+                "mangledName": "$s13QuickPoseCore0aB0C13RangeOfMotionO5ankleyAeC4SideO_SbtcAEmF",
+                "moduleName": "QuickPoseCore"
               },
               {
                 "kind": "Var",
@@ -1806,8 +2379,7 @@
                 "mangledName": "$s13QuickPoseCore0aB0C13RangeOfMotionO17shortDisplayTitleSSvp",
                 "moduleName": "QuickPoseCore",
                 "declAttributes": [
-                  "AccessControl",
-                  "RawDocComment"
+                  "AccessControl"
                 ],
                 "accessors": [
                   {
@@ -6986,1899 +7558,1913 @@
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/MeasuringArc.swift",
       "kind": "IntegerLiteral",
-      "offset": 4995,
+      "offset": 4502,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/MeasuringArc.swift",
       "kind": "IntegerLiteral",
-      "offset": 6041,
+      "offset": 5548,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/MeasuringArc.swift",
       "kind": "IntegerLiteral",
-      "offset": 6043,
+      "offset": 5550,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "Array",
-      "offset": 6193,
+      "offset": 6907,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "BooleanLiteral",
-      "offset": 6228,
+      "offset": 6942,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "BooleanLiteral",
-      "offset": 6266,
+      "offset": 6980,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "BooleanLiteral",
-      "offset": 6310,
+      "offset": 7024,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "Array",
-      "offset": 6413,
+      "offset": 7127,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "BooleanLiteral",
-      "offset": 6444,
+      "offset": 7158,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "BooleanLiteral",
-      "offset": 6478,
+      "offset": 7192,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "BooleanLiteral",
-      "offset": 6571,
+      "offset": 7285,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 6861,
+      "offset": 7575,
       "length": 4,
       "value": "\"ht\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 6866,
+      "offset": 7580,
       "length": 6,
       "value": "\"tps:\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 6873,
+      "offset": 7587,
       "length": 5,
       "value": "\"\/\/a\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 6879,
+      "offset": 7593,
       "length": 8,
       "value": "\"pi.qui\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 6888,
+      "offset": 7602,
       "length": 14,
       "value": "\"ckpose.ai\/sd\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 6903,
+      "offset": 7617,
       "length": 7,
       "value": "\"k\/v1\/\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 7593,
+      "offset": 8319,
       "length": 56,
       "value": "\"QuickPose \""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 7625,
+      "offset": 8351,
       "length": 7,
       "value": "\" started multiple times\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "BooleanLiteral",
-      "offset": 7832,
+      "offset": 8421,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8454,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "BooleanLiteral",
-      "offset": 7855,
+      "offset": 8623,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8646,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 8082,
+      "offset": 8873,
       "length": 80,
       "value": "\"QuickPose \""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 8114,
+      "offset": 8905,
       "length": 7,
       "value": "\" started with MediaPipe version \""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 8161,
+      "offset": 8952,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8200,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 8365,
+      "offset": 9142,
       "length": 13,
       "value": "\"no bundleID\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 8418,
+      "offset": 9195,
       "length": 5,
       "value": "\"IOS\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 8515,
+      "offset": 9292,
       "length": 18,
       "value": "\"waiting for uuid\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 8802,
+      "offset": 9579,
       "length": 3,
       "value": "\"v\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 8806,
+      "offset": 9583,
       "length": 3,
       "value": "\"a\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 8810,
+      "offset": 9587,
       "length": 3,
       "value": "\"l\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 8814,
+      "offset": 9591,
       "length": 3,
       "value": "\"i\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 8818,
+      "offset": 9595,
       "length": 7,
       "value": "\"date-\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 8826,
+      "offset": 9603,
       "length": 3,
       "value": "\"k\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 8830,
+      "offset": 9607,
       "length": 3,
       "value": "\"e\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 8834,
+      "offset": 9611,
       "length": 3,
       "value": "\"y\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 8906,
+      "offset": 9683,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 8945,
+      "offset": 9722,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 8985,
+      "offset": 9762,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 5708,
+      "offset": 6422,
       "length": 9,
       "value": "\"QuickPoseCore.QuickPose\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "kind": "IntegerLiteral",
+      "offset": 23650,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "kind": "IntegerLiteral",
+      "offset": 23679,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "kind": "IntegerLiteral",
+      "offset": 23710,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 27992,
+      "offset": 32703,
       "length": 6,
       "value": "\"None\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 28028,
+      "offset": 32739,
       "length": 12,
       "value": "\"Whole Body\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 28070,
+      "offset": 32781,
       "length": 12,
       "value": "\"Upper Body\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 28124,
+      "offset": 32835,
       "length": 26,
       "value": "\"Straight Arms Upper Body\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 28188,
+      "offset": 32899,
       "length": 17,
       "value": "\"Arms Upper Body\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 28235,
+      "offset": 32946,
       "length": 11,
       "value": "\"Shoulders\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 28291,
+      "offset": 33002,
       "length": 10,
       "value": "\"Left Arm\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 28340,
+      "offset": 33051,
       "length": 12,
       "value": "\"Left Arm 2\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 28391,
+      "offset": 33102,
       "length": 12,
       "value": "\"Left Arm 3\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 28443,
+      "offset": 33154,
       "length": 19,
       "value": "\"Left Straight Arm\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 28495,
+      "offset": 33206,
       "length": 11,
       "value": "\"Left Hand\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 28552,
+      "offset": 33263,
       "length": 11,
       "value": "\"Right Arm\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 28603,
+      "offset": 33314,
       "length": 13,
       "value": "\"Right Arm 2\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 28656,
+      "offset": 33367,
       "length": 13,
       "value": "\"Right Arm 3\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 28710,
+      "offset": 33421,
       "length": 20,
       "value": "\"Right Straight Arm\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 28764,
+      "offset": 33475,
       "length": 12,
       "value": "\"Right Hand\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 28819,
+      "offset": 33530,
       "length": 12,
       "value": "\"Lower Body\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 28856,
+      "offset": 33567,
       "length": 6,
       "value": "\"Hips\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 28895,
+      "offset": 33606,
       "length": 11,
       "value": "\"Right Leg\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 28938,
+      "offset": 33649,
       "length": 10,
       "value": "\"Left Leg\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 27992,
+      "offset": 32703,
       "length": 6,
       "value": "\"None\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 28028,
+      "offset": 32739,
       "length": 12,
       "value": "\"Whole Body\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 28070,
+      "offset": 32781,
       "length": 12,
       "value": "\"Upper Body\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 28124,
+      "offset": 32835,
       "length": 26,
       "value": "\"Straight Arms Upper Body\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 28188,
+      "offset": 32899,
       "length": 17,
       "value": "\"Arms Upper Body\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 28235,
+      "offset": 32946,
       "length": 11,
       "value": "\"Shoulders\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 28291,
+      "offset": 33002,
       "length": 10,
       "value": "\"Left Arm\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 28340,
+      "offset": 33051,
       "length": 12,
       "value": "\"Left Arm 2\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 28391,
+      "offset": 33102,
       "length": 12,
       "value": "\"Left Arm 3\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 28443,
+      "offset": 33154,
       "length": 19,
       "value": "\"Left Straight Arm\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 28495,
+      "offset": 33206,
       "length": 11,
       "value": "\"Left Hand\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 28552,
+      "offset": 33263,
       "length": 11,
       "value": "\"Right Arm\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 28603,
+      "offset": 33314,
       "length": 13,
       "value": "\"Right Arm 2\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 28656,
+      "offset": 33367,
       "length": 13,
       "value": "\"Right Arm 3\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 28710,
+      "offset": 33421,
       "length": 20,
       "value": "\"Right Straight Arm\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 28764,
+      "offset": 33475,
       "length": 12,
       "value": "\"Right Hand\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 28819,
+      "offset": 33530,
       "length": 12,
       "value": "\"Lower Body\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 28856,
+      "offset": 33567,
       "length": 6,
       "value": "\"Hips\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 28895,
+      "offset": 33606,
       "length": 11,
       "value": "\"Right Leg\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 28938,
+      "offset": 33649,
       "length": 10,
       "value": "\"Left Leg\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 32840,
+      "offset": 37551,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 32875,
+      "offset": 37586,
       "length": 3,
       "value": "152"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 32914,
+      "offset": 37625,
       "length": 2,
       "value": "93"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 32953,
+      "offset": 37664,
       "length": 3,
       "value": "323"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 32989,
+      "offset": 37700,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 32840,
+      "offset": 37551,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 32875,
+      "offset": 37586,
       "length": 3,
       "value": "152"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 32914,
+      "offset": 37625,
       "length": 2,
       "value": "93"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 32953,
+      "offset": 37664,
       "length": 3,
       "value": "323"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 32989,
+      "offset": 37700,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 32840,
+      "offset": 37551,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 32875,
+      "offset": 37586,
       "length": 3,
       "value": "152"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 32914,
+      "offset": 37625,
       "length": 2,
       "value": "93"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 32953,
+      "offset": 37664,
       "length": 3,
       "value": "323"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 32989,
+      "offset": 37700,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 33592,
+      "offset": 38303,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 33630,
+      "offset": 38341,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 33663,
+      "offset": 38374,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 33701,
+      "offset": 38412,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 33740,
+      "offset": 38451,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 33774,
+      "offset": 38485,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 33813,
+      "offset": 38524,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 33846,
+      "offset": 38557,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 33880,
+      "offset": 38591,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 33916,
+      "offset": 38627,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 33951,
+      "offset": 38662,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 33990,
+      "offset": 38701,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34030,
+      "offset": 38741,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34066,
+      "offset": 38777,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34103,
+      "offset": 38814,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34139,
+      "offset": 38850,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34176,
+      "offset": 38887,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34212,
+      "offset": 38923,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34249,
+      "offset": 38960,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34285,
+      "offset": 38996,
       "length": 2,
       "value": "19"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34322,
+      "offset": 39033,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34358,
+      "offset": 39069,
       "length": 2,
       "value": "21"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34395,
+      "offset": 39106,
       "length": 2,
       "value": "22"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34429,
+      "offset": 39140,
       "length": 2,
       "value": "23"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34464,
+      "offset": 39175,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34499,
+      "offset": 39210,
       "length": 2,
       "value": "25"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34535,
+      "offset": 39246,
       "length": 2,
       "value": "26"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34571,
+      "offset": 39282,
       "length": 2,
       "value": "27"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34608,
+      "offset": 39319,
       "length": 2,
       "value": "28"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34643,
+      "offset": 39354,
       "length": 2,
       "value": "29"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34679,
+      "offset": 39390,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34719,
+      "offset": 39430,
       "length": 2,
       "value": "31"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34760,
+      "offset": 39471,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34806,
+      "offset": 39517,
       "length": 2,
       "value": "1"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34844,
+      "offset": 39555,
       "length": 2,
       "value": "2"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 33592,
+      "offset": 38303,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 33630,
+      "offset": 38341,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 33663,
+      "offset": 38374,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 33701,
+      "offset": 38412,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 33740,
+      "offset": 38451,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 33774,
+      "offset": 38485,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 33813,
+      "offset": 38524,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 33846,
+      "offset": 38557,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 33880,
+      "offset": 38591,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 33916,
+      "offset": 38627,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 33951,
+      "offset": 38662,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 33990,
+      "offset": 38701,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34030,
+      "offset": 38741,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34066,
+      "offset": 38777,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34103,
+      "offset": 38814,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34139,
+      "offset": 38850,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34176,
+      "offset": 38887,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34212,
+      "offset": 38923,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34249,
+      "offset": 38960,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34285,
+      "offset": 38996,
       "length": 2,
       "value": "19"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34322,
+      "offset": 39033,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34358,
+      "offset": 39069,
       "length": 2,
       "value": "21"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34395,
+      "offset": 39106,
       "length": 2,
       "value": "22"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34429,
+      "offset": 39140,
       "length": 2,
       "value": "23"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34464,
+      "offset": 39175,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34499,
+      "offset": 39210,
       "length": 2,
       "value": "25"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34535,
+      "offset": 39246,
       "length": 2,
       "value": "26"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34571,
+      "offset": 39282,
       "length": 2,
       "value": "27"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34608,
+      "offset": 39319,
       "length": 2,
       "value": "28"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34643,
+      "offset": 39354,
       "length": 2,
       "value": "29"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34679,
+      "offset": 39390,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34719,
+      "offset": 39430,
       "length": 2,
       "value": "31"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34760,
+      "offset": 39471,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34806,
+      "offset": 39517,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34844,
+      "offset": 39555,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 33592,
+      "offset": 38303,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 33630,
+      "offset": 38341,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 33663,
+      "offset": 38374,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 33701,
+      "offset": 38412,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 33740,
+      "offset": 38451,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 33774,
+      "offset": 38485,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 33813,
+      "offset": 38524,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 33846,
+      "offset": 38557,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 33880,
+      "offset": 38591,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 33916,
+      "offset": 38627,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 33951,
+      "offset": 38662,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 33990,
+      "offset": 38701,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34030,
+      "offset": 38741,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34066,
+      "offset": 38777,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34103,
+      "offset": 38814,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34139,
+      "offset": 38850,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34176,
+      "offset": 38887,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34212,
+      "offset": 38923,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34249,
+      "offset": 38960,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34285,
+      "offset": 38996,
       "length": 2,
       "value": "19"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34322,
+      "offset": 39033,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34358,
+      "offset": 39069,
       "length": 2,
       "value": "21"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34395,
+      "offset": 39106,
       "length": 2,
       "value": "22"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34429,
+      "offset": 39140,
       "length": 2,
       "value": "23"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34464,
+      "offset": 39175,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34499,
+      "offset": 39210,
       "length": 2,
       "value": "25"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34535,
+      "offset": 39246,
       "length": 2,
       "value": "26"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34571,
+      "offset": 39282,
       "length": 2,
       "value": "27"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34608,
+      "offset": 39319,
       "length": 2,
       "value": "28"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34643,
+      "offset": 39354,
       "length": 2,
       "value": "29"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34679,
+      "offset": 39390,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34719,
+      "offset": 39430,
       "length": 2,
       "value": "31"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34760,
+      "offset": 39471,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34806,
+      "offset": 39517,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 34844,
+      "offset": 39555,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 39307,
+      "offset": 44018,
       "length": 4,
       "value": "1"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 39329,
+      "offset": 44040,
       "length": 7,
       "value": "2"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 39307,
+      "offset": 44018,
       "length": 4,
       "value": "1"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 39329,
+      "offset": 44040,
       "length": 7,
       "value": "2"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 39307,
+      "offset": 44018,
       "length": 4,
       "value": "1"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 39329,
+      "offset": 44040,
       "length": 7,
       "value": "2"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41358,
+      "offset": 46069,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41389,
+      "offset": 46100,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41420,
+      "offset": 46131,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41450,
+      "offset": 46161,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41481,
+      "offset": 46192,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41519,
+      "offset": 46230,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41557,
+      "offset": 46268,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41595,
+      "offset": 46306,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41633,
+      "offset": 46344,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41672,
+      "offset": 46383,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41711,
+      "offset": 46422,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41751,
+      "offset": 46462,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41791,
+      "offset": 46502,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41829,
+      "offset": 46540,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41867,
+      "offset": 46578,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41905,
+      "offset": 46616,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41943,
+      "offset": 46654,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41982,
+      "offset": 46693,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 42021,
+      "offset": 46732,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 42060,
+      "offset": 46771,
       "length": 2,
       "value": "19"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 42099,
+      "offset": 46810,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41358,
+      "offset": 46069,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41389,
+      "offset": 46100,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41420,
+      "offset": 46131,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41450,
+      "offset": 46161,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41481,
+      "offset": 46192,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41519,
+      "offset": 46230,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41557,
+      "offset": 46268,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41595,
+      "offset": 46306,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41633,
+      "offset": 46344,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41672,
+      "offset": 46383,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41711,
+      "offset": 46422,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41751,
+      "offset": 46462,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41791,
+      "offset": 46502,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41829,
+      "offset": 46540,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41867,
+      "offset": 46578,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41905,
+      "offset": 46616,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41943,
+      "offset": 46654,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41982,
+      "offset": 46693,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 42021,
+      "offset": 46732,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 42060,
+      "offset": 46771,
       "length": 2,
       "value": "19"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 42099,
+      "offset": 46810,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41358,
+      "offset": 46069,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41389,
+      "offset": 46100,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41420,
+      "offset": 46131,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41450,
+      "offset": 46161,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41481,
+      "offset": 46192,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41519,
+      "offset": 46230,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41557,
+      "offset": 46268,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41595,
+      "offset": 46306,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41633,
+      "offset": 46344,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41672,
+      "offset": 46383,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41711,
+      "offset": 46422,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41751,
+      "offset": 46462,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41791,
+      "offset": 46502,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41829,
+      "offset": 46540,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41867,
+      "offset": 46578,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41905,
+      "offset": 46616,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41943,
+      "offset": 46654,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 41982,
+      "offset": 46693,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 42021,
+      "offset": 46732,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 42060,
+      "offset": 46771,
       "length": 2,
       "value": "19"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 42099,
+      "offset": 46810,
       "length": 2,
       "value": "20"
-    },
-    {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
-      "kind": "IntegerLiteral",
-      "offset": 44411,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
-      "kind": "FloatLiteral",
-      "offset": 44434,
-      "length": 3,
-      "value": "0.5"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/FitnessClassifier.swift",
@@ -8911,7 +9497,7 @@
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/FitnessClassifier.swift",
       "kind": "FloatLiteral",
-      "offset": 6156,
+      "offset": 6107,
       "length": 3,
       "value": "2.5"
     }
