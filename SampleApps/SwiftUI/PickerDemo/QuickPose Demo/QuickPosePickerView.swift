@@ -13,10 +13,10 @@ struct QuickPosePickerView: View {
     @State private var showDebugString: String = "Off"
     @State private var lastDebugResult: QuickPoseCore.QuickPose.FeatureResult? = nil
     
-    @State private var selectedFeature: QuickPose.Feature = .overlay(.wholeBody)
+    @State private var selectedFeatures: [QuickPose.Feature] = [.overlay(.wholeBody)]
     @State private var selectedComponent: String = QuickPose.Feature.allDemoFeatureComponents().first!
     @State var counter = QuickPoseThresholdCounter(feature: .squatCounter)
-    private var quickPose = QuickPose(sdkKey: "01GS5HKE6APXSXT37W5RSVZ9H7")
+    private var quickPose = QuickPose(sdkKey: "01GS5J4JEQQZDZZB0EYSE974BV")
     @State private var overlayImage: UIImage?
     
     @State var useFrontCamera: Bool = true
@@ -43,9 +43,9 @@ struct QuickPosePickerView: View {
                 Menu {
                     
                     Menu {
-                        Picker("General", selection: $selectedFeature) {
+                        Picker("General", selection: $selectedFeatures) {
                             ForEach(QuickPose.Feature.allDemoFeatures(component: "General"), id: \.self) { feature in
-                                Text(feature.displayString)
+                                Text(feature.first?.displayString ?? "")
                             }
                         }
                         .tint(.white)
@@ -53,9 +53,9 @@ struct QuickPosePickerView: View {
                         Text("General")
                     }
                     Menu {
-                        Picker("Fitness", selection: $selectedFeature) {
+                        Picker("Fitness", selection: $selectedFeatures) {
                             ForEach(QuickPose.Feature.allDemoFeatures(component: "Fitness"), id: \.self) { feature in
-                                Text(feature.displayString)
+                                Text(feature.first?.displayString ?? "")
                             }
                         }
                         .tint(.white)
@@ -63,15 +63,26 @@ struct QuickPosePickerView: View {
                         Text("Fitness")
                     }
                     Menu {
-                        Picker("Health", selection: $selectedFeature) {
+                        Picker("Rowing", selection: $selectedFeatures) {
+                            ForEach(QuickPose.Feature.allDemoFeatures(component: "Rowing"), id: \.self) { feature in
+                                Text("Rowing")
+                            }
+                        }
+                        .tint(.white)
+                    } label: {
+                        Text("Rowing")
+                    }
+                    Menu {
+                        Picker("Health", selection: $selectedFeatures) {
                             ForEach(QuickPose.Feature.allDemoFeatures(component: "Health"), id: \.self) { feature in
-                                Text(feature.displayString)
+                                Text(feature.first?.displayString ?? "")
                             }
                         }
                         .tint(.white)
                     } label: {
                         Text("Health")
                     }
+                    
                     Menu {
                         Picker("Debug", selection: $showDebugString) {
                             ForEach(["On","Off"], id: \.self) { feature in
@@ -82,15 +93,15 @@ struct QuickPosePickerView: View {
                     } label: {
                         Text("Debug")
                     }
-                    .onChange(of: selectedFeature) { _ in
-                        quickPose.update(features: [selectedFeature])
+                    .onChange(of: selectedFeatures) { _ in
+                        quickPose.update(features: selectedFeatures)
                         
-                        if case let .fitness(newCountedFeature) = selectedFeature {
+                        if let selectedFeature = selectedFeatures.first, case let QuickPose.Feature.fitness(newCountedFeature, _) = selectedFeature {
                             counter.setFeature(feature: newCountedFeature)
                         }
                     }
                 } label: {
-                    Text(Image(systemName: "arrow.up.and.down.square.fill")) + Text(" Feature: "+(selectedFeature.displayString))
+                    Text(Image(systemName: "arrow.up.and.down.square.fill")) + Text(" Feature: "+(selectedFeatures.first?.displayString ?? ""))
                 }.font(.system(size: 20, weight: .semibold)).foregroundColor(.white).lineLimit(1)
                     .frame(alignment: .leading)
                     .padding(.vertical, 8)
@@ -154,14 +165,14 @@ struct QuickPosePickerView: View {
         }
         
         .onAppear {
-            quickPose.start(features: [selectedFeature], onStart: {
+            quickPose.start(features: selectedFeatures, onStart: {
                 withAnimation { cameraViewOpacity = 1.0 } // unhide the camera when loaded
             }, onFrame: { status, image, features, landmarks in
                 if case let .success(fps) = status {
                     lastFPS = fps
                     self.lastDebugResult = nil
                     
-                    if case .rangeOfMotion(_) = selectedFeature, let result = features[selectedFeature] {
+                    if case .rangeOfMotion(_,_) = selectedFeatures.first, let result = features[selectedFeatures.first!] {
                         lastResult = result.stringValue
                         if captureButtonOpacity == 0 { // only show button when reading available
                             withAnimation { captureButtonOpacity = 1 }
@@ -209,20 +220,28 @@ extension String: Identifiable {
 }
 
 extension QuickPose.Feature {
-    public static func allDemoFeatures(component: String) -> [QuickPose.Feature] {
-        
+    public static func allDemoFeatures(component: String) -> [[QuickPose.Feature]] {
+
         if component == "Health" {
-            return [.rangeOfMotion(.shoulder(side: .left, clockwiseDirection: false)),.rangeOfMotion(.shoulder(side: .right, clockwiseDirection: true))] +
-            [.rangeOfMotion(.hip(side: .right, clockwiseDirection: true)), .rangeOfMotion(.knee(side: .right, clockwiseDirection: true)), .rangeOfMotion(.neck(clockwiseDirection: false)), .rangeOfMotion(.back(clockwiseDirection: false))]
+            return [[.rangeOfMotion(.shoulder(side: .left, clockwiseDirection: false))], [.rangeOfMotion(.shoulder(side: .right, clockwiseDirection: true))] +
+            [.rangeOfMotion(.hip(side: .right, clockwiseDirection: true))], [.rangeOfMotion(.knee(side: .right, clockwiseDirection: true))], [.rangeOfMotion(.neck(clockwiseDirection: false)), .rangeOfMotion(.back(clockwiseDirection: false))]]
         } else if component == "Fitness" {
-            return [.fitness(.squatCounter), .fitness(.pushUpCounter), .fitness(.jumpingJackCounter)]
+            return [[.fitness(.squatCounter)], [.fitness(.pushUpCounter)], [.fitness(.jumpingJackCounter)]]
+        } else if component == "Rowing" {
+            let bikeStyle = QuickPose.Style(relativeFontSize: 0.33, relativeArcSize: 0.4, relativeLineWidth: 0.3)
+            let feature1: QuickPose.Feature = .rangeOfMotion(.shoulder(side: .right, clockwiseDirection: false), style: bikeStyle)
+            let feature2: QuickPose.Feature = .rangeOfMotion(.elbow(side: .right, clockwiseDirection: false), style: bikeStyle)
+            let feature3: QuickPose.Feature = .rangeOfMotion(.hip(side: .right, clockwiseDirection: false), style: bikeStyle)
+            let feature4: QuickPose.Feature = .rangeOfMotion(.knee(side: .right, clockwiseDirection: true), style: bikeStyle)
+            return [[feature1,  feature2, feature3, feature4]]
         } else {
-            return QuickPose.Landmarks.Group.commonLimbs().map { overlay($0) } + [.showPoints]
+            return QuickPose.Landmarks.Group.commonLimbs().map { [QuickPose.Feature.overlay($0)] } + [[QuickPose.Feature.showPoints()]]
         }
+        
     }
     
     
     public static func allDemoFeatureComponents() -> [String] {
-        return ["General", "Fitness", "Health"]
+        return ["General", "Fitness", "Health", "Rowing"]
     }
 }

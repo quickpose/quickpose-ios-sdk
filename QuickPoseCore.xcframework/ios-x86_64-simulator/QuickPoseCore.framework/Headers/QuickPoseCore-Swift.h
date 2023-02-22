@@ -365,6 +365,20 @@ using UInt = size_t;
 ///     UIApplication.shared.isIdleTimerDisabled = true // keep screen on when in use
 ///     }
 ///
+/// \endcodeFor an example with changed formatting such as font size, color and line width we can specify a <code>Style</code> class
+/// \code
+/// let smallerStyle = QuickPose.Style(relativeLineWidth: 0.33)
+/// quickPose.start(features: [.overlay(.userLeftArm, style: smallerStyle)], onFrame: { status, image, _, _ in
+///     ....
+/// })
+///
+/// \endcodeAnd for conditional formatting when the angle goes above 120 degrees use:
+/// \code
+/// let conditionalStyle = QuickPose.Style(conditionalColors: [QuickPose.Style.ConditionalColor(min: 120, max: nil, color: UIColor.red)])
+/// quickPose.start(features: [.overlay(.userLeftArm, style: conditionalStyle)], onFrame: { status, image, _, _ in
+///     ....
+/// })
+///
 /// \endcode
 SWIFT_CLASS("_TtC13QuickPoseCore9QuickPose")
 @interface QuickPose : NSObject <AVCaptureVideoDataOutputSampleBufferDelegate>

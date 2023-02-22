@@ -48,13 +48,29 @@ public protocol QuickPoseCaptureAVAssetOutputSampleBufferDelegate : ObjectiveC.N
   func captureAVOutput(didOutput sampleBuffer: CoreVideo.CVBuffer, timestamp: CoreMedia.CMTime, isFrontCamera: Swift.Bool)
 }
 extension QuickPoseCore.QuickPose {
+  public struct Style : Swift.Hashable {
+    public struct ConditionalColor : Swift.Hashable {
+      public init(min: Swift.Double?, max: Swift.Double?, color: UIKit.UIColor)
+      public func hash(into hasher: inout Swift.Hasher)
+      public static func == (a: QuickPoseCore.QuickPose.Style.ConditionalColor, b: QuickPoseCore.QuickPose.Style.ConditionalColor) -> Swift.Bool
+      public var hashValue: Swift.Int {
+        get
+      }
+    }
+    public init(relativeFontSize: Swift.Double = 1, relativeArcSize: Swift.Double = 1, relativeLineWidth: Swift.Double = 1, color: UIKit.UIColor = UIColor.white, conditionalColors: [QuickPoseCore.QuickPose.Style.ConditionalColor]? = nil)
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: QuickPoseCore.QuickPose.Style, b: QuickPoseCore.QuickPose.Style) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
   public enum Feature : Swift.Hashable {
-    case showPoints
-    case overlay(QuickPoseCore.QuickPose.Landmarks.Group)
-    case measureAngleBody(origin: QuickPoseCore.QuickPose.Landmarks.Body, p1: QuickPoseCore.QuickPose.Landmarks.Body, p2: QuickPoseCore.QuickPose.Landmarks.Body?, clockwiseDirection: Swift.Bool)
-    case measureAngleFace(origin: QuickPoseCore.QuickPose.Landmarks.Face, p1: QuickPoseCore.QuickPose.Landmarks.Face, clockwiseDirection: Swift.Bool)
-    case rangeOfMotion(QuickPoseCore.QuickPose.RangeOfMotion)
-    case fitness(QuickPoseCore.QuickPose.FitnessFeature)
+    case showPoints(style: QuickPoseCore.QuickPose.Style = Style())
+    case overlay(QuickPoseCore.QuickPose.Landmarks.Group, style: QuickPoseCore.QuickPose.Style = Style())
+    case measureAngleBody(origin: QuickPoseCore.QuickPose.Landmarks.Body, p1: QuickPoseCore.QuickPose.Landmarks.Body, p2: QuickPoseCore.QuickPose.Landmarks.Body?, clockwiseDirection: Swift.Bool, style: QuickPoseCore.QuickPose.Style = Style())
+    case measureAngleFace(origin: QuickPoseCore.QuickPose.Landmarks.Face, p1: QuickPoseCore.QuickPose.Landmarks.Face, clockwiseDirection: Swift.Bool, style: QuickPoseCore.QuickPose.Style = Style())
+    case rangeOfMotion(QuickPoseCore.QuickPose.RangeOfMotion, style: QuickPoseCore.QuickPose.Style = Style())
+    case fitness(QuickPoseCore.QuickPose.FitnessFeature, style: QuickPoseCore.QuickPose.Style = Style())
     public var displayString: Swift.String {
       get
     }
@@ -79,9 +95,11 @@ extension QuickPoseCore.QuickPose {
   public enum RangeOfMotion : Swift.Hashable {
     case neck(clockwiseDirection: Swift.Bool)
     case shoulder(side: QuickPoseCore.QuickPose.Side, clockwiseDirection: Swift.Bool)
+    case elbow(side: QuickPoseCore.QuickPose.Side, clockwiseDirection: Swift.Bool)
     case hip(side: QuickPoseCore.QuickPose.Side, clockwiseDirection: Swift.Bool)
     case back(clockwiseDirection: Swift.Bool)
     case knee(side: QuickPoseCore.QuickPose.Side, clockwiseDirection: Swift.Bool)
+    case ankle(side: QuickPoseCore.QuickPose.Side, clockwiseDirection: Swift.Bool)
     public var shortDisplayTitle: Swift.String {
       get
     }
