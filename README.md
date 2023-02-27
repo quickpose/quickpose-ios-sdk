@@ -60,6 +60,7 @@ Meta Features
 
 | Feature       | Example       | Supported |
 | ------------- |:-------------:| ---------:|
+| Stacked Feature Styling | ![shoulder-conditional-image](docs/v0.4/bike-demo.gif)<br />[<small>Bike Side View Video by Tariq Ali</small>](https://www.youtube.com/watch?v=LRA4N5cGnLU) | v0.4 |   
 | Conditional Styling | ![knee-conditional-image](docs/v0.4/health-knee-rom-conditional.gif) ![shoulder-conditional-image](docs/v0.4/health-shoulder-rom-conditional.gif)  | v0.4 |      
 
 Supported Platforms
