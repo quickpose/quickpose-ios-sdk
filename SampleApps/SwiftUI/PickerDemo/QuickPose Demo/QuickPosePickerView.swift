@@ -63,14 +63,14 @@ struct QuickPosePickerView: View {
                         Text("Fitness")
                     }
                     Menu {
-                        Picker("Rowing", selection: $selectedFeatures) {
-                            ForEach(QuickPose.Feature.allDemoFeatures(component: "Rowing"), id: \.self) { feature in
-                                Text("Rowing")
+                        Picker("Sports", selection: $selectedFeatures) {
+                            ForEach(QuickPose.Feature.allDemoFeatures(component: "Sports"), id: \.self) { feature in
+                                Text("Cycling/Rowing")
                             }
                         }
                         .tint(.white)
                     } label: {
-                        Text("Rowing")
+                        Text("Sports")
                     }
                     Menu {
                         Picker("Health", selection: $selectedFeatures) {
@@ -81,6 +81,16 @@ struct QuickPosePickerView: View {
                         .tint(.white)
                     } label: {
                         Text("Health")
+                    }
+                    Menu {
+                        Picker("Conditional", selection: $selectedFeatures) {
+                            ForEach(QuickPose.Feature.allDemoFeatures(component: "Conditional"), id: \.self) { feature in
+                                Text(feature.first?.displayString ?? "")
+                            }
+                        }
+                        .tint(.white)
+                    } label: {
+                        Text("Conditional")
                     }
                     
                     Menu {
@@ -223,11 +233,15 @@ extension QuickPose.Feature {
     public static func allDemoFeatures(component: String) -> [[QuickPose.Feature]] {
 
         if component == "Health" {
-            return [[.rangeOfMotion(.shoulder(side: .left, clockwiseDirection: false))], [.rangeOfMotion(.shoulder(side: .right, clockwiseDirection: true))] +
+            return [[.rangeOfMotion(.shoulder(side: .left, clockwiseDirection: false))], [.rangeOfMotion(.shoulder(side: .right, clockwiseDirection: true))],
             [.rangeOfMotion(.hip(side: .right, clockwiseDirection: true))], [.rangeOfMotion(.knee(side: .right, clockwiseDirection: true))], [.rangeOfMotion(.neck(clockwiseDirection: false)), .rangeOfMotion(.back(clockwiseDirection: false))]]
+        } else if component == "Conditional" {
+            let greenStyle = QuickPose.Style(conditionalColors: [QuickPose.Style.ConditionalColor(min: 40, max: nil, color: UIColor.green)])
+            let redStyle = QuickPose.Style(conditionalColors: [QuickPose.Style.ConditionalColor(min: 180, max: nil, color: UIColor.red)])
+            return [[.rangeOfMotion(.shoulder(side: .left, clockwiseDirection: false), style: greenStyle)], [.rangeOfMotion(.knee(side: .right, clockwiseDirection: true), style: redStyle)]]
         } else if component == "Fitness" {
             return [[.fitness(.squatCounter)], [.fitness(.pushUpCounter)], [.fitness(.jumpingJackCounter)]]
-        } else if component == "Rowing" {
+        } else if component == "Sports" {
             let bikeStyle = QuickPose.Style(relativeFontSize: 0.33, relativeArcSize: 0.4, relativeLineWidth: 0.3)
             let feature1: QuickPose.Feature = .rangeOfMotion(.shoulder(side: .right, clockwiseDirection: false), style: bikeStyle)
             let feature2: QuickPose.Feature = .rangeOfMotion(.elbow(side: .right, clockwiseDirection: false), style: bikeStyle)
@@ -237,11 +251,9 @@ extension QuickPose.Feature {
         } else {
             return QuickPose.Landmarks.Group.commonLimbs().map { [QuickPose.Feature.overlay($0)] } + [[QuickPose.Feature.showPoints()]]
         }
-        
     }
     
-    
     public static func allDemoFeatureComponents() -> [String] {
-        return ["General", "Fitness", "Health", "Rowing"]
+        return ["General", "Fitness", "Health", "Conditional", "Sports"]
     }
 }
