@@ -54,6 +54,8 @@ Features
 | <p><b>Overlays</b></p><p>Whole Body</p><p>Upper Body</p><p>Lower Body</p><p>Shoulder</p><p>Left Arm</p><p>Right Arm</p><p>Left Leg</p><p>Right Leg</p>       |  ![Whole Body Overlay](docs/v0.1/overlay-whole-body.gif) ![Upper Body Overlay](docs/v0.1/overlay-upper-body.gif) ![Lower Body Overlay](docs/v0.1/overlay-lower-body.gif)  ![Shoulders Overlay](docs/v0.1/overlay-shoulders.gif)  ![Left Leg Overlay](docs/v0.1/overlay-left-leg.gif)  ![Right Leg Overlay](docs/v0.1/overlay-right-leg.gif)| v0.1        |
 | <p><b>Health - Range Of Motion</b></p><p>Left Shoulder</p><p>Right Shoulder</p><p>Left Hip</p><p>Right Hip</p><p>Left Knee</p><p>Right Knee</p><p>Back</p><p>Neck</p>       |  ![health-shoulder-right-rom](docs/v0.3/health-shoulder-right-rom.gif) ![health-shoulder-rom](docs/v0.3/health-shoulder-rom.gif) ![health-hip-rom](docs/v0.3/health-hip-rom.gif) ![health-knee-rom](docs/v0.3/health-knee-rom.gif) ![health-back-rom](docs/v0.3/health-back-rom.gif)  ![health-neck-rom](docs/v0.3/health-neck-rom.gif)  | v0.3      |
 | <p><b>Fitness - Exercise Detection & Counter</b></p><p>Squat</p><p>Jumping Jack</p>      |  ![fitness-squat-counter](docs/v0.3/fitness-squat-counter.gif) ![fitness-jacks-counter](docs/v0.3/fitness-jacks-counter.gif)  | v0.3 |      
+| <p><b>Input</b></p><p>Raised Finger Detection & Count</p>      | ![finger-counter-left](docs/v0.5/finger-counter-left.gif) ![finger-counter-right](docs/v0.5/finger-counter-right.gif)   | v0.5 |      
+
 
 Meta Features
 ------------------

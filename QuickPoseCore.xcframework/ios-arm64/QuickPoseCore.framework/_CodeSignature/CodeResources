@@ -18,23 +18,23 @@
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		XxdZgbyI0xvCpKn8ieRFE6dAUc8=
+		8sOBiF4ZzTi2diPcCbbqX6tbIHA=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		75et4wfhn7eZiDiD5aupT6k8Ggk=
+		GuuU1wjxvlNSdAZnLbUCpHSMYr4=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		O7LpZk6OE+XzgLNsaXSEizI7IvM=
+		1pL1nc3PI/bVGN5WhKmD88AwDts=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		75et4wfhn7eZiDiD5aupT6k8Ggk=
+		GuuU1wjxvlNSdAZnLbUCpHSMYr4=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		qBNEWykBhlouFQygDZowmR/on10=
+		ZClk28ERpY4dd4ZkXtf4a3fzjJs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -55,6 +55,22 @@
 		<key>fitness_rep_clf.mlmodelc/metadata.json</key>
 		<data>
 		oJK/QiHusOzCFKBAxvAE35THb4c=
+		</data>
+		<key>hand_fingers_clf.mlmodelc/_B0000.DAT</key>
+		<data>
+		0U5lfigqrR5j7a8wvWtH8h18618=
+		</data>
+		<key>hand_fingers_clf.mlmodelc/analytics/coremldata.bin</key>
+		<data>
+		odN8sWOpFjZcjmtY3iE0dUAHsr0=
+		</data>
+		<key>hand_fingers_clf.mlmodelc/coremldata.bin</key>
+		<data>
+		FwgpSMT1GHZsHmxaG3ukxllVXmw=
+		</data>
+		<key>hand_fingers_clf.mlmodelc/metadata.json</key>
+		<data>
+		uWtOHl1nJxoqODFDCY2JutjS+hA=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -77,35 +93,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6wMPdDbp6jXlAInwIGXWNMPY61V0OzXlgJSe/OOjhjY=
+			LqX9ZUcOF+RP0xMZ7dV/Ghtqpc10+U5Kb2fHU6MPhFw=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yNMpXERtPHjbgfaV73wB321Oxs9EHrAQ73eZpo1NEsk=
+			drtVfB11d2EwOPqbyloexyKKmvvjHVdo405QmnKf8zo=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			C2eDaijE3rOYoigxNPxuwLzeMhK6A9z4V77eomuJD6g=
+			MTKaqOTZvYsYx5nXaYTwpDZ9li/WNS78eAiNh9NHo1s=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yNMpXERtPHjbgfaV73wB321Oxs9EHrAQ73eZpo1NEsk=
+			drtVfB11d2EwOPqbyloexyKKmvvjHVdo405QmnKf8zo=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			w3rnw5ShxqXcAy1j/OecmxQe0/j94HcnKxK2Sw7VAlk=
+			SOb/YARA//XeuOmhly3ccPiakqmSJ3rH0sLho7v31Iw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -141,6 +157,34 @@
 			<key>hash2</key>
 			<data>
 			ZL8xzEN3iPA/pwr6WC0WO7IXvhvAaQjez7md1ErPlpc=
+			</data>
+		</dict>
+		<key>hand_fingers_clf.mlmodelc/_B0000.DAT</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jyO2EDuVGrhxc1ErrFS2MThlfLSAx+yTWP3parqUDYg=
+			</data>
+		</dict>
+		<key>hand_fingers_clf.mlmodelc/analytics/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YpJ4KFxAX3qcfsdVWZv+VCa1zHumr9b2Mt4MhL46NUk=
+			</data>
+		</dict>
+		<key>hand_fingers_clf.mlmodelc/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			U4ZF4JtbN1bvUIkoEbLWC+ro7mD6UB+cpNI39OAiHoU=
+			</data>
+		</dict>
+		<key>hand_fingers_clf.mlmodelc/metadata.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3qbOjtJDowxU1dFw8wY3O325nFjCWIZYFZu3qDrWd70=
 			</data>
 		</dict>
 	</dict>

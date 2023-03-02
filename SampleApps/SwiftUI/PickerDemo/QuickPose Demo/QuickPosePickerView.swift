@@ -15,7 +15,7 @@ struct QuickPosePickerView: View {
     
     @State private var selectedFeatures: [QuickPose.Feature] = [.overlay(.wholeBody)]
     @State private var selectedComponent: String = QuickPose.Feature.allDemoFeatureComponents().first!
-    @State var counter = QuickPoseThresholdCounter(feature: .squatCounter)
+    @State var counter = QuickPoseThresholdCounter()
     private var quickPose = QuickPose(sdkKey: "01GS5J4JEQQZDZZB0EYSE974BV")
     @State private var overlayImage: UIImage?
     
@@ -51,6 +51,16 @@ struct QuickPosePickerView: View {
                         .tint(.white)
                     } label: {
                         Text("General")
+                    }
+                    Menu {
+                        Picker("Input", selection: $selectedFeatures) {
+                            ForEach(QuickPose.Feature.allDemoFeatures(component: "Input"), id: \.self) { feature in
+                                Text(feature.first?.displayString ?? "")
+                            }
+                        }
+                        .tint(.white)
+                    } label: {
+                        Text("Input")
                     }
                     Menu {
                         Picker("Fitness", selection: $selectedFeatures) {
@@ -105,10 +115,7 @@ struct QuickPosePickerView: View {
                     }
                     .onChange(of: selectedFeatures) { _ in
                         quickPose.update(features: selectedFeatures)
-                        
-                        if let selectedFeature = selectedFeatures.first, case let QuickPose.Feature.fitness(newCountedFeature, _) = selectedFeature {
-                            counter.setFeature(feature: newCountedFeature)
-                        }
+                        counter.reset()
                     }
                 } label: {
                     Text(Image(systemName: "arrow.up.and.down.square.fill")) + Text(" Feature: "+(selectedFeatures.first?.displayString ?? ""))
@@ -162,9 +169,11 @@ struct QuickPosePickerView: View {
                 .padding(.bottom, 0)
         }
         .overlay(alignment: .bottom) {
-            Text("\(counter.getFeature().displayTitle)\(count == 1 ? " " : "s"): \(count)") // remove logo here, but attribution appreciated
-                .font(.system(size: 32, weight: .semibold)).foregroundColor(.white)
-                .padding(.bottom, 40 + safeAreaInsets.bottom).opacity(counterVisibility)
+            if let feature = selectedFeatures.first {
+                Text("\(feature.displayString): \(count)")
+                    .font(.system(size: 32, weight: .semibold)).foregroundColor(.white)
+                    .padding(.bottom, 40 + safeAreaInsets.bottom).opacity(counterVisibility)
+            }
         }
         .overlay(alignment: .bottom) { // showDebug
             if let result = self.lastDebugResult, showDebugString == "On" {
@@ -190,15 +199,18 @@ struct QuickPosePickerView: View {
                     } else if captureButtonOpacity == 1 {
                         withAnimation { captureButtonOpacity = 0 }
                     }
-                    
-                    
-                    if case let result = features[.fitness(counter.getFeature())], let result = result {
+                           
+                    if case .fitness(_,_) = selectedFeatures.first, let result = features[selectedFeatures.first!] {
                         self.lastDebugResult = result
-                        counter.count(probability: result.value, id: result.stringValue)
-                        count = counter.getCount()
-                        withAnimation { counterVisibility = 1 }
+                        counter.count(probability: result.value) { status in
+                            count = counter.getCount()
+                        }
+                        counterVisibility = 1
+                    } else if case .raisedFingers(_,_) = selectedFeatures.first, let result = features[selectedFeatures.first!] {
+                        count = Int(result.value)
+                        counterVisibility = 1
                     } else {
-                        withAnimation { counterVisibility = 0 }
+                        counterVisibility = 0
                     }
                     
                     overlayImage = image
@@ -235,6 +247,8 @@ extension QuickPose.Feature {
         if component == "Health" {
             return [[.rangeOfMotion(.shoulder(side: .left, clockwiseDirection: false))], [.rangeOfMotion(.shoulder(side: .right, clockwiseDirection: true))],
             [.rangeOfMotion(.hip(side: .right, clockwiseDirection: true))], [.rangeOfMotion(.knee(side: .right, clockwiseDirection: true))], [.rangeOfMotion(.neck(clockwiseDirection: false)), .rangeOfMotion(.back(clockwiseDirection: false))]]
+        } else if component == "Input" {
+            return [[QuickPose.Feature.raisedFingers(nil)]]
         } else if component == "Conditional" {
             let greenStyle = QuickPose.Style(conditionalColors: [QuickPose.Style.ConditionalColor(min: 40, max: nil, color: UIColor.green)])
             let redStyle = QuickPose.Style(conditionalColors: [QuickPose.Style.ConditionalColor(min: 180, max: nil, color: UIColor.red)])
@@ -254,6 +268,6 @@ extension QuickPose.Feature {
     }
     
     public static func allDemoFeatureComponents() -> [String] {
-        return ["General", "Fitness", "Health", "Conditional", "Sports"]
+        return ["General", "Input", "Fitness", "Health", "Conditional", "Sports"]
     }
 }

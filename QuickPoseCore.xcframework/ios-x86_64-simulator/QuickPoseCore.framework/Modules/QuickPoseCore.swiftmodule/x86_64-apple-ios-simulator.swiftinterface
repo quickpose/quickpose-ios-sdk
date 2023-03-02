@@ -14,12 +14,23 @@ import Vision
 import _Concurrency
 import _StringProcessing
 public class QuickPoseThresholdCounter {
-  public init(feature: QuickPoseCore.QuickPose.FitnessFeature, enterThreshold: Swift.Double = 0.6, exitThreshold: Swift.Double = 0.6)
-  public func count(probability: Swift.Double, id: Swift.String)
+  public enum CountState {
+    case poseEntered(_: Swift.Int)
+    case poseComplete(_: Swift.Int)
+  }
+  final public let enterThreshold: Swift.Double
+  final public let exitThreshold: Swift.Double
+  public init(enterThreshold: Swift.Double = 0.6, exitThreshold: Swift.Double = 0.3)
+  public func count(probability: Swift.Double, onChange: ((QuickPoseCore.QuickPoseThresholdCounter.CountState) -> ())? = nil)
   public func getCount() -> Swift.Int
-  public func resetCount()
-  public func setFeature(feature: QuickPoseCore.QuickPose.FitnessFeature)
-  public func getFeature() -> QuickPoseCore.QuickPose.FitnessFeature
+  public func getState() -> QuickPoseCore.QuickPoseThresholdCounter.CountState
+  public func reset()
+  public func setCount(_ newCount: Swift.Int)
+  @objc deinit
+}
+public class QuickPoseClassifierSmoother {
+  public init(windowSize: Swift.Int = 10, alpha: Swift.Double = 0.9)
+  public func smooth(probs: [Swift.Double]) -> [Swift.Double]
   @objc deinit
 }
 extension CoreFoundation.CGPoint : Swift.Hashable {
@@ -30,22 +41,6 @@ extension CoreFoundation.CGPoint : Swift.Hashable {
 }
 extension CoreFoundation.CGPoint {
   public func Yflipped() -> CoreFoundation.CGPoint
-}
-@objc public class QuickPose : ObjectiveC.NSObject, AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate, QuickPoseCore.QuickPoseCaptureAVAssetOutputSampleBufferDelegate {
-  public init(sdkKey: Swift.String)
-  public func start(features: [QuickPoseCore.QuickPose.Feature], onStart: (() -> ())? = nil, onFrame: @escaping ((QuickPoseCore.QuickPose.Status, UIKit.UIImage?, [QuickPoseCore.QuickPose.Feature : QuickPoseCore.QuickPose.FeatureResult], QuickPoseCore.QuickPose.Landmarks?) -> ()))
-  public func disableLogging()
-  public func enableLogging()
-  public func update(features: [QuickPoseCore.QuickPose.Feature])
-  public func stop()
-  public func libVersion() -> Swift.String
-  public func quickPoseVersion() -> Swift.String
-  public func captureAVOutput(didOutput sampleBuffer: CoreVideo.CVBuffer, timestamp: CoreMedia.CMTime, isFrontCamera: Swift.Bool)
-  @objc public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
-  @objc deinit
-}
-public protocol QuickPoseCaptureAVAssetOutputSampleBufferDelegate : ObjectiveC.NSObjectProtocol {
-  func captureAVOutput(didOutput sampleBuffer: CoreVideo.CVBuffer, timestamp: CoreMedia.CMTime, isFrontCamera: Swift.Bool)
 }
 extension QuickPoseCore.QuickPose {
   public struct Style : Swift.Hashable {
@@ -69,13 +64,15 @@ extension QuickPoseCore.QuickPose {
     case overlay(_: QuickPoseCore.QuickPose.Landmarks.Group, style: QuickPoseCore.QuickPose.Style = Style())
     case measureAngleBody(origin: QuickPoseCore.QuickPose.Landmarks.Body, p1: QuickPoseCore.QuickPose.Landmarks.Body, p2: QuickPoseCore.QuickPose.Landmarks.Body?, clockwiseDirection: Swift.Bool, style: QuickPoseCore.QuickPose.Style = Style())
     case measureAngleFace(origin: QuickPoseCore.QuickPose.Landmarks.Face, p1: QuickPoseCore.QuickPose.Landmarks.Face, clockwiseDirection: Swift.Bool, style: QuickPoseCore.QuickPose.Style = Style())
+    case raisedFingers(_: QuickPoseCore.QuickPose.Side?, style: QuickPoseCore.QuickPose.Style = Style(relativeLineWidth: 0.5))
     case rangeOfMotion(_: QuickPoseCore.QuickPose.RangeOfMotion, style: QuickPoseCore.QuickPose.Style = Style())
     case fitness(_: QuickPoseCore.QuickPose.FitnessFeature, style: QuickPoseCore.QuickPose.Style = Style())
     public var displayString: Swift.String {
       get
     }
     public func hash(into hasher: inout Swift.Hasher)
-    public static func == (a: QuickPoseCore.QuickPose.Feature, b: QuickPoseCore.QuickPose.Feature) -> Swift.Bool
+    public static func == (lhs: QuickPoseCore.QuickPose.Feature, rhs: QuickPoseCore.QuickPose.Feature) -> Swift.Bool
+    public func restyled(_ newStyle: QuickPoseCore.QuickPose.Style) -> QuickPoseCore.QuickPose.Feature
     public var hashValue: Swift.Int {
       get
     }
@@ -139,6 +136,22 @@ extension QuickPoseCore.QuickPose {
     case noPersonFound
     case sdkValidationError
   }
+}
+@objc public class QuickPose : ObjectiveC.NSObject, AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate, QuickPoseCore.QuickPoseCaptureAVAssetOutputSampleBufferDelegate {
+  public init(sdkKey: Swift.String)
+  public func start(features: [QuickPoseCore.QuickPose.Feature], onStart: (() -> ())? = nil, onFrame: @escaping ((QuickPoseCore.QuickPose.Status, UIKit.UIImage?, [QuickPoseCore.QuickPose.Feature : QuickPoseCore.QuickPose.FeatureResult], QuickPoseCore.QuickPose.Landmarks?) -> ()))
+  public func disableLogging()
+  public func enableLogging()
+  public func update(features: [QuickPoseCore.QuickPose.Feature])
+  public func stop()
+  public func libVersion() -> Swift.String
+  public func quickPoseVersion() -> Swift.String
+  public func captureAVOutput(didOutput sampleBuffer: CoreVideo.CVBuffer, timestamp: CoreMedia.CMTime, isFrontCamera: Swift.Bool)
+  @objc public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
+  @objc deinit
+}
+public protocol QuickPoseCaptureAVAssetOutputSampleBufferDelegate : ObjectiveC.NSObjectProtocol {
+  func captureAVOutput(didOutput sampleBuffer: CoreVideo.CVBuffer, timestamp: CoreMedia.CMTime, isFrontCamera: Swift.Bool)
 }
 extension QuickPoseCore.QuickPose {
   public struct Landmarks {
