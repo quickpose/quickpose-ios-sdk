@@ -104,7 +104,7 @@ Get an SDK Key
 ------------------
 
 Register for your free SDK key on [https://dev.quickpose.ai](https://dev.quickpose.ai), usage limits apply. 
-SDK Keys are linked to your bundle ID, please check your SDK Key before distributing to the App Store.
+SDK Keys are linked to your bundle ID, please check Key before distributing to the App Store.
 
 Getting Started
 ------------------
@@ -167,7 +167,7 @@ import QuickPoseSwiftUI
 
 struct QuickPoseBasicView: View {
     
-    private var quickPose = QuickPose(sdkKey: "YOUR SDK KEY HERE")
+    private var quickPose = QuickPose(sdkKey: "YOUR SDK KEY HERE") // https://dev.quickpose.ai/
     @State private var overlayImage: UIImage?
     
     var body: some View {
@@ -200,7 +200,7 @@ import QuickPoseSwiftUI
 ...
 struct QuickPoseBasicView: View {
 
-    private var quickPose = QuickPose(sdkKey: "YOUR SDK KEY HERE")
+    private var quickPose = QuickPose(sdkKey: "YOUR SDK KEY HERE") // https://dev.quickpose.ai/
     @State private var overlayImage: UIImage?
     
     var body: some View {
@@ -239,7 +239,7 @@ import QuickPoseCamera
 class ViewController: UIViewController {
     
     var camera: QuickPoseCamera?
-    var quickPose = QuickPose(sdkKey: "YOUR SDK KEY HERE")
+    var quickPose = QuickPose(sdkKey: "YOUR SDK KEY HERE") // https://dev.quickpose.ai/
     
     @IBOutlet var cameraView: UIView!
     @IBOutlet var overlayView: UIImageView!
@@ -289,7 +289,7 @@ class ViewController: UIViewController {
     
     var camera: QuickPoseCamera?
     var simulatedCamera: QuickPoseSimulatedCamera?
-    var quickPose = QuickPose(sdkKey: "YOUR SDK KEY HERE")
+    var quickPose = QuickPose(sdkKey: "YOUR SDK KEY HERE") // https://dev.quickpose.ai/
     
     @IBOutlet var cameraView: UIView!
     @IBOutlet var overlayView: UIImageView!
