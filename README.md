@@ -55,7 +55,7 @@ Features
 | <p><b>Health - Range Of Motion</b></p><p>Left Shoulder</p><p>Right Shoulder</p><p>Left Hip</p><p>Right Hip</p><p>Left Knee</p><p>Right Knee</p><p>Back</p><p>Neck</p>       |  ![health-shoulder-right-rom](docs/v0.3/health-shoulder-right-rom.gif) ![health-shoulder-rom](docs/v0.3/health-shoulder-rom.gif) ![health-hip-rom](docs/v0.3/health-hip-rom.gif) ![health-knee-rom](docs/v0.3/health-knee-rom.gif) ![health-back-rom](docs/v0.3/health-back-rom.gif)  ![health-neck-rom](docs/v0.3/health-neck-rom.gif)  | v0.3      |
 | <p><b>Fitness - Exercise Detection & Counter</b></p><p>Squat</p><p>Jumping Jack</p><p>Push Up</p>       |  ![fitness-squat-counter](docs/v0.3/fitness-squat-counter.gif) ![fitness-jacks-counter](docs/v0.3/fitness-jacks-counter.gif) ![fitness-push-up](docs/v0.5/fitness-push-up-counter.gif)  | v0.5 |      
 | <p><b>Input</b></p><p>Raised Finger Detection & Count</p>      | ![finger-counter-left](docs/v0.5/finger-counter-left.gif) ![finger-counter-right](docs/v0.5/finger-counter-right.gif)   | v0.5 |      
-
+| <p><b>Input</b></p><p>Thumbs Up Detection, Thumbs up and down detection</p>      | ![thumbs-up](docs/v0.6/thumbs-up.gif) ![thumbs-up-and-down](docs/v0.6/thumbs-up-and-down.gif)   | v0.6 |     
 
 Meta Features
 ------------------
@@ -63,7 +63,7 @@ Meta Features
 | Feature       | Example       | Supported |
 | ------------- |:-------------:| ---------:|
 | Stacked Feature Styling | ![shoulder-conditional-image](docs/v0.4/bike-demo.gif)<br />[<small>Bike Side View Video by Tariq Ali</small>](https://www.youtube.com/watch?v=LRA4N5cGnLU) | v0.4 |   
-| Conditional Styling | ![knee-conditional-image](docs/v0.4/health-knee-rom-conditional.gif) ![shoulder-conditional-image](docs/v0.4/health-shoulder-rom-conditional.gif)  | v0.4 |      
+| Conditional Styling | ![knee-conditional-image](docs/v0.4/health-knee-rom-conditional.gif) ![shoulder-conditional-image](docs/v0.4/health-shoulder-rom-conditional.gif)  | v0.4 |       
 
 Supported Platforms
 ------------------
