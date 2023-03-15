@@ -191,7 +191,7 @@ struct QuickPosePickerView: View {
                     lastFPS = fps
                     self.lastDebugResult = nil
                     
-                    if case .rangeOfMotion(_,_) = selectedFeatures.first, let result = features[selectedFeatures.first!] {
+                    if case .rangeOfMotion = selectedFeatures.first, let result = features[selectedFeatures.first!] {
                         lastResult = result.stringValue
                         if captureButtonOpacity == 0 { // only show button when reading available
                             withAnimation { captureButtonOpacity = 1 }
@@ -200,14 +200,20 @@ struct QuickPosePickerView: View {
                         withAnimation { captureButtonOpacity = 0 }
                     }
                            
-                    if case .fitness(_,_) = selectedFeatures.first, let result = features[selectedFeatures.first!] {
+                    if case .fitness = selectedFeatures.first, let result = features[selectedFeatures.first!] {
                         self.lastDebugResult = result
                         counter.count(probability: result.value) { status in
                             count = counter.getCount()
                         }
                         counterVisibility = 1
-                    } else if case .raisedFingers(_,_) = selectedFeatures.first, let result = features[selectedFeatures.first!] {
+                    } else if case .raisedFingers = selectedFeatures.first, let result = features[selectedFeatures.first!] {
                         count = Int(result.value)
+                        counterVisibility = 1
+                    } else if case .thumbsUp = selectedFeatures.first, let result = features[selectedFeatures.first!] {
+                        count = Int(result.value > 0.7 ? 1 : 0)
+                        counterVisibility = 1
+                    } else if case .thumbsUpOrDown = selectedFeatures.first, let result = features[selectedFeatures.first!] {
+                        count = Int(result.stringValue == "thumbs_up" && result.value > 0.7 ? 1 : result.stringValue == "thumbs_down" && result.value > 0.7 ? -1 : 0)
                         counterVisibility = 1
                     } else {
                         counterVisibility = 0
@@ -248,7 +254,7 @@ extension QuickPose.Feature {
             return [[.rangeOfMotion(.shoulder(side: .left, clockwiseDirection: false))], [.rangeOfMotion(.shoulder(side: .right, clockwiseDirection: true))],
             [.rangeOfMotion(.hip(side: .right, clockwiseDirection: true))], [.rangeOfMotion(.knee(side: .right, clockwiseDirection: true))], [.rangeOfMotion(.neck(clockwiseDirection: false)), .rangeOfMotion(.back(clockwiseDirection: false))]]
         } else if component == "Input" {
-            return [[QuickPose.Feature.raisedFingers()]]
+            return [[QuickPose.Feature.raisedFingers()], [QuickPose.Feature.thumbsUp()], [QuickPose.Feature.thumbsUpOrDown()]]
         } else if component == "Conditional" {
             let greenStyle = QuickPose.Style(conditionalColors: [QuickPose.Style.ConditionalColor(min: 40, max: nil, color: UIColor.green)])
             let redStyle = QuickPose.Style(conditionalColors: [QuickPose.Style.ConditionalColor(min: 180, max: nil, color: UIColor.red)])
