@@ -157,6 +157,8 @@ quickPose.start(features: [.overlay(.upperBody)], onFrame: { status, image, feat
 
 ### Integrating into SwiftUI App
 
+For reference docs see https://quickpose.github.io/quickpose-ios-sdk
+
 #### Device Camera only
 ```swift
 import SwiftUI
