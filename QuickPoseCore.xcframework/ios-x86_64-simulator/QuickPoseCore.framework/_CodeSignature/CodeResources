@@ -14,27 +14,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		yF1W8xPBT23RUN/QIMfYnQPA9gE=
+		Y0ghwIIWsScjUhrj8B0CcBnxLYM=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		8sOBiF4ZzTi2diPcCbbqX6tbIHA=
+		88/JOHW6t1oujttTxS+kn1AEbZ4=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		HAT/RXxGEvhDBFAVp6mLSMcRDvo=
+		TCbPKp7/9VBmhuDPpcUY53AfckM=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		n3q9rzGoqsJX/ci/j01XXire3LQ=
+		kigiIxnZjSDlubBWx5C+dmLrqjg=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		HAT/RXxGEvhDBFAVp6mLSMcRDvo=
+		TCbPKp7/9VBmhuDPpcUY53AfckM=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		rjmpbpOHVjsHE27iHF38KDbeFXU=
+		jSBGkQBSWcvQDHZUmCojCI5F2P0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -72,6 +72,38 @@
 		<data>
 		uWtOHl1nJxoqODFDCY2JutjS+hA=
 		</data>
+		<key>thumb_clf.mlmodelc/analytics/coremldata.bin</key>
+		<data>
+		R41UQVxSAhGnVUNhZdPllFI3Zm4=
+		</data>
+		<key>thumb_clf.mlmodelc/coremldata.bin</key>
+		<data>
+		ZkF7wbMskYG5oYj34jCpSL4E49o=
+		</data>
+		<key>thumb_clf.mlmodelc/metadata.json</key>
+		<data>
+		gWFbTWkZAyz6Lhny4ayHmaoIOVI=
+		</data>
+		<key>thumb_clf.mlmodelc/model.espresso.net</key>
+		<data>
+		uBY3KA7+t+U6uOQCI7GjDF5MMkc=
+		</data>
+		<key>thumb_clf.mlmodelc/model.espresso.shape</key>
+		<data>
+		JT7FSFSX0Gt71lpSV0RQpt8zBZw=
+		</data>
+		<key>thumb_clf.mlmodelc/model.espresso.weights</key>
+		<data>
+		xK6Cj/qV0f7v3x61+H0FFyfwGoo=
+		</data>
+		<key>thumb_clf.mlmodelc/model/coremldata.bin</key>
+		<data>
+		yNfQ7w7t+oLS6hqlkoRbmm1LArc=
+		</data>
+		<key>thumb_clf.mlmodelc/neural_network_optionals/coremldata.bin</key>
+		<data>
+		tkgF5pxT7RlO+9uypQti9obolyA=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -93,35 +125,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LqX9ZUcOF+RP0xMZ7dV/Ghtqpc10+U5Kb2fHU6MPhFw=
+			ogjkDG6nNH9rLyie5K3O7dr3pRzEl0AM6Im6CpHhkck=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			P+k3Xf0ClhGLdEyAr0bsUDkO/xvHi8P/5w+wEZaaol0=
+			dlOY1yPHqdTyjhvOqIIIRX9g00vrDN9Z7B634NZKiHo=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gWGvPg+IuXi1NxS3ziCyuL/W36vqVoYKVjCcsXWCgb4=
+			g5GHgXUCXIdg6tIQ7aPMUgZezrktjpXz53a8GSHRrmM=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			P+k3Xf0ClhGLdEyAr0bsUDkO/xvHi8P/5w+wEZaaol0=
+			dlOY1yPHqdTyjhvOqIIIRX9g00vrDN9Z7B634NZKiHo=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HG1O3X4aFdedyzrG5oc60Rk0cSdtsKJW1VZd1zvCvnc=
+			4tNb6wifaKtNE7sLOK/pVKUWOEwSUvZ+i109rb8ZfSE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -185,6 +217,62 @@
 			<key>hash2</key>
 			<data>
 			3qbOjtJDowxU1dFw8wY3O325nFjCWIZYFZu3qDrWd70=
+			</data>
+		</dict>
+		<key>thumb_clf.mlmodelc/analytics/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			16TziEEK1xKGnrru8cECHvyKPAJ8XGrxYumC0i7pmW4=
+			</data>
+		</dict>
+		<key>thumb_clf.mlmodelc/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mS55A75Gi3NkQQVxmCPqe3jN+Vq5esr2DFE+TcZv4Aw=
+			</data>
+		</dict>
+		<key>thumb_clf.mlmodelc/metadata.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gjF6kU613SJx6x4wNvXhkDuMduE74G/HauZKHOZDat4=
+			</data>
+		</dict>
+		<key>thumb_clf.mlmodelc/model.espresso.net</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DE9polwCh71jlC4K5q+4w5+2uD3ubmzXIqk9xrhkKx0=
+			</data>
+		</dict>
+		<key>thumb_clf.mlmodelc/model.espresso.shape</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			o49r509pOcyo4vRFNeHf53Lg4WXLa/O/f7Kl/eUOky4=
+			</data>
+		</dict>
+		<key>thumb_clf.mlmodelc/model.espresso.weights</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Wn0H6VuzFN7XneGD+8U1xJcwcOco0emyW9mJ861wIRE=
+			</data>
+		</dict>
+		<key>thumb_clf.mlmodelc/model/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			9aX9QtFqIDAnmO9u0wmXm0MAPSMg2fDo6pgxqSdZ+0s=
+			</data>
+		</dict>
+		<key>thumb_clf.mlmodelc/neural_network_optionals/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WTG9U2xFUClKISxvyNPBvuddqBeYC6C2cchgPa+zYjg=
 			</data>
 		</dict>
 	</dict>

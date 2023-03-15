@@ -16,8 +16,11 @@ public struct QuickPoseOverlayView: View {
     }
     
     public var body: some View {
-        if let overlayImage = overlayImage.wrappedValue {
-            Image(uiImage: overlayImage).resizable().aspectRatio(contentMode: .fill)
+        GeometryReader { reader in
+            if let overlayImage = overlayImage.wrappedValue {
+                Image(uiImage: overlayImage).resizable().aspectRatio(contentMode: .fill)
+                    .frame(width: reader.size.width, height: reader.size.height)
+            }
         }
     }
 }

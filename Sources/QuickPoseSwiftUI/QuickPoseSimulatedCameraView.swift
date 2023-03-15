@@ -18,8 +18,8 @@ public struct QuickPoseSimulatedCameraView: View {
     @State var cameraReady: Bool = false
     @State var camera: QuickPoseSimulatedCamera? = nil
 
-    public init(useFrontCamera: Bool, delegate: QuickPoseCaptureAVAssetOutputSampleBufferDelegate?, video: URL) {
-        self.camera = QuickPoseSimulatedCamera(useFrontCamera: useFrontCamera, asset: AVAsset(url: video))
+    public init(useFrontCamera: Bool, delegate: QuickPoseCaptureAVAssetOutputSampleBufferDelegate?, video: URL,  onVideoLoop: (()->())? = nil) {
+        self.camera = QuickPoseSimulatedCamera(useFrontCamera: useFrontCamera, asset: AVAsset(url: video), onVideoLoop: onVideoLoop)
         self.delegate = delegate
     }
     
@@ -27,6 +27,8 @@ public struct QuickPoseSimulatedCameraView: View {
         ZStack(alignment: .top) {
             if cameraReady, let avAssetPlayer = camera?.player {
                 QuickPoseAssetRenderView(player: avAssetPlayer, videoGravity: .resizeAspectFill)
+            } else {
+                EmptyView()
             }
         }.onAppear {
             do {
