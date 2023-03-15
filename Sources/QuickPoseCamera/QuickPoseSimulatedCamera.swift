@@ -95,12 +95,14 @@ public class QuickPoseSimulatedCamera {
     private var displayLink: CADisplayLink?
     private var videoFileFrameDuration = CMTime.invalid
     private weak var delegate: QuickPoseCaptureAVAssetOutputSampleBufferDelegate?
+    private var onVideoLoop: (()->())?
     public var player: AVPlayer?
     public var playerItem: AVPlayerItem?
     private var videoFileBufferOrientation = CGImagePropertyOrientation.up
-    public init(useFrontCamera: Bool, asset: AVAsset) {
+    public init(useFrontCamera: Bool, asset: AVAsset, onVideoLoop: (()->())? = nil) {
         self.useFrontCamera = useFrontCamera
         self.asset = asset
+        self.onVideoLoop = onVideoLoop
     }
     
     public func start(delegate: QuickPoseCaptureAVAssetOutputSampleBufferDelegate?) throws {
@@ -160,9 +162,10 @@ public class QuickPoseSimulatedCamera {
     }
     @objc func restartVideo() {
         player?.pause()
-        player?.currentItem?.seek(to: CMTime.zero, completionHandler: { _ in
-            self.player?.play()
-        })
+        player?.currentItem?.seek(to: CMTime.zero) { [weak self] _ in
+            self?.onVideoLoop?()
+            self?.player?.play()
+        }
     }
     
     @objc private func handleDisplayLink(_ displayLink: CADisplayLink) {

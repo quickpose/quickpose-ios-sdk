@@ -12,7 +12,7 @@
 
 @interface QuickPoseMP : NSObject
 - (instancetype)initWithFaceTracking: (BOOL) faceTracking andHandTracking: (BOOL) handTracking;
-- (void)startGraph;
+- (void)startGraphWithModelComplexity: (int) modelComplexity andSmoothLandmarks: (BOOL) smoothLandmarks;
 - (void)stopGraph;
 - (void)processVideoFrame:(CVPixelBufferRef)imageBuffer timestamp:(CMTime)timestamp;
 @property (weak, nonatomic) id <QuickPoseMediaPipeDelegate> delegate;

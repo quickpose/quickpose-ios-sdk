@@ -33,6 +33,22 @@ public class QuickPoseClassifierSmoother {
   public func smooth(probs: [Swift.Double]) -> [Swift.Double]
   @objc deinit
 }
+public class QuickPoseDoubleAndStateUnchangedDetector {
+  public var similarDuration: Foundation.TimeInterval
+  public var leniency: Swift.Double
+  public init(similarDuration: Foundation.TimeInterval, leniency: Swift.Double = 0.05)
+  public func count(result: (value: Swift.Double, state: Swift.String), timestamp: Foundation.Date = Date(), minValue: Swift.Double? = nil, maxValue: Swift.Double? = nil, onChange: (() -> ()))
+  public func reset()
+  @objc deinit
+}
+public class QuickPoseDoubleUnchangedDetector {
+  public var similarDuration: Foundation.TimeInterval
+  public var leniency: Swift.Double
+  public init(similarDuration: Foundation.TimeInterval, leniency: Swift.Double = 0.05)
+  public func count(result: Swift.Double, timestamp: Foundation.Date = Date(), minValue: Swift.Double? = nil, maxValue: Swift.Double? = nil, onChange: (() -> ()))
+  public func reset()
+  @objc deinit
+}
 extension CoreFoundation.CGPoint : Swift.Hashable {
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -64,7 +80,9 @@ extension QuickPoseCore.QuickPose {
     case overlay(_: QuickPoseCore.QuickPose.Landmarks.Group, style: QuickPoseCore.QuickPose.Style = Style())
     case measureAngleBody(origin: QuickPoseCore.QuickPose.Landmarks.Body, p1: QuickPoseCore.QuickPose.Landmarks.Body, p2: QuickPoseCore.QuickPose.Landmarks.Body?, clockwiseDirection: Swift.Bool, style: QuickPoseCore.QuickPose.Style = Style())
     case measureAngleFace(origin: QuickPoseCore.QuickPose.Landmarks.Face, p1: QuickPoseCore.QuickPose.Landmarks.Face, clockwiseDirection: Swift.Bool, style: QuickPoseCore.QuickPose.Style = Style())
-    case raisedFingers(_: QuickPoseCore.QuickPose.Side?, style: QuickPoseCore.QuickPose.Style = Style(relativeLineWidth: 0.5))
+    case raisedFingers(side: QuickPoseCore.QuickPose.Side? = nil, style: QuickPoseCore.QuickPose.Style = Style(relativeLineWidth: 0.5))
+    case thumbsUp(side: QuickPoseCore.QuickPose.Side? = nil, style: QuickPoseCore.QuickPose.Style = Style(relativeLineWidth: 0.5))
+    case thumbsUpOrDown(side: QuickPoseCore.QuickPose.Side? = nil, style: QuickPoseCore.QuickPose.Style = Style(relativeLineWidth: 0.5))
     case rangeOfMotion(_: QuickPoseCore.QuickPose.RangeOfMotion, style: QuickPoseCore.QuickPose.Style = Style())
     case fitness(_: QuickPoseCore.QuickPose.FitnessFeature, style: QuickPoseCore.QuickPose.Style = Style())
     public var displayString: Swift.String {
@@ -127,9 +145,10 @@ extension QuickPoseCore.QuickPose {
   }
 }
 extension QuickPoseCore.QuickPose {
-  public struct FeatureResult {
+  public struct FeatureResult : Swift.Equatable {
     public let value: Swift.Double
     public let stringValue: Swift.String
+    public static func == (a: QuickPoseCore.QuickPose.FeatureResult, b: QuickPoseCore.QuickPose.FeatureResult) -> Swift.Bool
   }
   public enum Status {
     case success(fps: Swift.Int)
