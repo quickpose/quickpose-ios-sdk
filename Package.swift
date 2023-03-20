@@ -16,9 +16,10 @@ let package = Package(
   ],
   dependencies: [],
   targets: [
-    .target(name: "QuickPoseCamera"),
-    .target(name: "QuickPoseSwiftUI", dependencies: ["QuickPoseCamera"]),
     .target(name: "QuickPoseCoreTarget", dependencies: ["QuickPoseCore"], path: "QuickPoseCoreWrapper"),
+    .target(name: "QuickPoseCamera", dependencies: ["QuickPoseCoreTarget"]),
+    .target(name: "QuickPoseSwiftUI", dependencies: ["QuickPoseCamera"]),
+    
     .target(name: "QuickPoseMPTarget", dependencies: ["QuickPoseMP",], path: "QuickPoseMPWrapper", linkerSettings: [.linkedLibrary("c++")]),
     
     .binaryTarget(name: "QuickPoseCore", path: "QuickPoseCore.xcframework"),
