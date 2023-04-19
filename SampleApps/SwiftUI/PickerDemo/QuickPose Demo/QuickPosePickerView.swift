@@ -205,10 +205,13 @@ struct QuickPosePickerView: View {
                                 .font(.system(size: 32, weight: .semibold)).foregroundColor(.white)
                                 .padding(.bottom, 40 + safeAreaInsets.bottom).opacity(counterVisibility * isFullBodyVisible)
                         ValueBar(value: measure, opacity: isFullBodyVisible * counterVisibility)
+                    }
+                }.overlay(alignment: .center) {
+                    if (selectedFeatures.contains(.checks(.isFullBodyVisible))) {
                         Text("Ensure your full body is visible")
                                 .font(.system(size: 32, weight: .semibold)).foregroundColor(.red).multilineTextAlignment(.center)
                                 .padding(.bottom, 40 + safeAreaInsets.bottom)
-                                .opacity((1 - isFullBodyVisible) * counterVisibility)
+                                .opacity(1 - isFullBodyVisible)
                     }
                 }.overlay(alignment: .bottom) {
                     if let feature = selectedFeatures.first {
