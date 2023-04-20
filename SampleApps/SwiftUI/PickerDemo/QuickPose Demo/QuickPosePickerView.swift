@@ -322,9 +322,9 @@ extension QuickPose.Feature {
             return [[.rangeOfMotion(.shoulder(side: .left, clockwiseDirection: false), style: greenStyle)], [.rangeOfMotion(.knee(side: .right, clockwiseDirection: true), style: redStyle)]]
         } else if component == "Fitness" {
             return [
-                [.fitness(.squatCounter), .checks(.isFullBodyVisible)],
-                [.fitness(.pushUpCounter), .checks(.isFullBodyVisible)],
-                [.fitness(.jumpingJackCounter), .checks(.isFullBodyVisible)],
+//                [.fitness(.squatCounter), .checks(.isFullBodyVisible)],
+//                [.fitness(.pushUpCounter), .checks(.isFullBodyVisible)],
+//                [.fitness(.jumpingJackCounter), .checks(.isFullBodyVisible)],
                 [.fitness(.squats), .checks(.isFullBodyVisible)],
                 [.fitness(.pushUps), .checks(.isFullBodyVisible)],
                 [.fitness(.jumpingJacks), .checks(.isFullBodyVisible)],
