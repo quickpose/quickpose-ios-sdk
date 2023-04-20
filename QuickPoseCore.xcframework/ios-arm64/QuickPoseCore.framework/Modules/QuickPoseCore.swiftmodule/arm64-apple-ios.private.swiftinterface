@@ -165,9 +165,6 @@ extension QuickPoseCore.QuickPose {
     }
   }
   public enum FitnessFeature : Swift.Hashable {
-    case squatCounter
-    case pushUpCounter
-    case jumpingJackCounter
     case squats
     case pushUps
     case jumpingJacks
