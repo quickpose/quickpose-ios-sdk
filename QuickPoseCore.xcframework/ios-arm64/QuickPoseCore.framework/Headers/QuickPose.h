@@ -3,7 +3,7 @@
 //  QuickPoseiOS.h
 //  QuickPoseiOS
 //
-//  Created by Peter Nash on 11/01/2023.
+//  Created by QuickPose.ai on 11/01/2023.
 //
 
 #import <Foundation/Foundation.h>

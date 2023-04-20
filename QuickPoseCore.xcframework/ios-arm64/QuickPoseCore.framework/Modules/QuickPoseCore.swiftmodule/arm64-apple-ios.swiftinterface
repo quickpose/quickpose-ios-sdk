@@ -33,6 +33,42 @@ public class QuickPoseClassifierSmoother {
   public func smooth(probs: [Swift.Double]) -> [Swift.Double]
   @objc deinit
 }
+@_hasMissingDesignatedInitializers public class Measures {
+  public static func squatMeasure(poseXYZ: [[Swift.Double]]) -> Swift.Double
+  public static func pushUpMeasure(poseXYZ: [[Swift.Double]]) -> Swift.Double
+  public static func jumpingJacksMeasure(poseXYZ: [[Swift.Double]]) -> Swift.Double
+  public static func sumoSquatMeasure(poseXYZ: [[Swift.Double]]) -> Swift.Double
+  public static func leftLegLungesMeasure(poseXYZ: [[Swift.Double]]) -> Swift.Double
+  public static func rightLegLungesMeasure(poseXYZ: [[Swift.Double]]) -> Swift.Double
+  public static func sitUpsMeasure(poseXYZ: [[Swift.Double]]) -> Swift.Double
+  public static func cobraWindsMeasure(poseXYZ: [[Swift.Double]]) -> Swift.Double
+  public static func plankMeasure(poseXYZ: [[Swift.Double]]) -> Swift.Double
+  public enum BodyPosition {
+    case horizontal
+    case vertical
+    public static func == (a: QuickPoseCore.Measures.BodyPosition, b: QuickPoseCore.Measures.BodyPosition) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @objc deinit
+}
+public class MeasureBasedCounter {
+  public enum CountState {
+    case poseEntered(_: Swift.Int)
+    case poseComplete(_: Swift.Int)
+  }
+  final public let enterThreshold: Swift.Double
+  final public let exitThreshold: Swift.Double
+  public init(enterThreshold: Swift.Double = 0.6, exitThreshold: Swift.Double = 0.3)
+  public func count(probability: Swift.Double, onChange: ((QuickPoseCore.MeasureBasedCounter.CountState) -> ())? = nil)
+  public func getCount() -> Swift.Int
+  public func getState() -> QuickPoseCore.MeasureBasedCounter.CountState
+  public func reset()
+  public func setCount(_ newCount: Swift.Int)
+  @objc deinit
+}
 public class QuickPoseDoubleAndStateUnchangedDetector {
   public var similarDuration: Foundation.TimeInterval
   public var leniency: Swift.Double
@@ -85,6 +121,7 @@ extension QuickPoseCore.QuickPose {
     case thumbsUpOrDown(side: QuickPoseCore.QuickPose.Side? = nil, style: QuickPoseCore.QuickPose.Style = Style(relativeLineWidth: 0.5))
     case rangeOfMotion(_: QuickPoseCore.QuickPose.RangeOfMotion, style: QuickPoseCore.QuickPose.Style = Style())
     case fitness(_: QuickPoseCore.QuickPose.FitnessFeature, style: QuickPoseCore.QuickPose.Style = Style())
+    case checks(_: QuickPoseCore.QuickPose.ChecksFeature, style: QuickPoseCore.QuickPose.Style = Style())
     public var displayString: Swift.String {
       get
     }
@@ -131,13 +168,36 @@ extension QuickPoseCore.QuickPose {
     case squatCounter
     case pushUpCounter
     case jumpingJackCounter
+    case squats
+    case pushUps
+    case jumpingJacks
+    case sumoSquats
+    case leftLegLunges
+    case rightLegLunges
+    case sitUps
+    case cobraWings
+    case plank
     public var id: Swift.String {
       get
     }
     public var displayTitle: Swift.String {
       get
     }
+    public var measureFunction: ([[Swift.Double]]) -> Swift.Double {
+      get
+    }
     public static func == (a: QuickPoseCore.QuickPose.FitnessFeature, b: QuickPoseCore.QuickPose.FitnessFeature) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum ChecksFeature : Swift.Hashable {
+    case isFullBodyVisible
+    public var id: Swift.String {
+      get
+    }
+    public static func == (a: QuickPoseCore.QuickPose.ChecksFeature, b: QuickPoseCore.QuickPose.ChecksFeature) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
@@ -174,6 +234,10 @@ public protocol QuickPoseCaptureAVAssetOutputSampleBufferDelegate : ObjectiveC.N
 }
 extension QuickPoseCore.QuickPose {
   public struct Landmarks {
+    public let poseLandmarks: [[Swift.Double]]
+    public let faceLandmarks: [[Swift.Double]]
+    public let leftHandLandmarks: [[Swift.Double]]
+    public let rightHandLandmarks: [[Swift.Double]]
     public enum Group : Swift.String {
       case none
       case wholeBody
@@ -303,6 +367,17 @@ extension QuickPoseCore.QuickPose {
     }
   }
 }
+public class MeasureBasedTimer {
+  final public let measureThreshold: Swift.Double
+  final public let windowSize: Swift.Int
+  public var measures: [Swift.Double]
+  public init(measureThreshold: Swift.Double = 0.6, windowSize: Swift.Int = 10)
+  public func update(measure: Swift.Double) -> Swift.Bool
+  public func timeInPosition() -> Foundation.TimeInterval
+  @objc deinit
+}
+extension QuickPoseCore.Measures.BodyPosition : Swift.Equatable {}
+extension QuickPoseCore.Measures.BodyPosition : Swift.Hashable {}
 extension QuickPoseCore.QuickPose.Landmarks.Group : Swift.Equatable {}
 extension QuickPoseCore.QuickPose.Landmarks.Group : Swift.Hashable {}
 extension QuickPoseCore.QuickPose.Landmarks.Group : Swift.RawRepresentable {}

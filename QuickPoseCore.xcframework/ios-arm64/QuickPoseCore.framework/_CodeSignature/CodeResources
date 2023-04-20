@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/QuickPose.h</key>
 		<data>
-		R+5zzDGLVtk5OETNKFVgq+a9WAE=
+		wTnXLDgDwMxeW4mqHigFDD2mMK8=
 		</data>
 		<key>Headers/QuickPoseCore-Swift.h</key>
 		<data>
@@ -18,23 +18,23 @@
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		QeGT4RK0D4y5MHkO0mHo+l8IaH4=
+		lgC65ydh2zEqPH/gsnQ4hxrzMOc=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		Xfw7IecKvhnlZnHtxtdsj5LuVDQ=
+		TvOknzE8UCbPQGbf9JNyRJWGfWg=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		slasKc3KHl/M2QqpL54z28qpTEU=
+		cmJnPZCX3vJwjHibhUJIEUQNmBs=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		Xfw7IecKvhnlZnHtxtdsj5LuVDQ=
+		TvOknzE8UCbPQGbf9JNyRJWGfWg=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		o2Pzs2fWPSxeXHieEdjs6jQoCOQ=
+		JRD0WcUV/cdDTdMtaLnUGXWjcmg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>fitness_rep_clf.mlmodelc/_B0000.DAT</key>
 		<data>
-		OdaEx32QJBfhLrfNcJerkdtX6T0=
+		hNLs5n5o+eQK8JuaRp4Deqxkows=
 		</data>
 		<key>fitness_rep_clf.mlmodelc/analytics/coremldata.bin</key>
 		<data>
-		X5krqkxEiW0ZLGfQEyDjGkqYWSo=
+		mMByoffW+lhyezk+jwpHINhaPBc=
 		</data>
 		<key>fitness_rep_clf.mlmodelc/coremldata.bin</key>
 		<data>
@@ -111,7 +111,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0x5H5LeC6CkQCZ0gVSNVB8ZqkW0bASFTYehTthLe2U8=
+			n6J76Nky6Wf7EbufMGdIJC+/NPwfNz0ukO1UAxAhd4U=
 			</data>
 		</dict>
 		<key>Headers/QuickPoseCore-Swift.h</key>
@@ -125,35 +125,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zvs2IBJpjFLJNKUcyyezaw3aEXDDvDq5+yNF1CgGU9k=
+			bV4P2/Dccl2vHLzRuzjouP6FLC98R3XuoRICVsVhNPE=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			INrLAEaM05Hp35HIVM9PiPgJ0cOolA71XYIP64wjmYg=
+			1o7WfxGmtoTE5m+lnjXgAlKo7tTBwiQSUVJ4D3K0oH8=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1YC1TDV6q2/gnTIQHO24EIsvOFFozm6dzbQBQ2Sdd+4=
+			o6qy2/nSlAKcBsrf+cRm+dKTXVmBxW4IrMNacb30rSI=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			INrLAEaM05Hp35HIVM9PiPgJ0cOolA71XYIP64wjmYg=
+			1o7WfxGmtoTE5m+lnjXgAlKo7tTBwiQSUVJ4D3K0oH8=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			F/Y/zXCTA+e/j5B7oncS0jEAsD4WyNdWzAn0NsqIWWw=
+			eimRHRveL9sh33Fpg9Y9Zw2r+eeUrG6rle5hiA4kgAs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -167,14 +167,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aJalQTGs9DD+Q53XNvCdqpkAERM77ev1qEO5j2Fdv2c=
+			nf0u4ylcJy4InoMDzDJ67Z9rcpRRKu+/Rf1aZKbm1G4=
 			</data>
 		</dict>
 		<key>fitness_rep_clf.mlmodelc/analytics/coremldata.bin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			51WAYx2zCbu7VcQcPUa5ESYJiAImFC2XxYVegn/7u4M=
+			GpLAtf90UTHtUu55kOuapWtvfIZ4MGuWorhCsjX8pzU=
 			</data>
 		</dict>
 		<key>fitness_rep_clf.mlmodelc/coremldata.bin</key>

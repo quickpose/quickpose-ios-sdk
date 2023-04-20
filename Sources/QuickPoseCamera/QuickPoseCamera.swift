@@ -2,7 +2,7 @@
 //  File.swift
 //
 //
-//  Created by Peter Nash on 12/01/2023.
+//  Created by QuickPose.ai on 12/01/2023.
 //
 
 import Foundation
