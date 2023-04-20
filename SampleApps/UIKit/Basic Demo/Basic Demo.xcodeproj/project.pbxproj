@@ -17,6 +17,7 @@
 		D0341182297ED13500289B0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0341180297ED13500289B0E /* LaunchScreen.storyboard */; };
 		D03B2AA9297ED54200FB5F48 /* QuickPoseCore in Frameworks */ = {isa = PBXBuildFile; productRef = D03B2AA8297ED54200FB5F48 /* QuickPoseCore */; };
 		D03B2AAB297ED54200FB5F48 /* QuickPoseMP in Frameworks */ = {isa = PBXBuildFile; productRef = D03B2AAA297ED54200FB5F48 /* QuickPoseMP */; };
+		D0DDC15729E433C800654123 /* CameraPermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DDC15629E433C800654123 /* CameraPermissionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		D0341181297ED13500289B0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0341183297ED13500289B0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0A5B0CA297EE51100346519 /* quickpose-ios-sdk */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "quickpose-ios-sdk"; path = ../../..; sourceTree = "<group>"; };
+		D0DDC15629E433C800654123 /* CameraPermissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPermissionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 			children = (
 				D0341175297ED13400289B0E /* AppDelegate.swift */,
 				D0341177297ED13400289B0E /* SceneDelegate.swift */,
+				D0DDC15629E433C800654123 /* CameraPermissionViewController.swift */,
 				D0341179297ED13400289B0E /* ViewController.swift */,
 				D034117B297ED13400289B0E /* Main.storyboard */,
 				D034117E297ED13500289B0E /* Assets.xcassets */,
@@ -171,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0DDC15729E433C800654123 /* CameraPermissionViewController.swift in Sources */,
 				D034117A297ED13400289B0E /* ViewController.swift in Sources */,
 				D0341176297ED13400289B0E /* AppDelegate.swift in Sources */,
 				D0341178297ED13400289B0E /* SceneDelegate.swift in Sources */,

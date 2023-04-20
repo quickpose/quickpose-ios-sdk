@@ -49,7 +49,7 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        quickPose.start(features: [.overlay(.upperBody)], onFrame: { status, image, features, landmarks in
+        quickPose.start(features: [.overlay(.userLeftArm)], onFrame: { status, image, features, landmarks in
             if case .success(_) = status {
                 DispatchQueue.main.async {
                     self.overlayView.image = image
@@ -61,7 +61,6 @@ class ViewController: UIViewController {
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         camera?.stop()
-        simulatedCamera?.stop()
         quickPose.stop()
     }
 }
