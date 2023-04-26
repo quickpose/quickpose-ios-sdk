@@ -51,11 +51,11 @@ struct QuickPosePickerView: View {
     @State private var captureButtonOpacity: Double = 0
     @State private var counterVisibility: Double = 0
     @State private var timerVisibility: Double = 0
-    @State private var isFullBodyVisible: Double = 0
     
     @State private var count: Int = 0
     @State private var measure: Double = 0
     @State private var timeInPosition: String = ""
+    @State private var guidanceText: String? = nil
     
     var body: some View {
         ZStack(alignment: .top) {
@@ -203,22 +203,24 @@ struct QuickPosePickerView: View {
             if let feature = selectedFeatures.first {
                 Text("\(feature.displayString): \(count)")
                     .font(.system(size: 32, weight: .semibold)).foregroundColor(.white)
-                    .padding(.bottom, 40 + safeAreaInsets.bottom).opacity(counterVisibility * isFullBodyVisible)
-                ValueBar(value: measure, opacity: isFullBodyVisible * counterVisibility)
+                    .padding(.bottom, 40 + safeAreaInsets.bottom).opacity(counterVisibility)
+                ValueBar(value: measure, opacity:counterVisibility)
             }
         }.overlay(alignment: .center) {
-            if (selectedFeatures.contains(.checks(.isFullBodyVisible))) {
-                Text("Ensure your full body is visible")
-                    .font(.system(size: 32, weight: .semibold)).foregroundColor(.red).multilineTextAlignment(.center)
+            if let guidanceText = guidanceText {
+                Text(guidanceText)
+                    .font(.system(size: 26, weight: .semibold)).foregroundColor(.white).multilineTextAlignment(.center)
+                    .padding(16)
+                    .background(RoundedRectangle(cornerRadius: 8).foregroundColor(Color("AccentColor").opacity(0.8)))
                     .padding(.bottom, 40 + safeAreaInsets.bottom)
-                    .opacity(1 - isFullBodyVisible)
+                    
             }
         }.overlay(alignment: .bottom) {
             if let feature = selectedFeatures.first {
                 Text("\(feature.displayString): " + timeInPosition)
                     .font(.system(size: 32, weight: .semibold)).foregroundColor(.white)
-                    .padding(.bottom, 40 + safeAreaInsets.bottom).opacity(timerVisibility *  isFullBodyVisible)
-                ValueBar(value: measure, opacity: timerVisibility * isFullBodyVisible)
+                    .padding(.bottom, 40 + safeAreaInsets.bottom).opacity(timerVisibility)
+                ValueBar(value: measure, opacity: timerVisibility)
             }
         }
         .overlay(alignment: .bottom) { // showDebug
@@ -232,7 +234,7 @@ struct QuickPosePickerView: View {
         .onAppear {
             quickPose.start(features: selectedFeatures, onStart: {
                 withAnimation { cameraViewOpacity = 1.0 } // unhide the camera when loaded
-            }, onFrame: { status, image, features, landmarks in
+            }, onFrame: { status, image, features, guidance, landmarks in
                 if case let .success(fps) = status {
                     lastFPS = fps
                     self.lastDebugResult = nil
@@ -245,25 +247,22 @@ struct QuickPosePickerView: View {
                     } else if captureButtonOpacity == 1 {
                         withAnimation { captureButtonOpacity = 0 }
                     }
-                    
-                    if let result = features[.checks(.isFullBodyVisible)] {
-                        isFullBodyVisible = result.value
+                    if case .fitness = selectedFeatures.first, let guidance = guidance[selectedFeatures.first!]  {
+                        guidanceText = guidance.displayString
+                    } else {
+                        guidanceText = nil
                     }
-                    
                     if case .fitness = selectedFeatures.first, let result = features[selectedFeatures.first!]  {
                         measure = result.value
-                        
-                        if (isFullBodyVisible == 1.0) {
-                            if (result.stringValue == "plank") {
-                                // no counter for this exercises
-                                _ = timer.update(measure: result.value)
-                                timeInPosition = String(format: "%.2f", timer.timeInPosition())
-                                timerVisibility = 1
-                            } else {
-                                measureBasedCounter.count(probability: result.value)
-                                count = measureBasedCounter.getCount()
-                                counterVisibility = 1
-                            }
+                        if (result.stringValue == "plank") {
+                            // no counter for this exercises
+                            _ = timer.update(measure: result.value)
+                            timeInPosition = String(format: "%.2f", timer.timeInPosition())
+                            timerVisibility = 1
+                        } else {
+                            measureBasedCounter.count(probability: result.value)
+                            count = measureBasedCounter.getCount()
+                            counterVisibility = 1
                         }
                     } else if case .raisedFingers = selectedFeatures.first, let result = features[selectedFeatures.first!] {
                         count = Int(result.value)
@@ -277,9 +276,7 @@ struct QuickPosePickerView: View {
                     } else {
                         counterVisibility = 0
                     }
-                    
-                    
-                    
+
                     overlayImage = image
                 }
             })
@@ -288,6 +285,7 @@ struct QuickPosePickerView: View {
             
         }
         .onDisappear {
+            timer.stop()
             quickPose.stop()
             UIApplication.shared.isIdleTimerDisabled = false
             UIScreen.main.brightness = self.initialBrightness
@@ -322,18 +320,15 @@ extension QuickPose.Feature {
             return [[.rangeOfMotion(.shoulder(side: .left, clockwiseDirection: false), style: greenStyle)], [.rangeOfMotion(.knee(side: .right, clockwiseDirection: true), style: redStyle)]]
         } else if component == "Fitness" {
             return [
-//                [.fitness(.squatCounter), .checks(.isFullBodyVisible)],
-//                [.fitness(.pushUpCounter), .checks(.isFullBodyVisible)],
-//                [.fitness(.jumpingJackCounter), .checks(.isFullBodyVisible)],
-                [.fitness(.squats), .checks(.isFullBodyVisible)],
-                [.fitness(.pushUps), .checks(.isFullBodyVisible)],
-                [.fitness(.jumpingJacks), .checks(.isFullBodyVisible)],
-                [.fitness(.sumoSquats), .checks(.isFullBodyVisible)],
-                [.fitness(.leftLegLunges), .checks(.isFullBodyVisible)],
-                [.fitness(.rightLegLunges), .checks(.isFullBodyVisible)],
-                [.fitness(.sitUps), .checks(.isFullBodyVisible)],
-                [.fitness(.cobraWings), .checks(.isFullBodyVisible)],
-                [.fitness(.plank), .checks(.isFullBodyVisible)]
+                [.fitness(.squats)],
+                [.fitness(.pushUps)],
+                [.fitness(.jumpingJacks)],
+                [.fitness(.sumoSquats)],
+                [.fitness(.leftLegLunges)],
+                [.fitness(.rightLegLunges)],
+                [.fitness(.sitUps)],
+                [.fitness(.cobraWings)],
+                [.fitness(.plank)]
             ]
         } else if component == "Sports" {
             let bikeStyle = QuickPose.Style(relativeFontSize: 0.33, relativeArcSize: 0.4, relativeLineWidth: 0.3)
