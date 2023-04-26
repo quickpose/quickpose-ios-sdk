@@ -9,6 +9,7 @@ QuickPose provides developer-oriented cutting edge ML features of MediaPipe and 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
+- [Register an SDK Key](#get-an-sdk-key)
 - [How it works](#how-it-works)
 - [Features](#features)
 - [Meta Features](#meta-features)
@@ -16,7 +17,6 @@ QuickPose provides developer-oriented cutting edge ML features of MediaPipe and 
 - [Requirements](#requirements)
 - [Installing the SDK](#installing-the-sdk)
   - [Swift Package Manager](#swift-package-manager)
-- [Get an SDK Key](#get-an-sdk-key)
 - [Getting Started](#getting-started)
   - [Getting Started with Newer Macs M1/M2](#getting-started-with-newer-macs-m1m2)
   - [Getting Started with Older Intel Macs](#getting-started-with-older-intel-macs)
@@ -31,6 +31,11 @@ QuickPose provides developer-oriented cutting edge ML features of MediaPipe and 
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+Register an SDK Key
+------------------
+
+Get your free SDK key on [https://dev.quickpose.ai](https://dev.quickpose.ai), usage limits may apply. 
+SDK Keys are linked to your bundle ID, please check Key before distributing to the App Store.
 
 How it works
 ------------------
@@ -53,7 +58,7 @@ Features
 | MediaPipe Landmarks  | ![MediaPipe Landmarks](docs/v0.2/overlay-all-points.gif) | v0.1        |
 | <p><b>Overlays</b></p><p>Whole Body</p><p>Upper Body</p><p>Lower Body</p><p>Shoulder</p><p>Left Arm</p><p>Right Arm</p><p>Left Leg</p><p>Right Leg</p>       |  ![Whole Body Overlay](docs/v0.1/overlay-whole-body.gif) ![Upper Body Overlay](docs/v0.1/overlay-upper-body.gif) ![Lower Body Overlay](docs/v0.1/overlay-lower-body.gif)  ![Shoulders Overlay](docs/v0.1/overlay-shoulders.gif)  ![Left Leg Overlay](docs/v0.1/overlay-left-leg.gif)  ![Right Leg Overlay](docs/v0.1/overlay-right-leg.gif)| v0.1        |
 | <p><b>Health - Range Of Motion</b></p><p>Left Shoulder</p><p>Right Shoulder</p><p>Left Hip</p><p>Right Hip</p><p>Left Knee</p><p>Right Knee</p><p>Back</p><p>Neck</p>       |  ![health-shoulder-right-rom](docs/v0.3/health-shoulder-right-rom.gif) ![health-shoulder-rom](docs/v0.3/health-shoulder-rom.gif) ![health-hip-rom](docs/v0.3/health-hip-rom.gif) ![health-knee-rom](docs/v0.3/health-knee-rom.gif) ![health-back-rom](docs/v0.3/health-back-rom.gif)  ![health-neck-rom](docs/v0.3/health-neck-rom.gif)  | v0.3      |
-| <p><b>Fitness - Exercise Detection & Counter</b></p><p>Squat</p><p>Jumping Jack</p><p>Push Up</p>       |  ![fitness-squat-counter](docs/v0.3/fitness-squat-counter.gif) ![fitness-jacks-counter](docs/v0.3/fitness-jacks-counter.gif) ![fitness-push-up](docs/v0.5/fitness-push-up-counter.gif)  | v0.5 |      
+| <p><b>Fitness - Exercise Detection & Counter</b></p><p>Squat</p><p>Sumo Squat</p><p>Jumping Jack</p><p>Push Up</p> <p>Plank</p> <p>Cobra Wings</p>   <p>Left Leg Lunge</p><p>Right Leg Lunge</p>        |  ![fitness-pushup](docs/v0.8/fitness-pushup.gif) ![fitness-plank](docs/v0.8/fitness-plank.gif) ![fitness-cobra-wings](docs/v0.8/fitness-cobra-wings.gif) ![fitness-left-leg-lunges](docs/v0.8/fitness-left-leg-lunges.gif)  ![fitness-squats](docs/v0.8/fitness-squats.gif) ![fitness-sumo-squats](docs/v0.8/fitness-sumo-squats.gif) ![fitness-jumping-jacks](docs/v0.8/fitness-jumping-jacks.gif) | v0.8 |      
 | <p><b>Input</b></p><p>Raised Finger Detection & Count</p>      | ![finger-counter-left](docs/v0.5/finger-counter-left.gif) ![finger-counter-right](docs/v0.5/finger-counter-right.gif)   | v0.5 |      
 | <p><b>Input</b></p><p>Thumbs Up Detection, Thumbs up and down detection</p>      | ![thumbs-up](docs/v0.6/thumbs-up.gif) ![thumbs-up-and-down](docs/v0.6/thumbs-up-and-down.gif)   | v0.6 |     
 
@@ -63,14 +68,15 @@ Meta Features
 | Feature       | Example       | Supported |
 | ------------- |:-------------:| ---------:|
 | Stacked Feature Styling | ![shoulder-conditional-image](docs/v0.4/bike-demo.gif)<br />[<small>Bike Side View Video by Tariq Ali</small>](https://www.youtube.com/watch?v=LRA4N5cGnLU) | v0.4 |   
-| Conditional Styling | ![knee-conditional-image](docs/v0.4/health-knee-rom-conditional.gif) ![shoulder-conditional-image](docs/v0.4/health-shoulder-rom-conditional.gif)  | v0.4 |       
+| Conditional Styling | ![knee-conditional-image](docs/v0.4/health-knee-rom-conditional.gif) ![shoulder-conditional-image](docs/v0.4/health-shoulder-rom-conditional.gif)  | v0.4 |   
+| <p><b>Fitness - Guidance</b></p><p>Body Position</p><p>Named Leg or Arm not visible</p> |   ![fitness-body-guidance](docs/v0.8/fitness-body-guidance.gif) ![fitness-arm-guidance](docs/v0.8/fitness-arm-guidance.gif) ![fitness-leg-guidance](docs/v0.8/fitness-leg-guidance.gif) | v0.8 |       
 
 Supported Platforms
 ------------------
 
 | iOS Device | Silicon Mac (M1, M2, etc) | iOS Simulator x86_64 | iOS Simulator arm64  | 
 | ----------:| -------------------------:|---------------------:|---------------------:|
-| ✅ Runs    |                   ✅ Runs |          ⚙ Compiles |          ⚙ Compiles  |
+| ✅ Runs    |                   ✅ Runs |          ⚙ Compiles |        ⚙ Known Issue |
 
 Requirements
 ------------------
@@ -100,11 +106,7 @@ __Step 4__: Choose all modules and click add package.
 | QuickPoseCamera | Utility Class for Integration  (optional, recommended) |
 | QuickPoseSwiftUI | Utility Classes for SwiftUI Integration  (optional, recommended)|
 
-Get an SDK Key
-------------------
 
-Register for your free SDK key on [https://dev.quickpose.ai](https://dev.quickpose.ai), usage limits apply. 
-SDK Keys are linked to your bundle ID, please check Key before distributing to the App Store.
 
 Getting Started
 ------------------
@@ -126,7 +128,7 @@ __Step 4__: Run
 __Step 5__: Explore the features and returned results
 
 ```swift
-quickPose.start(features: [.overlay(.upperBody)], onFrame: { status, image, features, landmarks in
+quickPose.start(features: [.overlay(.upperBody)], onFrame: { status, image, features, guidance, landmarks in
     if case .success(_) = status {
         overlayImage = image
     }
@@ -148,7 +150,7 @@ __Step 5__: Run
 __Step 6__: Explore the features and returned results
 
 ```swift
-quickPose.start(features: [.overlay(.upperBody)], onFrame: { status, image, features, landmarks in
+quickPose.start(features: [.overlay(.upperBody)], onFrame: { status, image, features,  guidance, landmarks in
     if case .success(_) = status {
         overlayImage = image
     }
@@ -181,7 +183,7 @@ struct QuickPoseBasicView: View {
             .frame(width: geometry.size.width)
             .edgesIgnoringSafeArea(.all)
             .onAppear {
-                quickPose.start(features: [.overlay(.userLeftArm)], onFrame: { status, image, features, landmarks in
+                quickPose.start(features: [.overlay(.userLeftArm)], onFrame: { status, image, features,  guidance, landmarks in
                     if case .success(_) = status {
                         overlayImage = image
                     }
@@ -218,7 +220,7 @@ struct QuickPoseBasicView: View {
             .frame(width: geometry.size.width)
             .edgesIgnoringSafeArea(.all)
             .onAppear {
-                quickPose.start(features: [.overlay(.upperBody)], onFrame: { status, image, features, landmarks in
+                quickPose.start(features: [.overlay(.upperBody)], onFrame: { status, image, features,  guidance, landmarks in
                     if case .success(_) = status {
                         overlayImage = image
                     }
@@ -266,7 +268,7 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        quickPose.start(features: [.overlay(.userLeftArm)], onFrame: { status, image, features, landmarks in
+        quickPose.start(features: [.overlay(.userLeftArm)], onFrame: { status, image, features, guidance, landmarks in
             if case .success(_) = status {
                 DispatchQueue.main.async {
                     self.overlayView.image = image
@@ -326,7 +328,7 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        quickPose.start(features: [.overlay(.upperBody)], onFrame: { status, image, features, landmarks in
+        quickPose.start(features: [.overlay(.upperBody)], onFrame: { status, image, features,  guidance, landmarks in
             if case .success(_) = status {
                 DispatchQueue.main.async {
                     self.overlayView.image = image
