@@ -1,0 +1,294 @@
+{
+  "storage" : "model.espresso.weights",
+  "analyses" : {
+
+  },
+  "properties" : {
+
+  },
+  "format_version" : 200,
+  "metadata_in_weights" : [
+
+  ],
+  "layers" : [
+    {
+      "size_of_axes" : 1,
+      "bottom" : "x",
+      "axes_0" : -1,
+      "weights" : {
+
+      },
+      "nd_axis" : 0,
+      "debug_info" : "input.1_rank2_expansion",
+      "top" : "input.1_rank2_expansion",
+      "type" : "expand_dims",
+      "name" : "input.1_rank2_expansion"
+    },
+    {
+      "size_of_axes" : 1,
+      "bottom" : "input.1_rank2_expansion",
+      "axes_0" : -2,
+      "weights" : {
+
+      },
+      "nd_axis" : 0,
+      "debug_info" : "input.1_batch_norm_1d_expanded",
+      "top" : "input.1_batch_norm_1d_expanded",
+      "type" : "expand_dims",
+      "name" : "input.1_batch_norm_1d_expanded"
+    },
+    {
+      "name" : "input.1_batch_norm_1d",
+      "bottom" : "input.1_batch_norm_1d_expanded",
+      "weights" : {
+
+      },
+      "debug_info" : "input.1_batch_norm_1d",
+      "top" : "input.1_batch_norm_1d_batch_norm",
+      "C" : 40,
+      "blob_batchnorm_params" : 1,
+      "type" : "batchnorm"
+    },
+    {
+      "size_of_axes" : 1,
+      "bottom" : "input.1_batch_norm_1d_batch_norm",
+      "axes_0" : -2,
+      "weights" : {
+
+      },
+      "nd_axis" : 0,
+      "debug_info" : "input.1_batch_norm_1d_squeeze",
+      "version" : 1,
+      "top" : "input.1_batch_norm_1d",
+      "type" : "squeeze",
+      "name" : "input.1_batch_norm_1d_squeeze"
+    },
+    {
+      "size_of_axes" : 1,
+      "bottom" : "input.1_batch_norm_1d",
+      "axes_0" : -1,
+      "weights" : {
+
+      },
+      "nd_axis" : 0,
+      "debug_info" : "input.1",
+      "version" : 1,
+      "top" : "input.1",
+      "type" : "squeeze",
+      "name" : "input.1"
+    },
+    {
+      "nB" : 40,
+      "top" : "input.3",
+      "has_biases" : 1,
+      "weights" : {
+
+      },
+      "nC" : 256,
+      "blob_weights" : 5,
+      "type" : "inner_product",
+      "has_relu" : 0,
+      "bottom" : "input.1",
+      "blob_biases" : 3,
+      "has_tanh" : 0,
+      "debug_info" : "input.3",
+      "name" : "input.3",
+      "has_prelu" : 0
+    },
+    {
+      "alpha" : 0.0099999997764825821,
+      "bottom" : "input.3",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "input.5",
+      "top" : "input.5",
+      "type" : "activation",
+      "name" : "input.5"
+    },
+    {
+      "size_of_axes" : 1,
+      "bottom" : "input.5",
+      "axes_0" : -1,
+      "weights" : {
+
+      },
+      "nd_axis" : 0,
+      "debug_info" : "input.7_rank2_expansion",
+      "top" : "input.7_rank2_expansion",
+      "type" : "expand_dims",
+      "name" : "input.7_rank2_expansion"
+    },
+    {
+      "size_of_axes" : 1,
+      "bottom" : "input.7_rank2_expansion",
+      "axes_0" : -2,
+      "weights" : {
+
+      },
+      "nd_axis" : 0,
+      "debug_info" : "input.7_batch_norm_1d_expanded",
+      "top" : "input.7_batch_norm_1d_expanded",
+      "type" : "expand_dims",
+      "name" : "input.7_batch_norm_1d_expanded"
+    },
+    {
+      "name" : "input.7_batch_norm_1d",
+      "bottom" : "input.7_batch_norm_1d_expanded",
+      "weights" : {
+
+      },
+      "debug_info" : "input.7_batch_norm_1d",
+      "top" : "input.7_batch_norm_1d_batch_norm",
+      "C" : 256,
+      "blob_batchnorm_params" : 7,
+      "type" : "batchnorm"
+    },
+    {
+      "size_of_axes" : 1,
+      "bottom" : "input.7_batch_norm_1d_batch_norm",
+      "axes_0" : -2,
+      "weights" : {
+
+      },
+      "nd_axis" : 0,
+      "debug_info" : "input.7_batch_norm_1d_squeeze",
+      "version" : 1,
+      "top" : "input.7_batch_norm_1d",
+      "type" : "squeeze",
+      "name" : "input.7_batch_norm_1d_squeeze"
+    },
+    {
+      "size_of_axes" : 1,
+      "bottom" : "input.7_batch_norm_1d",
+      "axes_0" : -1,
+      "weights" : {
+
+      },
+      "nd_axis" : 0,
+      "debug_info" : "input.7",
+      "version" : 1,
+      "top" : "input.7",
+      "type" : "squeeze",
+      "name" : "input.7"
+    },
+    {
+      "nB" : 256,
+      "top" : "input.9",
+      "has_biases" : 1,
+      "weights" : {
+
+      },
+      "nC" : 128,
+      "blob_weights" : 11,
+      "type" : "inner_product",
+      "has_relu" : 0,
+      "bottom" : "input.7",
+      "blob_biases" : 9,
+      "has_tanh" : 0,
+      "debug_info" : "input.9",
+      "name" : "input.9",
+      "has_prelu" : 0
+    },
+    {
+      "alpha" : 0.0099999997764825821,
+      "bottom" : "input.9",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "input.11",
+      "top" : "input.11",
+      "type" : "activation",
+      "name" : "input.11"
+    },
+    {
+      "size_of_axes" : 1,
+      "bottom" : "input.11",
+      "axes_0" : -1,
+      "weights" : {
+
+      },
+      "nd_axis" : 0,
+      "debug_info" : "input_rank2_expansion",
+      "top" : "input_rank2_expansion",
+      "type" : "expand_dims",
+      "name" : "input_rank2_expansion"
+    },
+    {
+      "size_of_axes" : 1,
+      "bottom" : "input_rank2_expansion",
+      "axes_0" : -2,
+      "weights" : {
+
+      },
+      "nd_axis" : 0,
+      "debug_info" : "input_batch_norm_1d_expanded",
+      "top" : "input_batch_norm_1d_expanded",
+      "type" : "expand_dims",
+      "name" : "input_batch_norm_1d_expanded"
+    },
+    {
+      "name" : "input_batch_norm_1d",
+      "bottom" : "input_batch_norm_1d_expanded",
+      "weights" : {
+
+      },
+      "debug_info" : "input_batch_norm_1d",
+      "top" : "input_batch_norm_1d_batch_norm",
+      "C" : 128,
+      "blob_batchnorm_params" : 13,
+      "type" : "batchnorm"
+    },
+    {
+      "size_of_axes" : 1,
+      "bottom" : "input_batch_norm_1d_batch_norm",
+      "axes_0" : -2,
+      "weights" : {
+
+      },
+      "nd_axis" : 0,
+      "debug_info" : "input_batch_norm_1d_squeeze",
+      "version" : 1,
+      "top" : "input_batch_norm_1d",
+      "type" : "squeeze",
+      "name" : "input_batch_norm_1d_squeeze"
+    },
+    {
+      "size_of_axes" : 1,
+      "bottom" : "input_batch_norm_1d",
+      "axes_0" : -1,
+      "weights" : {
+
+      },
+      "nd_axis" : 0,
+      "debug_info" : "input",
+      "version" : 1,
+      "top" : "input",
+      "type" : "squeeze",
+      "name" : "input"
+    },
+    {
+      "has_prelu" : 0,
+      "top" : "var_39",
+      "has_biases" : 1,
+      "weights" : {
+
+      },
+      "nC" : 5,
+      "blob_weights" : 17,
+      "type" : "inner_product",
+      "has_relu" : 0,
+      "attributes" : {
+        "is_output" : 1
+      },
+      "bottom" : "input",
+      "debug_info" : "39",
+      "has_tanh" : 0,
+      "blob_biases" : 15,
+      "name" : "39",
+      "nB" : 128
+    }
+  ]
+}
