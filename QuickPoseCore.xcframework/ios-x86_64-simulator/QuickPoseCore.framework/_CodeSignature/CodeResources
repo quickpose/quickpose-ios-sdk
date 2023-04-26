@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/QuickPoseCore-Swift.h</key>
 		<data>
-		n3tZAndm0q8Kbqu7Nynz3PK5ugM=
+		7QWGUQq/rFyQIacIaMmIgVqPfcc=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -18,27 +18,59 @@
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		HY4jDPLEDTxNOd7F6ql7ExjQJ7A=
+		r7kRAc0VWhoPm5ratUwd+M9F4mg=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		KZjYCqdUIFnxEoKf4K1x8XYWfJc=
+		HFGuCWfjqnAurmh/XZP0V6KKvlY=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		tEuzOb0u5L/02a4vd3jJZpCiB8c=
+		Wde4CTJr2K/3aUfFE45EcV3Knts=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		KZjYCqdUIFnxEoKf4K1x8XYWfJc=
+		HFGuCWfjqnAurmh/XZP0V6KKvlY=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		C1/jNtgzuu1jFafu/Hb0Hp7wdGE=
+		ME/MQ3RwdYzi4p1tGloKJSJzQao=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		GthXHYcy1Sr3SvJIxzgeA4RXCxA=
+		</data>
+		<key>body_pose_clf.mlmodelc/analytics/coremldata.bin</key>
+		<data>
+		fyx9K30HVNdiw7kfc7HLDWvblJU=
+		</data>
+		<key>body_pose_clf.mlmodelc/coremldata.bin</key>
+		<data>
+		5IwGdP8dDMcUDjWGNcJwUI0ECwg=
+		</data>
+		<key>body_pose_clf.mlmodelc/metadata.json</key>
+		<data>
+		yzpEcVU70OzBSxoP3qX3OTKeFXo=
+		</data>
+		<key>body_pose_clf.mlmodelc/model.espresso.net</key>
+		<data>
+		UGzf5gviWsVm0DC3GT0zz2BVWpU=
+		</data>
+		<key>body_pose_clf.mlmodelc/model.espresso.shape</key>
+		<data>
+		uMp6K9XNzI5+WeBTRLYJWoeJ/Q8=
+		</data>
+		<key>body_pose_clf.mlmodelc/model.espresso.weights</key>
+		<data>
+		Z4RLNpGxehfhN4ogM+eHtNNI5aI=
+		</data>
+		<key>body_pose_clf.mlmodelc/model/coremldata.bin</key>
+		<data>
+		yNfQ7w7t+oLS6hqlkoRbmm1LArc=
+		</data>
+		<key>body_pose_clf.mlmodelc/neural_network_optionals/coremldata.bin</key>
+		<data>
+		tkgF5pxT7RlO+9uypQti9obolyA=
 		</data>
 		<key>fitness_rep_clf.mlmodelc/_B0000.DAT</key>
 		<data>
@@ -118,42 +150,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3ndlwrWTX/UwKDxa0NXmA4nkKxr9d6oxzavU9b9qOw0=
+			0HMx/1/ITWdtYWBhHxAsZFqHdGi45smPfNZ4NnwhjCM=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Jn3NGwwFiKYCKqC4jF5l0hPADg9/vCrPS8Y5FGlDLhA=
+			Gf4dye3q1C3w408tWRfi6NymxsF6XHd8hQMneRfzNu8=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			npugoPbWYNKf52+B7q+K1nQLL4REtI3ediksKfqCspo=
+			iqucVxLnRIxIXrLfqKlp0b2vaFx1go+GZXQWsJ06QT4=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Fd3+4JLD3c9v/pU1r7q9SyP9Tqhz9X4mmIptaHmppxs=
+			sOFaDnip1UrIlT9fd2s/eTvmweJGgtxySuY+AyCA3Ak=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			npugoPbWYNKf52+B7q+K1nQLL4REtI3ediksKfqCspo=
+			iqucVxLnRIxIXrLfqKlp0b2vaFx1go+GZXQWsJ06QT4=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sQInMJ8mwa/KDPHil2eCbs+O3pl498+5/yx2ipe5J6c=
+			0v5xj6JLXXc15Cf8uICW+CMF7ZD8GJ8P5UGd+oS80dw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -161,6 +193,62 @@
 			<key>hash2</key>
 			<data>
 			J9BkVMgOCG7BfBY4zbNM57BqO9Y5PwVWwQ/YqRP99+0=
+			</data>
+		</dict>
+		<key>body_pose_clf.mlmodelc/analytics/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			R4dB7Uvo0E1uAxh3HI+EFu12+fdnZuD9rGLh5nVcduM=
+			</data>
+		</dict>
+		<key>body_pose_clf.mlmodelc/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qs48N+29gEzETSINhOsfI7W1MjYB7bPYDydykK4Xnzg=
+			</data>
+		</dict>
+		<key>body_pose_clf.mlmodelc/metadata.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			GlIadIxUSIohRZDt9ie1FJdMfEXACklbDUEut7zXI2w=
+			</data>
+		</dict>
+		<key>body_pose_clf.mlmodelc/model.espresso.net</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			O9PFxtjEihZkdOyOzDrhG0iQfNkEzMiRbbLc9WK92tw=
+			</data>
+		</dict>
+		<key>body_pose_clf.mlmodelc/model.espresso.shape</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fDYSkx5+ynwcccexEviMzlh5IOajEBg0jsd1lO5rd6g=
+			</data>
+		</dict>
+		<key>body_pose_clf.mlmodelc/model.espresso.weights</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			a8xc+eeUYX9tQJAJoxFFM5S26gkTVoSopRc3QeStrxc=
+			</data>
+		</dict>
+		<key>body_pose_clf.mlmodelc/model/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			9aX9QtFqIDAnmO9u0wmXm0MAPSMg2fDo6pgxqSdZ+0s=
+			</data>
+		</dict>
+		<key>body_pose_clf.mlmodelc/neural_network_optionals/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WTG9U2xFUClKISxvyNPBvuddqBeYC6C2cchgPa+zYjg=
 			</data>
 		</dict>
 		<key>fitness_rep_clf.mlmodelc/_B0000.DAT</key>
