@@ -8,7 +8,10 @@
 import Foundation
 import SwiftUI
 import AVFoundation
+#if QUICKPOSECORE
+#else
 import QuickPoseCamera
+#endif
 
 public struct QuickPoseCameraView: View {
 

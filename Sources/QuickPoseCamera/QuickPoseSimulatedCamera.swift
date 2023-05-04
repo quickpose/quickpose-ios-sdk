@@ -9,7 +9,10 @@ import Foundation
 import AVFoundation
 import UIKit
 import SwiftUI
+#if QUICKPOSECORE
+#else
 import QuickPoseCore
+#endif
 
 /// QuickPoseSimulatedCamera prepares an asset reader for a provided avasset and sets a delegate.
 ///
@@ -94,6 +97,7 @@ public class QuickPoseSimulatedCamera {
     private var playerItemOutput: AVPlayerItemVideoOutput?
     private var displayLink: CADisplayLink?
     private var videoFileFrameDuration = CMTime.invalid
+    
     private weak var delegate: QuickPoseCaptureAVAssetOutputSampleBufferDelegate?
     private var onVideoLoop: (()->())?
     public var player: AVPlayer?

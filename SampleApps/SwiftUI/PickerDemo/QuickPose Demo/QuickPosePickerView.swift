@@ -24,13 +24,34 @@ struct ValueBar: View {
 }
 
 
+struct QuickPoseStatsView: View {
+    @Environment(\.geometry) private var geometrySize
+    @Environment(\.safeAreaInsets) private var safeAreaInsets
+    
+    let quickPose: QuickPose
+    let showLag = false
+    @Binding var lastFPS: Int
+    @Binding var lastLag: Double
+    
+    var body: some View {
+        Text("Powered by QuickPose.ai v\(quickPose.quickPoseVersion())\n\(lastFPS) fps" + (showLag ? "lag \(String(format: "%.2f", lastLag))ms" : "")) // remove logo here, but attribution appreciated
+            .font(.system(size: 16, weight: .semibold).monospaced()).foregroundColor(.white)
+            .frame(height: 40 + safeAreaInsets.bottom, alignment: .center)
+            .padding(.bottom, 0)
+    }
+    
+}
+
 
 struct QuickPosePickerView: View {
     @Environment(\.geometry) private var geometrySize
     @Environment(\.safeAreaInsets) private var safeAreaInsets
     private let initialBrightness = UIScreen.main.brightness
-    
+    static let fastLabel = "Fast (Body Points only)"
     @State private var showDebugString: String = "Off"
+    @State private var performance: String = UserDefaults.standard.bool(forKey: "performanceFast") ? QuickPosePickerView.fastLabel : "Normal"
+    @State private var targetFPS: Double? = UserDefaults.standard.bool(forKey: "performanceFast") ? 60 : nil
+    
     @State private var lastDebugResult: QuickPoseCore.QuickPose.FeatureResult? = nil
     
     @State private var selectedFeatures: [QuickPose.Feature] = [.overlay(.wholeBody)]
@@ -46,6 +67,7 @@ struct QuickPosePickerView: View {
     
     @State private var lastResult: String? = nil
     @State private var lastFPS: Int = 0
+    @State private var lastLag: Double = 0
     @State private var showResult: String? = nil
     @State private var cameraViewOpacity: Double = 0
     @State private var captureButtonOpacity: Double = 0
@@ -57,12 +79,13 @@ struct QuickPosePickerView: View {
     @State private var timeInPosition: String = ""
     @State private var guidanceText: String? = nil
     
+   
     var body: some View {
         ZStack(alignment: .top) {
             if ProcessInfo.processInfo.isiOSAppOnMac, let url = Bundle.main.url(forResource: "rain-dance", withExtension: "mov") {
                 QuickPoseSimulatedCameraView(useFrontCamera: true, delegate: quickPose, video: url)
             } else {
-                QuickPoseCameraSwitchView(useFrontCamera: $useFrontCamera, delegate: quickPose)
+                QuickPoseCameraSwitchView(useFrontCamera: $useFrontCamera, delegate: quickPose, frameRate: $targetFPS)
             }
             QuickPoseOverlayView(overlayImage: $overlayImage)
         }
@@ -130,7 +153,22 @@ struct QuickPosePickerView: View {
                     } label: {
                         Text("Conditional")
                     }
-                    
+                    Menu {
+                        Picker("Performance", selection: $performance) {
+                            ForEach([QuickPosePickerView.fastLabel, "Normal"], id: \.self) { feature in
+                                Text(feature)
+                            }
+                        }
+                        .onChange(of: performance) { _ in
+                            // changing model complexity requires restart of quickpose, but tracking can be changed per frame
+                            quickPose.update(features: selectedFeatures, modelConfig: performance == "Normal" ? QuickPose.ModelConfig() : QuickPose.ModelConfig(detailedFaceTracking: false, detailedHandTracking: false))
+                            UserDefaults.standard.set(performance == QuickPosePickerView.fastLabel , forKey: "performanceFast")
+                            targetFPS = performance == QuickPosePickerView.fastLabel ? 60 : nil
+                        }
+                        .tint(.white)
+                    } label: {
+                        Text("Performance")
+                    }
                     Menu {
                         Picker("Debug", selection: $showDebugString) {
                             ForEach(["On","Off"], id: \.self) { feature in
@@ -194,10 +232,7 @@ struct QuickPosePickerView: View {
             }.opacity(captureButtonOpacity)
         }
         .overlay(alignment: .bottom) {
-            Text("Powered by QuickPose.ai v\(quickPose.quickPoseVersion()) - \(lastFPS) fps") // remove logo here, but attribution appreciated
-                .font(.system(size: 16, weight: .semibold)).foregroundColor(.white)
-                .frame(height: 40 + safeAreaInsets.bottom, alignment: .center)
-                .padding(.bottom, 0)
+            QuickPoseStatsView(quickPose: quickPose, lastFPS: $lastFPS, lastLag: $lastLag)
         }
         .overlay(alignment: .bottom) {
             if let feature = selectedFeatures.first {
@@ -206,7 +241,8 @@ struct QuickPosePickerView: View {
                     .padding(.bottom, 40 + safeAreaInsets.bottom).opacity(counterVisibility)
                 ValueBar(value: measure, opacity:counterVisibility)
             }
-        }.overlay(alignment: .center) {
+        }
+        .overlay(alignment: .center) {
             if let guidanceText = guidanceText {
                 Text(guidanceText)
                     .font(.system(size: 26, weight: .semibold)).foregroundColor(.white).multilineTextAlignment(.center)
@@ -215,7 +251,8 @@ struct QuickPosePickerView: View {
                     .padding(.bottom, 40 + safeAreaInsets.bottom)
                     
             }
-        }.overlay(alignment: .bottom) {
+        }
+        .overlay(alignment: .bottom) {
             if let feature = selectedFeatures.first {
                 Text("\(feature.displayString): " + timeInPosition)
                     .font(.system(size: 32, weight: .semibold)).foregroundColor(.white)
@@ -232,11 +269,12 @@ struct QuickPosePickerView: View {
         }
         
         .onAppear {
-            quickPose.start(features: selectedFeatures, onStart: {
+            quickPose.start(features: selectedFeatures, modelConfig: performance == "Normal" ? QuickPose.ModelConfig() : QuickPose.ModelConfig(detailedFaceTracking: false, detailedHandTracking: false), onStart: {
                 withAnimation { cameraViewOpacity = 1.0 } // unhide the camera when loaded
             }, onFrame: { status, image, features, guidance, landmarks in
-                if case let .success(fps) = status {
+                if case let .success(fps, lag) = status {
                     lastFPS = fps
+                    lastLag = lag*1000
                     self.lastDebugResult = nil
                     
                     if case .rangeOfMotion = selectedFeatures.first, let result = features[selectedFeatures.first!] {
@@ -290,9 +328,10 @@ struct QuickPosePickerView: View {
             UIApplication.shared.isIdleTimerDisabled = false
             UIScreen.main.brightness = self.initialBrightness
         }
-        .frame(width: geometrySize.width)
+        .frame(width: geometrySize.width + safeAreaInsets.leading + safeAreaInsets.trailing)
         .edgesIgnoringSafeArea(.all)
         .opacity(cameraViewOpacity)
+        .background(Color.black)
         
     }
 }

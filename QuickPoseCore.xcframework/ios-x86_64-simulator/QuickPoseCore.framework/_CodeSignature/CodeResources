@@ -18,23 +18,23 @@
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		r7kRAc0VWhoPm5ratUwd+M9F4mg=
+		l+qsnUGlAcPF/gGPmWHWzqj6gD0=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		HFGuCWfjqnAurmh/XZP0V6KKvlY=
+		0Po3gzUiaz5KvpX9LYb9l1qvJvA=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Wde4CTJr2K/3aUfFE45EcV3Knts=
+		wSlAza8/JnAH87+a6iJAkO/wgkg=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		HFGuCWfjqnAurmh/XZP0V6KKvlY=
+		0Po3gzUiaz5KvpX9LYb9l1qvJvA=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ME/MQ3RwdYzi4p1tGloKJSJzQao=
+		v/SUbRcX6333kAeEUVYhX02bMTk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -157,35 +157,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Gf4dye3q1C3w408tWRfi6NymxsF6XHd8hQMneRfzNu8=
+			zk5c0sDXe1viuweNYi6UqgXPWJ60TqXa8mBu/FPxpmU=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iqucVxLnRIxIXrLfqKlp0b2vaFx1go+GZXQWsJ06QT4=
+			JtqauhKh52nhA3Ptnc45muL0ahIrbo7LGM68mK+D2kQ=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sOFaDnip1UrIlT9fd2s/eTvmweJGgtxySuY+AyCA3Ak=
+			QCQWpTbQBjKhzDBPS+GtQlRcswwJhRS3AscawP+miI0=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iqucVxLnRIxIXrLfqKlp0b2vaFx1go+GZXQWsJ06QT4=
+			JtqauhKh52nhA3Ptnc45muL0ahIrbo7LGM68mK+D2kQ=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0v5xj6JLXXc15Cf8uICW+CMF7ZD8GJ8P5UGd+oS80dw=
+			e23CnOLds9WkvMzXKLnW/r0lxj8VG19iMrZ7in106aM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
