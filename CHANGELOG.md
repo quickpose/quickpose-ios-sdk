@@ -10,6 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Depth Measurement Bar for Fitness Measurements
 - Supporting Sumo Squats, Plank, Left and Right Leg Lunges and Cobra wings.
 - Fitness Measurements return customizable guidance prompts
+- Improved Camera Permissions for UIKit demo apps
+- Fixed a stability issue where frames could be processed before initialisation
 
 ## v0.7 - 2023-03-20
 

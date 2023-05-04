@@ -15,9 +15,14 @@
 - (void)startGraphWithModelComplexity: (int) modelComplexity andSmoothLandmarks: (BOOL) smoothLandmarks;
 - (void)stopGraph;
 - (void)processVideoFrame:(CVPixelBufferRef)imageBuffer timestamp:(CMTime)timestamp;
+
+@property (readwrite, nonatomic) int rotationDegrees;
+@property (readwrite, nonatomic) BOOL handTrackingEnabled;
+@property (readwrite, nonatomic) BOOL faceTrackingEnabled;
 @property (weak, nonatomic) id <QuickPoseMediaPipeDelegate> delegate;
 @property (readwrite, nonatomic) NSString* libVersion;
 @property (readwrite, nonatomic) NSString* tfVersion;
+
 @end
 
 typedef NS_ENUM(NSInteger, QuickPoseMediaPipeLandmarkJoints) {

@@ -1,5 +1,6 @@
 
 `FlowLimiterCalculatorinput_videoFINISHED:output_video"throttled_input_videoj
 FINISHED
-¼HolisticLandmarkGpuIMAGE:throttled_input_video"POSE_LANDMARKS:pose_landmarks"POSE_ROI:pose_roi"POSE_DETECTION:pose_detection"FACE_LANDMARKS:face_landmarks"'LEFT_HAND_LANDMARKS:left_hand_landmarks")RIGHT_HAND_LANDMARKS:right_hand_landmarks*!MODEL_COMPLEXITY:model_complexity*!SMOOTH_LANDMARKS:smooth_landmarks
-VAnnotationOverlayCalculatorIMAGE_GPU:throttled_input_video"IMAGE_GPU:output_videoRinput_videozoutput_videozpose_landmarkszface_landmarkszleft_hand_landmarkszright_hand_landmarks‚!MODEL_COMPLEXITY:model_complexity‚!SMOOTH_LANDMARKS:smooth_landmarks‚FLIP_VERTICALLY:flip_vertically
+­ImageTransformationCalculatorIMAGE_GPU:throttled_input_video!ROTATION_DEGREES:rotation_degrees"'IMAGE_GPU:throttled_input_video_flipped*FLIP_VERTICALLY:flip_vertically
+¢HolisticLandmarkGpu#IMAGE:throttled_input_video_flipped-HAND_LANDMARKS_ENABLED:hand_landmarks_enabled-FACE_LANDMARKS_ENABLED:face_landmarks_enabled"POSE_LANDMARKS:pose_landmarks"POSE_ROI:pose_roi"POSE_DETECTION:pose_detection"FACE_LANDMARKS:face_landmarks"'LEFT_HAND_LANDMARKS:left_hand_landmarks")RIGHT_HAND_LANDMARKS:right_hand_landmarks*!MODEL_COMPLEXITY:model_complexity*!SMOOTH_LANDMARKS:smooth_landmarks
+VAnnotationOverlayCalculatorIMAGE_GPU:throttled_input_video"IMAGE_GPU:output_videoRinput_videoR!ROTATION_DEGREES:rotation_degreesR-HAND_LANDMARKS_ENABLED:hand_landmarks_enabledR-FACE_LANDMARKS_ENABLED:face_landmarks_enabledzoutput_videozpose_landmarkszface_landmarkszleft_hand_landmarkszright_hand_landmarks‚!MODEL_COMPLEXITY:model_complexity‚!SMOOTH_LANDMARKS:smooth_landmarks‚FLIP_VERTICALLY:flip_vertically

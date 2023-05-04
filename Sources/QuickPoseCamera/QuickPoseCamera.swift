@@ -7,6 +7,7 @@
 
 import Foundation
 import AVFoundation
+import UIKit // for UIDevice only
 
 /// QuickPose Camera prepares an AVCaptureSession of the device's camera and sets a delegate.
 ///
@@ -80,21 +81,27 @@ public class QuickPoseCamera {
     private var device: AVCaptureDevice? = nil
     private lazy var output: AVCaptureVideoDataOutput = .init()
     private let qpProcessingQueue = DispatchQueue(label: "QPProcessingQueue", qos: .userInteractive)
-    
+    private var initialFrameRate: Int32 = -1
     public init(useFrontCamera: Bool) {
         self.useFrontCamera = useFrontCamera
     }
     
-    public func start(delegate: AVCaptureVideoDataOutputSampleBufferDelegate?) throws {
+    public func start(delegate: AVCaptureVideoDataOutputSampleBufferDelegate?, frameRate: Double? = nil) throws {
         device = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position:  useFrontCamera ? .front : .back)
+        
         output.videoSettings = [kCVPixelBufferPixelFormatTypeKey as String : kCVPixelFormatType_32BGRA]
         if let device = device {
             let session = AVCaptureSession()
             let input: AVCaptureDeviceInput = try AVCaptureDeviceInput(device: device)
             session.addInput(input)
             session.addOutput(output)
-            session.connections[0].videoOrientation = .portrait
+            initialFrameRate = device.activeVideoMaxFrameDuration.timescale
+            device.setFrameRate(frameRate)
             
+            if session.connections[0].isVideoOrientationSupported, let videoOrientation = AVCaptureVideoOrientation(rawValue: UIDevice.current.orientation.rawValue) {
+                session.connections[0].videoOrientation = videoOrientation
+                print("Setting QuickPose orientation to \(UIDevice.current.orientation.displayString)")
+            }
             // deliberately keeping front camera not mirrored to keep ML data points consistent
             
             self.session = session
@@ -123,6 +130,73 @@ public class QuickPoseCamera {
         output.setSampleBufferDelegate(nil, queue: qpProcessingQueue)
         output = .init()
     }
+    
+    public func setFrameRate(_ frameRate: Double?) {
+        qpProcessingQueue.async {
+            self.session?.stopRunning()
+            self.device?.setFrameRate(frameRate == nil ? Double(self.initialFrameRate) : frameRate)
+            self.session?.startRunning()
+        }
+    }
 }
 
+extension AVCaptureDevice {
+    fileprivate func setFrameRate(_ frameRate: Double?) {
+        
+        guard let frameRate = frameRate, activeVideoMaxFrameDuration.timescale != Int32(frameRate) else { return } // if possible avoid changing
+        var selectedFormat: AVCaptureDevice.Format? = nil
+        let activeDimensions = CMVideoFormatDescriptionGetDimensions(activeFormat.formatDescription);
+        for format in formats {
+            for range in format.videoSupportedFrameRateRanges {
+                let dimensions = CMVideoFormatDescriptionGetDimensions(format.formatDescription);
+                if (range.minFrameRate <= frameRate && frameRate <= range.maxFrameRate && dimensions.width == activeDimensions.width && dimensions.height == activeDimensions.height) {
+                    selectedFormat = format
+                    break
+                }
+            }
+        }
+        
+        if let selectedFormat = selectedFormat {
+            do {
+                try lockForConfiguration()
+                activeFormat = selectedFormat
+                activeVideoMinFrameDuration = CMTimeMake(value: 1, timescale: Int32(frameRate))
+                activeVideoMaxFrameDuration = CMTimeMake(value: 1, timescale: Int32(frameRate))
+                unlockForConfiguration()
+            } catch {
+                print("LockForConfiguration failed with error: \(error.localizedDescription)")
+            }
+        } else {
+            print("QuickPose couldn't set frameRate to \(frameRate)fps at \(activeDimensions), continuing with \(String(format:"%.f",activeVideoMaxFrameDuration.timescale))fps")
+        }
+    }
+}
 
+fileprivate extension CMTime {
+    var doubleValue: Double {
+        return Double(self.value) / Double(self.timescale)
+    }
+}
+
+fileprivate extension UIDeviceOrientation {
+    var displayString: String {
+        switch self {
+        case .portrait:
+            return "Portrait"
+        case .portraitUpsideDown:
+            return "Portrait Upside Down"
+        case .landscapeLeft:
+            return "Landscape Left"
+        case .landscapeRight:
+            return "Landscape Right"
+        case .faceUp:
+            return "Face Up"
+        case .faceDown:
+            return "Face Down"
+        case .unknown:
+            return "Unknown"
+        @unknown default:
+            return "Unknown"
+        }
+    }
+}

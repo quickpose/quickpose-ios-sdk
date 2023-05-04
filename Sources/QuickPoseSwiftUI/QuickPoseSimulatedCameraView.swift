@@ -1,15 +1,19 @@
 //
-//  File.swift
+//  QuickPoseSimulatedCameraView.swift
 //
 //
-//  Created by Peter Nash on 12/01/2023.
+//  Created by QuickPose.ai on 12/01/2023.
 //
 
 import Foundation
 import SwiftUI
 import AVFoundation
+#if QUICKPOSECORE
+#else
 import QuickPoseCore
 import QuickPoseCamera
+#endif
+
 
 public struct QuickPoseSimulatedCameraView: View {
 

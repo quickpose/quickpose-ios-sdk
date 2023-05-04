@@ -36,7 +36,35 @@ public struct QuickPoseCameraRenderView: UIViewRepresentable {
         return view
     }
     
-    public  func updateUIView(_ uiView: CameraRenderUIView, context: Context) {
-        
+    public func updateUIView(_ uiView: CameraRenderUIView, context: Context) {
+        if let connection = uiView.videoPreviewLayer.connection, connection.isVideoOrientationSupported, UIDevice.current.orientation.isValidInterfaceOrientation, let videoOrientation = AVCaptureVideoOrientation(rawValue: UIDevice.current.orientation.rawValue), (connection.videoOrientation != videoOrientation || session.connections[0].videoOrientation != videoOrientation) {
+            
+            connection.videoOrientation = videoOrientation // rotates view
+            session.connections[0].videoOrientation = videoOrientation // rotations ml
+            print("Updating QuickPose orientation to \(UIDevice.current.orientation.displayString)")
+        }
+    }
+}
+
+fileprivate extension UIDeviceOrientation {
+    var displayString: String {
+        switch self {
+        case .portrait:
+            return "Portrait"
+        case .portraitUpsideDown:
+            return "Portrait Upside Down"
+        case .landscapeLeft:
+            return "Landscape Left"
+        case .landscapeRight:
+            return "Landscape Right"
+        case .faceUp:
+            return "Face Up"
+        case .faceDown:
+            return "Face Down"
+        case .unknown:
+            return "Unknown"
+        @unknown default:
+            return "Unknown"
+        }
     }
 }
