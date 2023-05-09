@@ -50,7 +50,7 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
         
         quickPose.start(features: [.overlay(.userLeftArm)], onFrame: { status, image, features, guidance, landmarks in
-            if case .success(_) = status {
+            if case .success(_, _) = status {
                 DispatchQueue.main.async {
                     self.overlayView.image = image
                 }

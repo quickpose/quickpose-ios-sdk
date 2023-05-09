@@ -309,7 +309,7 @@ using UInt = size_t;
 ///         QuickPoseOverlayView(overlayImage: $overlayImage)
 ///     }
 ///     .onAppear {
-///         quickPose.start(features: [.overlay(.userLeftArm)], onFrame: { status, image, features, guidance, landmarks in
+///         quickPose.start(features: [.overlay(.userLeftArm)], onFrame: { status, image, features, feedback, landmarks in
 ///             overlayImage = image
 ///         })
 ///     }

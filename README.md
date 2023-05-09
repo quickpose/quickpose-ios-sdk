@@ -4,7 +4,7 @@
 
 [![Swift Package Manager](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 
-QuickPose provides developer-oriented cutting edge ML features of MediaPipe and BlazePose, with easy integration and production ready code. Dramatically improving the speed of implementation of MediaPipe and BlazePose's pose estimation and skeleton tracking features into mobile applications.
+QuickPose provides developer-oriented cutting edge ML features of MediaPipe and BlazePose, with easy integration and production ready code. Dramatically improving the speed of implementation of MediaPipe and BlazePose's pose estimation and skeleton tracking features into mobile applications. More documentation is provided at [https://docs.quickpose.ai/docs/MobileSDK](https://docs.quickpose.ai/docs/MobileSDK)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -26,6 +26,7 @@ QuickPose provides developer-oriented cutting edge ML features of MediaPipe and 
   - [Integrating into UIKit App](#integrating-into-uikit-app)
     - [Device Camera only](#device-camera-only-1)
     - [Device Camera and Running Video on Mac (Recommended)](#device-camera-and-running-video-on-mac-recommended-1)
+- [Integration Guides](#integration-guides)
 - [Troubleshooting](#troubleshooting)
   - [No Such Module](#no-such-module)
 
@@ -69,7 +70,8 @@ Meta Features
 | ------------- |:-------------:| ---------:|
 | Stacked Feature Styling | ![shoulder-conditional-image](docs/v0.4/bike-demo.gif)<br />[<small>Bike Side View Video by Tariq Ali</small>](https://www.youtube.com/watch?v=LRA4N5cGnLU) | v0.4 |   
 | Conditional Styling | ![knee-conditional-image](docs/v0.4/health-knee-rom-conditional.gif) ![shoulder-conditional-image](docs/v0.4/health-shoulder-rom-conditional.gif)  | v0.4 |   
-| <p><b>Fitness - Guidance</b></p><p>Body Position</p><p>Named Leg or Arm not visible</p> |   ![fitness-body-guidance](docs/v0.8/fitness-body-guidance.gif) ![fitness-arm-guidance](docs/v0.8/fitness-arm-guidance.gif) ![fitness-leg-guidance](docs/v0.8/fitness-leg-guidance.gif) | v0.8 |       
+| <p><b>Fitness - Feedback</b></p><p>Body Position</p><p>Named Leg or Arm not visible</p> |   ![fitness-body-feedback](docs/v0.8/fitness-body-feedback.gif) ![fitness-arm-feedback](docs/v0.8/fitness-arm-feedback.gif) ![fitness-leg-feedback](docs/v0.8/fitness-leg-feedback.gif) | v0.8 |   
+| Orientation Switching |   ![portrait](docs/v1.0.0/portrait.gif)  ![landscape](docs/v1.0.0/landscape.gif)  | v1.0.0 |       
 
 Supported Platforms
 ------------------
@@ -128,7 +130,7 @@ __Step 4__: Run
 __Step 5__: Explore the features and returned results
 
 ```swift
-quickPose.start(features: [.overlay(.upperBody)], onFrame: { status, image, features, guidance, landmarks in
+quickPose.start(features: [.overlay(.upperBody)], onFrame: { status, image, features, feedback, landmarks in
     if case .success(_) = status {
         overlayImage = image
     }
@@ -150,7 +152,7 @@ __Step 5__: Run
 __Step 6__: Explore the features and returned results
 
 ```swift
-quickPose.start(features: [.overlay(.upperBody)], onFrame: { status, image, features,  guidance, landmarks in
+quickPose.start(features: [.overlay(.upperBody)], onFrame: { status, image, features,  feedback, landmarks in
     if case .success(_) = status {
         overlayImage = image
     }
@@ -183,7 +185,7 @@ struct QuickPoseBasicView: View {
             .frame(width: geometry.size.width)
             .edgesIgnoringSafeArea(.all)
             .onAppear {
-                quickPose.start(features: [.overlay(.userLeftArm)], onFrame: { status, image, features,  guidance, landmarks in
+                quickPose.start(features: [.overlay(.userLeftArm)], onFrame: { status, image, features,  feedback, landmarks in
                     if case .success(_) = status {
                         overlayImage = image
                     }
@@ -220,7 +222,7 @@ struct QuickPoseBasicView: View {
             .frame(width: geometry.size.width)
             .edgesIgnoringSafeArea(.all)
             .onAppear {
-                quickPose.start(features: [.overlay(.upperBody)], onFrame: { status, image, features,  guidance, landmarks in
+                quickPose.start(features: [.overlay(.upperBody)], onFrame: { status, image, features,  feedback, landmarks in
                     if case .success(_) = status {
                         overlayImage = image
                     }
@@ -268,7 +270,7 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        quickPose.start(features: [.overlay(.userLeftArm)], onFrame: { status, image, features, guidance, landmarks in
+        quickPose.start(features: [.overlay(.userLeftArm)], onFrame: { status, image, features, feedback, landmarks in
             if case .success(_) = status {
                 DispatchQueue.main.async {
                     self.overlayView.image = image
@@ -328,7 +330,7 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        quickPose.start(features: [.overlay(.upperBody)], onFrame: { status, image, features,  guidance, landmarks in
+        quickPose.start(features: [.overlay(.upperBody)], onFrame: { status, image, features,  feedback, landmarks in
             if case .success(_) = status {
                 DispatchQueue.main.async {
                     self.overlayView.image = image
@@ -346,6 +348,11 @@ class ViewController: UIViewController {
 }
 
 ```
+
+
+Integration Guides
+------------------
+Checkout our integration guides at [https://docs.quickpose.ai/docs/MobileSDK](https://docs.quickpose.ai/docs/MobileSDK)
 
 
 Troubleshooting

@@ -35,7 +35,7 @@ struct QuickPoseBasicView: View {
             
             .onAppear {
                 quickPose.start(features: [.rangeOfMotion(.shoulder(side: .left, clockwiseDirection: false))], onFrame: { status, image, features, guidance, landmarks in
-                    if case .success(_) = status {
+                    if case .success(_, _) = status {
                         overlayImage = image
                     }
                 })

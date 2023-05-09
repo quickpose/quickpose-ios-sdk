@@ -621,992 +621,6 @@
         ]
       },
       {
-        "kind": "TypeDecl",
-        "name": "Measures",
-        "printedName": "Measures",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "jumpingJacksMeasure",
-            "printedName": "jumpingJacksMeasure(poseXYZ:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[[Swift.Double]]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Swift.Double]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Double",
-                        "printedName": "Swift.Double",
-                        "usr": "s:Sd"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13QuickPoseCore8MeasuresC19jumpingJacksMeasure7poseXYZSdSaySaySdGG_tFZ",
-            "mangledName": "$s13QuickPoseCore8MeasuresC19jumpingJacksMeasure7poseXYZSdSaySaySdGG_tFZ",
-            "moduleName": "QuickPoseCore",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "squatMeasure",
-            "printedName": "squatMeasure(poseXYZ:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[[Swift.Double]]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Swift.Double]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Double",
-                        "printedName": "Swift.Double",
-                        "usr": "s:Sd"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13QuickPoseCore8MeasuresC12squatMeasure7poseXYZSdSaySaySdGG_tFZ",
-            "mangledName": "$s13QuickPoseCore8MeasuresC12squatMeasure7poseXYZSdSaySaySdGG_tFZ",
-            "moduleName": "QuickPoseCore",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "leftLegLungesMeasure",
-            "printedName": "leftLegLungesMeasure(poseXYZ:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[[Swift.Double]]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Swift.Double]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Double",
-                        "printedName": "Swift.Double",
-                        "usr": "s:Sd"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13QuickPoseCore8MeasuresC20leftLegLungesMeasure7poseXYZSdSaySaySdGG_tFZ",
-            "mangledName": "$s13QuickPoseCore8MeasuresC20leftLegLungesMeasure7poseXYZSdSaySaySdGG_tFZ",
-            "moduleName": "QuickPoseCore",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "rightLegLungesMeasure",
-            "printedName": "rightLegLungesMeasure(poseXYZ:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[[Swift.Double]]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Swift.Double]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Double",
-                        "printedName": "Swift.Double",
-                        "usr": "s:Sd"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13QuickPoseCore8MeasuresC21rightLegLungesMeasure7poseXYZSdSaySaySdGG_tFZ",
-            "mangledName": "$s13QuickPoseCore8MeasuresC21rightLegLungesMeasure7poseXYZSdSaySaySdGG_tFZ",
-            "moduleName": "QuickPoseCore",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "sitUpsMeasure",
-            "printedName": "sitUpsMeasure(poseXYZ:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[[Swift.Double]]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Swift.Double]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Double",
-                        "printedName": "Swift.Double",
-                        "usr": "s:Sd"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13QuickPoseCore8MeasuresC13sitUpsMeasure7poseXYZSdSaySaySdGG_tFZ",
-            "mangledName": "$s13QuickPoseCore8MeasuresC13sitUpsMeasure7poseXYZSdSaySaySdGG_tFZ",
-            "moduleName": "QuickPoseCore",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "cobraWingsMeasure",
-            "printedName": "cobraWingsMeasure(poseXYZ:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[[Swift.Double]]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Swift.Double]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Double",
-                        "printedName": "Swift.Double",
-                        "usr": "s:Sd"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13QuickPoseCore8MeasuresC17cobraWingsMeasure7poseXYZSdSaySaySdGG_tFZ",
-            "mangledName": "$s13QuickPoseCore8MeasuresC17cobraWingsMeasure7poseXYZSdSaySaySdGG_tFZ",
-            "moduleName": "QuickPoseCore",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "pushUpMeasure",
-            "printedName": "pushUpMeasure(poseXYZ:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[[Swift.Double]]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Swift.Double]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Double",
-                        "printedName": "Swift.Double",
-                        "usr": "s:Sd"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13QuickPoseCore8MeasuresC13pushUpMeasure7poseXYZSdSaySaySdGG_tFZ",
-            "mangledName": "$s13QuickPoseCore8MeasuresC13pushUpMeasure7poseXYZSdSaySaySdGG_tFZ",
-            "moduleName": "QuickPoseCore",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "plankMeasure",
-            "printedName": "plankMeasure(poseXYZ:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[[Swift.Double]]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Swift.Double]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Double",
-                        "printedName": "Swift.Double",
-                        "usr": "s:Sd"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13QuickPoseCore8MeasuresC12plankMeasure7poseXYZSdSaySaySdGG_tFZ",
-            "mangledName": "$s13QuickPoseCore8MeasuresC12plankMeasure7poseXYZSdSaySaySdGG_tFZ",
-            "moduleName": "QuickPoseCore",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "TypeDecl",
-            "name": "BodyPosition",
-            "printedName": "BodyPosition",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "horizontal",
-                "printedName": "horizontal",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(QuickPoseCore.Measures.BodyPosition.Type) -> QuickPoseCore.Measures.BodyPosition",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BodyPosition",
-                        "printedName": "QuickPoseCore.Measures.BodyPosition",
-                        "usr": "s:13QuickPoseCore8MeasuresC12BodyPositionO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "QuickPoseCore.Measures.BodyPosition.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "BodyPosition",
-                            "printedName": "QuickPoseCore.Measures.BodyPosition",
-                            "usr": "s:13QuickPoseCore8MeasuresC12BodyPositionO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:13QuickPoseCore8MeasuresC12BodyPositionO10horizontalyA2EmF",
-                "mangledName": "$s13QuickPoseCore8MeasuresC12BodyPositionO10horizontalyA2EmF",
-                "moduleName": "QuickPoseCore"
-              },
-              {
-                "kind": "Var",
-                "name": "vertical",
-                "printedName": "vertical",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(QuickPoseCore.Measures.BodyPosition.Type) -> QuickPoseCore.Measures.BodyPosition",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BodyPosition",
-                        "printedName": "QuickPoseCore.Measures.BodyPosition",
-                        "usr": "s:13QuickPoseCore8MeasuresC12BodyPositionO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "QuickPoseCore.Measures.BodyPosition.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "BodyPosition",
-                            "printedName": "QuickPoseCore.Measures.BodyPosition",
-                            "usr": "s:13QuickPoseCore8MeasuresC12BodyPositionO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:13QuickPoseCore8MeasuresC12BodyPositionO8verticalyA2EmF",
-                "mangledName": "$s13QuickPoseCore8MeasuresC12BodyPositionO8verticalyA2EmF",
-                "moduleName": "QuickPoseCore"
-              },
-              {
-                "kind": "Function",
-                "name": "==",
-                "printedName": "==(_:_:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "BodyPosition",
-                    "printedName": "QuickPoseCore.Measures.BodyPosition",
-                    "usr": "s:13QuickPoseCore8MeasuresC12BodyPositionO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "BodyPosition",
-                    "printedName": "QuickPoseCore.Measures.BodyPosition",
-                    "usr": "s:13QuickPoseCore8MeasuresC12BodyPositionO"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:13QuickPoseCore8MeasuresC12BodyPositionO2eeoiySbAE_AEtFZ",
-                "mangledName": "$s13QuickPoseCore8MeasuresC12BodyPositionO2eeoiySbAE_AEtFZ",
-                "moduleName": "QuickPoseCore",
-                "static": true,
-                "implicit": true,
-                "funcSelfKind": "NonMutating"
-              },
-              {
-                "kind": "Var",
-                "name": "hashValue",
-                "printedName": "hashValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:13QuickPoseCore8MeasuresC12BodyPositionO9hashValueSivp",
-                "mangledName": "$s13QuickPoseCore8MeasuresC12BodyPositionO9hashValueSivp",
-                "moduleName": "QuickPoseCore",
-                "implicit": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:13QuickPoseCore8MeasuresC12BodyPositionO9hashValueSivg",
-                    "mangledName": "$s13QuickPoseCore8MeasuresC12BodyPositionO9hashValueSivg",
-                    "moduleName": "QuickPoseCore",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Function",
-                "name": "hash",
-                "printedName": "hash(into:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Hasher",
-                    "printedName": "Swift.Hasher",
-                    "paramValueOwnership": "InOut",
-                    "usr": "s:s6HasherV"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:13QuickPoseCore8MeasuresC12BodyPositionO4hash4intoys6HasherVz_tF",
-                "mangledName": "$s13QuickPoseCore8MeasuresC12BodyPositionO4hash4intoys6HasherVz_tF",
-                "moduleName": "QuickPoseCore",
-                "implicit": true,
-                "funcSelfKind": "NonMutating"
-              }
-            ],
-            "declKind": "Enum",
-            "usr": "s:13QuickPoseCore8MeasuresC12BodyPositionO",
-            "mangledName": "$s13QuickPoseCore8MeasuresC12BodyPositionO",
-            "moduleName": "QuickPoseCore",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Hashable",
-                "printedName": "Hashable",
-                "usr": "s:SH",
-                "mangledName": "$sSH"
-              }
-            ]
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:13QuickPoseCore8MeasuresC",
-        "mangledName": "$s13QuickPoseCore8MeasuresC",
-        "moduleName": "QuickPoseCore",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "hasMissingDesignatedInitializers": true
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "QuickPoseCore",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "MeasureBasedCounter",
-        "printedName": "MeasureBasedCounter",
-        "children": [
-          {
-            "kind": "TypeDecl",
-            "name": "CountState",
-            "printedName": "CountState",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "poseEntered",
-                "printedName": "poseEntered",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(QuickPoseCore.MeasureBasedCounter.CountState.Type) -> (Swift.Int) -> QuickPoseCore.MeasureBasedCounter.CountState",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "(Swift.Int) -> QuickPoseCore.MeasureBasedCounter.CountState",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "CountState",
-                            "printedName": "QuickPoseCore.MeasureBasedCounter.CountState",
-                            "usr": "s:13QuickPoseCore19MeasureBasedCounterC10CountStateO"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Int",
-                            "printedName": "Swift.Int",
-                            "usr": "s:Si"
-                          }
-                        ]
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "QuickPoseCore.MeasureBasedCounter.CountState.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "CountState",
-                            "printedName": "QuickPoseCore.MeasureBasedCounter.CountState",
-                            "usr": "s:13QuickPoseCore19MeasureBasedCounterC10CountStateO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:13QuickPoseCore19MeasureBasedCounterC10CountStateO11poseEnteredyAESicAEmF",
-                "mangledName": "$s13QuickPoseCore19MeasureBasedCounterC10CountStateO11poseEnteredyAESicAEmF",
-                "moduleName": "QuickPoseCore"
-              },
-              {
-                "kind": "Var",
-                "name": "poseComplete",
-                "printedName": "poseComplete",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(QuickPoseCore.MeasureBasedCounter.CountState.Type) -> (Swift.Int) -> QuickPoseCore.MeasureBasedCounter.CountState",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "(Swift.Int) -> QuickPoseCore.MeasureBasedCounter.CountState",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "CountState",
-                            "printedName": "QuickPoseCore.MeasureBasedCounter.CountState",
-                            "usr": "s:13QuickPoseCore19MeasureBasedCounterC10CountStateO"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Int",
-                            "printedName": "Swift.Int",
-                            "usr": "s:Si"
-                          }
-                        ]
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "QuickPoseCore.MeasureBasedCounter.CountState.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "CountState",
-                            "printedName": "QuickPoseCore.MeasureBasedCounter.CountState",
-                            "usr": "s:13QuickPoseCore19MeasureBasedCounterC10CountStateO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:13QuickPoseCore19MeasureBasedCounterC10CountStateO12poseCompleteyAESicAEmF",
-                "mangledName": "$s13QuickPoseCore19MeasureBasedCounterC10CountStateO12poseCompleteyAESicAEmF",
-                "moduleName": "QuickPoseCore"
-              }
-            ],
-            "declKind": "Enum",
-            "usr": "s:13QuickPoseCore19MeasureBasedCounterC10CountStateO",
-            "mangledName": "$s13QuickPoseCore19MeasureBasedCounterC10CountStateO",
-            "moduleName": "QuickPoseCore",
-            "declAttributes": [
-              "AccessControl"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "enterThreshold",
-            "printedName": "enterThreshold",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13QuickPoseCore19MeasureBasedCounterC14enterThresholdSdvp",
-            "mangledName": "$s13QuickPoseCore19MeasureBasedCounterC14enterThresholdSdvp",
-            "moduleName": "QuickPoseCore",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13QuickPoseCore19MeasureBasedCounterC14enterThresholdSdvg",
-                "mangledName": "$s13QuickPoseCore19MeasureBasedCounterC14enterThresholdSdvg",
-                "moduleName": "QuickPoseCore",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "exitThreshold",
-            "printedName": "exitThreshold",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13QuickPoseCore19MeasureBasedCounterC13exitThresholdSdvp",
-            "mangledName": "$s13QuickPoseCore19MeasureBasedCounterC13exitThresholdSdvp",
-            "moduleName": "QuickPoseCore",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13QuickPoseCore19MeasureBasedCounterC13exitThresholdSdvg",
-                "mangledName": "$s13QuickPoseCore19MeasureBasedCounterC13exitThresholdSdvg",
-                "moduleName": "QuickPoseCore",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(enterThreshold:exitThreshold:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "MeasureBasedCounter",
-                "printedName": "QuickPoseCore.MeasureBasedCounter",
-                "usr": "s:13QuickPoseCore19MeasureBasedCounterC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "hasDefaultArg": true,
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "hasDefaultArg": true,
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:13QuickPoseCore19MeasureBasedCounterC14enterThreshold04exitH0ACSd_Sdtcfc",
-            "mangledName": "$s13QuickPoseCore19MeasureBasedCounterC14enterThreshold04exitH0ACSd_Sdtcfc",
-            "moduleName": "QuickPoseCore",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "count",
-            "printedName": "count(probability:onChange:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((QuickPoseCore.MeasureBasedCounter.CountState) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(QuickPoseCore.MeasureBasedCounter.CountState) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CountState",
-                        "printedName": "QuickPoseCore.MeasureBasedCounter.CountState",
-                        "usr": "s:13QuickPoseCore19MeasureBasedCounterC10CountStateO"
-                      }
-                    ]
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13QuickPoseCore19MeasureBasedCounterC5count11probability8onChangeySd_yAC10CountStateOcSgtF",
-            "mangledName": "$s13QuickPoseCore19MeasureBasedCounterC5count11probability8onChangeySd_yAC10CountStateOcSgtF",
-            "moduleName": "QuickPoseCore",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getCount",
-            "printedName": "getCount()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13QuickPoseCore19MeasureBasedCounterC8getCountSiyF",
-            "mangledName": "$s13QuickPoseCore19MeasureBasedCounterC8getCountSiyF",
-            "moduleName": "QuickPoseCore",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getState",
-            "printedName": "getState()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "CountState",
-                "printedName": "QuickPoseCore.MeasureBasedCounter.CountState",
-                "usr": "s:13QuickPoseCore19MeasureBasedCounterC10CountStateO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13QuickPoseCore19MeasureBasedCounterC8getStateAC05CountH0OyF",
-            "mangledName": "$s13QuickPoseCore19MeasureBasedCounterC8getStateAC05CountH0OyF",
-            "moduleName": "QuickPoseCore",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "reset",
-            "printedName": "reset()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13QuickPoseCore19MeasureBasedCounterC5resetyyF",
-            "mangledName": "$s13QuickPoseCore19MeasureBasedCounterC5resetyyF",
-            "moduleName": "QuickPoseCore",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setCount",
-            "printedName": "setCount(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13QuickPoseCore19MeasureBasedCounterC8setCountyySiF",
-            "mangledName": "$s13QuickPoseCore19MeasureBasedCounterC8setCountyySiF",
-            "moduleName": "QuickPoseCore",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:13QuickPoseCore19MeasureBasedCounterC",
-        "mangledName": "$s13QuickPoseCore19MeasureBasedCounterC",
-        "moduleName": "QuickPoseCore",
-        "declAttributes": [
-          "AccessControl"
-        ]
-      },
-      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -1929,8 +943,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "BodyGuidance",
-        "printedName": "BodyGuidance",
+        "name": "BodyFeedback",
+        "printedName": "BodyFeedback",
         "children": [
           {
             "kind": "Var",
@@ -1940,24 +954,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(QuickPoseCore.BodyGuidance.Type) -> QuickPoseCore.BodyGuidance",
+                "printedName": "(QuickPoseCore.BodyFeedback.Type) -> QuickPoseCore.BodyFeedback",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "BodyGuidance",
-                    "printedName": "QuickPoseCore.BodyGuidance",
-                    "usr": "s:13QuickPoseCore12BodyGuidanceO"
+                    "name": "BodyFeedback",
+                    "printedName": "QuickPoseCore.BodyFeedback",
+                    "usr": "s:13QuickPoseCore12BodyFeedbackO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "QuickPoseCore.BodyGuidance.Type",
+                    "printedName": "QuickPoseCore.BodyFeedback.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "BodyGuidance",
-                        "printedName": "QuickPoseCore.BodyGuidance",
-                        "usr": "s:13QuickPoseCore12BodyGuidanceO"
+                        "name": "BodyFeedback",
+                        "printedName": "QuickPoseCore.BodyFeedback",
+                        "usr": "s:13QuickPoseCore12BodyFeedbackO"
                       }
                     ]
                   }
@@ -1965,8 +979,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:13QuickPoseCore12BodyGuidanceO11standFacingyA2CmF",
-            "mangledName": "$s13QuickPoseCore12BodyGuidanceO11standFacingyA2CmF",
+            "usr": "s:13QuickPoseCore12BodyFeedbackO11standFacingyA2CmF",
+            "mangledName": "$s13QuickPoseCore12BodyFeedbackO11standFacingyA2CmF",
             "moduleName": "QuickPoseCore"
           },
           {
@@ -1977,24 +991,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(QuickPoseCore.BodyGuidance.Type) -> QuickPoseCore.BodyGuidance",
+                "printedName": "(QuickPoseCore.BodyFeedback.Type) -> QuickPoseCore.BodyFeedback",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "BodyGuidance",
-                    "printedName": "QuickPoseCore.BodyGuidance",
-                    "usr": "s:13QuickPoseCore12BodyGuidanceO"
+                    "name": "BodyFeedback",
+                    "printedName": "QuickPoseCore.BodyFeedback",
+                    "usr": "s:13QuickPoseCore12BodyFeedbackO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "QuickPoseCore.BodyGuidance.Type",
+                    "printedName": "QuickPoseCore.BodyFeedback.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "BodyGuidance",
-                        "printedName": "QuickPoseCore.BodyGuidance",
-                        "usr": "s:13QuickPoseCore12BodyGuidanceO"
+                        "name": "BodyFeedback",
+                        "printedName": "QuickPoseCore.BodyFeedback",
+                        "usr": "s:13QuickPoseCore12BodyFeedbackO"
                       }
                     ]
                   }
@@ -2002,8 +1016,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:13QuickPoseCore12BodyGuidanceO11standSideOnyA2CmF",
-            "mangledName": "$s13QuickPoseCore12BodyGuidanceO11standSideOnyA2CmF",
+            "usr": "s:13QuickPoseCore12BodyFeedbackO11standSideOnyA2CmF",
+            "mangledName": "$s13QuickPoseCore12BodyFeedbackO11standSideOnyA2CmF",
             "moduleName": "QuickPoseCore"
           },
           {
@@ -2014,24 +1028,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(QuickPoseCore.BodyGuidance.Type) -> QuickPoseCore.BodyGuidance",
+                "printedName": "(QuickPoseCore.BodyFeedback.Type) -> QuickPoseCore.BodyFeedback",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "BodyGuidance",
-                    "printedName": "QuickPoseCore.BodyGuidance",
-                    "usr": "s:13QuickPoseCore12BodyGuidanceO"
+                    "name": "BodyFeedback",
+                    "printedName": "QuickPoseCore.BodyFeedback",
+                    "usr": "s:13QuickPoseCore12BodyFeedbackO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "QuickPoseCore.BodyGuidance.Type",
+                    "printedName": "QuickPoseCore.BodyFeedback.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "BodyGuidance",
-                        "printedName": "QuickPoseCore.BodyGuidance",
-                        "usr": "s:13QuickPoseCore12BodyGuidanceO"
+                        "name": "BodyFeedback",
+                        "printedName": "QuickPoseCore.BodyFeedback",
+                        "usr": "s:13QuickPoseCore12BodyFeedbackO"
                       }
                     ]
                   }
@@ -2039,8 +1053,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:13QuickPoseCore12BodyGuidanceO17standFacingOrSideyA2CmF",
-            "mangledName": "$s13QuickPoseCore12BodyGuidanceO17standFacingOrSideyA2CmF",
+            "usr": "s:13QuickPoseCore12BodyFeedbackO17standFacingOrSideyA2CmF",
+            "mangledName": "$s13QuickPoseCore12BodyFeedbackO17standFacingOrSideyA2CmF",
             "moduleName": "QuickPoseCore"
           },
           {
@@ -2051,24 +1065,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(QuickPoseCore.BodyGuidance.Type) -> QuickPoseCore.BodyGuidance",
+                "printedName": "(QuickPoseCore.BodyFeedback.Type) -> QuickPoseCore.BodyFeedback",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "BodyGuidance",
-                    "printedName": "QuickPoseCore.BodyGuidance",
-                    "usr": "s:13QuickPoseCore12BodyGuidanceO"
+                    "name": "BodyFeedback",
+                    "printedName": "QuickPoseCore.BodyFeedback",
+                    "usr": "s:13QuickPoseCore12BodyFeedbackO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "QuickPoseCore.BodyGuidance.Type",
+                    "printedName": "QuickPoseCore.BodyFeedback.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "BodyGuidance",
-                        "printedName": "QuickPoseCore.BodyGuidance",
-                        "usr": "s:13QuickPoseCore12BodyGuidanceO"
+                        "name": "BodyFeedback",
+                        "printedName": "QuickPoseCore.BodyFeedback",
+                        "usr": "s:13QuickPoseCore12BodyFeedbackO"
                       }
                     ]
                   }
@@ -2076,8 +1090,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:13QuickPoseCore12BodyGuidanceO11floorFacingyA2CmF",
-            "mangledName": "$s13QuickPoseCore12BodyGuidanceO11floorFacingyA2CmF",
+            "usr": "s:13QuickPoseCore12BodyFeedbackO11floorFacingyA2CmF",
+            "mangledName": "$s13QuickPoseCore12BodyFeedbackO11floorFacingyA2CmF",
             "moduleName": "QuickPoseCore"
           },
           {
@@ -2088,24 +1102,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(QuickPoseCore.BodyGuidance.Type) -> QuickPoseCore.BodyGuidance",
+                "printedName": "(QuickPoseCore.BodyFeedback.Type) -> QuickPoseCore.BodyFeedback",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "BodyGuidance",
-                    "printedName": "QuickPoseCore.BodyGuidance",
-                    "usr": "s:13QuickPoseCore12BodyGuidanceO"
+                    "name": "BodyFeedback",
+                    "printedName": "QuickPoseCore.BodyFeedback",
+                    "usr": "s:13QuickPoseCore12BodyFeedbackO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "QuickPoseCore.BodyGuidance.Type",
+                    "printedName": "QuickPoseCore.BodyFeedback.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "BodyGuidance",
-                        "printedName": "QuickPoseCore.BodyGuidance",
-                        "usr": "s:13QuickPoseCore12BodyGuidanceO"
+                        "name": "BodyFeedback",
+                        "printedName": "QuickPoseCore.BodyFeedback",
+                        "usr": "s:13QuickPoseCore12BodyFeedbackO"
                       }
                     ]
                   }
@@ -2113,8 +1127,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:13QuickPoseCore12BodyGuidanceO31floorSideOnWithBackOffTheGroundyA2CmF",
-            "mangledName": "$s13QuickPoseCore12BodyGuidanceO31floorSideOnWithBackOffTheGroundyA2CmF",
+            "usr": "s:13QuickPoseCore12BodyFeedbackO31floorSideOnWithBackOffTheGroundyA2CmF",
+            "mangledName": "$s13QuickPoseCore12BodyFeedbackO31floorSideOnWithBackOffTheGroundyA2CmF",
             "moduleName": "QuickPoseCore"
           },
           {
@@ -2125,24 +1139,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(QuickPoseCore.BodyGuidance.Type) -> QuickPoseCore.BodyGuidance",
+                "printedName": "(QuickPoseCore.BodyFeedback.Type) -> QuickPoseCore.BodyFeedback",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "BodyGuidance",
-                    "printedName": "QuickPoseCore.BodyGuidance",
-                    "usr": "s:13QuickPoseCore12BodyGuidanceO"
+                    "name": "BodyFeedback",
+                    "printedName": "QuickPoseCore.BodyFeedback",
+                    "usr": "s:13QuickPoseCore12BodyFeedbackO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "QuickPoseCore.BodyGuidance.Type",
+                    "printedName": "QuickPoseCore.BodyFeedback.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "BodyGuidance",
-                        "printedName": "QuickPoseCore.BodyGuidance",
-                        "usr": "s:13QuickPoseCore12BodyGuidanceO"
+                        "name": "BodyFeedback",
+                        "printedName": "QuickPoseCore.BodyFeedback",
+                        "usr": "s:13QuickPoseCore12BodyFeedbackO"
                       }
                     ]
                   }
@@ -2150,8 +1164,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:13QuickPoseCore12BodyGuidanceO25floorWithBackOffTheGroundyA2CmF",
-            "mangledName": "$s13QuickPoseCore12BodyGuidanceO25floorWithBackOffTheGroundyA2CmF",
+            "usr": "s:13QuickPoseCore12BodyFeedbackO25floorWithBackOffTheGroundyA2CmF",
+            "mangledName": "$s13QuickPoseCore12BodyFeedbackO25floorWithBackOffTheGroundyA2CmF",
             "moduleName": "QuickPoseCore"
           },
           {
@@ -2162,24 +1176,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(QuickPoseCore.BodyGuidance.Type) -> QuickPoseCore.BodyGuidance",
+                "printedName": "(QuickPoseCore.BodyFeedback.Type) -> QuickPoseCore.BodyFeedback",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "BodyGuidance",
-                    "printedName": "QuickPoseCore.BodyGuidance",
-                    "usr": "s:13QuickPoseCore12BodyGuidanceO"
+                    "name": "BodyFeedback",
+                    "printedName": "QuickPoseCore.BodyFeedback",
+                    "usr": "s:13QuickPoseCore12BodyFeedbackO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "QuickPoseCore.BodyGuidance.Type",
+                    "printedName": "QuickPoseCore.BodyFeedback.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "BodyGuidance",
-                        "printedName": "QuickPoseCore.BodyGuidance",
-                        "usr": "s:13QuickPoseCore12BodyGuidanceO"
+                        "name": "BodyFeedback",
+                        "printedName": "QuickPoseCore.BodyFeedback",
+                        "usr": "s:13QuickPoseCore12BodyFeedbackO"
                       }
                     ]
                   }
@@ -2187,8 +1201,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:13QuickPoseCore12BodyGuidanceO019floorSideOnWithBackH9TheGroundyA2CmF",
-            "mangledName": "$s13QuickPoseCore12BodyGuidanceO019floorSideOnWithBackH9TheGroundyA2CmF",
+            "usr": "s:13QuickPoseCore12BodyFeedbackO019floorSideOnWithBackH9TheGroundyA2CmF",
+            "mangledName": "$s13QuickPoseCore12BodyFeedbackO019floorSideOnWithBackH9TheGroundyA2CmF",
             "moduleName": "QuickPoseCore"
           },
           {
@@ -2199,13 +1213,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "QuickPoseCore.BodyGuidance?",
+                "printedName": "QuickPoseCore.BodyFeedback?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "BodyGuidance",
-                    "printedName": "QuickPoseCore.BodyGuidance",
-                    "usr": "s:13QuickPoseCore12BodyGuidanceO"
+                    "name": "BodyFeedback",
+                    "printedName": "QuickPoseCore.BodyFeedback",
+                    "usr": "s:13QuickPoseCore12BodyFeedbackO"
                   }
                 ],
                 "usr": "s:Sq"
@@ -2218,8 +1232,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:13QuickPoseCore12BodyGuidanceO8rawValueACSgSS_tcfc",
-            "mangledName": "$s13QuickPoseCore12BodyGuidanceO8rawValueACSgSS_tcfc",
+            "usr": "s:13QuickPoseCore12BodyFeedbackO8rawValueACSgSS_tcfc",
+            "mangledName": "$s13QuickPoseCore12BodyFeedbackO8rawValueACSgSS_tcfc",
             "moduleName": "QuickPoseCore",
             "implicit": true,
             "init_kind": "Designated"
@@ -2237,8 +1251,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:13QuickPoseCore12BodyGuidanceO8rawValueSSvp",
-            "mangledName": "$s13QuickPoseCore12BodyGuidanceO8rawValueSSvp",
+            "usr": "s:13QuickPoseCore12BodyFeedbackO8rawValueSSvp",
+            "mangledName": "$s13QuickPoseCore12BodyFeedbackO8rawValueSSvp",
             "moduleName": "QuickPoseCore",
             "implicit": true,
             "accessors": [
@@ -2255,8 +1269,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13QuickPoseCore12BodyGuidanceO8rawValueSSvg",
-                "mangledName": "$s13QuickPoseCore12BodyGuidanceO8rawValueSSvg",
+                "usr": "s:13QuickPoseCore12BodyFeedbackO8rawValueSSvg",
+                "mangledName": "$s13QuickPoseCore12BodyFeedbackO8rawValueSSvg",
                 "moduleName": "QuickPoseCore",
                 "implicit": true,
                 "accessorKind": "get"
@@ -2265,8 +1279,8 @@
           }
         ],
         "declKind": "Enum",
-        "usr": "s:13QuickPoseCore12BodyGuidanceO",
-        "mangledName": "$s13QuickPoseCore12BodyGuidanceO",
+        "usr": "s:13QuickPoseCore12BodyFeedbackO",
+        "mangledName": "$s13QuickPoseCore12BodyFeedbackO",
         "moduleName": "QuickPoseCore",
         "declAttributes": [
           "AccessControl"
@@ -2313,8 +1327,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "PoseGuidance",
-        "printedName": "PoseGuidance",
+        "name": "PoseFeedback",
+        "printedName": "PoseFeedback",
         "children": [
           {
             "kind": "TypeDecl",
@@ -2329,24 +1343,24 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(QuickPoseCore.PoseGuidance.ActionChange.Type) -> QuickPoseCore.PoseGuidance.ActionChange",
+                    "printedName": "(QuickPoseCore.PoseFeedback.ActionChange.Type) -> QuickPoseCore.PoseFeedback.ActionChange",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "ActionChange",
-                        "printedName": "QuickPoseCore.PoseGuidance.ActionChange",
-                        "usr": "s:13QuickPoseCore0B8GuidanceO12ActionChangeO"
+                        "printedName": "QuickPoseCore.PoseFeedback.ActionChange",
+                        "usr": "s:13QuickPoseCore0B8FeedbackO12ActionChangeO"
                       },
                       {
                         "kind": "TypeNominal",
                         "name": "Metatype",
-                        "printedName": "QuickPoseCore.PoseGuidance.ActionChange.Type",
+                        "printedName": "QuickPoseCore.PoseFeedback.ActionChange.Type",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "ActionChange",
-                            "printedName": "QuickPoseCore.PoseGuidance.ActionChange",
-                            "usr": "s:13QuickPoseCore0B8GuidanceO12ActionChangeO"
+                            "printedName": "QuickPoseCore.PoseFeedback.ActionChange",
+                            "usr": "s:13QuickPoseCore0B8FeedbackO12ActionChangeO"
                           }
                         ]
                       }
@@ -2354,8 +1368,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:13QuickPoseCore0B8GuidanceO12ActionChangeO4moveyA2EmF",
-                "mangledName": "$s13QuickPoseCore0B8GuidanceO12ActionChangeO4moveyA2EmF",
+                "usr": "s:13QuickPoseCore0B8FeedbackO12ActionChangeO4moveyA2EmF",
+                "mangledName": "$s13QuickPoseCore0B8FeedbackO12ActionChangeO4moveyA2EmF",
                 "moduleName": "QuickPoseCore"
               },
               {
@@ -2366,24 +1380,24 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(QuickPoseCore.PoseGuidance.ActionChange.Type) -> QuickPoseCore.PoseGuidance.ActionChange",
+                    "printedName": "(QuickPoseCore.PoseFeedback.ActionChange.Type) -> QuickPoseCore.PoseFeedback.ActionChange",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "ActionChange",
-                        "printedName": "QuickPoseCore.PoseGuidance.ActionChange",
-                        "usr": "s:13QuickPoseCore0B8GuidanceO12ActionChangeO"
+                        "printedName": "QuickPoseCore.PoseFeedback.ActionChange",
+                        "usr": "s:13QuickPoseCore0B8FeedbackO12ActionChangeO"
                       },
                       {
                         "kind": "TypeNominal",
                         "name": "Metatype",
-                        "printedName": "QuickPoseCore.PoseGuidance.ActionChange.Type",
+                        "printedName": "QuickPoseCore.PoseFeedback.ActionChange.Type",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "ActionChange",
-                            "printedName": "QuickPoseCore.PoseGuidance.ActionChange",
-                            "usr": "s:13QuickPoseCore0B8GuidanceO12ActionChangeO"
+                            "printedName": "QuickPoseCore.PoseFeedback.ActionChange",
+                            "usr": "s:13QuickPoseCore0B8FeedbackO12ActionChangeO"
                           }
                         ]
                       }
@@ -2391,8 +1405,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:13QuickPoseCore0B8GuidanceO12ActionChangeO4leanyA2EmF",
-                "mangledName": "$s13QuickPoseCore0B8GuidanceO12ActionChangeO4leanyA2EmF",
+                "usr": "s:13QuickPoseCore0B8FeedbackO12ActionChangeO4leanyA2EmF",
+                "mangledName": "$s13QuickPoseCore0B8FeedbackO12ActionChangeO4leanyA2EmF",
                 "moduleName": "QuickPoseCore"
               },
               {
@@ -2403,24 +1417,24 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(QuickPoseCore.PoseGuidance.ActionChange.Type) -> QuickPoseCore.PoseGuidance.ActionChange",
+                    "printedName": "(QuickPoseCore.PoseFeedback.ActionChange.Type) -> QuickPoseCore.PoseFeedback.ActionChange",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "ActionChange",
-                        "printedName": "QuickPoseCore.PoseGuidance.ActionChange",
-                        "usr": "s:13QuickPoseCore0B8GuidanceO12ActionChangeO"
+                        "printedName": "QuickPoseCore.PoseFeedback.ActionChange",
+                        "usr": "s:13QuickPoseCore0B8FeedbackO12ActionChangeO"
                       },
                       {
                         "kind": "TypeNominal",
                         "name": "Metatype",
-                        "printedName": "QuickPoseCore.PoseGuidance.ActionChange.Type",
+                        "printedName": "QuickPoseCore.PoseFeedback.ActionChange.Type",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "ActionChange",
-                            "printedName": "QuickPoseCore.PoseGuidance.ActionChange",
-                            "usr": "s:13QuickPoseCore0B8GuidanceO12ActionChangeO"
+                            "printedName": "QuickPoseCore.PoseFeedback.ActionChange",
+                            "usr": "s:13QuickPoseCore0B8FeedbackO12ActionChangeO"
                           }
                         ]
                       }
@@ -2428,8 +1442,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:13QuickPoseCore0B8GuidanceO12ActionChangeO10straightenyA2EmF",
-                "mangledName": "$s13QuickPoseCore0B8GuidanceO12ActionChangeO10straightenyA2EmF",
+                "usr": "s:13QuickPoseCore0B8FeedbackO12ActionChangeO10straightenyA2EmF",
+                "mangledName": "$s13QuickPoseCore0B8FeedbackO12ActionChangeO10straightenyA2EmF",
                 "moduleName": "QuickPoseCore"
               },
               {
@@ -2440,24 +1454,24 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(QuickPoseCore.PoseGuidance.ActionChange.Type) -> QuickPoseCore.PoseGuidance.ActionChange",
+                    "printedName": "(QuickPoseCore.PoseFeedback.ActionChange.Type) -> QuickPoseCore.PoseFeedback.ActionChange",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "ActionChange",
-                        "printedName": "QuickPoseCore.PoseGuidance.ActionChange",
-                        "usr": "s:13QuickPoseCore0B8GuidanceO12ActionChangeO"
+                        "printedName": "QuickPoseCore.PoseFeedback.ActionChange",
+                        "usr": "s:13QuickPoseCore0B8FeedbackO12ActionChangeO"
                       },
                       {
                         "kind": "TypeNominal",
                         "name": "Metatype",
-                        "printedName": "QuickPoseCore.PoseGuidance.ActionChange.Type",
+                        "printedName": "QuickPoseCore.PoseFeedback.ActionChange.Type",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "ActionChange",
-                            "printedName": "QuickPoseCore.PoseGuidance.ActionChange",
-                            "usr": "s:13QuickPoseCore0B8GuidanceO12ActionChangeO"
+                            "printedName": "QuickPoseCore.PoseFeedback.ActionChange",
+                            "usr": "s:13QuickPoseCore0B8FeedbackO12ActionChangeO"
                           }
                         ]
                       }
@@ -2465,8 +1479,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:13QuickPoseCore0B8GuidanceO12ActionChangeO5loweryA2EmF",
-                "mangledName": "$s13QuickPoseCore0B8GuidanceO12ActionChangeO5loweryA2EmF",
+                "usr": "s:13QuickPoseCore0B8FeedbackO12ActionChangeO5loweryA2EmF",
+                "mangledName": "$s13QuickPoseCore0B8FeedbackO12ActionChangeO5loweryA2EmF",
                 "moduleName": "QuickPoseCore"
               },
               {
@@ -2477,24 +1491,24 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(QuickPoseCore.PoseGuidance.ActionChange.Type) -> QuickPoseCore.PoseGuidance.ActionChange",
+                    "printedName": "(QuickPoseCore.PoseFeedback.ActionChange.Type) -> QuickPoseCore.PoseFeedback.ActionChange",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "ActionChange",
-                        "printedName": "QuickPoseCore.PoseGuidance.ActionChange",
-                        "usr": "s:13QuickPoseCore0B8GuidanceO12ActionChangeO"
+                        "printedName": "QuickPoseCore.PoseFeedback.ActionChange",
+                        "usr": "s:13QuickPoseCore0B8FeedbackO12ActionChangeO"
                       },
                       {
                         "kind": "TypeNominal",
                         "name": "Metatype",
-                        "printedName": "QuickPoseCore.PoseGuidance.ActionChange.Type",
+                        "printedName": "QuickPoseCore.PoseFeedback.ActionChange.Type",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "ActionChange",
-                            "printedName": "QuickPoseCore.PoseGuidance.ActionChange",
-                            "usr": "s:13QuickPoseCore0B8GuidanceO12ActionChangeO"
+                            "printedName": "QuickPoseCore.PoseFeedback.ActionChange",
+                            "usr": "s:13QuickPoseCore0B8FeedbackO12ActionChangeO"
                           }
                         ]
                       }
@@ -2502,8 +1516,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:13QuickPoseCore0B8GuidanceO12ActionChangeO5placeyA2EmF",
-                "mangledName": "$s13QuickPoseCore0B8GuidanceO12ActionChangeO5placeyA2EmF",
+                "usr": "s:13QuickPoseCore0B8FeedbackO12ActionChangeO5placeyA2EmF",
+                "mangledName": "$s13QuickPoseCore0B8FeedbackO12ActionChangeO5placeyA2EmF",
                 "moduleName": "QuickPoseCore"
               },
               {
@@ -2514,13 +1528,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "QuickPoseCore.PoseGuidance.ActionChange?",
+                    "printedName": "QuickPoseCore.PoseFeedback.ActionChange?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "ActionChange",
-                        "printedName": "QuickPoseCore.PoseGuidance.ActionChange",
-                        "usr": "s:13QuickPoseCore0B8GuidanceO12ActionChangeO"
+                        "printedName": "QuickPoseCore.PoseFeedback.ActionChange",
+                        "usr": "s:13QuickPoseCore0B8FeedbackO12ActionChangeO"
                       }
                     ],
                     "usr": "s:Sq"
@@ -2533,8 +1547,8 @@
                   }
                 ],
                 "declKind": "Constructor",
-                "usr": "s:13QuickPoseCore0B8GuidanceO12ActionChangeO8rawValueAESgSS_tcfc",
-                "mangledName": "$s13QuickPoseCore0B8GuidanceO12ActionChangeO8rawValueAESgSS_tcfc",
+                "usr": "s:13QuickPoseCore0B8FeedbackO12ActionChangeO8rawValueAESgSS_tcfc",
+                "mangledName": "$s13QuickPoseCore0B8FeedbackO12ActionChangeO8rawValueAESgSS_tcfc",
                 "moduleName": "QuickPoseCore",
                 "implicit": true,
                 "init_kind": "Designated"
@@ -2552,8 +1566,8 @@
                   }
                 ],
                 "declKind": "Var",
-                "usr": "s:13QuickPoseCore0B8GuidanceO12ActionChangeO8rawValueSSvp",
-                "mangledName": "$s13QuickPoseCore0B8GuidanceO12ActionChangeO8rawValueSSvp",
+                "usr": "s:13QuickPoseCore0B8FeedbackO12ActionChangeO8rawValueSSvp",
+                "mangledName": "$s13QuickPoseCore0B8FeedbackO12ActionChangeO8rawValueSSvp",
                 "moduleName": "QuickPoseCore",
                 "implicit": true,
                 "accessors": [
@@ -2570,8 +1584,8 @@
                       }
                     ],
                     "declKind": "Accessor",
-                    "usr": "s:13QuickPoseCore0B8GuidanceO12ActionChangeO8rawValueSSvg",
-                    "mangledName": "$s13QuickPoseCore0B8GuidanceO12ActionChangeO8rawValueSSvg",
+                    "usr": "s:13QuickPoseCore0B8FeedbackO12ActionChangeO8rawValueSSvg",
+                    "mangledName": "$s13QuickPoseCore0B8FeedbackO12ActionChangeO8rawValueSSvg",
                     "moduleName": "QuickPoseCore",
                     "implicit": true,
                     "accessorKind": "get"
@@ -2580,8 +1594,8 @@
               }
             ],
             "declKind": "Enum",
-            "usr": "s:13QuickPoseCore0B8GuidanceO12ActionChangeO",
-            "mangledName": "$s13QuickPoseCore0B8GuidanceO12ActionChangeO",
+            "usr": "s:13QuickPoseCore0B8FeedbackO12ActionChangeO",
+            "mangledName": "$s13QuickPoseCore0B8FeedbackO12ActionChangeO",
             "moduleName": "QuickPoseCore",
             "declAttributes": [
               "AccessControl"
@@ -2639,24 +1653,24 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(QuickPoseCore.PoseGuidance.DirectionChange.Type) -> QuickPoseCore.PoseGuidance.DirectionChange",
+                    "printedName": "(QuickPoseCore.PoseFeedback.DirectionChange.Type) -> QuickPoseCore.PoseFeedback.DirectionChange",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "DirectionChange",
-                        "printedName": "QuickPoseCore.PoseGuidance.DirectionChange",
-                        "usr": "s:13QuickPoseCore0B8GuidanceO15DirectionChangeO"
+                        "printedName": "QuickPoseCore.PoseFeedback.DirectionChange",
+                        "usr": "s:13QuickPoseCore0B8FeedbackO15DirectionChangeO"
                       },
                       {
                         "kind": "TypeNominal",
                         "name": "Metatype",
-                        "printedName": "QuickPoseCore.PoseGuidance.DirectionChange.Type",
+                        "printedName": "QuickPoseCore.PoseFeedback.DirectionChange.Type",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "DirectionChange",
-                            "printedName": "QuickPoseCore.PoseGuidance.DirectionChange",
-                            "usr": "s:13QuickPoseCore0B8GuidanceO15DirectionChangeO"
+                            "printedName": "QuickPoseCore.PoseFeedback.DirectionChange",
+                            "usr": "s:13QuickPoseCore0B8FeedbackO15DirectionChangeO"
                           }
                         ]
                       }
@@ -2664,8 +1678,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:13QuickPoseCore0B8GuidanceO15DirectionChangeO2upyA2EmF",
-                "mangledName": "$s13QuickPoseCore0B8GuidanceO15DirectionChangeO2upyA2EmF",
+                "usr": "s:13QuickPoseCore0B8FeedbackO15DirectionChangeO2upyA2EmF",
+                "mangledName": "$s13QuickPoseCore0B8FeedbackO15DirectionChangeO2upyA2EmF",
                 "moduleName": "QuickPoseCore"
               },
               {
@@ -2676,24 +1690,24 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(QuickPoseCore.PoseGuidance.DirectionChange.Type) -> QuickPoseCore.PoseGuidance.DirectionChange",
+                    "printedName": "(QuickPoseCore.PoseFeedback.DirectionChange.Type) -> QuickPoseCore.PoseFeedback.DirectionChange",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "DirectionChange",
-                        "printedName": "QuickPoseCore.PoseGuidance.DirectionChange",
-                        "usr": "s:13QuickPoseCore0B8GuidanceO15DirectionChangeO"
+                        "printedName": "QuickPoseCore.PoseFeedback.DirectionChange",
+                        "usr": "s:13QuickPoseCore0B8FeedbackO15DirectionChangeO"
                       },
                       {
                         "kind": "TypeNominal",
                         "name": "Metatype",
-                        "printedName": "QuickPoseCore.PoseGuidance.DirectionChange.Type",
+                        "printedName": "QuickPoseCore.PoseFeedback.DirectionChange.Type",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "DirectionChange",
-                            "printedName": "QuickPoseCore.PoseGuidance.DirectionChange",
-                            "usr": "s:13QuickPoseCore0B8GuidanceO15DirectionChangeO"
+                            "printedName": "QuickPoseCore.PoseFeedback.DirectionChange",
+                            "usr": "s:13QuickPoseCore0B8FeedbackO15DirectionChangeO"
                           }
                         ]
                       }
@@ -2701,8 +1715,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:13QuickPoseCore0B8GuidanceO15DirectionChangeO4downyA2EmF",
-                "mangledName": "$s13QuickPoseCore0B8GuidanceO15DirectionChangeO4downyA2EmF",
+                "usr": "s:13QuickPoseCore0B8FeedbackO15DirectionChangeO4downyA2EmF",
+                "mangledName": "$s13QuickPoseCore0B8FeedbackO15DirectionChangeO4downyA2EmF",
                 "moduleName": "QuickPoseCore"
               },
               {
@@ -2713,24 +1727,24 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(QuickPoseCore.PoseGuidance.DirectionChange.Type) -> QuickPoseCore.PoseGuidance.DirectionChange",
+                    "printedName": "(QuickPoseCore.PoseFeedback.DirectionChange.Type) -> QuickPoseCore.PoseFeedback.DirectionChange",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "DirectionChange",
-                        "printedName": "QuickPoseCore.PoseGuidance.DirectionChange",
-                        "usr": "s:13QuickPoseCore0B8GuidanceO15DirectionChangeO"
+                        "printedName": "QuickPoseCore.PoseFeedback.DirectionChange",
+                        "usr": "s:13QuickPoseCore0B8FeedbackO15DirectionChangeO"
                       },
                       {
                         "kind": "TypeNominal",
                         "name": "Metatype",
-                        "printedName": "QuickPoseCore.PoseGuidance.DirectionChange.Type",
+                        "printedName": "QuickPoseCore.PoseFeedback.DirectionChange.Type",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "DirectionChange",
-                            "printedName": "QuickPoseCore.PoseGuidance.DirectionChange",
-                            "usr": "s:13QuickPoseCore0B8GuidanceO15DirectionChangeO"
+                            "printedName": "QuickPoseCore.PoseFeedback.DirectionChange",
+                            "usr": "s:13QuickPoseCore0B8FeedbackO15DirectionChangeO"
                           }
                         ]
                       }
@@ -2738,8 +1752,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:13QuickPoseCore0B8GuidanceO15DirectionChangeO7forwardyA2EmF",
-                "mangledName": "$s13QuickPoseCore0B8GuidanceO15DirectionChangeO7forwardyA2EmF",
+                "usr": "s:13QuickPoseCore0B8FeedbackO15DirectionChangeO7forwardyA2EmF",
+                "mangledName": "$s13QuickPoseCore0B8FeedbackO15DirectionChangeO7forwardyA2EmF",
                 "moduleName": "QuickPoseCore"
               },
               {
@@ -2750,24 +1764,24 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(QuickPoseCore.PoseGuidance.DirectionChange.Type) -> QuickPoseCore.PoseGuidance.DirectionChange",
+                    "printedName": "(QuickPoseCore.PoseFeedback.DirectionChange.Type) -> QuickPoseCore.PoseFeedback.DirectionChange",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "DirectionChange",
-                        "printedName": "QuickPoseCore.PoseGuidance.DirectionChange",
-                        "usr": "s:13QuickPoseCore0B8GuidanceO15DirectionChangeO"
+                        "printedName": "QuickPoseCore.PoseFeedback.DirectionChange",
+                        "usr": "s:13QuickPoseCore0B8FeedbackO15DirectionChangeO"
                       },
                       {
                         "kind": "TypeNominal",
                         "name": "Metatype",
-                        "printedName": "QuickPoseCore.PoseGuidance.DirectionChange.Type",
+                        "printedName": "QuickPoseCore.PoseFeedback.DirectionChange.Type",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "DirectionChange",
-                            "printedName": "QuickPoseCore.PoseGuidance.DirectionChange",
-                            "usr": "s:13QuickPoseCore0B8GuidanceO15DirectionChangeO"
+                            "printedName": "QuickPoseCore.PoseFeedback.DirectionChange",
+                            "usr": "s:13QuickPoseCore0B8FeedbackO15DirectionChangeO"
                           }
                         ]
                       }
@@ -2775,8 +1789,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:13QuickPoseCore0B8GuidanceO15DirectionChangeO4backyA2EmF",
-                "mangledName": "$s13QuickPoseCore0B8GuidanceO15DirectionChangeO4backyA2EmF",
+                "usr": "s:13QuickPoseCore0B8FeedbackO15DirectionChangeO4backyA2EmF",
+                "mangledName": "$s13QuickPoseCore0B8FeedbackO15DirectionChangeO4backyA2EmF",
                 "moduleName": "QuickPoseCore"
               },
               {
@@ -2787,24 +1801,24 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(QuickPoseCore.PoseGuidance.DirectionChange.Type) -> QuickPoseCore.PoseGuidance.DirectionChange",
+                    "printedName": "(QuickPoseCore.PoseFeedback.DirectionChange.Type) -> QuickPoseCore.PoseFeedback.DirectionChange",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "DirectionChange",
-                        "printedName": "QuickPoseCore.PoseGuidance.DirectionChange",
-                        "usr": "s:13QuickPoseCore0B8GuidanceO15DirectionChangeO"
+                        "printedName": "QuickPoseCore.PoseFeedback.DirectionChange",
+                        "usr": "s:13QuickPoseCore0B8FeedbackO15DirectionChangeO"
                       },
                       {
                         "kind": "TypeNominal",
                         "name": "Metatype",
-                        "printedName": "QuickPoseCore.PoseGuidance.DirectionChange.Type",
+                        "printedName": "QuickPoseCore.PoseFeedback.DirectionChange.Type",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "DirectionChange",
-                            "printedName": "QuickPoseCore.PoseGuidance.DirectionChange",
-                            "usr": "s:13QuickPoseCore0B8GuidanceO15DirectionChangeO"
+                            "printedName": "QuickPoseCore.PoseFeedback.DirectionChange",
+                            "usr": "s:13QuickPoseCore0B8FeedbackO15DirectionChangeO"
                           }
                         ]
                       }
@@ -2812,8 +1826,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:13QuickPoseCore0B8GuidanceO15DirectionChangeO5apartyA2EmF",
-                "mangledName": "$s13QuickPoseCore0B8GuidanceO15DirectionChangeO5apartyA2EmF",
+                "usr": "s:13QuickPoseCore0B8FeedbackO15DirectionChangeO5apartyA2EmF",
+                "mangledName": "$s13QuickPoseCore0B8FeedbackO15DirectionChangeO5apartyA2EmF",
                 "moduleName": "QuickPoseCore"
               },
               {
@@ -2824,24 +1838,24 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(QuickPoseCore.PoseGuidance.DirectionChange.Type) -> QuickPoseCore.PoseGuidance.DirectionChange",
+                    "printedName": "(QuickPoseCore.PoseFeedback.DirectionChange.Type) -> QuickPoseCore.PoseFeedback.DirectionChange",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "DirectionChange",
-                        "printedName": "QuickPoseCore.PoseGuidance.DirectionChange",
-                        "usr": "s:13QuickPoseCore0B8GuidanceO15DirectionChangeO"
+                        "printedName": "QuickPoseCore.PoseFeedback.DirectionChange",
+                        "usr": "s:13QuickPoseCore0B8FeedbackO15DirectionChangeO"
                       },
                       {
                         "kind": "TypeNominal",
                         "name": "Metatype",
-                        "printedName": "QuickPoseCore.PoseGuidance.DirectionChange.Type",
+                        "printedName": "QuickPoseCore.PoseFeedback.DirectionChange.Type",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "DirectionChange",
-                            "printedName": "QuickPoseCore.PoseGuidance.DirectionChange",
-                            "usr": "s:13QuickPoseCore0B8GuidanceO15DirectionChangeO"
+                            "printedName": "QuickPoseCore.PoseFeedback.DirectionChange",
+                            "usr": "s:13QuickPoseCore0B8FeedbackO15DirectionChangeO"
                           }
                         ]
                       }
@@ -2849,8 +1863,8 @@
                   }
                 ],
                 "declKind": "EnumElement",
-                "usr": "s:13QuickPoseCore0B8GuidanceO15DirectionChangeO8intoViewyA2EmF",
-                "mangledName": "$s13QuickPoseCore0B8GuidanceO15DirectionChangeO8intoViewyA2EmF",
+                "usr": "s:13QuickPoseCore0B8FeedbackO15DirectionChangeO8intoViewyA2EmF",
+                "mangledName": "$s13QuickPoseCore0B8FeedbackO15DirectionChangeO8intoViewyA2EmF",
                 "moduleName": "QuickPoseCore"
               },
               {
@@ -2861,13 +1875,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "QuickPoseCore.PoseGuidance.DirectionChange?",
+                    "printedName": "QuickPoseCore.PoseFeedback.DirectionChange?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "DirectionChange",
-                        "printedName": "QuickPoseCore.PoseGuidance.DirectionChange",
-                        "usr": "s:13QuickPoseCore0B8GuidanceO15DirectionChangeO"
+                        "printedName": "QuickPoseCore.PoseFeedback.DirectionChange",
+                        "usr": "s:13QuickPoseCore0B8FeedbackO15DirectionChangeO"
                       }
                     ],
                     "usr": "s:Sq"
@@ -2880,8 +1894,8 @@
                   }
                 ],
                 "declKind": "Constructor",
-                "usr": "s:13QuickPoseCore0B8GuidanceO15DirectionChangeO8rawValueAESgSS_tcfc",
-                "mangledName": "$s13QuickPoseCore0B8GuidanceO15DirectionChangeO8rawValueAESgSS_tcfc",
+                "usr": "s:13QuickPoseCore0B8FeedbackO15DirectionChangeO8rawValueAESgSS_tcfc",
+                "mangledName": "$s13QuickPoseCore0B8FeedbackO15DirectionChangeO8rawValueAESgSS_tcfc",
                 "moduleName": "QuickPoseCore",
                 "implicit": true,
                 "init_kind": "Designated"
@@ -2899,8 +1913,8 @@
                   }
                 ],
                 "declKind": "Var",
-                "usr": "s:13QuickPoseCore0B8GuidanceO15DirectionChangeO8rawValueSSvp",
-                "mangledName": "$s13QuickPoseCore0B8GuidanceO15DirectionChangeO8rawValueSSvp",
+                "usr": "s:13QuickPoseCore0B8FeedbackO15DirectionChangeO8rawValueSSvp",
+                "mangledName": "$s13QuickPoseCore0B8FeedbackO15DirectionChangeO8rawValueSSvp",
                 "moduleName": "QuickPoseCore",
                 "implicit": true,
                 "accessors": [
@@ -2917,8 +1931,8 @@
                       }
                     ],
                     "declKind": "Accessor",
-                    "usr": "s:13QuickPoseCore0B8GuidanceO15DirectionChangeO8rawValueSSvg",
-                    "mangledName": "$s13QuickPoseCore0B8GuidanceO15DirectionChangeO8rawValueSSvg",
+                    "usr": "s:13QuickPoseCore0B8FeedbackO15DirectionChangeO8rawValueSSvg",
+                    "mangledName": "$s13QuickPoseCore0B8FeedbackO15DirectionChangeO8rawValueSSvg",
                     "moduleName": "QuickPoseCore",
                     "implicit": true,
                     "accessorKind": "get"
@@ -2927,8 +1941,8 @@
               }
             ],
             "declKind": "Enum",
-            "usr": "s:13QuickPoseCore0B8GuidanceO15DirectionChangeO",
-            "mangledName": "$s13QuickPoseCore0B8GuidanceO15DirectionChangeO",
+            "usr": "s:13QuickPoseCore0B8FeedbackO15DirectionChangeO",
+            "mangledName": "$s13QuickPoseCore0B8FeedbackO15DirectionChangeO",
             "moduleName": "QuickPoseCore",
             "declAttributes": [
               "AccessControl"
@@ -2981,29 +1995,29 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(QuickPoseCore.PoseGuidance.Type) -> (QuickPoseCore.BodyGuidance, Swift.Bool) -> QuickPoseCore.PoseGuidance",
+                "printedName": "(QuickPoseCore.PoseFeedback.Type) -> (QuickPoseCore.BodyFeedback, Swift.Bool) -> QuickPoseCore.PoseFeedback",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(QuickPoseCore.BodyGuidance, Swift.Bool) -> QuickPoseCore.PoseGuidance",
+                    "printedName": "(QuickPoseCore.BodyFeedback, Swift.Bool) -> QuickPoseCore.PoseFeedback",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "PoseGuidance",
-                        "printedName": "QuickPoseCore.PoseGuidance",
-                        "usr": "s:13QuickPoseCore0B8GuidanceO"
+                        "name": "PoseFeedback",
+                        "printedName": "QuickPoseCore.PoseFeedback",
+                        "usr": "s:13QuickPoseCore0B8FeedbackO"
                       },
                       {
                         "kind": "TypeNominal",
                         "name": "Tuple",
-                        "printedName": "(guidance: QuickPoseCore.BodyGuidance, isRequired: Swift.Bool)",
+                        "printedName": "(feedback: QuickPoseCore.BodyFeedback, isRequired: Swift.Bool)",
                         "children": [
                           {
                             "kind": "TypeNominal",
-                            "name": "BodyGuidance",
-                            "printedName": "QuickPoseCore.BodyGuidance",
-                            "usr": "s:13QuickPoseCore12BodyGuidanceO"
+                            "name": "BodyFeedback",
+                            "printedName": "QuickPoseCore.BodyFeedback",
+                            "usr": "s:13QuickPoseCore12BodyFeedbackO"
                           },
                           {
                             "kind": "TypeNominal",
@@ -3018,13 +2032,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "QuickPoseCore.PoseGuidance.Type",
+                    "printedName": "QuickPoseCore.PoseFeedback.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "PoseGuidance",
-                        "printedName": "QuickPoseCore.PoseGuidance",
-                        "usr": "s:13QuickPoseCore0B8GuidanceO"
+                        "name": "PoseFeedback",
+                        "printedName": "QuickPoseCore.PoseFeedback",
+                        "usr": "s:13QuickPoseCore0B8FeedbackO"
                       }
                     ]
                   }
@@ -3032,8 +2046,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:13QuickPoseCore0B8GuidanceO4bodyyAcA04BodyD0O_SbtcACmF",
-            "mangledName": "$s13QuickPoseCore0B8GuidanceO4bodyyAcA04BodyD0O_SbtcACmF",
+            "usr": "s:13QuickPoseCore0B8FeedbackO4bodyyAcA04BodyD0O_SbtcACmF",
+            "mangledName": "$s13QuickPoseCore0B8FeedbackO4bodyyAcA04BodyD0O_SbtcACmF",
             "moduleName": "QuickPoseCore"
           },
           {
@@ -3044,29 +2058,29 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(QuickPoseCore.PoseGuidance.Type) -> (QuickPoseCore.PoseGuidance.ActionChange, QuickPoseCore.QuickPose.Landmarks.Group, QuickPoseCore.PoseGuidance.DirectionChange?, Swift.Bool) -> QuickPoseCore.PoseGuidance",
+                "printedName": "(QuickPoseCore.PoseFeedback.Type) -> (QuickPoseCore.PoseFeedback.ActionChange, QuickPoseCore.QuickPose.Landmarks.Group, QuickPoseCore.PoseFeedback.DirectionChange?, Swift.Bool) -> QuickPoseCore.PoseFeedback",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(QuickPoseCore.PoseGuidance.ActionChange, QuickPoseCore.QuickPose.Landmarks.Group, QuickPoseCore.PoseGuidance.DirectionChange?, Swift.Bool) -> QuickPoseCore.PoseGuidance",
+                    "printedName": "(QuickPoseCore.PoseFeedback.ActionChange, QuickPoseCore.QuickPose.Landmarks.Group, QuickPoseCore.PoseFeedback.DirectionChange?, Swift.Bool) -> QuickPoseCore.PoseFeedback",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "PoseGuidance",
-                        "printedName": "QuickPoseCore.PoseGuidance",
-                        "usr": "s:13QuickPoseCore0B8GuidanceO"
+                        "name": "PoseFeedback",
+                        "printedName": "QuickPoseCore.PoseFeedback",
+                        "usr": "s:13QuickPoseCore0B8FeedbackO"
                       },
                       {
                         "kind": "TypeNominal",
                         "name": "Tuple",
-                        "printedName": "(action: QuickPoseCore.PoseGuidance.ActionChange, group: QuickPoseCore.QuickPose.Landmarks.Group, direction: QuickPoseCore.PoseGuidance.DirectionChange?, isRequired: Swift.Bool)",
+                        "printedName": "(action: QuickPoseCore.PoseFeedback.ActionChange, group: QuickPoseCore.QuickPose.Landmarks.Group, direction: QuickPoseCore.PoseFeedback.DirectionChange?, isRequired: Swift.Bool)",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "ActionChange",
-                            "printedName": "QuickPoseCore.PoseGuidance.ActionChange",
-                            "usr": "s:13QuickPoseCore0B8GuidanceO12ActionChangeO"
+                            "printedName": "QuickPoseCore.PoseFeedback.ActionChange",
+                            "usr": "s:13QuickPoseCore0B8FeedbackO12ActionChangeO"
                           },
                           {
                             "kind": "TypeNominal",
@@ -3077,13 +2091,13 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Optional",
-                            "printedName": "QuickPoseCore.PoseGuidance.DirectionChange?",
+                            "printedName": "QuickPoseCore.PoseFeedback.DirectionChange?",
                             "children": [
                               {
                                 "kind": "TypeNominal",
                                 "name": "DirectionChange",
-                                "printedName": "QuickPoseCore.PoseGuidance.DirectionChange",
-                                "usr": "s:13QuickPoseCore0B8GuidanceO15DirectionChangeO"
+                                "printedName": "QuickPoseCore.PoseFeedback.DirectionChange",
+                                "usr": "s:13QuickPoseCore0B8FeedbackO15DirectionChangeO"
                               }
                             ],
                             "usr": "s:Sq"
@@ -3101,13 +2115,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "QuickPoseCore.PoseGuidance.Type",
+                    "printedName": "QuickPoseCore.PoseFeedback.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "PoseGuidance",
-                        "printedName": "QuickPoseCore.PoseGuidance",
-                        "usr": "s:13QuickPoseCore0B8GuidanceO"
+                        "name": "PoseFeedback",
+                        "printedName": "QuickPoseCore.PoseFeedback",
+                        "usr": "s:13QuickPoseCore0B8FeedbackO"
                       }
                     ]
                   }
@@ -3115,8 +2129,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:13QuickPoseCore0B8GuidanceO5groupyA2C12ActionChangeO_AA0aB0C9LandmarksV5GroupOAC09DirectionG0OSgSbtcACmF",
-            "mangledName": "$s13QuickPoseCore0B8GuidanceO5groupyA2C12ActionChangeO_AA0aB0C9LandmarksV5GroupOAC09DirectionG0OSgSbtcACmF",
+            "usr": "s:13QuickPoseCore0B8FeedbackO5groupyA2C12ActionChangeO_AA0aB0C9LandmarksV5GroupOAC09DirectionG0OSgSbtcACmF",
+            "mangledName": "$s13QuickPoseCore0B8FeedbackO5groupyA2C12ActionChangeO_AA0aB0C9LandmarksV5GroupOAC09DirectionG0OSgSbtcACmF",
             "moduleName": "QuickPoseCore"
           },
           {
@@ -3127,29 +2141,29 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(QuickPoseCore.PoseGuidance.Type) -> (QuickPoseCore.PoseGuidance.ActionChange, QuickPoseCore.QuickPose.Landmarks.Body, QuickPoseCore.PoseGuidance.DirectionChange?, Swift.Bool) -> QuickPoseCore.PoseGuidance",
+                "printedName": "(QuickPoseCore.PoseFeedback.Type) -> (QuickPoseCore.PoseFeedback.ActionChange, QuickPoseCore.QuickPose.Landmarks.Body, QuickPoseCore.PoseFeedback.DirectionChange?, Swift.Bool) -> QuickPoseCore.PoseFeedback",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(QuickPoseCore.PoseGuidance.ActionChange, QuickPoseCore.QuickPose.Landmarks.Body, QuickPoseCore.PoseGuidance.DirectionChange?, Swift.Bool) -> QuickPoseCore.PoseGuidance",
+                    "printedName": "(QuickPoseCore.PoseFeedback.ActionChange, QuickPoseCore.QuickPose.Landmarks.Body, QuickPoseCore.PoseFeedback.DirectionChange?, Swift.Bool) -> QuickPoseCore.PoseFeedback",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "PoseGuidance",
-                        "printedName": "QuickPoseCore.PoseGuidance",
-                        "usr": "s:13QuickPoseCore0B8GuidanceO"
+                        "name": "PoseFeedback",
+                        "printedName": "QuickPoseCore.PoseFeedback",
+                        "usr": "s:13QuickPoseCore0B8FeedbackO"
                       },
                       {
                         "kind": "TypeNominal",
                         "name": "Tuple",
-                        "printedName": "(action: QuickPoseCore.PoseGuidance.ActionChange, joint: QuickPoseCore.QuickPose.Landmarks.Body, direction: QuickPoseCore.PoseGuidance.DirectionChange?, isRequired: Swift.Bool)",
+                        "printedName": "(action: QuickPoseCore.PoseFeedback.ActionChange, joint: QuickPoseCore.QuickPose.Landmarks.Body, direction: QuickPoseCore.PoseFeedback.DirectionChange?, isRequired: Swift.Bool)",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "ActionChange",
-                            "printedName": "QuickPoseCore.PoseGuidance.ActionChange",
-                            "usr": "s:13QuickPoseCore0B8GuidanceO12ActionChangeO"
+                            "printedName": "QuickPoseCore.PoseFeedback.ActionChange",
+                            "usr": "s:13QuickPoseCore0B8FeedbackO12ActionChangeO"
                           },
                           {
                             "kind": "TypeNominal",
@@ -3160,13 +2174,13 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Optional",
-                            "printedName": "QuickPoseCore.PoseGuidance.DirectionChange?",
+                            "printedName": "QuickPoseCore.PoseFeedback.DirectionChange?",
                             "children": [
                               {
                                 "kind": "TypeNominal",
                                 "name": "DirectionChange",
-                                "printedName": "QuickPoseCore.PoseGuidance.DirectionChange",
-                                "usr": "s:13QuickPoseCore0B8GuidanceO15DirectionChangeO"
+                                "printedName": "QuickPoseCore.PoseFeedback.DirectionChange",
+                                "usr": "s:13QuickPoseCore0B8FeedbackO15DirectionChangeO"
                               }
                             ],
                             "usr": "s:Sq"
@@ -3184,13 +2198,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "QuickPoseCore.PoseGuidance.Type",
+                    "printedName": "QuickPoseCore.PoseFeedback.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "PoseGuidance",
-                        "printedName": "QuickPoseCore.PoseGuidance",
-                        "usr": "s:13QuickPoseCore0B8GuidanceO"
+                        "name": "PoseFeedback",
+                        "printedName": "QuickPoseCore.PoseFeedback",
+                        "usr": "s:13QuickPoseCore0B8FeedbackO"
                       }
                     ]
                   }
@@ -3198,8 +2212,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:13QuickPoseCore0B8GuidanceO5jointyA2C12ActionChangeO_AA0aB0C9LandmarksV4BodyOAC09DirectionG0OSgSbtcACmF",
-            "mangledName": "$s13QuickPoseCore0B8GuidanceO5jointyA2C12ActionChangeO_AA0aB0C9LandmarksV4BodyOAC09DirectionG0OSgSbtcACmF",
+            "usr": "s:13QuickPoseCore0B8FeedbackO5jointyA2C12ActionChangeO_AA0aB0C9LandmarksV4BodyOAC09DirectionG0OSgSbtcACmF",
+            "mangledName": "$s13QuickPoseCore0B8FeedbackO5jointyA2C12ActionChangeO_AA0aB0C9LandmarksV4BodyOAC09DirectionG0OSgSbtcACmF",
             "moduleName": "QuickPoseCore"
           },
           {
@@ -3215,8 +2229,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:13QuickPoseCore0B8GuidanceO13displayStringSSvp",
-            "mangledName": "$s13QuickPoseCore0B8GuidanceO13displayStringSSvp",
+            "usr": "s:13QuickPoseCore0B8FeedbackO13displayStringSSvp",
+            "mangledName": "$s13QuickPoseCore0B8FeedbackO13displayStringSSvp",
             "moduleName": "QuickPoseCore",
             "declAttributes": [
               "AccessControl"
@@ -3235,8 +2249,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13QuickPoseCore0B8GuidanceO13displayStringSSvg",
-                "mangledName": "$s13QuickPoseCore0B8GuidanceO13displayStringSSvg",
+                "usr": "s:13QuickPoseCore0B8FeedbackO13displayStringSSvg",
+                "mangledName": "$s13QuickPoseCore0B8FeedbackO13displayStringSSvg",
                 "moduleName": "QuickPoseCore",
                 "accessorKind": "get"
               }
@@ -3255,8 +2269,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:13QuickPoseCore0B8GuidanceO10isRequiredSbvp",
-            "mangledName": "$s13QuickPoseCore0B8GuidanceO10isRequiredSbvp",
+            "usr": "s:13QuickPoseCore0B8FeedbackO10isRequiredSbvp",
+            "mangledName": "$s13QuickPoseCore0B8FeedbackO10isRequiredSbvp",
             "moduleName": "QuickPoseCore",
             "declAttributes": [
               "AccessControl"
@@ -3275,8 +2289,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13QuickPoseCore0B8GuidanceO10isRequiredSbvg",
-                "mangledName": "$s13QuickPoseCore0B8GuidanceO10isRequiredSbvg",
+                "usr": "s:13QuickPoseCore0B8FeedbackO10isRequiredSbvg",
+                "mangledName": "$s13QuickPoseCore0B8FeedbackO10isRequiredSbvg",
                 "moduleName": "QuickPoseCore",
                 "accessorKind": "get"
               }
@@ -3284,304 +2298,12 @@
           }
         ],
         "declKind": "Enum",
-        "usr": "s:13QuickPoseCore0B8GuidanceO",
-        "mangledName": "$s13QuickPoseCore0B8GuidanceO",
+        "usr": "s:13QuickPoseCore0B8FeedbackO",
+        "mangledName": "$s13QuickPoseCore0B8FeedbackO",
         "moduleName": "QuickPoseCore",
         "declAttributes": [
           "AccessControl"
         ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "Checks",
-        "printedName": "Checks",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "bodyPositionCheck",
-            "printedName": "bodyPositionCheck(validPositions:guidance:)",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Double, [[Swift.Double]], [[Swift.Double]]) -> QuickPoseCore.PoseGuidance?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "QuickPoseCore.PoseGuidance?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "PoseGuidance",
-                        "printedName": "QuickPoseCore.PoseGuidance",
-                        "usr": "s:13QuickPoseCore0B8GuidanceO"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(Swift.Double, [[Swift.Double]], [[Swift.Double]])",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Double",
-                        "printedName": "Swift.Double",
-                        "usr": "s:Sd"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[[Swift.Double]]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Array",
-                            "printedName": "[Swift.Double]",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Double",
-                                "printedName": "Swift.Double",
-                                "usr": "s:Sd"
-                              }
-                            ],
-                            "usr": "s:Sa"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[[Swift.Double]]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Array",
-                            "printedName": "[Swift.Double]",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Double",
-                                "printedName": "Swift.Double",
-                                "usr": "s:Sd"
-                              }
-                            ],
-                            "usr": "s:Sa"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[QuickPoseCore.BodyPose]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "BodyPose",
-                    "printedName": "QuickPoseCore.BodyPose",
-                    "usr": "s:13QuickPoseCore04BodyB0O"
-                  }
-                ],
-                "usr": "s:Sa"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "BodyGuidance",
-                "printedName": "QuickPoseCore.BodyGuidance",
-                "usr": "s:13QuickPoseCore12BodyGuidanceO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13QuickPoseCore6ChecksC17bodyPositionCheck14validPositions8guidanceAA0B8GuidanceOSgSd_SaySaySdGGAKtcSayAA04BodyB0OG_AA0lK0OtFZ",
-            "mangledName": "$s13QuickPoseCore6ChecksC17bodyPositionCheck14validPositions8guidanceAA0B8GuidanceOSgSd_SaySaySdGGAKtcSayAA04BodyB0OG_AA0lK0OtFZ",
-            "moduleName": "QuickPoseCore",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "squatsBackCheck",
-            "printedName": "squatsBackCheck(measurement:poseLandmarks:scaledLandmarks:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "QuickPoseCore.PoseGuidance?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PoseGuidance",
-                    "printedName": "QuickPoseCore.PoseGuidance",
-                    "usr": "s:13QuickPoseCore0B8GuidanceO"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[[Swift.Double]]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Swift.Double]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Double",
-                        "printedName": "Swift.Double",
-                        "usr": "s:Sd"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "usr": "s:Sa"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[[Swift.Double]]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Swift.Double]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Double",
-                        "printedName": "Swift.Double",
-                        "usr": "s:Sd"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13QuickPoseCore6ChecksC15squatsBackCheck11measurement13poseLandmarks06scaledJ0AA0B8GuidanceOSgSd_SaySaySdGGALtFZ",
-            "mangledName": "$s13QuickPoseCore6ChecksC15squatsBackCheck11measurement13poseLandmarks06scaledJ0AA0B8GuidanceOSgSd_SaySaySdGGALtFZ",
-            "moduleName": "QuickPoseCore",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "sumoSquatCheck",
-            "printedName": "sumoSquatCheck(measurement:poseLandmarks:scaledLandmarks:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "QuickPoseCore.PoseGuidance?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PoseGuidance",
-                    "printedName": "QuickPoseCore.PoseGuidance",
-                    "usr": "s:13QuickPoseCore0B8GuidanceO"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[[Swift.Double]]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Swift.Double]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Double",
-                        "printedName": "Swift.Double",
-                        "usr": "s:Sd"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "usr": "s:Sa"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[[Swift.Double]]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Swift.Double]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Double",
-                        "printedName": "Swift.Double",
-                        "usr": "s:Sd"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13QuickPoseCore6ChecksC14sumoSquatCheck11measurement13poseLandmarks06scaledJ0AA0B8GuidanceOSgSd_SaySaySdGGALtFZ",
-            "mangledName": "$s13QuickPoseCore6ChecksC14sumoSquatCheck11measurement13poseLandmarks06scaledJ0AA0B8GuidanceOSgSd_SaySaySdGGALtFZ",
-            "moduleName": "QuickPoseCore",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:13QuickPoseCore6ChecksC",
-        "mangledName": "$s13QuickPoseCore6ChecksC",
-        "moduleName": "QuickPoseCore",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "hasMissingDesignatedInitializers": true
       },
       {
         "kind": "Import",
@@ -4772,7 +3494,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(QuickPoseCore.QuickPose.Status, UIKit.UIImage?, [QuickPoseCore.QuickPose.Feature : QuickPoseCore.QuickPose.FeatureResult], [QuickPoseCore.QuickPose.Feature : QuickPoseCore.PoseGuidance], QuickPoseCore.QuickPose.Landmarks?) -> ()",
+                "printedName": "(QuickPoseCore.QuickPose.Status, UIKit.UIImage?, [QuickPoseCore.QuickPose.Feature : QuickPoseCore.QuickPose.FeatureResult], [QuickPoseCore.QuickPose.Feature : QuickPoseCore.PoseFeedback], QuickPoseCore.QuickPose.Landmarks?) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -4782,7 +3504,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Tuple",
-                    "printedName": "(QuickPoseCore.QuickPose.Status, UIKit.UIImage?, [QuickPoseCore.QuickPose.Feature : QuickPoseCore.QuickPose.FeatureResult], [QuickPoseCore.QuickPose.Feature : QuickPoseCore.PoseGuidance], QuickPoseCore.QuickPose.Landmarks?)",
+                    "printedName": "(QuickPoseCore.QuickPose.Status, UIKit.UIImage?, [QuickPoseCore.QuickPose.Feature : QuickPoseCore.QuickPose.FeatureResult], [QuickPoseCore.QuickPose.Feature : QuickPoseCore.PoseFeedback], QuickPoseCore.QuickPose.Landmarks?)",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -4827,7 +3549,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Dictionary",
-                        "printedName": "[QuickPoseCore.QuickPose.Feature : QuickPoseCore.PoseGuidance]",
+                        "printedName": "[QuickPoseCore.QuickPose.Feature : QuickPoseCore.PoseFeedback]",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -4837,9 +3559,9 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "PoseGuidance",
-                            "printedName": "QuickPoseCore.PoseGuidance",
-                            "usr": "s:13QuickPoseCore0B8GuidanceO"
+                            "name": "PoseFeedback",
+                            "printedName": "QuickPoseCore.PoseFeedback",
+                            "usr": "s:13QuickPoseCore0B8FeedbackO"
                           }
                         ],
                         "usr": "s:SD"
@@ -4864,8 +3586,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:13QuickPoseCore0aB0C5start8features11modelConfig7onStart0H5FrameySayAC7FeatureOG_AC05ModelG0VyycSgyAC6StatusO_So7UIImageCSgSDyAjC0K6ResultVGSDyAjA0B8GuidanceOGAC9LandmarksVSgtctF",
-            "mangledName": "$s13QuickPoseCore0aB0C5start8features11modelConfig7onStart0H5FrameySayAC7FeatureOG_AC05ModelG0VyycSgyAC6StatusO_So7UIImageCSgSDyAjC0K6ResultVGSDyAjA0B8GuidanceOGAC9LandmarksVSgtctF",
+            "usr": "s:13QuickPoseCore0aB0C5start8features11modelConfig7onStart0H5FrameySayAC7FeatureOG_AC05ModelG0VyycSgyAC6StatusO_So7UIImageCSgSDyAjC0K6ResultVGSDyAjA0B8FeedbackOGAC9LandmarksVSgtctF",
+            "mangledName": "$s13QuickPoseCore0aB0C5start8features11modelConfig7onStart0H5FrameySayAC7FeatureOG_AC05ModelG0VyycSgyAC6StatusO_So7UIImageCSgSDyAjC0K6ResultVGSDyAjA0B8FeedbackOGAC9LandmarksVSgtctF",
             "moduleName": "QuickPoseCore",
             "declAttributes": [
               "AccessControl",
@@ -7807,23 +6529,23 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[(Swift.Double, [[Swift.Double]], [[Swift.Double]]) -> QuickPoseCore.PoseGuidance?]",
+                    "printedName": "[(Swift.Double, [[Swift.Double]], [[Swift.Double]]) -> QuickPoseCore.PoseFeedback?]",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(Swift.Double, [[Swift.Double]], [[Swift.Double]]) -> QuickPoseCore.PoseGuidance?",
+                        "printedName": "(Swift.Double, [[Swift.Double]], [[Swift.Double]]) -> QuickPoseCore.PoseFeedback?",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "Optional",
-                            "printedName": "QuickPoseCore.PoseGuidance?",
+                            "printedName": "QuickPoseCore.PoseFeedback?",
                             "children": [
                               {
                                 "kind": "TypeNominal",
-                                "name": "PoseGuidance",
-                                "printedName": "QuickPoseCore.PoseGuidance",
-                                "usr": "s:13QuickPoseCore0B8GuidanceO"
+                                "name": "PoseFeedback",
+                                "printedName": "QuickPoseCore.PoseFeedback",
+                                "usr": "s:13QuickPoseCore0B8FeedbackO"
                               }
                             ],
                             "usr": "s:Sq"
@@ -7892,8 +6614,8 @@
                   }
                 ],
                 "declKind": "Var",
-                "usr": "s:13QuickPoseCore0aB0C14FitnessFeatureO14checksFunctionSayAA0B8GuidanceOSgSd_SaySaySdGGAKtcGvp",
-                "mangledName": "$s13QuickPoseCore0aB0C14FitnessFeatureO14checksFunctionSayAA0B8GuidanceOSgSd_SaySaySdGGAKtcGvp",
+                "usr": "s:13QuickPoseCore0aB0C14FitnessFeatureO14checksFunctionSayAA0B8FeedbackOSgSd_SaySaySdGGAKtcGvp",
+                "mangledName": "$s13QuickPoseCore0aB0C14FitnessFeatureO14checksFunctionSayAA0B8FeedbackOSgSd_SaySaySdGGAKtcGvp",
                 "moduleName": "QuickPoseCore",
                 "declAttributes": [
                   "AccessControl"
@@ -7907,23 +6629,23 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Array",
-                        "printedName": "[(Swift.Double, [[Swift.Double]], [[Swift.Double]]) -> QuickPoseCore.PoseGuidance?]",
+                        "printedName": "[(Swift.Double, [[Swift.Double]], [[Swift.Double]]) -> QuickPoseCore.PoseFeedback?]",
                         "children": [
                           {
                             "kind": "TypeFunc",
                             "name": "Function",
-                            "printedName": "(Swift.Double, [[Swift.Double]], [[Swift.Double]]) -> QuickPoseCore.PoseGuidance?",
+                            "printedName": "(Swift.Double, [[Swift.Double]], [[Swift.Double]]) -> QuickPoseCore.PoseFeedback?",
                             "children": [
                               {
                                 "kind": "TypeNominal",
                                 "name": "Optional",
-                                "printedName": "QuickPoseCore.PoseGuidance?",
+                                "printedName": "QuickPoseCore.PoseFeedback?",
                                 "children": [
                                   {
                                     "kind": "TypeNominal",
-                                    "name": "PoseGuidance",
-                                    "printedName": "QuickPoseCore.PoseGuidance",
-                                    "usr": "s:13QuickPoseCore0B8GuidanceO"
+                                    "name": "PoseFeedback",
+                                    "printedName": "QuickPoseCore.PoseFeedback",
+                                    "usr": "s:13QuickPoseCore0B8FeedbackO"
                                   }
                                 ],
                                 "usr": "s:Sq"
@@ -7992,8 +6714,8 @@
                       }
                     ],
                     "declKind": "Accessor",
-                    "usr": "s:13QuickPoseCore0aB0C14FitnessFeatureO14checksFunctionSayAA0B8GuidanceOSgSd_SaySaySdGGAKtcGvg",
-                    "mangledName": "$s13QuickPoseCore0aB0C14FitnessFeatureO14checksFunctionSayAA0B8GuidanceOSgSd_SaySaySdGGAKtcGvg",
+                    "usr": "s:13QuickPoseCore0aB0C14FitnessFeatureO14checksFunctionSayAA0B8FeedbackOSgSd_SaySaySdGGAKtcGvg",
+                    "mangledName": "$s13QuickPoseCore0aB0C14FitnessFeatureO14checksFunctionSayAA0B8FeedbackOSgSd_SaySaySdGGAKtcGvg",
                     "moduleName": "QuickPoseCore",
                     "accessorKind": "get"
                   }
@@ -13077,13 +11799,13 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "MeasureBasedTimer",
-        "printedName": "MeasureBasedTimer",
+        "name": "QuickPoseThresholdTimer",
+        "printedName": "QuickPoseThresholdTimer",
         "children": [
           {
             "kind": "Var",
-            "name": "measureThreshold",
-            "printedName": "measureThreshold",
+            "name": "threshold",
+            "printedName": "threshold",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -13093,8 +11815,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:13QuickPoseCore17MeasureBasedTimerC16measureThresholdSdvp",
-            "mangledName": "$s13QuickPoseCore17MeasureBasedTimerC16measureThresholdSdvp",
+            "usr": "s:13QuickPoseCore0aB14ThresholdTimerC9thresholdSdvp",
+            "mangledName": "$s13QuickPoseCore0aB14ThresholdTimerC9thresholdSdvp",
             "moduleName": "QuickPoseCore",
             "declAttributes": [
               "Final",
@@ -13117,8 +11839,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13QuickPoseCore17MeasureBasedTimerC16measureThresholdSdvg",
-                "mangledName": "$s13QuickPoseCore17MeasureBasedTimerC16measureThresholdSdvg",
+                "usr": "s:13QuickPoseCore0aB14ThresholdTimerC9thresholdSdvg",
+                "mangledName": "$s13QuickPoseCore0aB14ThresholdTimerC9thresholdSdvg",
                 "moduleName": "QuickPoseCore",
                 "implicit": true,
                 "declAttributes": [
@@ -13141,8 +11863,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:13QuickPoseCore17MeasureBasedTimerC10windowSizeSivp",
-            "mangledName": "$s13QuickPoseCore17MeasureBasedTimerC10windowSizeSivp",
+            "usr": "s:13QuickPoseCore0aB14ThresholdTimerC10windowSizeSivp",
+            "mangledName": "$s13QuickPoseCore0aB14ThresholdTimerC10windowSizeSivp",
             "moduleName": "QuickPoseCore",
             "declAttributes": [
               "Final",
@@ -13165,8 +11887,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13QuickPoseCore17MeasureBasedTimerC10windowSizeSivg",
-                "mangledName": "$s13QuickPoseCore17MeasureBasedTimerC10windowSizeSivg",
+                "usr": "s:13QuickPoseCore0aB14ThresholdTimerC10windowSizeSivg",
+                "mangledName": "$s13QuickPoseCore0aB14ThresholdTimerC10windowSizeSivg",
                 "moduleName": "QuickPoseCore",
                 "implicit": true,
                 "declAttributes": [
@@ -13197,8 +11919,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:13QuickPoseCore17MeasureBasedTimerC8measuresSaySdGvp",
-            "mangledName": "$s13QuickPoseCore17MeasureBasedTimerC8measuresSaySdGvp",
+            "usr": "s:13QuickPoseCore0aB14ThresholdTimerC8measuresSaySdGvp",
+            "mangledName": "$s13QuickPoseCore0aB14ThresholdTimerC8measuresSaySdGvp",
             "moduleName": "QuickPoseCore",
             "declAttributes": [
               "HasInitialValue",
@@ -13228,8 +11950,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13QuickPoseCore17MeasureBasedTimerC8measuresSaySdGvg",
-                "mangledName": "$s13QuickPoseCore17MeasureBasedTimerC8measuresSaySdGvg",
+                "usr": "s:13QuickPoseCore0aB14ThresholdTimerC8measuresSaySdGvg",
+                "mangledName": "$s13QuickPoseCore0aB14ThresholdTimerC8measuresSaySdGvg",
                 "moduleName": "QuickPoseCore",
                 "implicit": true,
                 "accessorKind": "get"
@@ -13260,8 +11982,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13QuickPoseCore17MeasureBasedTimerC8measuresSaySdGvs",
-                "mangledName": "$s13QuickPoseCore17MeasureBasedTimerC8measuresSaySdGvs",
+                "usr": "s:13QuickPoseCore0aB14ThresholdTimerC8measuresSaySdGvs",
+                "mangledName": "$s13QuickPoseCore0aB14ThresholdTimerC8measuresSaySdGvs",
                 "moduleName": "QuickPoseCore",
                 "implicit": true,
                 "accessorKind": "set"
@@ -13278,8 +12000,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13QuickPoseCore17MeasureBasedTimerC8measuresSaySdGvM",
-                "mangledName": "$s13QuickPoseCore17MeasureBasedTimerC8measuresSaySdGvM",
+                "usr": "s:13QuickPoseCore0aB14ThresholdTimerC8measuresSaySdGvM",
+                "mangledName": "$s13QuickPoseCore0aB14ThresholdTimerC8measuresSaySdGvM",
                 "moduleName": "QuickPoseCore",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -13289,13 +12011,13 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(measureThreshold:windowSize:)",
+            "printedName": "init(threshold:windowSize:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "MeasureBasedTimer",
-                "printedName": "QuickPoseCore.MeasureBasedTimer",
-                "usr": "s:13QuickPoseCore17MeasureBasedTimerC"
+                "name": "QuickPoseThresholdTimer",
+                "printedName": "QuickPoseCore.QuickPoseThresholdTimer",
+                "usr": "s:13QuickPoseCore0aB14ThresholdTimerC"
               },
               {
                 "kind": "TypeNominal",
@@ -13313,8 +12035,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:13QuickPoseCore17MeasureBasedTimerC16measureThreshold10windowSizeACSd_Sitcfc",
-            "mangledName": "$s13QuickPoseCore17MeasureBasedTimerC16measureThreshold10windowSizeACSd_Sitcfc",
+            "usr": "s:13QuickPoseCore0aB14ThresholdTimerC9threshold10windowSizeACSd_Sitcfc",
+            "mangledName": "$s13QuickPoseCore0aB14ThresholdTimerC9threshold10windowSizeACSd_Sitcfc",
             "moduleName": "QuickPoseCore",
             "declAttributes": [
               "AccessControl"
@@ -13340,8 +12062,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:13QuickPoseCore17MeasureBasedTimerC6update7measureSbSd_tF",
-            "mangledName": "$s13QuickPoseCore17MeasureBasedTimerC6update7measureSbSd_tF",
+            "usr": "s:13QuickPoseCore0aB14ThresholdTimerC6update7measureSbSd_tF",
+            "mangledName": "$s13QuickPoseCore0aB14ThresholdTimerC6update7measureSbSd_tF",
             "moduleName": "QuickPoseCore",
             "declAttributes": [
               "AccessControl"
@@ -13361,8 +12083,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:13QuickPoseCore17MeasureBasedTimerC14timeInPositionSdyF",
-            "mangledName": "$s13QuickPoseCore17MeasureBasedTimerC14timeInPositionSdyF",
+            "usr": "s:13QuickPoseCore0aB14ThresholdTimerC14timeInPositionSdyF",
+            "mangledName": "$s13QuickPoseCore0aB14ThresholdTimerC14timeInPositionSdyF",
             "moduleName": "QuickPoseCore",
             "declAttributes": [
               "AccessControl"
@@ -13381,8 +12103,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:13QuickPoseCore17MeasureBasedTimerC4stopyyF",
-            "mangledName": "$s13QuickPoseCore17MeasureBasedTimerC4stopyyF",
+            "usr": "s:13QuickPoseCore0aB14ThresholdTimerC4stopyyF",
+            "mangledName": "$s13QuickPoseCore0aB14ThresholdTimerC4stopyyF",
             "moduleName": "QuickPoseCore",
             "declAttributes": [
               "AccessControl"
@@ -13391,11 +12113,12 @@
           }
         ],
         "declKind": "Class",
-        "usr": "s:13QuickPoseCore17MeasureBasedTimerC",
-        "mangledName": "$s13QuickPoseCore17MeasureBasedTimerC",
+        "usr": "s:13QuickPoseCore0aB14ThresholdTimerC",
+        "mangledName": "$s13QuickPoseCore0aB14ThresholdTimerC",
         "moduleName": "QuickPoseCore",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ]
       },
       {
@@ -13707,34 +12430,6 @@
       "value": "0.9"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/MeasureBasedCounter.swift",
-      "kind": "IntegerLiteral",
-      "offset": 380,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/MeasureBasedCounter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 404,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/MeasureBasedCounter.swift",
-      "kind": "FloatLiteral",
-      "offset": 456,
-      "length": 3,
-      "value": "0.6"
-    },
-    {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/MeasureBasedCounter.swift",
-      "kind": "FloatLiteral",
-      "offset": 485,
-      "length": 3,
-      "value": "0.3"
-    },
-    {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Checks.swift",
       "kind": "StringLiteral",
       "offset": 340,
@@ -13835,154 +12530,154 @@
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Checks.swift",
       "kind": "StringLiteral",
-      "offset": 783,
+      "offset": 782,
       "length": 6,
       "value": "\"move\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Checks.swift",
       "kind": "StringLiteral",
-      "offset": 810,
+      "offset": 809,
       "length": 6,
       "value": "\"lean\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Checks.swift",
       "kind": "StringLiteral",
-      "offset": 843,
+      "offset": 842,
       "length": 12,
       "value": "\"straighten\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Checks.swift",
       "kind": "StringLiteral",
-      "offset": 877,
+      "offset": 876,
       "length": 7,
       "value": "\"lower\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Checks.swift",
       "kind": "StringLiteral",
-      "offset": 906,
+      "offset": 905,
       "length": 7,
       "value": "\"place\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Checks.swift",
       "kind": "StringLiteral",
-      "offset": 783,
+      "offset": 782,
       "length": 6,
       "value": "\"move\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Checks.swift",
       "kind": "StringLiteral",
-      "offset": 810,
+      "offset": 809,
       "length": 6,
       "value": "\"lean\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Checks.swift",
       "kind": "StringLiteral",
-      "offset": 843,
+      "offset": 842,
       "length": 12,
       "value": "\"straighten\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Checks.swift",
       "kind": "StringLiteral",
-      "offset": 877,
+      "offset": 876,
       "length": 7,
       "value": "\"lower\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Checks.swift",
       "kind": "StringLiteral",
-      "offset": 906,
+      "offset": 905,
       "length": 7,
       "value": "\"place\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Checks.swift",
       "kind": "StringLiteral",
-      "offset": 985,
+      "offset": 984,
       "length": 4,
       "value": "\"up\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Checks.swift",
       "kind": "StringLiteral",
-      "offset": 1010,
+      "offset": 1009,
       "length": 6,
       "value": "\"down\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Checks.swift",
       "kind": "StringLiteral",
-      "offset": 1041,
+      "offset": 1040,
       "length": 8,
       "value": "\"foward\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Checks.swift",
       "kind": "StringLiteral",
-      "offset": 1070,
+      "offset": 1069,
       "length": 6,
       "value": "\"back\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Checks.swift",
       "kind": "StringLiteral",
-      "offset": 1098,
+      "offset": 1097,
       "length": 7,
       "value": "\"apart\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Checks.swift",
       "kind": "StringLiteral",
-      "offset": 1130,
+      "offset": 1129,
       "length": 11,
       "value": "\"into view\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Checks.swift",
       "kind": "StringLiteral",
-      "offset": 985,
+      "offset": 984,
       "length": 4,
       "value": "\"up\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Checks.swift",
       "kind": "StringLiteral",
-      "offset": 1010,
+      "offset": 1009,
       "length": 6,
       "value": "\"down\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Checks.swift",
       "kind": "StringLiteral",
-      "offset": 1041,
+      "offset": 1040,
       "length": 8,
       "value": "\"foward\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Checks.swift",
       "kind": "StringLiteral",
-      "offset": 1070,
+      "offset": 1069,
       "length": 6,
       "value": "\"back\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Checks.swift",
       "kind": "StringLiteral",
-      "offset": 1098,
+      "offset": 1097,
       "length": 7,
       "value": "\"apart\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Checks.swift",
       "kind": "StringLiteral",
-      "offset": 1130,
+      "offset": 1129,
       "length": 11,
       "value": "\"into view\""
     },
@@ -16080,23 +14775,23 @@
       "value": "2.5"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/MeasureBasedTimer.swift",
+      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/QuickPoseThresholdTimer.swift",
       "kind": "Array",
-      "offset": 263,
+      "offset": 363,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/MeasureBasedTimer.swift",
+      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/QuickPoseThresholdTimer.swift",
       "kind": "FloatLiteral",
-      "offset": 355,
+      "offset": 448,
       "length": 3,
       "value": "0.6"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/MeasureBasedTimer.swift",
+      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/QuickPoseThresholdTimer.swift",
       "kind": "IntegerLiteral",
-      "offset": 378,
+      "offset": 471,
       "length": 2,
       "value": "10"
     },
