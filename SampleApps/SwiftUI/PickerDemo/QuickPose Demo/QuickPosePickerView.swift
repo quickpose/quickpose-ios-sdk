@@ -5,7 +5,6 @@ import QuickPoseCamera
 import QuickPoseSwiftUI
 
 struct ValueBar: View {
-    // thank you ChatGPT
     var value: Double
     var opacity: Double
     
@@ -57,8 +56,7 @@ struct QuickPosePickerView: View {
     @State private var selectedFeatures: [QuickPose.Feature] = [.overlay(.wholeBody)]
     @State private var selectedComponent: String = QuickPose.Feature.allDemoFeatureComponents().first!
     @State var counter = QuickPoseThresholdCounter()
-    @State var measureBasedCounter = MeasureBasedCounter()
-    @State var timer = MeasureBasedTimer()
+    @State var timer = QuickPoseThresholdTimer()
     
     private var quickPose = QuickPose(sdkKey: "01GS5J4JEQQZDZZB0EYSE974BV")
     @State private var overlayImage: UIImage?
@@ -77,7 +75,7 @@ struct QuickPosePickerView: View {
     @State private var count: Int = 0
     @State private var measure: Double = 0
     @State private var timeInPosition: String = ""
-    @State private var guidanceText: String? = nil
+    @State private var feedbackText: String? = nil
     
    
     var body: some View {
@@ -182,7 +180,6 @@ struct QuickPosePickerView: View {
                     .onChange(of: selectedFeatures) { _ in
                         quickPose.update(features: selectedFeatures)
                         counter.reset()
-                        measureBasedCounter.reset()
                         counterVisibility = 0
                         timerVisibility = 0
                     }
@@ -243,8 +240,8 @@ struct QuickPosePickerView: View {
             }
         }
         .overlay(alignment: .center) {
-            if let guidanceText = guidanceText {
-                Text(guidanceText)
+            if let feedbackText = feedbackText {
+                Text(feedbackText)
                     .font(.system(size: 26, weight: .semibold)).foregroundColor(.white).multilineTextAlignment(.center)
                     .padding(16)
                     .background(RoundedRectangle(cornerRadius: 8).foregroundColor(Color("AccentColor").opacity(0.8)))
@@ -271,7 +268,7 @@ struct QuickPosePickerView: View {
         .onAppear {
             quickPose.start(features: selectedFeatures, modelConfig: performance == "Normal" ? QuickPose.ModelConfig() : QuickPose.ModelConfig(detailedFaceTracking: false, detailedHandTracking: false), onStart: {
                 withAnimation { cameraViewOpacity = 1.0 } // unhide the camera when loaded
-            }, onFrame: { status, image, features, guidance, landmarks in
+            }, onFrame: { status, image, features, feedback, landmarks in
                 if case let .success(fps, lag) = status {
                     lastFPS = fps
                     lastLag = lag*1000
@@ -285,10 +282,10 @@ struct QuickPosePickerView: View {
                     } else if captureButtonOpacity == 1 {
                         withAnimation { captureButtonOpacity = 0 }
                     }
-                    if case .fitness = selectedFeatures.first, let guidance = guidance[selectedFeatures.first!]  {
-                        guidanceText = guidance.displayString
+                    if case .fitness = selectedFeatures.first, let feedback = feedback[selectedFeatures.first!]  {
+                        feedbackText = feedback.displayString
                     } else {
-                        guidanceText = nil
+                        feedbackText = nil
                     }
                     if case .fitness = selectedFeatures.first, let result = features[selectedFeatures.first!]  {
                         measure = result.value
@@ -298,8 +295,8 @@ struct QuickPosePickerView: View {
                             timeInPosition = String(format: "%.2f", timer.timeInPosition())
                             timerVisibility = 1
                         } else {
-                            measureBasedCounter.count(probability: result.value)
-                            count = measureBasedCounter.getCount()
+                            counter.count(probability: result.value)
+                            count = counter.getCount()
                             counterVisibility = 1
                         }
                     } else if case .raisedFingers = selectedFeatures.first, let result = features[selectedFeatures.first!] {
