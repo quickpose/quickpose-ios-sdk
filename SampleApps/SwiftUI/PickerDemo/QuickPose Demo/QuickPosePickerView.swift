@@ -347,7 +347,7 @@ extension QuickPose.Feature {
         
         if component == "Health" {
             return [[.rangeOfMotion(.shoulder(side: .left, clockwiseDirection: false))], [.rangeOfMotion(.shoulder(side: .right, clockwiseDirection: true))],
-                    [.rangeOfMotion(.hip(side: .right, clockwiseDirection: true))], [.rangeOfMotion(.knee(side: .right, clockwiseDirection: true))], [.rangeOfMotion(.neck(clockwiseDirection: false)), .rangeOfMotion(.back(clockwiseDirection: false))]]
+                    [.rangeOfMotion(.hip(side: .right, clockwiseDirection: true))], [.rangeOfMotion(.knee(side: .right, clockwiseDirection: true))], [.rangeOfMotion(.neck(clockwiseDirection: false))], [.rangeOfMotion(.back(clockwiseDirection: false))]]
         } else if component == "Input" {
             return [[QuickPose.Feature.raisedFingers()], [QuickPose.Feature.thumbsUp()], [QuickPose.Feature.thumbsUpOrDown()]]
         } else if component == "Conditional" {
