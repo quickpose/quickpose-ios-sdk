@@ -15,7 +15,7 @@ import Vision
 import _Concurrency
 import _StringProcessing
 public class QuickPoseThresholdCounter {
-  public enum CountState {
+  @frozen public enum CountState {
     case poseEntered(_: Swift.Int)
     case poseComplete(_: Swift.Int)
   }
@@ -34,7 +34,7 @@ public class QuickPoseClassifierSmoother {
   public func smooth(probs: [Swift.Double]) -> [Swift.Double]
   @objc deinit
 }
-public enum BodyPose {
+@frozen public enum BodyPose {
   case standFacing
   case standSideOn
   case floorFacing
@@ -46,7 +46,7 @@ public enum BodyPose {
     get
   }
 }
-public enum BodyFeedback : Swift.String {
+@frozen public enum BodyFeedback : Swift.String {
   case standFacing
   case standSideOn
   case standFacingOrSide
@@ -60,26 +60,53 @@ public enum BodyFeedback : Swift.String {
     get
   }
 }
-public enum PoseFeedback {
-  public enum ActionChange : Swift.String {
+@frozen public enum PoseFeedback {
+  @frozen public enum ActionChange : Swift.String {
     case move
     case lean
     case straighten
     case lower
     case place
+    case bent
     public init?(rawValue: Swift.String)
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
     }
   }
-  public enum DirectionChange : Swift.String {
+  @frozen public enum DirectionChange : Swift.String {
     case up
     case down
     case forward
     case back
     case apart
     case intoView
+    case onFloor
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  @frozen public enum JointGroup : Swift.String {
+    case none
+    case wholeBody
+    case upperBody
+    case straightArmsUpperBody
+    case toWristsUpperBody
+    case shoulders
+    case userLeftArm
+    case userLeftHand
+    case userRightArm
+    case userRightHand
+    case lowerBody
+    case hips
+    case elbows
+    case knees
+    case legs
+    case userRightLeg
+    case userLeftLeg
+    case arms
     public init?(rawValue: Swift.String)
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
@@ -87,7 +114,7 @@ public enum PoseFeedback {
     }
   }
   case body(feedback: QuickPoseCore.BodyFeedback, isRequired: Swift.Bool)
-  case group(action: QuickPoseCore.PoseFeedback.ActionChange, group: QuickPoseCore.QuickPose.Landmarks.Group, direction: QuickPoseCore.PoseFeedback.DirectionChange?, isRequired: Swift.Bool)
+  case group(action: QuickPoseCore.PoseFeedback.ActionChange, group: QuickPoseCore.PoseFeedback.JointGroup, direction: QuickPoseCore.PoseFeedback.DirectionChange?, isRequired: Swift.Bool)
   case joint(action: QuickPoseCore.PoseFeedback.ActionChange, joint: QuickPoseCore.QuickPose.Landmarks.Body, direction: QuickPoseCore.PoseFeedback.DirectionChange?, isRequired: Swift.Bool)
   public var displayString: Swift.String {
     get
@@ -141,9 +168,10 @@ extension QuickPoseCore.QuickPose {
       get
     }
   }
-  public enum Feature : Swift.Hashable {
+  @frozen public enum Feature : Swift.Hashable {
     case showPoints(style: QuickPoseCore.QuickPose.Style = Style())
     case overlay(_: QuickPoseCore.QuickPose.Landmarks.Group, style: QuickPoseCore.QuickPose.Style = Style())
+    case measureLineBody(p1: QuickPoseCore.QuickPose.Landmarks.Body, p2: QuickPoseCore.QuickPose.Landmarks.Body, userHeight: Swift.Double?, format: Swift.String?, style: QuickPoseCore.QuickPose.Style = Style())
     case measureAngleBody(origin: QuickPoseCore.QuickPose.Landmarks.Body, p1: QuickPoseCore.QuickPose.Landmarks.Body, p2: QuickPoseCore.QuickPose.Landmarks.Body?, clockwiseDirection: Swift.Bool, style: QuickPoseCore.QuickPose.Style = Style())
     case measureAngleFace(origin: QuickPoseCore.QuickPose.Landmarks.Face, p1: QuickPoseCore.QuickPose.Landmarks.Face, clockwiseDirection: Swift.Bool, style: QuickPoseCore.QuickPose.Style = Style())
     case raisedFingers(side: QuickPoseCore.QuickPose.Side? = nil, style: QuickPoseCore.QuickPose.Style = Style(relativeLineWidth: 0.5))
@@ -161,7 +189,7 @@ extension QuickPoseCore.QuickPose {
       get
     }
   }
-  public enum Side : Swift.Hashable {
+  @frozen public enum Side : Swift.Hashable {
     case left
     case right
     public var displayTitle: Swift.String {
@@ -173,7 +201,7 @@ extension QuickPoseCore.QuickPose {
       get
     }
   }
-  public enum RangeOfMotion : Swift.Hashable {
+  @frozen public enum RangeOfMotion : Swift.Hashable {
     case neck(clockwiseDirection: Swift.Bool)
     case shoulder(side: QuickPoseCore.QuickPose.Side, clockwiseDirection: Swift.Bool)
     case elbow(side: QuickPoseCore.QuickPose.Side, clockwiseDirection: Swift.Bool)
@@ -193,7 +221,7 @@ extension QuickPoseCore.QuickPose {
       get
     }
   }
-  public enum FitnessFeature : Swift.Hashable {
+  @frozen public enum FitnessFeature : Swift.Hashable {
     case squats
     case pushUps
     case jumpingJacks
@@ -203,19 +231,21 @@ extension QuickPoseCore.QuickPose {
     case sitUps
     case cobraWings
     case plank
-    public var requiredVisibility: [QuickPoseCore.QuickPose.Landmarks.Group] {
-      get
-    }
+    case legRaises
+    case gluteBridge
+    case overheadDumbbellPress
+    case vUps
+    case lateralRaises
+    case frontRaises
+    case hipAbductionStandingLeft
+    case hipAbductionStandingRight
+    case sideLungesLeft
+    case sideLungesRight
+    case bicepsCurls
     public var id: Swift.String {
       get
     }
     public var displayTitle: Swift.String {
-      get
-    }
-    public var measureFunction: ([[Swift.Double]]) -> Swift.Double {
-      get
-    }
-    public var checksFunction: [(Swift.Double, [[Swift.Double]], [[Swift.Double]]) -> QuickPoseCore.PoseFeedback?] {
       get
     }
     public static func == (a: QuickPoseCore.QuickPose.FitnessFeature, b: QuickPoseCore.QuickPose.FitnessFeature) -> Swift.Bool
@@ -231,7 +261,7 @@ extension QuickPoseCore.QuickPose {
     public let stringValue: Swift.String
     public static func == (a: QuickPoseCore.QuickPose.FeatureResult, b: QuickPoseCore.QuickPose.FeatureResult) -> Swift.Bool
   }
-  public enum Status {
+  @frozen public enum Status {
     case success(fps: Swift.Int, lag: Swift.Double)
     case noPersonFound
     case sdkValidationError
@@ -240,7 +270,7 @@ extension QuickPoseCore.QuickPose {
 @objc public class QuickPose : ObjectiveC.NSObject, AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate, QuickPoseCore.QuickPoseCaptureAVAssetOutputSampleBufferDelegate {
   public init(sdkKey: Swift.String)
   public struct ModelConfig {
-    public enum ModelComplexity {
+    @frozen public enum ModelComplexity {
       case light
       case good
       case heavy
@@ -269,7 +299,7 @@ extension QuickPoseCore.QuickPose {
     public let faceLandmarks: [[Swift.Double]]
     public let leftHandLandmarks: [[Swift.Double]]
     public let rightHandLandmarks: [[Swift.Double]]
-    public enum Group : Swift.String {
+    @frozen public enum Group : Swift.String {
       case none
       case wholeBody
       case upperBody
@@ -303,7 +333,7 @@ extension QuickPoseCore.QuickPose {
         get
       }
     }
-    public enum Face : Swift.Int {
+    @frozen public enum Face : Swift.Int {
       case userFaceForehead
       case userFaceChin
       case userFaceLeftEar
@@ -316,7 +346,7 @@ extension QuickPoseCore.QuickPose {
         get
       }
     }
-    public enum Body : Swift.Int {
+    @frozen public enum Body : Swift.Int {
       case nose
       case userLeftEyeInner
       case userLeftEye
@@ -361,7 +391,7 @@ extension QuickPoseCore.QuickPose {
         get
       }
     }
-    public enum HandGroup : Swift.Int {
+    @frozen public enum HandGroup : Swift.Int {
       case none
       case hand
       case fingers
@@ -373,7 +403,7 @@ extension QuickPoseCore.QuickPose {
         get
       }
     }
-    public enum Hand : Swift.Int {
+    @frozen public enum Hand : Swift.Int {
       case WRIST
       case THUMB_CMC
       case THUMB_MCP
@@ -414,31 +444,51 @@ public class QuickPoseThresholdTimer {
   public func stop()
   @objc deinit
 }
+extension QuickPoseCore.QuickPoseThresholdCounter.CountState : Swift.Sendable {}
 extension QuickPoseCore.BodyPose : Swift.Equatable {}
 extension QuickPoseCore.BodyPose : Swift.Hashable {}
+extension QuickPoseCore.BodyPose : Swift.Sendable {}
 extension QuickPoseCore.BodyFeedback : Swift.Equatable {}
 extension QuickPoseCore.BodyFeedback : Swift.Hashable {}
 extension QuickPoseCore.BodyFeedback : Swift.RawRepresentable {}
+extension QuickPoseCore.BodyFeedback : Swift.Sendable {}
+extension QuickPoseCore.PoseFeedback : Swift.Sendable {}
 extension QuickPoseCore.PoseFeedback.ActionChange : Swift.Equatable {}
 extension QuickPoseCore.PoseFeedback.ActionChange : Swift.Hashable {}
 extension QuickPoseCore.PoseFeedback.ActionChange : Swift.RawRepresentable {}
+extension QuickPoseCore.PoseFeedback.ActionChange : Swift.Sendable {}
 extension QuickPoseCore.PoseFeedback.DirectionChange : Swift.Equatable {}
 extension QuickPoseCore.PoseFeedback.DirectionChange : Swift.Hashable {}
 extension QuickPoseCore.PoseFeedback.DirectionChange : Swift.RawRepresentable {}
+extension QuickPoseCore.PoseFeedback.DirectionChange : Swift.Sendable {}
+extension QuickPoseCore.PoseFeedback.JointGroup : Swift.Equatable {}
+extension QuickPoseCore.PoseFeedback.JointGroup : Swift.Hashable {}
+extension QuickPoseCore.PoseFeedback.JointGroup : Swift.RawRepresentable {}
+extension QuickPoseCore.PoseFeedback.JointGroup : Swift.Sendable {}
+extension QuickPoseCore.QuickPose.Side : Swift.Sendable {}
+extension QuickPoseCore.QuickPose.RangeOfMotion : Swift.Sendable {}
+extension QuickPoseCore.QuickPose.FitnessFeature : Swift.Sendable {}
+extension QuickPoseCore.QuickPose.Status : Swift.Sendable {}
 extension QuickPoseCore.QuickPose.ModelConfig.ModelComplexity : Swift.Equatable {}
 extension QuickPoseCore.QuickPose.ModelConfig.ModelComplexity : Swift.Hashable {}
+extension QuickPoseCore.QuickPose.ModelConfig.ModelComplexity : Swift.Sendable {}
 extension QuickPoseCore.QuickPose.Landmarks.Group : Swift.Equatable {}
 extension QuickPoseCore.QuickPose.Landmarks.Group : Swift.Hashable {}
 extension QuickPoseCore.QuickPose.Landmarks.Group : Swift.RawRepresentable {}
+extension QuickPoseCore.QuickPose.Landmarks.Group : Swift.Sendable {}
 extension QuickPoseCore.QuickPose.Landmarks.Face : Swift.Equatable {}
 extension QuickPoseCore.QuickPose.Landmarks.Face : Swift.Hashable {}
 extension QuickPoseCore.QuickPose.Landmarks.Face : Swift.RawRepresentable {}
+extension QuickPoseCore.QuickPose.Landmarks.Face : Swift.Sendable {}
 extension QuickPoseCore.QuickPose.Landmarks.Body : Swift.Equatable {}
 extension QuickPoseCore.QuickPose.Landmarks.Body : Swift.Hashable {}
 extension QuickPoseCore.QuickPose.Landmarks.Body : Swift.RawRepresentable {}
+extension QuickPoseCore.QuickPose.Landmarks.Body : Swift.Sendable {}
 extension QuickPoseCore.QuickPose.Landmarks.HandGroup : Swift.Equatable {}
 extension QuickPoseCore.QuickPose.Landmarks.HandGroup : Swift.Hashable {}
 extension QuickPoseCore.QuickPose.Landmarks.HandGroup : Swift.RawRepresentable {}
+extension QuickPoseCore.QuickPose.Landmarks.HandGroup : Swift.Sendable {}
 extension QuickPoseCore.QuickPose.Landmarks.Hand : Swift.Equatable {}
 extension QuickPoseCore.QuickPose.Landmarks.Hand : Swift.Hashable {}
 extension QuickPoseCore.QuickPose.Landmarks.Hand : Swift.RawRepresentable {}
+extension QuickPoseCore.QuickPose.Landmarks.Hand : Swift.Sendable {}

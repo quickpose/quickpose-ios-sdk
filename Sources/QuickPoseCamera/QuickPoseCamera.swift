@@ -99,8 +99,14 @@ public class QuickPoseCamera {
             device.setFrameRate(frameRate)
             
             if session.connections[0].isVideoOrientationSupported, let videoOrientation = AVCaptureVideoOrientation(rawValue: UIDevice.current.orientation.rawValue) {
-                session.connections[0].videoOrientation = videoOrientation
-                print("Setting QuickPose orientation to \(UIDevice.current.orientation.displayString)")
+                
+                if UIDevice.current.orientation.isValidInterfaceOrientation {
+                    session.connections[0].videoOrientation = videoOrientation
+                    print("Setting QuickPose orientation to \(UIDevice.current.orientation.displayString)")
+                } else {
+                    session.connections[0].videoOrientation = .portrait // for 'face up' orientations default to portrait.
+                    print("Ignoring \(UIDevice.current.orientation.displayString) for QuickPose orientation, setting to portrait")
+                }
             }
             // deliberately keeping front camera not mirrored to keep ML data points consistent
             

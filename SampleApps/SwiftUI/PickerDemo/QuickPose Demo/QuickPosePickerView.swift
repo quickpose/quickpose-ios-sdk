@@ -71,12 +71,13 @@ struct QuickPosePickerView: View {
     @State private var captureButtonOpacity: Double = 0
     @State private var counterVisibility: Double = 0
     @State private var timerVisibility: Double = 0
-    
+    @State private var customUserHeight: Double = 100
     @State private var count: Int = 0
     @State private var measure: Double = 0
     @State private var timeInPosition: String = ""
+    @State private var heightInCMText: String = ""
     @State private var feedbackText: String? = nil
-    
+    @State private var showHeightAlert: Bool = false
    
     var body: some View {
         ZStack(alignment: .top) {
@@ -167,6 +168,18 @@ struct QuickPosePickerView: View {
                     } label: {
                         Text("Performance")
                     }
+                    
+                    Menu {
+                        Picker("Measurement", selection: $selectedFeatures) {
+                            ForEach(QuickPose.Feature.allDemoFeatures(component: "Measurement"), id: \.self) { feature in
+                                Text(feature.first?.displayString ?? "")
+                            }
+                        }
+                        .tint(.white)
+                    } label: {
+                        Text("Measurement")
+                    }
+                    
                     Menu {
                         Picker("Debug", selection: $showDebugString) {
                             ForEach(["On","Off"], id: \.self) { feature in
@@ -177,11 +190,20 @@ struct QuickPosePickerView: View {
                     } label: {
                         Text("Debug")
                     }
+                   
+                
                     .onChange(of: selectedFeatures) { _ in
-                        quickPose.update(features: selectedFeatures)
+                        
                         counter.reset()
                         counterVisibility = 0
                         timerVisibility = 0
+                        showHeightAlert = false
+                        if case let .measureLineBody(_, _, customHeight, _, _) = selectedFeatures.first, customHeight != nil {
+                            showHeightAlert = true
+                        } else {
+                            quickPose.update(features: selectedFeatures)
+                        }
+                       
                     }
                 } label: {
                     Text(Image(systemName: "arrow.up.and.down.square.fill")) + Text(" Feature: "+(selectedFeatures.first?.displayString ?? ""))
@@ -208,7 +230,16 @@ struct QuickPosePickerView: View {
             .padding(.horizontal, 16)
             .frame(width: geometrySize.width)
         }
-        
+        .alert("Add Height", isPresented: $showHeightAlert)
+        {
+            TextField("Your height in CM, e.g. 150", text: $heightInCMText).keyboardType(.numberPad)
+            Button("OK"){
+                selectedFeatures = [.measureLineBody(p1: .userLeftShoulder, p2: .userRightShoulder, userHeight: Double(heightInCMText) ?? 100, format: "%.fcm")]
+                quickPose.update(features: selectedFeatures)
+            }
+        } message: {
+            Text("To show a ruler in CM, please enter your height in CM. ")
+        }
         .overlay(alignment: .bottom) {
             Button(action: {
                 showResult = lastResult
@@ -282,7 +313,7 @@ struct QuickPosePickerView: View {
                     } else if captureButtonOpacity == 1 {
                         withAnimation { captureButtonOpacity = 0 }
                     }
-                    if case .fitness = selectedFeatures.first, let feedback = feedback[selectedFeatures.first!]  {
+                    if let feedback = feedback[selectedFeatures.first!]  {
                         feedbackText = feedback.displayString
                     } else {
                         feedbackText = nil
@@ -333,8 +364,6 @@ struct QuickPosePickerView: View {
     }
 }
 
-
-
 extension String: Identifiable {
     public typealias ID = Int
     public var id: Int {
@@ -344,8 +373,12 @@ extension String: Identifiable {
 
 extension QuickPose.Feature {
     public static func allDemoFeatures(component: String) -> [[QuickPose.Feature]] {
-        
-        if component == "Health" {
+        if component == "Measurement" {
+            return [
+                [.measureLineBody(p1: .userLeftShoulder, p2: .userRightShoulder, userHeight: nil, format: nil)],
+                [.measureLineBody(p1: .userLeftShoulder, p2: .userRightShoulder, userHeight: 100, format: "%.fcm")],
+                ]
+        } else if component == "Health" {
             return [[.rangeOfMotion(.shoulder(side: .left, clockwiseDirection: false))], [.rangeOfMotion(.shoulder(side: .right, clockwiseDirection: true))],
                     [.rangeOfMotion(.hip(side: .right, clockwiseDirection: true))], [.rangeOfMotion(.knee(side: .right, clockwiseDirection: true))], [.rangeOfMotion(.neck(clockwiseDirection: false))], [.rangeOfMotion(.back(clockwiseDirection: false))]]
         } else if component == "Input" {
@@ -364,7 +397,10 @@ extension QuickPose.Feature {
                 [.fitness(.rightLegLunges)],
                 [.fitness(.sitUps)],
                 [.fitness(.cobraWings)],
-                [.fitness(.plank)]
+                [.fitness(.plank)],
+                [.fitness(.bicepsCurls)],
+                [.fitness(.lateralRaises)],
+                [.fitness(.frontRaises)]
             ]
         } else if component == "Sports" {
             let bikeStyle = QuickPose.Style(relativeFontSize: 0.33, relativeArcSize: 0.4, relativeLineWidth: 0.3)
@@ -379,6 +415,6 @@ extension QuickPose.Feature {
     }
     
     public static func allDemoFeatureComponents() -> [String] {
-        return ["General", "Input", "Fitness", "Health", "Conditional", "Sports"]
+        return ["General", "Input", "Fitness", "Health", "Conditional", "Sports", "Measurement"]
     }
 }

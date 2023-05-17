@@ -9,7 +9,7 @@ QuickPose provides developer-oriented cutting edge ML features of MediaPipe and 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [Register an SDK Key](#get-an-sdk-key)
+- [Register an SDK Key](#register-an-sdk-key)
 - [How it works](#how-it-works)
 - [Features](#features)
 - [Meta Features](#meta-features)
@@ -20,13 +20,8 @@ QuickPose provides developer-oriented cutting edge ML features of MediaPipe and 
 - [Getting Started](#getting-started)
   - [Getting Started with Newer Macs M1/M2](#getting-started-with-newer-macs-m1m2)
   - [Getting Started with Older Intel Macs](#getting-started-with-older-intel-macs)
-  - [Integrating into SwiftUI App](#integrating-into-swiftui-app)
-    - [Device Camera only](#device-camera-only)
-    - [Device Camera and Running Video on Mac (Recommended)](#device-camera-and-running-video-on-mac-recommended)
-  - [Integrating into UIKit App](#integrating-into-uikit-app)
-    - [Device Camera only](#device-camera-only-1)
-    - [Device Camera and Running Video on Mac (Recommended)](#device-camera-and-running-video-on-mac-recommended-1)
-- [Integration Guides](#integration-guides)
+  - [SwiftUI Example](#swiftui-example)
+- [Documentation](#documentation)
 - [Troubleshooting](#troubleshooting)
   - [No Such Module](#no-such-module)
 
@@ -59,7 +54,8 @@ Features
 | MediaPipe Landmarks  | ![MediaPipe Landmarks](docs/v0.2/overlay-all-points.gif) | v0.1        |
 | <p><b>Overlays</b></p><p>Whole Body</p><p>Upper Body</p><p>Lower Body</p><p>Shoulder</p><p>Left Arm</p><p>Right Arm</p><p>Left Leg</p><p>Right Leg</p>       |  ![Whole Body Overlay](docs/v0.1/overlay-whole-body.gif) ![Upper Body Overlay](docs/v0.1/overlay-upper-body.gif) ![Lower Body Overlay](docs/v0.1/overlay-lower-body.gif)  ![Shoulders Overlay](docs/v0.1/overlay-shoulders.gif)  ![Left Leg Overlay](docs/v0.1/overlay-left-leg.gif)  ![Right Leg Overlay](docs/v0.1/overlay-right-leg.gif)| v0.1        |
 | <p><b>Health - Range Of Motion</b></p><p>Left Shoulder</p><p>Right Shoulder</p><p>Left Hip</p><p>Right Hip</p><p>Left Knee</p><p>Right Knee</p><p>Back</p><p>Neck</p>       |  ![health-shoulder-right-rom](docs/v0.3/health-shoulder-right-rom.gif) ![health-shoulder-rom](docs/v0.3/health-shoulder-rom.gif) ![health-hip-rom](docs/v0.3/health-hip-rom.gif) ![health-knee-rom](docs/v0.3/health-knee-rom.gif) ![health-back-rom](docs/v0.3/health-back-rom.gif)  ![health-neck-rom](docs/v0.3/health-neck-rom.gif)  | v0.3      |
-| <p><b>Fitness - Exercise Detection & Counter</b></p><p>Squat</p><p>Sumo Squat</p><p>Jumping Jack</p><p>Push Up</p> <p>Plank</p> <p>Cobra Wings</p>   <p>Left Leg Lunge</p><p>Right Leg Lunge</p>        |  ![fitness-pushup](docs/v0.8/fitness-pushup.gif) ![fitness-plank](docs/v0.8/fitness-plank.gif) ![fitness-cobra-wings](docs/v0.8/fitness-cobra-wings.gif) ![fitness-left-leg-lunges](docs/v0.8/fitness-left-leg-lunges.gif)  ![fitness-squats](docs/v0.8/fitness-squats.gif) ![fitness-sumo-squats](docs/v0.8/fitness-sumo-squats.gif) ![fitness-jumping-jacks](docs/v0.8/fitness-jumping-jacks.gif) | v0.8 |      
+| <p><b>Distance Independent Measuring Line <i>beta</i></b></p><p>Measurement relative to body height</p><p>Measurement in CM (using body height as input)</p>       |  ![feature-scale-independent-ruler](docs/v1.1.0/feature-scale-independent-ruler.gif) ![feature-scale-independent-ruler-cm](docs/v1.1.0/feature-scale-independent-ruler-cm.gif)  | v1.1.0    |
+| <p><b>Fitness - Exercise Detection & Counter</b></p><p>Squat</p><p>Sumo Squat</p><p>Jumping Jack</p><p>Push Up</p> <p>Plank</p> <p>Cobra Wings</p>   <p>Left Leg Lunge</p><p>Right Leg Lunge</p><p> SitUps</p><p> CobraWings</p><p> Plank</p><p>Leg Raises</p><p>Glute Bridge</p><p>Overhead Dumbbell Press</p><p>vUps</p><p>Lateral Raises</p><p>Front Raises</p><p>Hip Abduction Standing Left</p><p>Hip Abduction Standing Right</p><p>Side Lunges Left</p><p>Side Lunges Right</p><p> Biceps Curls</p>|  ![fitness-pushup](docs/v0.8/fitness-pushup.gif) ![fitness-plank](docs/v0.8/fitness-plank.gif) ![fitness-cobra-wings](docs/v0.8/fitness-cobra-wings.gif) ![fitness-left-leg-lunges](docs/v0.8/fitness-left-leg-lunges.gif)  ![fitness-squats](docs/v0.8/fitness-squats.gif) ![fitness-sumo-squats](docs/v0.8/fitness-sumo-squats.gif) ![fitness-jumping-jacks](docs/v0.8/fitness-jumping-jacks.gif) ![fitness-sit-ups](docs/v0.8/fitness-sit-ups.gif) ![fitness-cobra-wings](docs/v0.8/fitness-cobra-wings.gif) ![fitness-plank](docs/v0.8/fitness-plank.gif)  ![fitness-overhead-dumbbell-press](docs/v1.1.0/fitness-overhead-dumbbell-press.gif) ![fitness-lateral-raises](docs/v1.1.0/fitness-lateral-raises.gif)![fitness-front-raises](docs/v1.1.0/fitness-front-raises.gif)![fitness-hip-abduction-standing](docs/v1.1.0/fitness-hip-abduction-standing.gif)![fitness-side-lunges](docs/v1.1.0/fitness-side-lunges.gif)![fitness-biceps-curls](docs/v1.1.0/fitness-biceps-curls.gif)![fitness-leg-raises](docs/v1.1.0/fitness-leg-raises.gif)  ![fitness-glute-bridge](docs/v1.1.0/fitness-glute-bridge.gif) ![fitness-v-ups](docs/v1.1.0/fitness-v-ups.gif)| v0.8 - v1.1.0|      
 | <p><b>Input</b></p><p>Raised Finger Detection & Count</p>      | ![finger-counter-left](docs/v0.5/finger-counter-left.gif) ![finger-counter-right](docs/v0.5/finger-counter-right.gif)   | v0.5 |      
 | <p><b>Input</b></p><p>Thumbs Up Detection, Thumbs up and down detection</p>      | ![thumbs-up](docs/v0.6/thumbs-up.gif) ![thumbs-up-and-down](docs/v0.6/thumbs-up-and-down.gif)   | v0.6 |     
 
@@ -159,11 +155,8 @@ quickPose.start(features: [.overlay(.upperBody)], onFrame: { status, image, feat
 })
 ```
 
-### Integrating into SwiftUI App
+### SwiftUI Example
 
-For reference docs see https://quickpose.github.io/quickpose-ios-sdk
-
-#### Device Camera only
 ```swift
 import SwiftUI
 import QuickPoseCore
@@ -198,162 +191,10 @@ struct QuickPoseBasicView: View {
     }
 }
 ```
-#### Device Camera and Running Video on Mac (Recommended)
-```swift
-import SwiftUI
-import QuickPoseCore
-import QuickPoseSwiftUI
-...
-struct QuickPoseBasicView: View {
 
-    private var quickPose = QuickPose(sdkKey: "YOUR SDK KEY HERE") // register for your free key at https://dev.quickpose.ai
-    @State private var overlayImage: UIImage?
-    
-    var body: some View {
-        GeometryReader { geometry in
-            ZStack(alignment: .top) {
-                if ProcessInfo.processInfo.isiOSAppOnMac, let url = Bundle.main.url(forResource: "happy-dance", withExtension: "mov") {
-                    QuickPoseSimulatedCameraView(useFrontCamera: true, delegate: quickPose, video: url)
-                } else {
-                    QuickPoseCameraView(useFrontCamera: true, delegate: quickPose)
-                }
-                QuickPoseOverlayView(overlayImage: $overlayImage)
-            }
-            .frame(width: geometry.size.width)
-            .edgesIgnoringSafeArea(.all)
-            .onAppear {
-                quickPose.start(features: [.overlay(.upperBody)], onFrame: { status, image, features,  feedback, landmarks in
-                    if case .success(_) = status {
-                        overlayImage = image
-                    }
-                })
-            }.onDisappear {
-                quickPose.stop()
-            }
-            
-        }
-    }
-```
-### Integrating into UIKit App
-
-#### Device Camera only
-```swift
-import QuickPoseCore
-import QuickPoseCamera
-...
-
-class ViewController: UIViewController {
-    
-    var camera: QuickPoseCamera?
-    var quickPose = QuickPose(sdkKey: "YOUR SDK KEY HERE") // register for your free key at https://dev.quickpose.ai
-    
-    @IBOutlet var cameraView: UIView!
-    @IBOutlet var overlayView: UIImageView!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // setup camera
-        camera = QuickPoseCamera(useFrontCamera: true)
-        try? camera?.start(delegate: quickPose)
-        
-        let customPreviewLayer = AVCaptureVideoPreviewLayer(session: camera!.session!)
-        customPreviewLayer.videoGravity = .resizeAspectFill
-        customPreviewLayer.frame.size = view.frame.size
-        cameraView.layer.addSublayer(customPreviewLayer)
-        
-        // setup overlay
-        overlayView.contentMode = .scaleAspectFill // keep overlays in same scale as camera output
-        overlayView.frame.size = view.frame.size
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        quickPose.start(features: [.overlay(.userLeftArm)], onFrame: { status, image, features, feedback, landmarks in
-            if case .success(_) = status {
-                DispatchQueue.main.async {
-                    self.overlayView.image = image
-                }
-            }
-        })
-    }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        camera?.stop()
-        quickPose.stop()
-    }
-}
-```
-#### Device Camera and Running Video on Mac (Recommended)
-```swift
-import QuickPoseCore
-import QuickPoseCamera
-...
-class ViewController: UIViewController {
-    
-    var camera: QuickPoseCamera?
-    var simulatedCamera: QuickPoseSimulatedCamera?
-    var quickPose = QuickPose(sdkKey: "YOUR SDK KEY HERE") // register for your free key at https://dev.quickpose.ai
-    
-    @IBOutlet var cameraView: UIView!
-    @IBOutlet var overlayView: UIImageView!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        if ProcessInfo.processInfo.isiOSAppOnMac, let url = Bundle.main.url(forResource: "happy-dance", withExtension: "mov") {
-            simulatedCamera = QuickPoseSimulatedCamera(useFrontCamera: true, asset: AVAsset(url: url)) // setup simulated camera
-            try? simulatedCamera?.start(delegate: quickPose)
-            
-            let customPreviewLayer = AVPlayerLayer(player: simulatedCamera?.player)
-            customPreviewLayer.videoGravity = .resizeAspectFill
-            customPreviewLayer.frame.size = view.frame.size
-            cameraView.layer.addSublayer(customPreviewLayer)
-        } else {
-            camera = QuickPoseCamera(useFrontCamera: true) // setup camera
-            try? camera?.start(delegate: quickPose)
-            
-            let customPreviewLayer = AVCaptureVideoPreviewLayer(session: camera!.session!)
-            customPreviewLayer.videoGravity = .resizeAspectFill
-            customPreviewLayer.frame.size = view.frame.size
-            cameraView.layer.addSublayer(customPreviewLayer)
-        }
-        
-        
-        // setup overlay
-        overlayView.contentMode = .scaleAspectFill // keep overlays in same scale as camera output
-        overlayView.frame.size = view.frame.size
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        quickPose.start(features: [.overlay(.upperBody)], onFrame: { status, image, features,  feedback, landmarks in
-            if case .success(_) = status {
-                DispatchQueue.main.async {
-                    self.overlayView.image = image
-                }
-            }
-        })
-    }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        camera?.stop()
-        simulatedCamera?.stop()
-        quickPose.stop()
-    }
-}
-
-```
-
-
-Integration Guides
+Documentation
 ------------------
-Checkout our integration guides at [https://docs.quickpose.ai/docs/MobileSDK](https://docs.quickpose.ai/docs/MobileSDK)
-
+Checkout our full documentation at [https://docs.quickpose.ai/docs/MobileSDK](https://docs.quickpose.ai/docs/MobileSDK) including more SwiftUI and UIKit examples.
 
 Troubleshooting
 ------------------
@@ -368,3 +209,10 @@ Xcode reports error no such module `QuickPoseCore` or no such module `QuickPoseS
 
 ![xcode troubleshooting no such module guide](docs/img/xcode-troubleshooting-no-such-module-fix.png)
 
+### Cannot find type 'QuickPoseCaptureAVAssetOutputSampleBufferDelegate' in scope
+
+Xcode reports error `Cannot find type 'QuickPoseCaptureAVAssetOutputSampleBufferDelegate' in scope`
+
+> This happens as our builds are not compatible with the arm64 simulator. To fix run as `My Mac (Designed for iPhone)`
+
+![xcode troubleshooting cannot find type](docs/img/xcode-troubleshooting-cannot-find-type-arm64.png)
