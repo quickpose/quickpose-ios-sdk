@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		YPxn+TWCQiliCrNzOujbOvhiqLw=
+		bbS4Lgqtuj2Y7ardocQuR/F9j3c=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		YEVornD1Tk26KW5nZRW8hUcgSSE=
+		nzErZ4/HBn7PePrqNtzBtwaRjjg=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		YEVornD1Tk26KW5nZRW8hUcgSSE=
+		nzErZ4/HBn7PePrqNtzBtwaRjjg=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		jEOvpMzcuL330+LxNMe7ShhDNAM=
+		WfgNDwAKjQjrwBf2fjiZhYhmWRk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>body_pose_clf.mlmodelc/analytics/coremldata.bin</key>
 		<data>
-		fyx9K30HVNdiw7kfc7HLDWvblJU=
+		2I8GgD9pui5CoJPr7vVD0iK/71Y=
 		</data>
 		<key>body_pose_clf.mlmodelc/coremldata.bin</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>body_pose_clf.mlmodelc/model.espresso.weights</key>
 		<data>
-		Z4RLNpGxehfhN4ogM+eHtNNI5aI=
+		PFR3x2RCrP6EF/WwVZMjZXx95o4=
 		</data>
 		<key>body_pose_clf.mlmodelc/model/coremldata.bin</key>
 		<data>
@@ -157,14 +157,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EUGAiS3TIBnXCdgh/Mcj93G8RCOa3y9GmhuYsIHySlk=
+			fHkMB6e64FsQxWbomv87tEsmA4v/Ebw+GG6bhfms5LQ=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8hRB2BXZ88j3u5C/rtCdHEVkYJ6Zw2MjZWgHjC6/wIs=
+			4NU4YqvE5nx38z5yk5ZtkgJWF1+hocCFW98c1ms65Yk=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -178,14 +178,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8hRB2BXZ88j3u5C/rtCdHEVkYJ6Zw2MjZWgHjC6/wIs=
+			4NU4YqvE5nx38z5yk5ZtkgJWF1+hocCFW98c1ms65Yk=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			W1zEsBS1PPqoDrQjCmdk5gNF6LrZKSUCbGzRL3a+NAY=
+			uJjKgaft1kh1+S1rUkH9hs6rjgfU+HtWLVyWQ47CYLk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -199,7 +199,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			R4dB7Uvo0E1uAxh3HI+EFu12+fdnZuD9rGLh5nVcduM=
+			WkYSAzNZWK2i9XoyqUe0aHJJ06JGse//Qncz/MTHbgI=
 			</data>
 		</dict>
 		<key>body_pose_clf.mlmodelc/coremldata.bin</key>
@@ -234,7 +234,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			a8xc+eeUYX9tQJAJoxFFM5S26gkTVoSopRc3QeStrxc=
+			2NJDw6v+ARZs7qOSSpAY2KwG1qx1ViGHNqZGSkaogYI=
 			</data>
 		</dict>
 		<key>body_pose_clf.mlmodelc/model/coremldata.bin</key>
