@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-PodsDemo/Pods-PodsDemo-frameworks.sh
+${BUILT_PRODUCTS_DIR}/QuickPoseCamera/QuickPoseCamera.framework
+${BUILT_PRODUCTS_DIR}/QuickPoseSwiftUI/QuickPoseSwiftUI.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/QuickPoseCore/Core/QuickPoseCore.framework/QuickPoseCore
+${PODS_XCFRAMEWORKS_BUILD_DIR}/QuickPoseCore/Core/QuickPoseMP.framework/QuickPoseMP

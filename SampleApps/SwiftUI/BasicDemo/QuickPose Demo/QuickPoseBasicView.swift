@@ -34,9 +34,12 @@ struct QuickPoseBasicView: View {
             .edgesIgnoringSafeArea(.all)
             
             .onAppear {
-                quickPose.start(features: [.rangeOfMotion(.shoulder(side: .left, clockwiseDirection: false))], onFrame: { status, image, features, guidance, landmarks in
+                quickPose.start(features: [.rangeOfMotion(.shoulder(side: .left, clockwiseDirection: false))], onFrame: { status, image, features, feedback, landmarks in
+                    overlayImage = image
                     if case .success(_, _) = status {
-                        overlayImage = image
+                        
+                    } else {
+                        // show error feedback
                     }
                 })
             }.onDisappear {

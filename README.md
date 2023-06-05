@@ -4,7 +4,13 @@
 
 [![Swift Package Manager](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 
-QuickPose provides developer-oriented cutting edge ML features of MediaPipe and BlazePose, with easy integration and production ready code. Dramatically improving the speed of implementation of MediaPipe and BlazePose's pose estimation and skeleton tracking features into mobile applications. More documentation is provided at [https://docs.quickpose.ai/docs/MobileSDK](https://docs.quickpose.ai/docs/MobileSDK)
+QuickPose provides developer-oriented cutting edge ML features of MediaPipe and BlazePose, with easy integration and production ready code, which dramatically improves the speed of implementation of pose estimation, skeleton tracking and fitness counting features into mobile applications. 
+
+See our [Features](#features) below or [checkout our full documentation](https://docs.quickpose.ai/docs/MobileSDK)  on our website [docs.quickpose.ai/docs/MobileSDK](https://docs.quickpose.ai/docs/MobileSDK)
+
+| Range Of Motion Example | Leg Raises Counter Example | 
+| --------------- |:-----------------:| 
+|![health-shoulder-right-rom](docs/v0.3/health-shoulder-right-rom.gif) |![fitness-leg-raises](docs/v1.1.0/fitness-leg-raises.gif) |
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -51,13 +57,13 @@ Features
 
 | Feature       | Example       | Supported |
 | ------------- |:-------------:| ---------:|
-| MediaPipe Landmarks  | ![MediaPipe Landmarks](docs/v0.2/overlay-all-points.gif) | v0.1        |
-| <p><b>Overlays</b></p><p>Whole Body</p><p>Upper Body</p><p>Lower Body</p><p>Shoulder</p><p>Left Arm</p><p>Right Arm</p><p>Left Leg</p><p>Right Leg</p>       |  ![Whole Body Overlay](docs/v0.1/overlay-whole-body.gif) ![Upper Body Overlay](docs/v0.1/overlay-upper-body.gif) ![Lower Body Overlay](docs/v0.1/overlay-lower-body.gif)  ![Shoulders Overlay](docs/v0.1/overlay-shoulders.gif)  ![Left Leg Overlay](docs/v0.1/overlay-left-leg.gif)  ![Right Leg Overlay](docs/v0.1/overlay-right-leg.gif)| v0.1        |
-| <p><b>Health - Range Of Motion</b></p><p>Left Shoulder</p><p>Right Shoulder</p><p>Left Hip</p><p>Right Hip</p><p>Left Knee</p><p>Right Knee</p><p>Back</p><p>Neck</p>       |  ![health-shoulder-right-rom](docs/v0.3/health-shoulder-right-rom.gif) ![health-shoulder-rom](docs/v0.3/health-shoulder-rom.gif) ![health-hip-rom](docs/v0.3/health-hip-rom.gif) ![health-knee-rom](docs/v0.3/health-knee-rom.gif) ![health-back-rom](docs/v0.3/health-back-rom.gif)  ![health-neck-rom](docs/v0.3/health-neck-rom.gif)  | v0.3      |
-| <p><b>Distance Independent Measuring Line <i>beta</i></b></p><p>Measurement relative to body height</p><p>Measurement in CM (using body height as input)</p>       |  ![feature-scale-independent-ruler](docs/v1.1.0/feature-scale-independent-ruler.gif) ![feature-scale-independent-ruler-cm](docs/v1.1.0/feature-scale-independent-ruler-cm.gif)  | v1.1.0    |
-| <p><b>Fitness - Exercise Detection & Counter</b></p><p>Squat</p><p>Sumo Squat</p><p>Jumping Jack</p><p>Push Up</p> <p>Plank</p> <p>Cobra Wings</p>   <p>Left Leg Lunge</p><p>Right Leg Lunge</p><p> SitUps</p><p> CobraWings</p><p> Plank</p><p>Leg Raises</p><p>Glute Bridge</p><p>Overhead Dumbbell Press</p><p>vUps</p><p>Lateral Raises</p><p>Front Raises</p><p>Hip Abduction Standing Left</p><p>Hip Abduction Standing Right</p><p>Side Lunges Left</p><p>Side Lunges Right</p><p> Biceps Curls</p>|  ![fitness-pushup](docs/v0.8/fitness-pushup.gif) ![fitness-plank](docs/v0.8/fitness-plank.gif) ![fitness-cobra-wings](docs/v0.8/fitness-cobra-wings.gif) ![fitness-left-leg-lunges](docs/v0.8/fitness-left-leg-lunges.gif)  ![fitness-squats](docs/v0.8/fitness-squats.gif) ![fitness-sumo-squats](docs/v0.8/fitness-sumo-squats.gif) ![fitness-jumping-jacks](docs/v0.8/fitness-jumping-jacks.gif) ![fitness-sit-ups](docs/v0.8/fitness-sit-ups.gif) ![fitness-cobra-wings](docs/v0.8/fitness-cobra-wings.gif) ![fitness-plank](docs/v0.8/fitness-plank.gif)  ![fitness-overhead-dumbbell-press](docs/v1.1.0/fitness-overhead-dumbbell-press.gif) ![fitness-lateral-raises](docs/v1.1.0/fitness-lateral-raises.gif)![fitness-front-raises](docs/v1.1.0/fitness-front-raises.gif)![fitness-hip-abduction-standing](docs/v1.1.0/fitness-hip-abduction-standing.gif)![fitness-side-lunges](docs/v1.1.0/fitness-side-lunges.gif)![fitness-biceps-curls](docs/v1.1.0/fitness-biceps-curls.gif)![fitness-leg-raises](docs/v1.1.0/fitness-leg-raises.gif)  ![fitness-glute-bridge](docs/v1.1.0/fitness-glute-bridge.gif) ![fitness-v-ups](docs/v1.1.0/fitness-v-ups.gif)| v0.8 - v1.1.0|      
-| <p><b>Input</b></p><p>Raised Finger Detection & Count</p>      | ![finger-counter-left](docs/v0.5/finger-counter-left.gif) ![finger-counter-right](docs/v0.5/finger-counter-right.gif)   | v0.5 |      
-| <p><b>Input</b></p><p>Thumbs Up Detection, Thumbs up and down detection</p>      | ![thumbs-up](docs/v0.6/thumbs-up.gif) ![thumbs-up-and-down](docs/v0.6/thumbs-up-and-down.gif)   | v0.6 |     
+| Joint Positions  | ![MediaPipe Landmarks](docs/v0.2/overlay-all-points.gif) | v0.1        |
+| <p><b>Overlays</b></p><p>Whole Body</p><p>Upper Body</p><p>Lower Body</p><p>Shoulder</p><p>Left Arm</p><p>Right Arm</p><p>Left Leg</p><p>Right Leg</p>       |  ![Whole Body Overlay](docs/v0.1/overlay-whole-body.gif) | v0.1        |
+| <p><b>Health - Range Of Motion</b></p><p>Left Shoulder</p><p>Right Shoulder</p><p>Left Hip</p><p>Right Hip</p><p>Left Knee</p><p>Right Knee</p><p>Back</p><p>Neck</p>       |  ![health-shoulder-right-rom](docs/v0.3/health-shoulder-right-rom.gif)  | v0.3      |
+| <p><b>Distance Independent Measuring Line <i>beta</i></b></p><p>Measurement relative to body height</p><p>Measurement in CM (using body height as input)</p>       |  ![feature-scale-independent-ruler](docs/v1.1.0/feature-scale-independent-ruler.gif)  | v1.1.0    |
+| <p><b>Fitness - Exercise Detection & Counter</b></p><p>Squat</p><p>Sumo Squat</p><p>Jumping Jack</p><p>Push Up</p> <p>Plank</p> <p>Cobra Wings</p>   <p>Left Leg Lunge</p><p>Right Leg Lunge</p><p> SitUps</p><p> CobraWings</p><p> Plank</p><p>Leg Raises</p><p>Glute Bridge</p><p>Overhead Dumbbell Press</p><p>vUps</p><p>Lateral Raises</p><p>Front Raises</p><p>Hip Abduction Standing Left</p><p>Hip Abduction Standing Right</p><p>Side Lunges Left</p><p>Side Lunges Right</p><p> Biceps Curls</p>|  ![fitness-pushup](docs/v0.8/fitness-pushup.gif) | v0.8 - v1.1.0|      
+| <p><b>Input</b></p><p>Raised Finger Detection & Count</p>      | ![finger-counter-left](docs/v0.5/finger-counter-left.gif)    | v0.5 |      
+| <p><b>Input</b></p><p>Thumbs Up Detection, Thumbs up and down detection</p>      | ![thumbs-up](docs/v0.6/thumbs-up.gif)  | v0.6 |     
 
 Meta Features
 ------------------
@@ -65,9 +71,9 @@ Meta Features
 | Feature       | Example       | Supported |
 | ------------- |:-------------:| ---------:|
 | Stacked Feature Styling | ![shoulder-conditional-image](docs/v0.4/bike-demo.gif)<br />[<small>Bike Side View Video by Tariq Ali</small>](https://www.youtube.com/watch?v=LRA4N5cGnLU) | v0.4 |   
-| Conditional Styling | ![knee-conditional-image](docs/v0.4/health-knee-rom-conditional.gif) ![shoulder-conditional-image](docs/v0.4/health-shoulder-rom-conditional.gif)  | v0.4 |   
-| <p><b>Fitness - Feedback</b></p><p>Body Position</p><p>Named Leg or Arm not visible</p> |   ![fitness-body-feedback](docs/v0.8/fitness-body-feedback.gif) ![fitness-arm-feedback](docs/v0.8/fitness-arm-feedback.gif) ![fitness-leg-feedback](docs/v0.8/fitness-leg-feedback.gif) | v0.8 |   
-| Orientation Switching |   ![portrait](docs/v1.0.0/portrait.gif)  ![landscape](docs/v1.0.0/landscape.gif)  | v1.0.0 |       
+| Conditional Styling | ![knee-conditional-image](docs/v0.4/health-knee-rom-conditional.gif)  | v0.4 |   
+| <p><b>Fitness - Feedback</b></p><p>Body Position</p><p>Named Leg or Arm not visible</p> |   ![fitness-body-feedback](docs/v0.8/fitness-body-feedback.gif)  | v0.8 |   
+| Orientation Switching |  ![landscape](docs/v1.0.0/landscape.gif)  | v1.0.0 |       
 
 Supported Platforms
 ------------------
@@ -104,6 +110,26 @@ __Step 4__: Choose all modules and click add package.
 | QuickPoseCamera | Utility Class for Integration  (optional, recommended) |
 | QuickPoseSwiftUI | Utility Classes for SwiftUI Integration  (optional, recommended)|
 
+### CocoaPods
+
+__Step 1__: Open your project's Podfile
+
+__Step 2__: Add your pod file dependencies:  
+
+```
+pod 'QuickPoseCore', :git => 'https://github.com/quickpose/quickpose-ios-sdk.git'
+pod 'QuickPoseCamera', :git => 'https://github.com/quickpose/quickpose-ios-sdk.git'
+pod 'QuickPoseSwiftUI', :git => 'https://github.com/quickpose/quickpose-ios-sdk.git'
+```
+
+| Module        | Description         |
+| --------------|--------------------:|
+| QuickPoseCore | Includes Core SDK and Mediapipe Library (required) |
+| QuickPoseCamera | Utility Class for Integration  (optional, recommended) |
+| QuickPoseSwiftUI | Utility Classes for SwiftUI Integration  (optional, recommended)|
+
+
+__Step 3__: Run `pod update` from the command line
 
 
 Getting Started

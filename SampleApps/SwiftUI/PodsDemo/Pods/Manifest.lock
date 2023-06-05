@@ -1,0 +1,34 @@
+PODS:
+  - QuickPoseCamera (1.1.1):
+    - QuickPoseCamera/Camera (= 1.1.1)
+  - QuickPoseCamera/Camera (1.1.1):
+    - QuickPoseCore
+  - QuickPoseCore (1.1.1):
+    - QuickPoseCore/Core (= 1.1.1)
+  - QuickPoseCore/Core (1.1.1)
+  - QuickPoseSwiftUI (1.1.1):
+    - QuickPoseSwiftUI/SwiftUI (= 1.1.1)
+  - QuickPoseSwiftUI/SwiftUI (1.1.1):
+    - QuickPoseCamera
+
+DEPENDENCIES:
+  - QuickPoseCamera (from `../../../`)
+  - QuickPoseCore (from `../../../`)
+  - QuickPoseSwiftUI (from `../../../`)
+
+EXTERNAL SOURCES:
+  QuickPoseCamera:
+    :path: "../../../"
+  QuickPoseCore:
+    :path: "../../../"
+  QuickPoseSwiftUI:
+    :path: "../../../"
+
+SPEC CHECKSUMS:
+  QuickPoseCamera: b2014f2e5b0d54aeb6432b42d00542b1748f5a6c
+  QuickPoseCore: 586d141c782d3f876349c4f0e211c527eacecce8
+  QuickPoseSwiftUI: aff09bbef1dbc6097cdbc10ccf057c283d6389f5
+
+PODFILE CHECKSUM: a708f7e1b08b45e406312d1fae52344e44cce979
+
+COCOAPODS: 1.12.1

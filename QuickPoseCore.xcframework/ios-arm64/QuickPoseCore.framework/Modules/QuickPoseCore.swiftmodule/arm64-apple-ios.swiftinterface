@@ -18,19 +18,23 @@ public class QuickPoseThresholdCounter {
   @frozen public enum CountState {
     case poseEntered(_: Swift.Int)
     case poseComplete(_: Swift.Int)
+    public var count: Swift.Int {
+      get
+    }
+    public var isEntered: Swift.Bool {
+      get
+    }
   }
   final public let enterThreshold: Swift.Double
   final public let exitThreshold: Swift.Double
+  public var state: QuickPoseCore.QuickPoseThresholdCounter.CountState
   public init(enterThreshold: Swift.Double = 0.6, exitThreshold: Swift.Double = 0.3)
-  public func count(probability: Swift.Double, onChange: ((QuickPoseCore.QuickPoseThresholdCounter.CountState) -> ())? = nil)
-  public func getCount() -> Swift.Int
-  public func getState() -> QuickPoseCore.QuickPoseThresholdCounter.CountState
+  public func count(_ value: Swift.Double, onChange: ((QuickPoseCore.QuickPoseThresholdCounter.CountState) -> ())? = nil) -> QuickPoseCore.QuickPoseThresholdCounter.CountState
   public func reset()
-  public func setCount(_ newCount: Swift.Int)
   @objc deinit
 }
 public class QuickPoseClassifierSmoother {
-  public init(windowSize: Swift.Int = 10, alpha: Swift.Double = 0.9)
+  public init(alpha: Swift.Double = 0.9, windowSize: Swift.Int = 10)
   public func smooth(probs: [Swift.Double]) -> [Swift.Double]
   @objc deinit
 }
@@ -67,7 +71,7 @@ public class QuickPoseClassifierSmoother {
     case straighten
     case lower
     case place
-    case bent
+    case bend
     public init?(rawValue: Swift.String)
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
@@ -226,8 +230,7 @@ extension QuickPoseCore.QuickPose {
     case pushUps
     case jumpingJacks
     case sumoSquats
-    case leftLegLunges
-    case rightLegLunges
+    case lunges(side: QuickPoseCore.QuickPose.Side)
     case sitUps
     case cobraWings
     case plank
@@ -237,19 +240,17 @@ extension QuickPoseCore.QuickPose {
     case vUps
     case lateralRaises
     case frontRaises
-    case hipAbductionStandingLeft
-    case hipAbductionStandingRight
-    case sideLungesLeft
-    case sideLungesRight
-    case bicepsCurls
+    case hipAbductionStanding(side: QuickPoseCore.QuickPose.Side)
+    case sideLunges(side: QuickPoseCore.QuickPose.Side)
+    case bicepCurls
     public var id: Swift.String {
       get
     }
     public var displayTitle: Swift.String {
       get
     }
-    public static func == (a: QuickPoseCore.QuickPose.FitnessFeature, b: QuickPoseCore.QuickPose.FitnessFeature) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: QuickPoseCore.QuickPose.FitnessFeature, b: QuickPoseCore.QuickPose.FitnessFeature) -> Swift.Bool
     public var hashValue: Swift.Int {
       get
     }
@@ -435,12 +436,33 @@ extension QuickPoseCore.QuickPose {
   }
 }
 public class QuickPoseThresholdTimer {
+  @frozen public enum TimerState {
+    public struct Stats : Swift.CustomStringConvertible {
+      public let minValue: Swift.Double?
+      public var averageValue: Swift.Double? {
+        get
+      }
+      public let maxValue: Swift.Double?
+      public var description: Swift.String {
+        get
+      }
+    }
+    case poseEntered(_: Swift.Double, stats: QuickPoseCore.QuickPoseThresholdTimer.TimerState.Stats)
+    case poseComplete(_: Swift.Double, stats: QuickPoseCore.QuickPoseThresholdTimer.TimerState.Stats)
+    public var time: Swift.Double {
+      get
+    }
+    public var isEntered: Swift.Bool {
+      get
+    }
+    public var stats: QuickPoseCore.QuickPoseThresholdTimer.TimerState.Stats {
+      get
+    }
+  }
   final public let threshold: Swift.Double
-  final public let windowSize: Swift.Int
-  public var measures: [Swift.Double]
+  public var state: QuickPoseCore.QuickPoseThresholdTimer.TimerState
   public init(threshold: Swift.Double = 0.6, windowSize: Swift.Int = 10)
-  public func update(measure: Swift.Double) -> Swift.Bool
-  public func timeInPosition() -> Foundation.TimeInterval
+  public func time(_ value: Swift.Double, onChange: ((QuickPoseCore.QuickPoseThresholdTimer.TimerState) -> ())? = nil) -> QuickPoseCore.QuickPoseThresholdTimer.TimerState
   public func stop()
   @objc deinit
 }

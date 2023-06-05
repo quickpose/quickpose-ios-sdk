@@ -15,10 +15,8 @@ struct ValueBar: View {
                     .foregroundColor(Color.white)
                     .frame(width: geometry.size.width * CGFloat(value))
                     .opacity(opacity)
-            }
-            .cornerRadius(8)
-        }
-        .frame(height: 16)
+            }.cornerRadius(8)
+        }.frame(height: 16)
     }
 }
 
@@ -300,11 +298,12 @@ struct QuickPosePickerView: View {
             quickPose.start(features: selectedFeatures, modelConfig: performance == "Normal" ? QuickPose.ModelConfig() : QuickPose.ModelConfig(detailedFaceTracking: false, detailedHandTracking: false), onStart: {
                 withAnimation { cameraViewOpacity = 1.0 } // unhide the camera when loaded
             }, onFrame: { status, image, features, feedback, landmarks in
+                overlayImage = image
                 if case let .success(fps, lag) = status {
                     lastFPS = fps
                     lastLag = lag*1000
                     self.lastDebugResult = nil
-                    
+
                     if case .rangeOfMotion = selectedFeatures.first, let result = features[selectedFeatures.first!] {
                         lastResult = result.stringValue
                         if captureButtonOpacity == 0 { // only show button when reading available
@@ -322,12 +321,12 @@ struct QuickPosePickerView: View {
                         measure = result.value
                         if (result.stringValue == "plank") {
                             // no counter for this exercises
-                            _ = timer.update(measure: result.value)
-                            timeInPosition = String(format: "%.2f", timer.timeInPosition())
+                            _ = timer.time(result.value)
+                            timeInPosition = String(format: "%.2f", timer.state.time)
                             timerVisibility = 1
                         } else {
-                            counter.count(probability: result.value)
-                            count = counter.getCount()
+                            _ = counter.count(result.value)
+                            count = counter.state.count
                             counterVisibility = 1
                         }
                     } else if case .raisedFingers = selectedFeatures.first, let result = features[selectedFeatures.first!] {
@@ -343,7 +342,7 @@ struct QuickPosePickerView: View {
                         counterVisibility = 0
                     }
 
-                    overlayImage = image
+                    
                 }
             })
             
@@ -393,12 +392,12 @@ extension QuickPose.Feature {
                 [.fitness(.pushUps)],
                 [.fitness(.jumpingJacks)],
                 [.fitness(.sumoSquats)],
-                [.fitness(.leftLegLunges)],
-                [.fitness(.rightLegLunges)],
+                [.fitness(.lunges(side:.left))],
+                [.fitness(.lunges(side:.right))],
                 [.fitness(.sitUps)],
                 [.fitness(.cobraWings)],
                 [.fitness(.plank)],
-                [.fitness(.bicepsCurls)],
+                [.fitness(.bicepCurls)],
                 [.fitness(.lateralRaises)],
                 [.fitness(.frontRaises)]
             ]
