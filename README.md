@@ -23,6 +23,7 @@ See our [Features](#features) below or [checkout our full documentation](https:/
 - [Requirements](#requirements)
 - [Installing the SDK](#installing-the-sdk)
   - [Swift Package Manager](#swift-package-manager)
+  - [CocoaPods](#cocoapods)
 - [Getting Started](#getting-started)
   - [Getting Started with Newer Macs M1/M2](#getting-started-with-newer-macs-m1m2)
   - [Getting Started with Older Intel Macs](#getting-started-with-older-intel-macs)
@@ -30,6 +31,7 @@ See our [Features](#features) below or [checkout our full documentation](https:/
 - [Documentation](#documentation)
 - [Troubleshooting](#troubleshooting)
   - [No Such Module](#no-such-module)
+  - [Cannot find type 'QuickPoseCaptureAVAssetOutputSampleBufferDelegate' in scope](#cannot-find-type-quickposecaptureavassetoutputsamplebufferdelegate-in-scope)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
