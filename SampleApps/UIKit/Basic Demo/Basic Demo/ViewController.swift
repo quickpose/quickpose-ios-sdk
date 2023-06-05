@@ -49,11 +49,14 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        quickPose.start(features: [.overlay(.userLeftArm)], onFrame: { status, image, features, guidance, landmarks in
+        quickPose.start(features: [.overlay(.userLeftArm)], onFrame: { status, image, features, feedback, landmarks in
+            DispatchQueue.main.async {
+                self.overlayView.image = image
+            }
             if case .success(_, _) = status {
-                DispatchQueue.main.async {
-                    self.overlayView.image = image
-                }
+                
+            } else {
+                // show error feedback
             }
         })
     }
