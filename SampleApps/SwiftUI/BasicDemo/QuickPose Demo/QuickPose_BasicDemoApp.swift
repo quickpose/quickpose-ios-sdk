@@ -12,7 +12,8 @@ import AVFoundation
 struct QuickPose_DemoApp: App {
     var body: some Scene {
         WindowGroup {
-            DemoAppView().edgesIgnoringSafeArea(.all)
+            DemoAppView()
+                .edgesIgnoringSafeArea(.all)
                 .background(Color("AccentColor"))
         }
     }
