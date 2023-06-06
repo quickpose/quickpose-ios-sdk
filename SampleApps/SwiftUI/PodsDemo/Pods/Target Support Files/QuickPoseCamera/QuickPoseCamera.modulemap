@@ -1,6 +1,0 @@
-framework module QuickPoseCamera {
-  umbrella header "QuickPoseCamera-umbrella.h"
-
-  export *
-  module * { export * }
-}

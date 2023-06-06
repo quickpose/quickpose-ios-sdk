@@ -1,0 +1,151 @@
+{
+  "layer_shapes" : {
+    "input.7" : {
+      "k" : 1,
+      "w" : 100,
+      "n" : 1,
+      "_rank" : 2,
+      "h" : 1
+    },
+    "input.11" : {
+      "k" : 1,
+      "w" : 100,
+      "n" : 1,
+      "_rank" : 2,
+      "h" : 1
+    },
+    "input_batch_norm_1d" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 3,
+      "h" : 100
+    },
+    "input.1" : {
+      "k" : 1,
+      "w" : 37,
+      "n" : 1,
+      "_rank" : 2,
+      "h" : 1
+    },
+    "input.1_batch_norm_1d_batch_norm" : {
+      "k" : 37,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "input_rank2_expansion" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 3,
+      "h" : 100
+    },
+    "input" : {
+      "k" : 1,
+      "w" : 100,
+      "n" : 1,
+      "_rank" : 2,
+      "h" : 1
+    },
+    "input.7_rank2_expansion" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 3,
+      "h" : 100
+    },
+    "input.9" : {
+      "k" : 1,
+      "w" : 100,
+      "n" : 1,
+      "_rank" : 2,
+      "h" : 1
+    },
+    "input.3" : {
+      "k" : 1,
+      "w" : 100,
+      "n" : 1,
+      "_rank" : 2,
+      "h" : 1
+    },
+    "input.7_batch_norm_1d" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 3,
+      "h" : 100
+    },
+    "input.7_batch_norm_1d_batch_norm" : {
+      "k" : 100,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "x" : {
+      "k" : 1,
+      "w" : 37,
+      "n" : 1,
+      "_rank" : 2,
+      "h" : 1
+    },
+    "input_batch_norm_1d_expanded" : {
+      "k" : 100,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "input_batch_norm_1d_batch_norm" : {
+      "k" : 100,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "input.1_batch_norm_1d_expanded" : {
+      "k" : 37,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "input.1_batch_norm_1d" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 3,
+      "h" : 37
+    },
+    "var_39" : {
+      "k" : 1,
+      "w" : 3,
+      "n" : 1,
+      "_rank" : 2,
+      "h" : 1
+    },
+    "input.5" : {
+      "k" : 1,
+      "w" : 100,
+      "n" : 1,
+      "_rank" : 2,
+      "h" : 1
+    },
+    "input.1_rank2_expansion" : {
+      "k" : 1,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 3,
+      "h" : 37
+    },
+    "input.7_batch_norm_1d_expanded" : {
+      "k" : 100,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    }
+  }
+}
