@@ -24,15 +24,8 @@ struct QuickPoseBasicView: View {
                 }
                 QuickPoseOverlayView(overlayImage: $overlayImage)
             }
-            .overlay(alignment: .bottom) {
-                Text("Powered by QuickPose.ai v\(quickPose.quickPoseVersion())") // remove logo here, but attribution appreciated
-                    .font(.system(size: 16, weight: .semibold)).foregroundColor(.white)
-                    .frame(maxHeight:  40 + geometry.safeAreaInsets.bottom, alignment: .center)
-                    .padding(.bottom, 0)
-            }
             .frame(width: geometry.size.width)
             .edgesIgnoringSafeArea(.all)
-            
             .onAppear {
                 quickPose.start(features: [.overlay(.wholeBody)], onFrame: { status, image, features, feedback, landmarks in
                     overlayImage = image
@@ -44,6 +37,12 @@ struct QuickPoseBasicView: View {
                 })
             }.onDisappear {
                 quickPose.stop()
+            }
+            .overlay(alignment: .bottom) {
+                Text("Powered by QuickPose.ai v\(quickPose.quickPoseVersion())") // remove logo here, but attribution appreciated
+                    .font(.system(size: 16, weight: .semibold)).foregroundColor(.white)
+                    .frame(maxHeight:  40 + geometry.safeAreaInsets.bottom, alignment: .center)
+                    .padding(.bottom, 0)
             }
             
         }
