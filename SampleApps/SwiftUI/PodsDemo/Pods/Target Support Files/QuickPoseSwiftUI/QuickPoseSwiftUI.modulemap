@@ -1,6 +1,0 @@
-framework module QuickPoseSwiftUI {
-  umbrella header "QuickPoseSwiftUI-umbrella.h"
-
-  export *
-  module * { export * }
-}
