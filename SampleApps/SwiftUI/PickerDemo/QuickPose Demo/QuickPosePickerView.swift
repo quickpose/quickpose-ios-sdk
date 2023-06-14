@@ -36,7 +36,6 @@ struct QuickPoseStatsView: View {
             .frame(height: 40 + safeAreaInsets.bottom, alignment: .center)
             .padding(.bottom, 0)
     }
-    
 }
 
 
@@ -232,7 +231,7 @@ struct QuickPosePickerView: View {
         {
             TextField("Your height in CM, e.g. 150", text: $heightInCMText).keyboardType(.numberPad)
             Button("OK"){
-                selectedFeatures = [.measureLineBody(p1: .userLeftShoulder, p2: .userRightShoulder, userHeight: Double(heightInCMText) ?? 100, format: "%.fcm")]
+                selectedFeatures = [.measureLineBody(p1: .shoulder(side: .left), p2: .shoulder(side: .right), userHeight: Double(heightInCMText) ?? 100, format: "%.fcm")]
                 quickPose.update(features: selectedFeatures)
             }
         } message: {
@@ -374,8 +373,8 @@ extension QuickPose.Feature {
     public static func allDemoFeatures(component: String) -> [[QuickPose.Feature]] {
         if component == "Measurement" {
             return [
-                [.measureLineBody(p1: .userLeftShoulder, p2: .userRightShoulder, userHeight: nil, format: nil)],
-                [.measureLineBody(p1: .userLeftShoulder, p2: .userRightShoulder, userHeight: 100, format: "%.fcm")],
+                [.measureLineBody(p1: .shoulder(side: .left), p2: .shoulder(side: .right), userHeight: nil, format: nil)],
+                [.measureLineBody(p1: .shoulder(side: .left), p2: .shoulder(side: .right), userHeight: 100, format: "%.fcm")],
                 ]
         } else if component == "Health" {
             return [[.rangeOfMotion(.shoulder(side: .left, clockwiseDirection: false))], [.rangeOfMotion(.shoulder(side: .right, clockwiseDirection: true))],

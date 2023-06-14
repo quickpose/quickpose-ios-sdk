@@ -309,7 +309,7 @@ using UInt = size_t;
 ///         QuickPoseOverlayView(overlayImage: $overlayImage)
 ///     }
 ///     .onAppear {
-///         quickPose.start(features: [.overlay(.userLeftArm)], onFrame: { status, image, features, feedback, landmarks in
+///         quickPose.start(features: [.overlay(.arm(side: .left))], onFrame: { status, image, features, feedback, landmarks in
 ///             overlayImage = image
 ///         })
 ///     }
@@ -325,13 +325,13 @@ using UInt = size_t;
 /// Applying AI to camera feed is memory intensive and requires releasing for production use.
 /// The <code>start(features:onStart:onFrame:)</code> accepts a <code>Feature</code> array, and two closures one to asynchronously return when the camera has started, and second for each processed frame. Here only the onFrame image is read and applied the the view’s state, which triggers a SwiftUI refresh of the <code>QuickPoseOverlayView</code>.
 /// \code
-/// quickPose.start(features: [.overlay(.userLeftArm)], onFrame: { _, image, _, _, _ in
+/// quickPose.start(features: [.overlay(.arm(side: .left))], onFrame: { _, image, _, _, _ in
 ///     overlayImage = image
 ///   })
 ///
 /// \endcodeFor a more advanced example we can reference the <code>Status</code> state to log if the user is found and current performance via the returned frames-per-second.
 /// \code
-/// quickPose.start(features: [.overlay(.userLeftArm)], onFrame: { status, image, _, _, _ in
+/// quickPose.start(features: [.overlay(.arm(side: .left))], onFrame: { status, image, _, _, _ in
 ///     if case let .success(fps) = status {
 ///         print("fps: \(fps)")
 ///         overlayImage = image
@@ -349,6 +349,7 @@ using UInt = size_t;
 ///     quickPose.start(features: [selectedFeature], onStart: {
 ///         withAnimation { cameraViewOpacity = 1.0 } // unhide the camera when loaded
 ///     }, onFrame: { status, image, features, _, _ in
+///         overlayImage = image
 ///         if case let .success(fps) = status {
 ///             if case let .reading(_, displayString) = features[selectedFeature] {
 ///                 lastResult = displayString
@@ -358,7 +359,6 @@ using UInt = size_t;
 ///             } else if captureButtonOpacity == 1 {
 ///                 withAnimation { captureButtonOpacity = 0 }
 ///             }
-///             overlayImage = image
 ///         }
 ///     })
 ///
@@ -368,14 +368,14 @@ using UInt = size_t;
 /// \endcodeFor an example with changed formatting such as font size, color and line width we can specify a <code>Style</code> class
 /// \code
 /// let smallerStyle = QuickPose.Style(relativeLineWidth: 0.33)
-/// quickPose.start(features: [.overlay(.userLeftArm, style: smallerStyle)], onFrame: { status, image, _, _, _ in
+/// quickPose.start(features: [.overlay(.arm(side: .left), style: smallerStyle)], onFrame: { status, image, _, _, _ in
 ///     ....
 /// })
 ///
 /// \endcodeAnd for conditional formatting when the angle goes above 120 degrees use:
 /// \code
 /// let conditionalStyle = QuickPose.Style(conditionalColors: [QuickPose.Style.ConditionalColor(min: 120, max: nil, color: UIColor.red)])
-/// quickPose.start(features: [.overlay(.userLeftArm, style: conditionalStyle)], onFrame: { status, image, _, _, _ in
+/// quickPose.start(features: [.overlay(.arm(side: .left), style: conditionalStyle)], onFrame: { status, image, _, _, _ in
 ///     ....
 /// })
 ///
