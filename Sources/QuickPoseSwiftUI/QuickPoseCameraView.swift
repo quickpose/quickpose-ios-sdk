@@ -16,19 +16,20 @@ import QuickPoseCamera
 public struct QuickPoseCameraView: View {
 
     let delegate: AVCaptureVideoDataOutputSampleBufferDelegate
-    
+    let videoGravity: AVLayerVideoGravity
     @State var cameraReady: Bool = false
     @State var camera: QuickPoseCamera? = nil
 
-    public init(useFrontCamera: Bool, delegate: AVCaptureVideoDataOutputSampleBufferDelegate) {
+    public init(useFrontCamera: Bool, delegate: AVCaptureVideoDataOutputSampleBufferDelegate, videoGravity: AVLayerVideoGravity = .resizeAspectFill) {
         self.camera = QuickPoseCamera(useFrontCamera: useFrontCamera)
         self.delegate = delegate
+        self.videoGravity = videoGravity
     }
     
     public var body: some View {
         ZStack(alignment: .top) {
             if cameraReady, let cameraFeedSession = camera?.session {
-                QuickPoseCameraRenderView(session: cameraFeedSession, videoGravity: .resizeAspectFill)
+                QuickPoseCameraRenderView(session: cameraFeedSession, videoGravity: videoGravity)
             }
         }.onAppear {
             do {
