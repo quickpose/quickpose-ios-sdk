@@ -6,8 +6,8 @@
 @class QuickPoseMP;
 
 @protocol QuickPoseMediaPipeDelegate <NSObject>
-- (void) mediaPipeImpl: (QuickPoseMP*)mediaPipeImpl didOutputPoseLandmarks: (NSArray<NSArray<NSNumber*>*> *) poseLandmarks worldPoseLandmarks: (NSArray<NSArray<NSNumber*>*> *) worldPoseLandmarks faceLandmarks: (NSArray<NSArray<NSNumber*>*>  *)faceLandmarks leftHandLandmarks: (NSArray<NSArray<NSNumber*>*>  *) leftHandLandmarks  rightHandLandmarks: (NSArray<NSArray<NSNumber*>*>  *)rightHandLandmarks timestamp:(CMTime)timestamp;
-- (void) mediaPipeImpl: (QuickPoseMP*)mediaPipeImpl didOutputPixelBuffer: (CVPixelBufferRef)pixelBuffer timestamp:(CMTime)timestamp;
+- (void) mediaPipeImpl: (QuickPoseMP*)mediaPipeImpl poseLandmarks: (NSArray<NSArray<NSNumber*>*> *) poseLandmarks worldPoseLandmarks: (NSArray<NSArray<NSNumber*>*> *) worldPoseLandmarks faceLandmarks: (NSArray<NSArray<NSNumber*>*>  *)faceLandmarks leftHandLandmarks: (NSArray<NSArray<NSNumber*>*>  *) leftHandLandmarks  rightHandLandmarks: (NSArray<NSArray<NSNumber*>*>  *)rightHandLandmarks timestamp:(CMTime)timestamp;
+
 @end
 
 @interface QuickPoseMP : NSObject
