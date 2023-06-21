@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## v1.2.0 - 2023-06-21
 
 ### Added
-- Inside box feature and overlay. Defaults to whole body but any group can be used.
+- Inside box feature and overlay. Defaults to whole body but any joint group can be used.
 - High Performance guide
 
 ### Changed
