@@ -10,15 +10,16 @@ import SwiftUI
 
 public struct QuickPoseOverlayView: View {
     let overlayImage: Binding<UIImage?>
-    
-    public init(overlayImage: Binding<UIImage?>) {
+    let contentMode: ContentMode
+    public init(overlayImage: Binding<UIImage?>, contentMode: ContentMode = .fill) {
         self.overlayImage = overlayImage
+        self.contentMode = contentMode
     }
     
     public var body: some View {
         GeometryReader { reader in
             if let overlayImage = overlayImage.wrappedValue {
-                Image(uiImage: overlayImage).resizable().aspectRatio(contentMode: .fill)
+                Image(uiImage: overlayImage).resizable().aspectRatio(contentMode: contentMode)
                     .frame(width: reader.size.width, height: reader.size.height)
             }
         }
