@@ -13,7 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Library performance under high framerates
 - Improving readability of landmarks, by replacing raw double array with scaled Point3d lookups.
-- Tidying up features by passing side as a parameter
+- Tidying up features by passing side as a parameter e.g. .userRightKnee -> .knee(side: .right)
 - Simplified Feedback text to reuse QuickPose.Landmark.Group
 
 
