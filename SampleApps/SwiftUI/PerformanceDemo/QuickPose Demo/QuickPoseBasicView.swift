@@ -11,18 +11,14 @@ import QuickPoseSwiftUI
 
 struct QuickPoseBasicView: View {
 
-    private var quickPose = QuickPose(sdkKey: "01GS5J4JEQQZDZZB0EYSE974BV") // register for your free key at https://dev.quickpose.ai
+    private var quickPose = QuickPose(sdkKey: "YOUR SDK KEY HERE") // register for your free key at https://dev.quickpose.ai
     @State private var overlayImage: UIImage?
     @State private var frameRate: Double? = nil
     
     var body: some View {
         GeometryReader { geometry in
             ZStack(alignment: .top) {
-                if false, ProcessInfo.processInfo.isiOSAppOnMac, let url = Bundle.main.url(forResource: "happy-dance", withExtension: "mov") {
-                    QuickPoseSimulatedCameraView(useFrontCamera: true, delegate: quickPose, video: url)
-                } else {
-                    QuickPoseCameraView(useFrontCamera: true, delegate: quickPose, frameRate: $frameRate)
-                }
+                QuickPoseCameraView(useFrontCamera: true, delegate: quickPose, frameRate: $frameRate)
                 QuickPoseOverlayView(overlayImage: $overlayImage)
             }
             .frame(width: geometry.size.width)
