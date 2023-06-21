@@ -14,6 +14,7 @@ struct QuickPoseBasicView: View {
     private var quickPose = QuickPose(sdkKey: "01GS5J4JEQQZDZZB0EYSE974BV") // register for your free key at https://dev.quickpose.ai
     @State private var overlayImage: UIImage?
     @State private var frameRate: Double? = nil
+    
     var body: some View {
         GeometryReader { geometry in
             ZStack(alignment: .top) {
@@ -27,11 +28,18 @@ struct QuickPoseBasicView: View {
             .frame(width: geometry.size.width)
             .edgesIgnoringSafeArea(.all)
             .onAppear {
-                let modelConfig = QuickPose.ModelConfig(detailedFaceTracking: false, detailedHandTracking: false, modelComplexity: .light) // 14.48% faster than defaults
-                quickPose.start(features: [.showPoints()], onFrame: { status, image, features, feedback, landmarks in
+                let modelConfigLite = QuickPose.ModelConfig(detailedFaceTracking: false, detailedHandTracking: false, modelComplexity: .light)
+                let modelConfigGood = QuickPose.ModelConfig(detailedFaceTracking: false, detailedHandTracking: false, modelComplexity: .good)
+                let modelConfigHeavy = QuickPose.ModelConfig(detailedFaceTracking: true, detailedHandTracking: true, modelComplexity: .heavy)
+                quickPose.start(features: [.showPoints()], modelConfig: modelConfigHeavy,  onFrame: { status, image, features, feedback, landmarks in
                     overlayImage = image
                     if case .success(let fps, let latency) = status {
-                        print(fps, latency)
+                        if latency > 0 {
+                            let maxFps = Int(1 / latency)
+                            print(fps)
+                        } else {
+                            print(fps, latency)
+                        }
                     } else {
                         // show error feedback
                     }

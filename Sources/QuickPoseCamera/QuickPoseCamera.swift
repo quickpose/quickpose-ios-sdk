@@ -149,12 +149,14 @@ public class QuickPoseCamera {
 extension AVCaptureDevice {
     fileprivate func setFrameRate(_ frameRate: Double?) {
         
-        guard let frameRate = frameRate, activeVideoMaxFrameDuration.timescale != Int32(frameRate) else { return } // if possible avoid changing
+        guard let frameRate = frameRate else { return } // if possible avoid changing
         var selectedFormat: AVCaptureDevice.Format? = nil
         let activeDimensions = CMVideoFormatDescriptionGetDimensions(activeFormat.formatDescription);
         for format in formats {
+            guard selectedFormat == nil else { break }
             for range in format.videoSupportedFrameRateRanges {
                 let dimensions = CMVideoFormatDescriptionGetDimensions(format.formatDescription);
+                //print(dimensions, range.maxFrameRate)
                 if (range.minFrameRate <= frameRate && frameRate <= range.maxFrameRate && dimensions.width == activeDimensions.width && dimensions.height == activeDimensions.height) {
                     selectedFormat = format
                     break
@@ -173,7 +175,7 @@ extension AVCaptureDevice {
                 print("LockForConfiguration failed with error: \(error.localizedDescription)")
             }
         } else {
-            print("QuickPose couldn't set frameRate to \(frameRate)fps at \(activeDimensions), continuing with \(String(format:"%.f",activeVideoMaxFrameDuration.timescale))fps")
+            print("QuickPose couldn't set frameRate to \(frameRate)fps at \(activeDimensions), continuing with \(String(format:"%d",activeVideoMaxFrameDuration.timescale))fps")
         }
     }
 }
