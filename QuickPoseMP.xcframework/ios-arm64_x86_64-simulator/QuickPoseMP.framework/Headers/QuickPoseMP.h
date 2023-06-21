@@ -6,7 +6,7 @@
 @class QuickPoseMP;
 
 @protocol QuickPoseMediaPipeDelegate <NSObject>
-- (void) mediaPipeImpl: (QuickPoseMP*)mediaPipeImpl poseLandmarks: (NSArray<NSArray<NSNumber*>*> *) poseLandmarks worldPoseLandmarks: (NSArray<NSArray<NSNumber*>*> *) worldPoseLandmarks faceLandmarks: (NSArray<NSArray<NSNumber*>*>  *)faceLandmarks leftHandLandmarks: (NSArray<NSArray<NSNumber*>*>  *) leftHandLandmarks  rightHandLandmarks: (NSArray<NSArray<NSNumber*>*>  *)rightHandLandmarks timestamp:(CMTime)timestamp;
+- (void) mediaPipeImpl: (QuickPoseMP*)mediaPipeImpl poseLandmarks: (NSArray<NSArray<NSNumber*>*> *) poseLandmarks worldPoseLandmarks: (NSArray<NSArray<NSNumber*>*> *) worldPoseLandmarks faceLandmarks: (NSArray<NSArray<NSNumber*>*>  *)faceLandmarks leftHandLandmarks: (NSArray<NSArray<NSNumber*>*>  *) leftHandLandmarks  rightHandLandmarks: (NSArray<NSArray<NSNumber*>*>  *)rightHandLandmarks timestamp:(CMTime)timestamp absoluteTime:(CFAbsoluteTime) absoluteTime;
 
 @end
 
@@ -14,7 +14,7 @@
 - (instancetype)initWithFaceTracking: (BOOL) faceTracking andHandTracking: (BOOL) handTracking;
 - (void)startGraphWithModelComplexity: (int) modelComplexity andSmoothLandmarks: (BOOL) smoothLandmarks;
 - (void)stopGraph;
-- (void)processVideoFrame:(CVPixelBufferRef)imageBuffer timestamp:(CMTime)timestamp;
+- (void)processVideoFrame:(CVPixelBufferRef)imageBuffer timestamp:(CMTime)timestamp absoluteTime:(CFAbsoluteTime) absoluteTime;
 
 @property (readwrite, nonatomic) int rotationDegrees;
 @property (readwrite, nonatomic) BOOL handTrackingEnabled;
