@@ -10,31 +10,31 @@
 		</data>
 		<key>Headers/QuickPoseCore-Swift.h</key>
 		<data>
-		hc5HtYxpjhKKr8MTYhT7l4bqTds=
+		aUOBI//FVeWeMiXprQj7qiFhd2E=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		hAmmJCYXGVdEOcBVpUL61Ne5kcE=
+		vRhgTrtLpnI0ZDq7NNoAR4pMIlM=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		PkFQwIxyg7wnE9MdjyZ68lDeBfk=
+		eGBiOaMUze1kLv7OhwMbWwewr/Q=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		t2mBQUCTZhknw60BlihDAb2cavw=
+		FfQj9NicCi2xXSbv1lNKkCE7PcE=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		+71rdOc4/x2YrtehJI89mjINEaA=
+		G7xsQfM8r20UYNbM27D9dNZCjK0=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		t2mBQUCTZhknw60BlihDAb2cavw=
+		FfQj9NicCi2xXSbv1lNKkCE7PcE=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		JH77m9613S2HSdZYy9pQudw+I0Q=
+		vbN/8bzs6SohRFsS1vbL218xBxk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -150,42 +150,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pRCR5cVNPYj7wl9vn45ZryxWGbkTcG0btluioEQwISU=
+			kxXwyWA2pOoAZV94h/Q+plUOnLzjq5ACij93IkRUne0=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JLLOsraeHfYOMoQt3mP6r0ObKqe2a5WHMDQDOIUMCSc=
+			qgkA5MxFbG61ZL5HrgaNFMG2wY8DEohNTfZbbjyPMtA=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3Yn/QsjujCut8yLHrURWP9u62lH73NzBaWOkyR7g9T4=
+			RaZCdLqJDbuCdSffObZvoHDyWToxT9mL2QQoYWKTATQ=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PZRH4n0JJncWVMK4VB9l3M6w7nbdqsS6A7xqtByadNk=
+			OB3nrObxQqVWqgeMamCQdNg1/6HxLSQXL9yhzdi6xRs=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3Yn/QsjujCut8yLHrURWP9u62lH73NzBaWOkyR7g9T4=
+			RaZCdLqJDbuCdSffObZvoHDyWToxT9mL2QQoYWKTATQ=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			csMJvSwFqkltfTvGfpF7DRVGZCOEL7BQmiHpxGlLg48=
+			mFXw+FDMnWkdeNbwDqDaxdP9PCTc2NbyRxew+surmoI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

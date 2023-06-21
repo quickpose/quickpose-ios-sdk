@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D003502F297EE5C70009AFDA /* QuickPoseCore in Frameworks */ = {isa = PBXBuildFile; productRef = D003502E297EE5C70009AFDA /* QuickPoseCore */; };
+		D0035031297EE5C70009AFDA /* QuickPoseMP in Frameworks */ = {isa = PBXBuildFile; productRef = D0035030297EE5C70009AFDA /* QuickPoseMP */; };
+		D0035033297EE5C70009AFDA /* QuickPoseSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = D0035032297EE5C70009AFDA /* QuickPoseSwiftUI */; };
+		D0BB67B72976FC8900901A47 /* QuickPose_BasicDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D096814529475BF700E00306 /* QuickPose_BasicDemoApp.swift */; };
+		D0BB67B82976FC8900901A47 /* QuickPoseBasicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BB67AE2976D2B100901A47 /* QuickPoseBasicView.swift */; };
+		D0BB67BE2976FC8900901A47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D096814929475BF800E00306 /* Assets.xcassets */; };
+		D0BB67BF2976FC8900901A47 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F9CB6E2949138100C4CB24 /* Launch Screen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D0BB67C02976FC8900901A47 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D003502D297EE5BD0009AFDA /* quickpose-ios-sdk */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "quickpose-ios-sdk"; path = ../../..; sourceTree = "<group>"; };
+		D096814529475BF700E00306 /* QuickPose_BasicDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPose_BasicDemoApp.swift; sourceTree = "<group>"; };
+		D096814929475BF800E00306 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0BB67AE2976D2B100901A47 /* QuickPoseBasicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickPoseBasicView.swift; sourceTree = "<group>"; };
+		D0BB67C42976FC8900901A47 /* QuickPose Performance Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QuickPose Performance Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0F9CB6C2949110000C4CB24 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0F9CB6E2949138100C4CB24 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0BB67B92976FC8900901A47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0035031297EE5C70009AFDA /* QuickPoseMP in Frameworks */,
+				D0035033297EE5C70009AFDA /* QuickPoseSwiftUI in Frameworks */,
+				D003502F297EE5C70009AFDA /* QuickPoseCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D02AE6EB2970161500EB5081 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				D003502D297EE5BD0009AFDA /* quickpose-ios-sdk */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		D096813929475BF700E00306 = {
+			isa = PBXGroup;
+			children = (
+				D02AE6EB2970161500EB5081 /* Packages */,
+				D096814429475BF700E00306 /* QuickPose Demo */,
+				D0F9CB6C2949110000C4CB24 /* Info.plist */,
+				D0F9CB6E2949138100C4CB24 /* Launch Screen.storyboard */,
+				D096814329475BF700E00306 /* Products */,
+				D0BEEC7E29702C6A00158CBD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D096814329475BF700E00306 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0BB67C42976FC8900901A47 /* QuickPose Performance Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D096814429475BF700E00306 /* QuickPose Demo */ = {
+			isa = PBXGroup;
+			children = (
+				D096814529475BF700E00306 /* QuickPose_BasicDemoApp.swift */,
+				D0BB67AE2976D2B100901A47 /* QuickPoseBasicView.swift */,
+				D096814929475BF800E00306 /* Assets.xcassets */,
+			);
+			path = "QuickPose Demo";
+			sourceTree = "<group>";
+		};
+		D0BEEC7E29702C6A00158CBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0BB67B02976FC8900901A47 /* QuickPose Performance Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0BB67C12976FC8900901A47 /* Build configuration list for PBXNativeTarget "QuickPose Performance Demo" */;
+			buildPhases = (
+				D0BB67B52976FC8900901A47 /* Sources */,
+				D0BB67B92976FC8900901A47 /* Frameworks */,
+				D0BB67BD2976FC8900901A47 /* Resources */,
+				D0BB67C02976FC8900901A47 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0BB67B12976FC8900901A47 /* PBXTargetDependency */,
+			);
+			name = "QuickPose Performance Demo";
+			packageProductDependencies = (
+				D003502E297EE5C70009AFDA /* QuickPoseCore */,
+				D0035030297EE5C70009AFDA /* QuickPoseMP */,
+				D0035032297EE5C70009AFDA /* QuickPoseSwiftUI */,
+			);
+			productName = "QuickPose Health";
+			productReference = D0BB67C42976FC8900901A47 /* QuickPose Performance Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D096813A29475BF700E00306 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+			};
+			buildConfigurationList = D096813D29475BF700E00306 /* Build configuration list for PBXProject "QuickPose Performance Demo" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D096813929475BF700E00306;
+			packageReferences = (
+			);
+			productRefGroup = D096814329475BF700E00306 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0BB67B02976FC8900901A47 /* QuickPose Performance Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0BB67BD2976FC8900901A47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0BB67BE2976FC8900901A47 /* Assets.xcassets in Resources */,
+				D0BB67BF2976FC8900901A47 /* Launch Screen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0BB67B52976FC8900901A47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0BB67B72976FC8900901A47 /* QuickPose_BasicDemoApp.swift in Sources */,
+				D0BB67B82976FC8900901A47 /* QuickPoseBasicView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0BB67B12976FC8900901A47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = D02AE6ED2970169300EB5081 /* QuickPoseiOS */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D096814E29475BF800E00306 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D096814F29475BF800E00306 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0BB67C22976FC8900901A47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 22W63VGZT5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ai.quickpose.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D0BB67C32976FC8900901A47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 22W63VGZT5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ai.quickpose.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D096813D29475BF700E00306 /* Build configuration list for PBXProject "QuickPose Performance Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D096814E29475BF800E00306 /* Debug */,
+				D096814F29475BF800E00306 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0BB67C12976FC8900901A47 /* Build configuration list for PBXNativeTarget "QuickPose Performance Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0BB67C22976FC8900901A47 /* Debug */,
+				D0BB67C32976FC8900901A47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D003502E297EE5C70009AFDA /* QuickPoseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = QuickPoseCore;
+		};
+		D0035030297EE5C70009AFDA /* QuickPoseMP */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = QuickPoseMP;
+		};
+		D0035032297EE5C70009AFDA /* QuickPoseSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = QuickPoseSwiftUI;
+		};
+		D02AE6ED2970169300EB5081 /* QuickPoseiOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = QuickPoseiOS;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D096813A29475BF700E00306 /* Project object */;
+}
