@@ -13,6 +13,7 @@
 @interface QuickPoseMP : NSObject
 - (instancetype)initWithFaceTracking: (BOOL) faceTracking andHandTracking: (BOOL) handTracking;
 - (void)startGraphWithModelComplexity: (int) modelComplexity andSmoothLandmarks: (BOOL) smoothLandmarks;
+- (void) waitUntilGraphStarted;
 - (void)stopGraph;
 - (void)processVideoFrame:(CVPixelBufferRef)imageBuffer timestamp:(CMTime)timestamp absoluteTime:(CFAbsoluteTime) absoluteTime;
 

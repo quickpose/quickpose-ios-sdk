@@ -8,6 +8,7 @@
 import SwiftUI
 import QuickPoseCore
 import QuickPoseSwiftUI
+import AVFoundation
 
 struct QuickPoseBasicView: View {
 

@@ -335,7 +335,7 @@ struct QuickPosePickerView: View {
                         count = Int(result.value > 0.7 ? 1 : 0)
                         counterVisibility = 1
                     } else if case .thumbsUpOrDown = selectedFeatures.first, let result = features[selectedFeatures.first!] {
-                        count = Int(result.stringValue == "thumbs_up" && result.value > 0.7 ? 1 : result.stringValue == "thumbs_down" && result.value > 0.7 ? -1 : 0)
+                        count = Int(result.stringValue.lowercased().contains("up") && result.value > 0.7 ? 1 : result.stringValue.lowercased().contains("down") && result.value > 0.7 ? -1 : 0)
                         counterVisibility = 1
                     } else {
                         counterVisibility = 0

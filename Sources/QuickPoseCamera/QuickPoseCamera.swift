@@ -80,7 +80,7 @@ public class QuickPoseCamera {
     private let useFrontCamera: Bool
     private var device: AVCaptureDevice? = nil
     private lazy var output: AVCaptureVideoDataOutput = .init()
-    private let qpProcessingQueue = DispatchQueue(label: "QPProcessingQueue", qos: .userInteractive)
+    private let qpProcessingQueue = DispatchQueue(label: "QPProcessingQueue", qos: .userInitiated)
     private var initialFrameRate: Int32 = -1
     public init(useFrontCamera: Bool) {
         self.useFrontCamera = useFrontCamera

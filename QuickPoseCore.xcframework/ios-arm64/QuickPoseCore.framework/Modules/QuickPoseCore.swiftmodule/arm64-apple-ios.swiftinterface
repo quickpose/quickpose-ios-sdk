@@ -6,6 +6,7 @@ import AVFoundation
 import AVKit
 import CoreGraphics
 import CoreML
+import CoreMedia
 import Foundation
 import QuickPoseMP
 import Swift
@@ -33,75 +34,24 @@ public class QuickPoseThresholdCounter {
   public func reset()
   @objc deinit
 }
+public struct QuickPosePostProcessor {
+  public struct Request {
+    public let input: Foundation.URL
+    public let output: Foundation.URL
+    public let outputType: AVFoundation.AVFileType
+    public let darkenOutput: CoreFoundation.CGFloat
+    public let startTime: CoreMedia.CMTime
+    public let endTime: CoreMedia.CMTime?
+    public init(input: Foundation.URL, output: Foundation.URL, outputType: AVFoundation.AVFileType, darkenOutput: CoreFoundation.CGFloat = 0.1, startTime: CoreMedia.CMTime = CMTimeMakeWithSeconds(0, preferredTimescale:1000), endTime: CoreMedia.CMTime? = nil)
+    public init(bundleFilename: Swift.String, output: Foundation.URL, outputType: AVFoundation.AVFileType, darkenOutput: CoreFoundation.CGFloat = 0.1, startTime: CoreMedia.CMTime = CMTimeMakeWithSeconds(0, preferredTimescale:1000), endTime: CoreMedia.CMTime? = nil)
+  }
+  public init(sdkKey: Swift.String)
+  public func process(features: [QuickPoseCore.QuickPose.Feature], modelConfig: QuickPoseCore.QuickPose.ModelConfig = QuickPose.ModelConfig(), isFrontCamera: Swift.Bool, request: QuickPoseCore.QuickPosePostProcessor.Request, onFrame: @escaping ((Swift.Double, Swift.Double, QuickPoseCore.QuickPose.Status, UIKit.UIImage?, [QuickPoseCore.QuickPose.Feature : QuickPoseCore.QuickPose.FeatureResult], [QuickPoseCore.QuickPose.Feature : QuickPoseCore.QuickPose.PoseFeedback], QuickPoseCore.QuickPose.Landmarks?) -> ())) throws
+}
 public class QuickPoseClassifierSmoother {
   public init(alpha: Swift.Double = 0.9, windowSize: Swift.Int = 10)
   public func smooth(probs: [Swift.Double]) -> [Swift.Double]
   @objc deinit
-}
-@frozen public enum BodyPose {
-  case standFacing
-  case standSideOn
-  case floorFacing
-  case floorSideOnWithBackOffTheGround
-  case floorSideOnWithBackOnTheGround
-  public static func == (a: QuickPoseCore.BodyPose, b: QuickPoseCore.BodyPose) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-@frozen public enum BodyFeedback : Swift.String {
-  case standFacing
-  case standSideOn
-  case standFacingOrSide
-  case floorFacing
-  case floorSideOnWithBackOffTheGround
-  case floorWithBackOffTheGround
-  case floorSideOnWithBackOnTheGround
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-@frozen public enum PoseFeedback {
-  @frozen public enum ActionChange : Swift.String {
-    case move
-    case lean
-    case straighten
-    case lower
-    case place
-    case bend
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
-      get
-    }
-  }
-  @frozen public enum DirectionChange : Swift.String {
-    case up
-    case down
-    case forward
-    case back
-    case apart
-    case intoView
-    case intoBox
-    case onFloor
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
-      get
-    }
-  }
-  case body(feedback: QuickPoseCore.BodyFeedback, isRequired: Swift.Bool)
-  case group(action: QuickPoseCore.PoseFeedback.ActionChange, group: QuickPoseCore.QuickPose.Landmarks.Group, direction: QuickPoseCore.PoseFeedback.DirectionChange?, isRequired: Swift.Bool)
-  case joint(action: QuickPoseCore.PoseFeedback.ActionChange, joint: QuickPoseCore.QuickPose.Landmarks.Body, direction: QuickPoseCore.PoseFeedback.DirectionChange?, isRequired: Swift.Bool)
-  public var displayString: Swift.String {
-    get
-  }
-  public var isRequired: Swift.Bool {
-    get
-  }
 }
 public class QuickPoseDoubleAndStateUnchangedDetector {
   public var state: (resultValue: (value: Swift.Double, state: Swift.String), timestamp: Foundation.Date)?
@@ -240,6 +190,71 @@ extension QuickPoseCore.QuickPose {
       get
     }
   }
+  @frozen public enum BodyPose {
+    case standFacing
+    case standSideOn
+    case floorFacing
+    case floorSideOnWithBackOffTheGround
+    case floorSideOnWithBackOnTheGround
+    public static func == (a: QuickPoseCore.QuickPose.BodyPose, b: QuickPoseCore.QuickPose.BodyPose) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @frozen public enum BodyFeedback : Swift.String {
+    case standFacing
+    case standSideOn
+    case standFacingOrSide
+    case floorFacing
+    case floorSideOnWithBackOffTheGround
+    case floorWithBackOffTheGround
+    case floorSideOnWithBackOnTheGround
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  @frozen public enum PoseFeedback {
+    @frozen public enum ActionChange : Swift.String {
+      case move
+      case lean
+      case straighten
+      case lower
+      case place
+      case bend
+      public init?(rawValue: Swift.String)
+      public typealias RawValue = Swift.String
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    @frozen public enum DirectionChange : Swift.String {
+      case up
+      case down
+      case forward
+      case back
+      case apart
+      case intoView
+      case intoBox
+      case onFloor
+      public init?(rawValue: Swift.String)
+      public typealias RawValue = Swift.String
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    case body(feedback: QuickPoseCore.QuickPose.BodyFeedback, isRequired: Swift.Bool)
+    case group(action: QuickPoseCore.QuickPose.PoseFeedback.ActionChange, group: QuickPoseCore.QuickPose.Landmarks.Group, direction: QuickPoseCore.QuickPose.PoseFeedback.DirectionChange?, isRequired: Swift.Bool)
+    case joint(action: QuickPoseCore.QuickPose.PoseFeedback.ActionChange, joint: QuickPoseCore.QuickPose.Landmarks.Body, direction: QuickPoseCore.QuickPose.PoseFeedback.DirectionChange?, isRequired: Swift.Bool)
+    public var displayString: Swift.String {
+      get
+    }
+    public var isRequired: Swift.Bool {
+      get
+    }
+  }
 }
 extension QuickPoseCore.QuickPose {
   public struct FeatureResult : Swift.Equatable {
@@ -266,9 +281,9 @@ extension QuickPoseCore.QuickPose {
         get
       }
     }
-    public init(detailedFaceTracking: Swift.Bool = true, detailedHandTracking: Swift.Bool = true, modelComplexity: QuickPoseCore.QuickPose.ModelConfig.ModelComplexity = .good)
+    public init(detailedFaceTracking: Swift.Bool = true, detailedHandTracking: Swift.Bool = true, modelComplexity: QuickPoseCore.QuickPose.ModelConfig.ModelComplexity = .good, rotationDegrees: Swift.Int? = nil)
   }
-  public func start(features: [QuickPoseCore.QuickPose.Feature], modelConfig: QuickPoseCore.QuickPose.ModelConfig = ModelConfig(), onStart: (() -> ())? = nil, onFrame: @escaping ((QuickPoseCore.QuickPose.Status, UIKit.UIImage?, [QuickPoseCore.QuickPose.Feature : QuickPoseCore.QuickPose.FeatureResult], [QuickPoseCore.QuickPose.Feature : QuickPoseCore.PoseFeedback], QuickPoseCore.QuickPose.Landmarks?) -> ()))
+  public func start(features: [QuickPoseCore.QuickPose.Feature], modelConfig: QuickPoseCore.QuickPose.ModelConfig = ModelConfig(), onStart: (() -> ())? = nil, onFrame: @escaping ((QuickPoseCore.QuickPose.Status, UIKit.UIImage?, [QuickPoseCore.QuickPose.Feature : QuickPoseCore.QuickPose.FeatureResult], [QuickPoseCore.QuickPose.Feature : QuickPoseCore.QuickPose.PoseFeedback], QuickPoseCore.QuickPose.Landmarks?) -> ()))
   public func disableLogging()
   public func enableLogging()
   public func update(features: [QuickPoseCore.QuickPose.Feature], modelConfig: QuickPoseCore.QuickPose.ModelConfig? = nil)
@@ -451,25 +466,25 @@ public class QuickPoseThresholdTimer {
   @objc deinit
 }
 extension QuickPoseCore.QuickPoseThresholdCounter.CountState : Swift.Sendable {}
-extension QuickPoseCore.BodyPose : Swift.Equatable {}
-extension QuickPoseCore.BodyPose : Swift.Hashable {}
-extension QuickPoseCore.BodyPose : Swift.Sendable {}
-extension QuickPoseCore.BodyFeedback : Swift.Equatable {}
-extension QuickPoseCore.BodyFeedback : Swift.Hashable {}
-extension QuickPoseCore.BodyFeedback : Swift.RawRepresentable {}
-extension QuickPoseCore.BodyFeedback : Swift.Sendable {}
-extension QuickPoseCore.PoseFeedback : Swift.Sendable {}
-extension QuickPoseCore.PoseFeedback.ActionChange : Swift.Equatable {}
-extension QuickPoseCore.PoseFeedback.ActionChange : Swift.Hashable {}
-extension QuickPoseCore.PoseFeedback.ActionChange : Swift.RawRepresentable {}
-extension QuickPoseCore.PoseFeedback.ActionChange : Swift.Sendable {}
-extension QuickPoseCore.PoseFeedback.DirectionChange : Swift.Equatable {}
-extension QuickPoseCore.PoseFeedback.DirectionChange : Swift.Hashable {}
-extension QuickPoseCore.PoseFeedback.DirectionChange : Swift.RawRepresentable {}
-extension QuickPoseCore.PoseFeedback.DirectionChange : Swift.Sendable {}
 extension QuickPoseCore.QuickPose.Side : Swift.Sendable {}
 extension QuickPoseCore.QuickPose.RangeOfMotion : Swift.Sendable {}
 extension QuickPoseCore.QuickPose.FitnessFeature : Swift.Sendable {}
+extension QuickPoseCore.QuickPose.BodyPose : Swift.Equatable {}
+extension QuickPoseCore.QuickPose.BodyPose : Swift.Hashable {}
+extension QuickPoseCore.QuickPose.BodyPose : Swift.Sendable {}
+extension QuickPoseCore.QuickPose.BodyFeedback : Swift.Equatable {}
+extension QuickPoseCore.QuickPose.BodyFeedback : Swift.Hashable {}
+extension QuickPoseCore.QuickPose.BodyFeedback : Swift.RawRepresentable {}
+extension QuickPoseCore.QuickPose.BodyFeedback : Swift.Sendable {}
+extension QuickPoseCore.QuickPose.PoseFeedback : Swift.Sendable {}
+extension QuickPoseCore.QuickPose.PoseFeedback.ActionChange : Swift.Equatable {}
+extension QuickPoseCore.QuickPose.PoseFeedback.ActionChange : Swift.Hashable {}
+extension QuickPoseCore.QuickPose.PoseFeedback.ActionChange : Swift.RawRepresentable {}
+extension QuickPoseCore.QuickPose.PoseFeedback.ActionChange : Swift.Sendable {}
+extension QuickPoseCore.QuickPose.PoseFeedback.DirectionChange : Swift.Equatable {}
+extension QuickPoseCore.QuickPose.PoseFeedback.DirectionChange : Swift.Hashable {}
+extension QuickPoseCore.QuickPose.PoseFeedback.DirectionChange : Swift.RawRepresentable {}
+extension QuickPoseCore.QuickPose.PoseFeedback.DirectionChange : Swift.Sendable {}
 extension QuickPoseCore.QuickPose.Status : Swift.Sendable {}
 extension QuickPoseCore.QuickPose.ModelConfig.ModelComplexity : Swift.Equatable {}
 extension QuickPoseCore.QuickPose.ModelConfig.ModelComplexity : Swift.Hashable {}
