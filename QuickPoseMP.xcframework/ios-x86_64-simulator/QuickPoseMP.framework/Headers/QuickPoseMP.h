@@ -6,7 +6,7 @@
 @class QuickPoseMP;
 
 @protocol QuickPoseMediaPipeDelegate <NSObject>
-- (void) mediaPipeImpl: (QuickPoseMP*)mediaPipeImpl poseLandmarks: (NSArray<NSArray<NSNumber*>*> *) poseLandmarks worldPoseLandmarks: (NSArray<NSArray<NSNumber*>*> *) worldPoseLandmarks faceLandmarks: (NSArray<NSArray<NSNumber*>*>  *)faceLandmarks leftHandLandmarks: (NSArray<NSArray<NSNumber*>*>  *) leftHandLandmarks  rightHandLandmarks: (NSArray<NSArray<NSNumber*>*>  *)rightHandLandmarks timestamp:(CMTime)timestamp absoluteTime:(CFAbsoluteTime) absoluteTime;
+- (void) mediaPipeImpl: (QuickPoseMP*)mediaPipeImpl poseLandmarks:  (nullable NSArray<NSNumber*> *) poseLandmarks worldPoseLandmarks: (nullable NSArray<NSNumber*> *) worldPoseLandmarks faceLandmarks: (nullable NSArray<NSNumber*> *) faceLandmarks leftHandLandmarks: (nullable NSArray<NSNumber*> *)leftHandLandmarks  rightHandLandmarks: (nullable NSArray<NSNumber*> *)rightHandLandmarks frame: (nullable CVPixelBufferRef) frame timestamp:(CMTime)timestamp absoluteTime:(CFAbsoluteTime) absoluteTime;
 
 @end
 

@@ -362,8 +362,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 /// \endcodeFor a more advanced example we can reference the <code>Status</code> state to log if the user is found and current performance via the returned frames-per-second.
 /// \code
 /// quickPose.start(features: [.overlay(.arm(side: .left))], onFrame: { status, image, _, _, _ in
-///     if case let .success(fps) = status {
-///         print("fps: \(fps)")
+///     if case let .success(performance, _) = status {
+///         print("fps: \(performance.fps)")
 ///         overlayImage = image
 ///     } else {
 ///         print("No one found")
@@ -380,7 +380,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 ///         withAnimation { cameraViewOpacity = 1.0 } // unhide the camera when loaded
 ///     }, onFrame: { status, image, features, _, _ in
 ///         overlayImage = image
-///         if case let .success(fps) = status {
+///         if case let .success(_, _) = status {
 ///             if case let .reading(_, displayString) = features[selectedFeature] {
 ///                 lastResult = displayString
 ///                 if captureButtonOpacity == 0 { // only show button when reading available

@@ -50,6 +50,7 @@ struct QuickPoseBasicView: View {
                             } else {
                                 print("\(time)")
                             }
+                            // quickPosePP.update(features: [QuickPose.Feature]) // you can update the features based on the video, like in real time.
                             
                         }
                         fileProcessingProgress = 100

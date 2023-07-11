@@ -20,6 +20,23 @@ struct ValueBar: View {
     }
 }
 
+extension UIImage {
+  func mergeWith(topImage: UIImage) -> UIImage {
+    let bottomImage = self
+
+    UIGraphicsBeginImageContext(size)
+
+
+    let areaSize = CGRect(x: 0, y: 0, width: bottomImage.size.width, height: bottomImage.size.height)
+    bottomImage.draw(in: areaSize)
+
+    topImage.draw(in: areaSize, blendMode: .normal, alpha: 1.0)
+
+    let mergedImage = UIGraphicsGetImageFromCurrentImageContext()!
+    UIGraphicsEndImageContext()
+    return mergedImage
+  }
+}
 
 struct QuickPoseStatsView: View {
     @Environment(\.geometry) private var geometrySize
@@ -61,6 +78,7 @@ struct QuickPosePickerView: View {
     @State var useFrontCamera: Bool = true
     
     @State private var lastResult: String? = nil
+    @State private var lastResultImage: UIImage? = nil
     @State private var lastFPS: Int = 0
     @State private var lastLag: Double = 0
     @State private var showResult: String? = nil
@@ -75,11 +93,12 @@ struct QuickPosePickerView: View {
     @State private var heightInCMText: String = ""
     @State private var feedbackText: String? = nil
     @State private var showHeightAlert: Bool = false
+    @State private var resultsImage: UIImage? = nil
    
     var body: some View {
         ZStack(alignment: .top) {
             if ProcessInfo.processInfo.isiOSAppOnMac, let url = Bundle.main.url(forResource: "rain-dance", withExtension: "mov") {
-                QuickPoseSimulatedCameraView(useFrontCamera: true, delegate: quickPose, video: url)
+                QuickPoseSimulatedCameraView(useFrontCamera: false, delegate: quickPose, video: url)
             } else {
                 QuickPoseCameraSwitchView(useFrontCamera: $useFrontCamera, delegate: quickPose, frameRate: $targetFPS)
             }
@@ -238,8 +257,16 @@ struct QuickPosePickerView: View {
             Text("To show a ruler in CM, please enter your height in CM. ")
         }
         .overlay(alignment: .bottom) {
+            if let resultsImage =  resultsImage {
+                Image(uiImage: resultsImage).resizable().aspectRatio(contentMode:  .fill)
+                    .frame(width: geometrySize.width, height: geometrySize.height)
+            }
+        }
+        .overlay(alignment: .bottom) {
+            
             Button(action: {
                 showResult = lastResult
+                resultsImage = lastResultImage!.mergeWith(topImage: overlayImage!)
             }) {
                 Text("Capture")
                     .font(.system(size: 24, weight: .semibold)).foregroundColor(.white)
@@ -298,13 +325,14 @@ struct QuickPosePickerView: View {
                 withAnimation { cameraViewOpacity = 1.0 } // unhide the camera when loaded
             }, onFrame: { status, image, features, feedback, landmarks in
                 overlayImage = image
-                if case let .success(fps, lag) = status {
-                    lastFPS = fps
-                    lastLag = lag*1000
+                if case let .success(performance, cameraImage) = status {
+                    lastFPS = performance.fps
+                    lastLag = performance.latency*1000
                     self.lastDebugResult = nil
 
                     if case .rangeOfMotion = selectedFeatures.first, let result = features[selectedFeatures.first!] {
                         lastResult = result.stringValue
+                        lastResultImage = cameraImage
                         if captureButtonOpacity == 0 { // only show button when reading available
                             withAnimation { captureButtonOpacity = 1 }
                         }
