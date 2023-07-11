@@ -13,7 +13,7 @@ struct QuickPoseBasicView: View {
 
     private var quickPose = QuickPose(sdkKey: "YOUR SDK KEY HERE") // register for your free key at https://dev.quickpose.ai
     @State private var overlayImage: UIImage?
-    @State private var frameRate: Double? = nil
+    @State private var frameRate: Double? = 90
     
     var body: some View {
         GeometryReader { geometry in
@@ -27,19 +27,22 @@ struct QuickPoseBasicView: View {
                 let modelConfigLite = QuickPose.ModelConfig(detailedFaceTracking: false, detailedHandTracking: false, modelComplexity: .light)
                 let modelConfigGood = QuickPose.ModelConfig(detailedFaceTracking: false, detailedHandTracking: false, modelComplexity: .good)
                 let modelConfigHeavy = QuickPose.ModelConfig(detailedFaceTracking: true, detailedHandTracking: true, modelComplexity: .heavy)
-                quickPose.start(features: [.showPoints()], modelConfig: modelConfigHeavy,  onFrame: { status, image, features, feedback, landmarks in
-                    overlayImage = image
-                    if case .success(let fps, let latency) = status {
-                        if latency > 0 {
-                            let maxFps = Int(1 / latency)
-                            print(fps)
+
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3){
+                    quickPose.start(features: [.showPoints()], modelConfig: modelConfigLite) { status, image, features, feedback, landmarks in
+                        overlayImage = image
+                        if case .success(let performance, _) = status {
+                            if performance.latency > 0 {
+                                //let maxFps = Int(1 / performance.latency)
+                                print(performance.fps)
+                            } else {
+                                print(performance.fps, performance.latency)
+                            }
                         } else {
-                            print(fps, latency)
+                            // show error feedback
                         }
-                    } else {
-                        // show error feedback
                     }
-                })
+                }
             }.onDisappear {
                 quickPose.stop()
             }

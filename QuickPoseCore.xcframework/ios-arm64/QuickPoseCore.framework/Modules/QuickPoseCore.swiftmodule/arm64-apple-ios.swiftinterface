@@ -34,7 +34,7 @@ public class QuickPoseThresholdCounter {
   public func reset()
   @objc deinit
 }
-public struct QuickPosePostProcessor {
+public class QuickPosePostProcessor {
   public struct Request {
     public let input: Foundation.URL
     public let output: Foundation.URL
@@ -46,7 +46,9 @@ public struct QuickPosePostProcessor {
     public init(bundleFilename: Swift.String, output: Foundation.URL, outputType: AVFoundation.AVFileType, darkenOutput: CoreFoundation.CGFloat = 0.1, startTime: CoreMedia.CMTime = CMTimeMakeWithSeconds(0, preferredTimescale:1000), endTime: CoreMedia.CMTime? = nil)
   }
   public init(sdkKey: Swift.String)
+  public func update(features: [QuickPoseCore.QuickPose.Feature], modelConfig: QuickPoseCore.QuickPose.ModelConfig? = nil)
   public func process(features: [QuickPoseCore.QuickPose.Feature], modelConfig: QuickPoseCore.QuickPose.ModelConfig = QuickPose.ModelConfig(), isFrontCamera: Swift.Bool, request: QuickPoseCore.QuickPosePostProcessor.Request, onFrame: @escaping ((Swift.Double, Swift.Double, QuickPoseCore.QuickPose.Status, UIKit.UIImage?, [QuickPoseCore.QuickPose.Feature : QuickPoseCore.QuickPose.FeatureResult], [QuickPoseCore.QuickPose.Feature : QuickPoseCore.QuickPose.PoseFeedback], QuickPoseCore.QuickPose.Landmarks?) -> ())) throws
+  @objc deinit
 }
 public class QuickPoseClassifierSmoother {
   public init(alpha: Swift.Double = 0.9, windowSize: Swift.Int = 10)
@@ -263,7 +265,7 @@ extension QuickPoseCore.QuickPose {
     public static func == (a: QuickPoseCore.QuickPose.FeatureResult, b: QuickPoseCore.QuickPose.FeatureResult) -> Swift.Bool
   }
   @frozen public enum Status {
-    case success(fps: Swift.Int, lag: Swift.Double)
+    case success(performance: (fps: Swift.Int, latency: Swift.Double), camera: UIKit.UIImage?)
     case noPersonFound
     case sdkValidationError
   }
@@ -310,11 +312,13 @@ extension QuickPoseCore.QuickPose {
   }
   public struct Landmarks {
     public let cameraSize: CoreFoundation.CGSize
+    public let aspectRatio: CoreFoundation.CGFloat
     public let isFrontCamera: Swift.Bool
     public func landmark(forBody joint: QuickPoseCore.QuickPose.Landmarks.Body) -> QuickPoseCore.QuickPose.Point3d
     public func worldLandmark(forBody joint: QuickPoseCore.QuickPose.Landmarks.Body) -> QuickPoseCore.QuickPose.Point3d
     public func landmark(forFace joint: QuickPoseCore.QuickPose.Landmarks.Face) -> QuickPoseCore.QuickPose.Point3d?
     public func allLandmarksForFace() -> [QuickPoseCore.QuickPose.Point3d]
+    public func allWorldLandmarksForBody() -> [QuickPoseCore.QuickPose.Point3d]
     public func allLandmarksForBody() -> [QuickPoseCore.QuickPose.Point3d]
     public func allLandmarksForHand(side: QuickPoseCore.QuickPose.Side) -> [QuickPoseCore.QuickPose.Point3d]
     public func landmark(forLeftHand joint: QuickPoseCore.QuickPose.Landmarks.Hand) -> QuickPoseCore.QuickPose.Point3d?
