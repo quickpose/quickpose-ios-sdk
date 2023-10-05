@@ -325,14 +325,14 @@ struct QuickPosePickerView: View {
                 withAnimation { cameraViewOpacity = 1.0 } // unhide the camera when loaded
             }, onFrame: { status, image, features, feedback, landmarks in
                 overlayImage = image
-                if case let .success(performance, cameraImage) = status {
+                if case let .success(performance) = status {
                     lastFPS = performance.fps
                     lastLag = performance.latency*1000
                     self.lastDebugResult = nil
 
                     if case .rangeOfMotion = selectedFeatures.first, let result = features[selectedFeatures.first!] {
                         lastResult = result.stringValue
-                        lastResultImage = cameraImage
+//                        lastResultImage = cameraImage
                         if captureButtonOpacity == 0 { // only show button when reading available
                             withAnimation { captureButtonOpacity = 1 }
                         }

@@ -10,31 +10,31 @@
 		</data>
 		<key>Headers/QuickPoseCore-Swift.h</key>
 		<data>
-		ZXgcTSeookJpVq3c3DygKspYFGk=
+		gFVricINPvZ8C4vPH560Fe1XQys=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		HhSZnvhv5QwMg7f/zFchBeFfmrU=
+		++Mp//Y/q+lQJ6IJeKFPk0S2iMs=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		ZXFfDczyecLlwNrrf1XD7MmvZlY=
+		VJY82XcBr63ANH3FXrdK1La3tx8=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		htM9YA/BM79et1eQqVlpHUPsTcU=
+		h/UTJRieSr4i9HKsP6gQINmo3Qs=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		B133FfeCSEzIvYSixLAw3TNdsug=
+		/8jWuclXTODzL9Fyuxi2MikJtfA=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		htM9YA/BM79et1eQqVlpHUPsTcU=
+		h/UTJRieSr4i9HKsP6gQINmo3Qs=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		didgaUQtgNGJ+0g+ty7fE+qbbW8=
+		N+9bnC8ipLb8etDc3V0vJWZnams=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -150,42 +150,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8reN9JRJtuNsLPDhAJIh4M9NJqsug6wXAHQ4UiSxET4=
+			h4iCdrvmk3/vAlvIfnLbZX59mmP1EbrgtfpOehQqgEM=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			J6qCTipnmYIezO5lQ/kUu8ECwyMywIihfA/HNoSo0DM=
+			9re5jNMtl9htmZs5v0l0LmZq4gc8FhQgKY5R0U5TB9k=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sUrjfe8IIHroJlKBC9/fntZoGRf+M5CDJqW2GgFI+rI=
+			1S1Bp8M53Vta2oTj1NCTcZT7aNvJiUCFcONFDv2+xXQ=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aXNnbqD+IbmUgjpXRpQAZXjZqPy7yRNuPMnTQTCx6Js=
+			aJictNGJNmDBbyuOGRNXZ1airaf2HDTKe/cNb9PnRJU=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sUrjfe8IIHroJlKBC9/fntZoGRf+M5CDJqW2GgFI+rI=
+			1S1Bp8M53Vta2oTj1NCTcZT7aNvJiUCFcONFDv2+xXQ=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			T4FfsHHE78klSIu9jKMT93hHK42z9xSSo8QaCskxmBk=
+			TrkFca1F0Nn8ufD+EyJkuzNRkp/yLpTIeKUVOq5Hugs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

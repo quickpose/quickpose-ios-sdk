@@ -25,13 +25,14 @@ struct QuickPoseBasicView: View {
             .edgesIgnoringSafeArea(.all)
             .onAppear {
                 let modelConfigLite = QuickPose.ModelConfig(detailedFaceTracking: false, detailedHandTracking: false, modelComplexity: .light)
-                let modelConfigGood = QuickPose.ModelConfig(detailedFaceTracking: false, detailedHandTracking: false, modelComplexity: .good)
+                let modelConfigGood = QuickPose.ModelConfig(detailedFaceTracking: true, detailedHandTracking: true, modelComplexity: .good)
                 let modelConfigHeavy = QuickPose.ModelConfig(detailedFaceTracking: true, detailedHandTracking: true, modelComplexity: .heavy)
 
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3){
-                    quickPose.start(features: [.showPoints()], modelConfig: modelConfigLite) { status, image, features, feedback, landmarks in
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3){ // for max stressing of the device the delay stops ios killing thread on startup
+                    quickPose.start(features: [.showPoints()], modelConfig: modelConfigGood) { status, image, features, feedback, landmarks in
                         overlayImage = image
-                        if case .success(let performance, _) = status {
+                        
+                        if case .success(let performance) = status {
                             if performance.latency > 0 {
                                 //let maxFps = Int(1 / performance.latency)
                                 print(performance.fps)
