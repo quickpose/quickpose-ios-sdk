@@ -39,7 +39,7 @@ struct QuickPoseBasicView: View {
                     filename = request.input.lastPathComponent
                     
                     print("Processing \(request.input.lastPathComponent) -> \(request.output)")
-                    do {
+                    do { 
                         let features: [QuickPose.Feature] = [.rangeOfMotion(.shoulder(side: .right, clockwiseDirection: true), style: QuickPose.Style(relativeFontSize: 0.5, relativeArcSize: 0.5, relativeLineWidth: 0.5))]
                         
                         

@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name QuickPoseCore
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
@@ -15,6 +15,7 @@ import VideoToolbox
 import Vision
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 public class QuickPoseThresholdCounter {
   @frozen public enum CountState {
     case poseEntered(_: Swift.Int)
@@ -118,6 +119,7 @@ extension QuickPoseCore.QuickPose {
     case thumbsUpOrDown(side: QuickPoseCore.QuickPose.Side? = nil, style: QuickPoseCore.QuickPose.Style = Style(relativeLineWidth: 0.5))
     case rangeOfMotion(_: QuickPoseCore.QuickPose.RangeOfMotion, style: QuickPoseCore.QuickPose.Style = Style())
     case fitness(_: QuickPoseCore.QuickPose.FitnessFeature, style: QuickPoseCore.QuickPose.Style = Style())
+    case overlayHasCameraAsBackground(darkenCamera: Swift.Float)
     public var displayString: Swift.String {
       get
     }
@@ -265,8 +267,8 @@ extension QuickPoseCore.QuickPose {
     public static func == (a: QuickPoseCore.QuickPose.FeatureResult, b: QuickPoseCore.QuickPose.FeatureResult) -> Swift.Bool
   }
   @frozen public enum Status {
-    case success(performance: (fps: Swift.Int, latency: Swift.Double), camera: UIKit.UIImage?)
-    case noPersonFound
+    case success(info: (fps: Swift.Int, latency: Swift.Double, size: CoreFoundation.CGSize, timestamp: CoreMedia.CMTime))
+    case noPersonFound(info: (fps: Swift.Int, latency: Swift.Double, size: CoreFoundation.CGSize, timestamp: CoreMedia.CMTime))
     case sdkValidationError
   }
 }
@@ -311,9 +313,6 @@ extension QuickPoseCore.QuickPose {
     public static func - (lhs: QuickPoseCore.QuickPose.Point3d, rhs: QuickPoseCore.QuickPose.Point3d) -> QuickPoseCore.QuickPose.Point3d
   }
   public struct Landmarks {
-    public let cameraSize: CoreFoundation.CGSize
-    public let aspectRatio: CoreFoundation.CGFloat
-    public let isFrontCamera: Swift.Bool
     public func landmark(forBody joint: QuickPoseCore.QuickPose.Landmarks.Body) -> QuickPoseCore.QuickPose.Point3d
     public func worldLandmark(forBody joint: QuickPoseCore.QuickPose.Landmarks.Body) -> QuickPoseCore.QuickPose.Point3d
     public func landmark(forFace joint: QuickPoseCore.QuickPose.Landmarks.Face) -> QuickPoseCore.QuickPose.Point3d?
