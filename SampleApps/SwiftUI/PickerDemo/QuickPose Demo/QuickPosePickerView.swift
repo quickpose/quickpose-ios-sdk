@@ -72,7 +72,7 @@ struct QuickPosePickerView: View {
     @State var counter = QuickPoseThresholdCounter()
     @State var timer = QuickPoseThresholdTimer()
     
-    private var quickPose = QuickPose(sdkKey: "YOUR SDK KEY HERE") // register for your free key at https://dev.quickpose.ai
+    private var quickPose = QuickPose(sdkKey: "01GS5J4JEQQZDZZB0EYSE974BV") // register for your free key at https://dev.quickpose.ai
     @State private var overlayImage: UIImage?
     
     @State var useFrontCamera: Bool = true
