@@ -13,7 +13,7 @@ struct QuickPoseBasicView: View {
 
     private var quickPose = QuickPose(sdkKey: "YOUR SDK KEY HERE") // register for your free key at https://dev.quickpose.ai
     @State private var overlayImage: UIImage?
-    @State private var frameRate: Double? = 90
+    @State private var frameRate: Double? = 60
     
     var body: some View {
         GeometryReader { geometry in

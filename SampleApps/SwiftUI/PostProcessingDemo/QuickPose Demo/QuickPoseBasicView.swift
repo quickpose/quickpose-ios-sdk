@@ -15,16 +15,23 @@ struct QuickPoseBasicView: View {
     @State private var overlayImage: UIImage?
     @State private var filename: String? = nil
     @State private var fileProcessingProgress: Int? = nil
+    @State private var complete: URL? = nil
     
     var body: some View {
         GeometryReader { geometry in
             VStack {
-                if let filename = filename {
-                    Text("Processing\n\(filename)").multilineTextAlignment(.center)
+                if let complete = complete {
+                    Text("Processed\n\(filename ?? "")\n\(complete.absoluteString)").multilineTextAlignment(.center)
+                    
+                } else {
+                    if let filename = filename {
+                        Text("Processing\n\(filename)").multilineTextAlignment(.center)
+                    }
+                    if let progress = fileProcessingProgress {
+                        Text("\(progress)%").padding(.top, 20)
+                    }
                 }
-                if let progress = fileProcessingProgress {
-                    Text("\(progress)%").padding(.top, 20)
-                }
+                
             }
             .font(.system(size: 16, weight: .semibold)).foregroundColor(.white)
             .frame(width: geometry.size.width, height: geometry.size.height, alignment: .center)
@@ -32,8 +39,8 @@ struct QuickPoseBasicView: View {
             .onAppear() {
                 DispatchQueue.global(qos: .userInteractive).async {
                     let quickPosePP = QuickPosePostProcessor(sdkKey: "YOUR SDK KEY HERE") // register for your free key at https://dev.quickpose.ai
-                    
-                    let request = QuickPosePostProcessor.Request(input: Bundle.main.url(forResource: "tennis_240fps.mov", withExtension: nil)!, output: FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("tennis_240fps.mov"), outputType: .mov)
+                    let outputDir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("tennis_240fps.mov")
+                    let request = QuickPosePostProcessor.Request(input: Bundle.main.url(forResource: "tennis_240fps.mov", withExtension: nil)!, output:outputDir, outputType: .mov)
                     
                     fileProcessingProgress = nil
                     filename = request.input.lastPathComponent
@@ -43,7 +50,7 @@ struct QuickPoseBasicView: View {
                         let features: [QuickPose.Feature] = [.rangeOfMotion(.shoulder(side: .right, clockwiseDirection: true), style: QuickPose.Style(relativeFontSize: 0.5, relativeArcSize: 0.5, relativeLineWidth: 0.5))]
                         
                         
-                        try quickPosePP.process(features: features, isFrontCamera: true, request: request) { progress, time, _, _, features, _, _ in
+                        try quickPosePP.process(features: features, isFrontCamera: false, request: request) { progress, time, _, _, features, _, _ in
                             fileProcessingProgress = Int(progress * 100)
                             if let feature = features.first {
                                 print("\(time), \(feature.key.displayString) \(feature.value.stringValue)")
@@ -51,9 +58,10 @@ struct QuickPoseBasicView: View {
                                 print("\(time)")
                             }
                             // quickPosePP.update(features: [QuickPose.Feature]) // you can update the features based on the video, like in real time.
-                            
                         }
+                        complete = outputDir
                         fileProcessingProgress = 100
+                        print("Video output to \(outputDir)")
                     } catch {
                         print("\(request.input.lastPathComponent): file could not be processed: \(error)")
                     }

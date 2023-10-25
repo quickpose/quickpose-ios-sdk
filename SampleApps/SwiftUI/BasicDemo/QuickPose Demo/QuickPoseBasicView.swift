@@ -29,7 +29,7 @@ struct QuickPoseBasicView: View {
             .onAppear {
                 quickPose.start(features: [.overlay(.wholeBody)], onFrame: { status, image, features, feedback, landmarks in
                     overlayImage = image
-                    if case .success(_, _) = status {
+                    if case .success = status {
                         
                     } else {
                         // show error feedback

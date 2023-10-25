@@ -6,23 +6,23 @@
 @class QuickPoseMP;
 
 @protocol QuickPoseMediaPipeDelegate <NSObject>
-- (void) mediaPipeImpl: (QuickPoseMP*)mediaPipeImpl poseLandmarks:  (nullable NSArray<NSNumber*> *) poseLandmarks worldPoseLandmarks: (nullable NSArray<NSNumber*> *) worldPoseLandmarks faceLandmarks: (nullable NSArray<NSNumber*> *) faceLandmarks leftHandLandmarks: (nullable NSArray<NSNumber*> *)leftHandLandmarks  rightHandLandmarks: (nullable NSArray<NSNumber*> *)rightHandLandmarks frame: (nullable CVPixelBufferRef) frame timestamp:(CMTime)timestamp absoluteTime:(CFAbsoluteTime) absoluteTime;
+- (void) mediaPipeImpl: (nonnull QuickPoseMP*)mediaPipeImpl poseLandmarks:  (nullable NSArray<NSNumber*> *) poseLandmarks worldPoseLandmarks: (nullable NSArray<NSNumber*> *) worldPoseLandmarks faceLandmarks: (nullable NSArray<NSNumber*> *) faceLandmarks leftHandLandmarks: (nullable NSArray<NSNumber*> *)leftHandLandmarks  rightHandLandmarks: (nullable NSArray<NSNumber*> *)rightHandLandmarks frame: (nullable CVPixelBufferRef) frame timestamp:(CMTime)timestamp absoluteTime:(CFAbsoluteTime) absoluteTime;
 
 @end
 
 @interface QuickPoseMP : NSObject
-- (instancetype)initWithFaceTracking: (BOOL) faceTracking andHandTracking: (BOOL) handTracking;
+- (nonnull instancetype)initWithFaceTracking: (BOOL) faceTracking andHandTracking: (BOOL) handTracking;
 - (void)startGraphWithModelComplexity: (int) modelComplexity andSmoothLandmarks: (BOOL) smoothLandmarks;
 - (void) waitUntilGraphStarted;
 - (void)stopGraph;
-- (void)processVideoFrame:(CVPixelBufferRef)imageBuffer timestamp:(CMTime)timestamp absoluteTime:(CFAbsoluteTime) absoluteTime;
+- (void)processVideoFrame:(nonnull CVPixelBufferRef)imageBuffer timestamp:(CMTime)timestamp absoluteTime:(CFAbsoluteTime) absoluteTime;
 
 @property (readwrite, nonatomic) int rotationDegrees;
 @property (readwrite, nonatomic) BOOL handTrackingEnabled;
 @property (readwrite, nonatomic) BOOL faceTrackingEnabled;
-@property (weak, nonatomic) id <QuickPoseMediaPipeDelegate> delegate;
-@property (readwrite, nonatomic) NSString* libVersion;
-@property (readwrite, nonatomic) NSString* tfVersion;
+@property (weak, nonatomic, nullable) id <QuickPoseMediaPipeDelegate> delegate;
+@property (readwrite, nonatomic, nonnull) NSString* libVersion;
+@property (readwrite, nonatomic, nonnull) NSString* tfVersion;
 
 @end
 
