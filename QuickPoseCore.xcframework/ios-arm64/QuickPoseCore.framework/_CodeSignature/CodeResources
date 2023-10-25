@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		VJY82XcBr63ANH3FXrdK1La3tx8=
+		w8xcIvnXkepmy3s7RSREcAx2AAU=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		N+9bnC8ipLb8etDc3V0vJWZnams=
+		a9xuHGPHg/SWhXaESE62QIMsRgQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -157,7 +157,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9re5jNMtl9htmZs5v0l0LmZq4gc8FhQgKY5R0U5TB9k=
+			6fRam1R4iB7sypA6key+kDqjk96QG3pJLDm50krTRcM=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -185,7 +185,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TrkFca1F0Nn8ufD+EyJkuzNRkp/yLpTIeKUVOq5Hugs=
+			KVjzh3IkVLdpTfvwQz8+PcAQIaGNjowv4iQWvFvHj+0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
