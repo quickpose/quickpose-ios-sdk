@@ -8,7 +8,7 @@ s.license = { :type => "QuickPose", :file => "LICENSE" }
 
 s.source           = {
 :git => 'https://github.com/quickpose/quickpose-ios-sdk.git',
-:tag => 'v' + s.version
+:tag => 'v' + s.version.to_s
 }
 s.platform = :ios
 s.module_name   = 'QuickPoseCore'
