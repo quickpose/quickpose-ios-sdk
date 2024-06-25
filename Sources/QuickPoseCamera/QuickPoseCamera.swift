@@ -109,28 +109,29 @@ public class QuickPoseCamera {
                 }
             }
             // deliberately keeping front camera not mirrored to keep ML data points consistent
-            
-            self.session = session
-            
-            output.setSampleBufferDelegate(delegate, queue: qpProcessingQueue)
             qpProcessingQueue.async {
+                self.session = session
                 session.startRunning()
             }
+
+            output.setSampleBufferDelegate(delegate, queue: qpProcessingQueue)
         }
     }
     
     public func stop(){
-        if let cameraFeedSession = self.session {
-            
-            cameraFeedSession.stopRunning()
-            
-            for input in cameraFeedSession.inputs {
-                cameraFeedSession.removeInput(input)
+        qpProcessingQueue.async {
+            if let cameraFeedSession = self.session {
+                
+                cameraFeedSession.stopRunning()
+                
+                for input in cameraFeedSession.inputs {
+                    cameraFeedSession.removeInput(input)
+                }
+                for output in cameraFeedSession.outputs {
+                    cameraFeedSession.removeOutput(output)
+                }
+                self.session = nil
             }
-            for output in cameraFeedSession.outputs {
-                cameraFeedSession.removeOutput(output)
-            }
-            self.session = nil
         }
         device = nil
         output.setSampleBufferDelegate(nil, queue: qpProcessingQueue)

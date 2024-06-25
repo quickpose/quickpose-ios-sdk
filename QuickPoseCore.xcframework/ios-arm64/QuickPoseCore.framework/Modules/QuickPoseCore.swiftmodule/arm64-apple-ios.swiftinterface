@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name QuickPoseCore
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name QuickPoseCore
 import AVFoundation
 import AVKit
 import CoreGraphics
@@ -136,6 +135,12 @@ extension QuickPoseCore.QuickPose {
     public var displayTitle: Swift.String {
       get
     }
+    public var flip: QuickPoseCore.QuickPose.Side {
+      get
+    }
+    public var directionChange: QuickPoseCore.QuickPose.PoseFeedback.DirectionChange {
+      get
+    }
     public static func == (a: QuickPoseCore.QuickPose.Side, b: QuickPoseCore.QuickPose.Side) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
@@ -196,6 +201,8 @@ extension QuickPoseCore.QuickPose {
   }
   @frozen public enum BodyPose {
     case standFacing
+    case sitFacing
+    case sitFacingCrossLegged
     case standSideOn
     case floorFacing
     case floorSideOnWithBackOffTheGround
@@ -208,6 +215,8 @@ extension QuickPoseCore.QuickPose {
   }
   @frozen public enum BodyFeedback : Swift.String {
     case standFacing
+    case sitFacing
+    case sitFacingCrossLegged
     case standSideOn
     case standFacingOrSide
     case floorFacing
@@ -225,6 +234,7 @@ extension QuickPoseCore.QuickPose {
       case move
       case lean
       case straighten
+      case raise
       case lower
       case place
       case bend
@@ -237,6 +247,8 @@ extension QuickPoseCore.QuickPose {
     @frozen public enum DirectionChange : Swift.String {
       case up
       case down
+      case left
+      case right
       case forward
       case back
       case apart
@@ -308,6 +320,8 @@ extension QuickPoseCore.QuickPose {
     public let presence: Swift.Double
     public func cgPoint(scaledTo shape: CoreFoundation.CGSize, flippedHorizontally: Swift.Bool = false) -> CoreFoundation.CGPoint
     public func xyDistance(to p2: QuickPoseCore.QuickPose.Point3d) -> Swift.Double
+    public func yDistance(to p2: QuickPoseCore.QuickPose.Point3d) -> Swift.Double
+    public func xyDistanceWorld(to p2: QuickPoseCore.QuickPose.Point3d) -> Swift.Double
     public func midPoint(to p2: QuickPoseCore.QuickPose.Point3d) -> QuickPoseCore.QuickPose.Point3d
     public static func + (lhs: QuickPoseCore.QuickPose.Point3d, rhs: QuickPoseCore.QuickPose.Point3d) -> QuickPoseCore.QuickPose.Point3d
     public static func - (lhs: QuickPoseCore.QuickPose.Point3d, rhs: QuickPoseCore.QuickPose.Point3d) -> QuickPoseCore.QuickPose.Point3d

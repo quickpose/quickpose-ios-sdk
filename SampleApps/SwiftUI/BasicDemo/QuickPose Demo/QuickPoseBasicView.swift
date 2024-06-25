@@ -18,7 +18,7 @@ struct QuickPoseBasicView: View {
         GeometryReader { geometry in
             ZStack(alignment: .top) {
                 if ProcessInfo.processInfo.isiOSAppOnMac, let url = Bundle.main.url(forResource: "happy-dance", withExtension: "mov") {
-                    QuickPoseSimulatedCameraView(useFrontCamera: true, delegate: quickPose, video: url)
+                    QuickPoseSimulatedCameraView(useFrontCamera: false, delegate: quickPose, video: url)
                 } else {
                     QuickPoseCameraView(useFrontCamera: true, delegate: quickPose)
                 }
