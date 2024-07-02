@@ -1,14 +1,14 @@
 PODS:
-  - QuickPoseCamera (1.1.1):
-    - QuickPoseCamera/Camera (= 1.1.1)
-  - QuickPoseCamera/Camera (1.1.1):
+  - QuickPoseCamera (1.2.9):
+    - QuickPoseCamera/Camera (= 1.2.9)
+  - QuickPoseCamera/Camera (1.2.9):
     - QuickPoseCore
-  - QuickPoseCore (1.1.1):
-    - QuickPoseCore/Core (= 1.1.1)
-  - QuickPoseCore/Core (1.1.1)
-  - QuickPoseSwiftUI (1.1.1):
-    - QuickPoseSwiftUI/SwiftUI (= 1.1.1)
-  - QuickPoseSwiftUI/SwiftUI (1.1.1):
+  - QuickPoseCore (1.2.9):
+    - QuickPoseCore/Core (= 1.2.9)
+  - QuickPoseCore/Core (1.2.9)
+  - QuickPoseSwiftUI (1.2.9):
+    - QuickPoseSwiftUI/SwiftUI (= 1.2.9)
+  - QuickPoseSwiftUI/SwiftUI (1.2.9):
     - QuickPoseCamera
 
 DEPENDENCIES:
@@ -25,10 +25,10 @@ EXTERNAL SOURCES:
     :path: "../../../"
 
 SPEC CHECKSUMS:
-  QuickPoseCamera: b2014f2e5b0d54aeb6432b42d00542b1748f5a6c
-  QuickPoseCore: 586d141c782d3f876349c4f0e211c527eacecce8
-  QuickPoseSwiftUI: aff09bbef1dbc6097cdbc10ccf057c283d6389f5
+  QuickPoseCamera: 96ccc8174d7e6388e841da3ad767670c6af23f06
+  QuickPoseCore: 36852ac21abc0ba96b70fb03efbdc93852fbcef6
+  QuickPoseSwiftUI: 8fdcca40217955d62aa573319ef8e55abfe126e3
 
 PODFILE CHECKSUM: a708f7e1b08b45e406312d1fae52344e44cce979
 
-COCOAPODS: 1.12.1
+COCOAPODS: 1.14.2

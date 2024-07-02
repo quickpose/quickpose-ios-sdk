@@ -297,7 +297,7 @@ extension QuickPoseCore.QuickPose {
         get
       }
     }
-    public init(detailedFaceTracking: Swift.Bool = true, detailedHandTracking: Swift.Bool = true, modelComplexity: QuickPoseCore.QuickPose.ModelConfig.ModelComplexity = .good, rotationDegrees: Swift.Int? = nil)
+    public init(detailedFaceTracking: Swift.Bool = true, detailedHandTracking: Swift.Bool = true, modelComplexity: QuickPoseCore.QuickPose.ModelConfig.ModelComplexity? = nil, rotationDegrees: Swift.Int? = nil)
   }
   public func start(features: [QuickPoseCore.QuickPose.Feature], modelConfig: QuickPoseCore.QuickPose.ModelConfig = ModelConfig(), onStart: (() -> ())? = nil, onFrame: @escaping ((QuickPoseCore.QuickPose.Status, UIKit.UIImage?, [QuickPoseCore.QuickPose.Feature : QuickPoseCore.QuickPose.FeatureResult], [QuickPoseCore.QuickPose.Feature : QuickPoseCore.QuickPose.PoseFeedback], QuickPoseCore.QuickPose.Landmarks?) -> ()))
   public func disableLogging()
@@ -305,6 +305,7 @@ extension QuickPoseCore.QuickPose {
   public func update(features: [QuickPoseCore.QuickPose.Feature], modelConfig: QuickPoseCore.QuickPose.ModelConfig? = nil)
   public func stop()
   public func libVersion() -> Swift.String
+  public func modelWeight() -> Swift.String
   public func quickPoseVersion() -> Swift.String
   public func captureAVOutput(didOutput sampleBuffer: CoreVideo.CVBuffer, timestamp: CoreMedia.CMTime, isFrontCamera: Swift.Bool)
   @objc public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)

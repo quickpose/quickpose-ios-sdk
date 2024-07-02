@@ -20,23 +20,23 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		2339E9475992465353C276E19DA086DB /* QuickPoseAssetRenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD591F71BB07337FC7A096462C8A4B9 /* QuickPoseAssetRenderView.swift */; };
-		24345F733D9F8D09C7386D9867D677C4 /* QuickPoseCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFADB394C6A025BD7B5B78DBC1A8F5DB /* QuickPoseCameraView.swift */; };
-		47E049DA7F540C51B71BD6A87DA13DB8 /* QuickPoseSwiftUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D480DF904A14782AEFA120FF7131A64 /* QuickPoseSwiftUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4E6B1EFE4FBF2AA76F57E301E6ABCD51 /* QuickPoseOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B04F6572EBE9CA62F664BE4E999161 /* QuickPoseOverlayView.swift */; };
-		52D1295BC37372211AE24B97B2EDE4A6 /* QuickPoseSwiftUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C94E5AA05D892DD29E265DE9B0340C7 /* QuickPoseSwiftUI-dummy.m */; };
+		2339E9475992465353C276E19DA086DB /* QuickPoseAssetRenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968C1D1E8F03BB183808D8E9E2E398F7 /* QuickPoseAssetRenderView.swift */; };
+		24345F733D9F8D09C7386D9867D677C4 /* QuickPoseCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CE0F4B04DC51FDCB20D7B075A3B2A9 /* QuickPoseCameraView.swift */; };
+		47E049DA7F540C51B71BD6A87DA13DB8 /* QuickPoseSwiftUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 07E1C81986D597E1A48907CE07C053CD /* QuickPoseSwiftUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E6B1EFE4FBF2AA76F57E301E6ABCD51 /* QuickPoseOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635516009C9B3EF39561C55346DE4366 /* QuickPoseOverlayView.swift */; };
+		52D1295BC37372211AE24B97B2EDE4A6 /* QuickPoseSwiftUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C66326673709C370EF13DF0DB4019DF /* QuickPoseSwiftUI-dummy.m */; };
 		542C27D2BE7F1A74BBEA3BB2C9C0EBCA /* Pods-PodsDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D192D39A5981B7F18B6B9F2445F31484 /* Pods-PodsDemo-dummy.m */; };
 		677A9B30E56A15314E5A1508E5248742 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		87515F9585FF3DD3048B1F6A64D07A36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		BC5C54C4049883E86F2BF2A21F7E7E66 /* QuickPoseCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5173C6C751B8F0C8843B25E5083E9A /* QuickPoseCamera.swift */; };
-		C902AE097AF48EF04C7B88362FC19AA2 /* QuickPoseSimulatedCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142CBCC2CD540A3E5E39F94FCB5D4298 /* QuickPoseSimulatedCamera.swift */; };
-		CC5ABE8311538BC2EA372906710290DA /* QuickPoseCamera-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D673A42C15CDCB082ECC79C2ADC1A0 /* QuickPoseCamera-dummy.m */; };
-		CF1C20C94F3015583964470C2A5DF932 /* QuickPoseCamera-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DF80D6C6D313E880B7D8CCDAED718050 /* QuickPoseCamera-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D17E32C27CD896CF0030F163AAFA4415 /* QuickPoseSimulatedCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF6A2C716335476E9F6DA03BE5936AF /* QuickPoseSimulatedCameraView.swift */; };
+		BC5C54C4049883E86F2BF2A21F7E7E66 /* QuickPoseCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890CA7D6C704995ABBE1F5C3AC17809C /* QuickPoseCamera.swift */; };
+		C902AE097AF48EF04C7B88362FC19AA2 /* QuickPoseSimulatedCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D10EC4B8925872019CD8ACD11CF751 /* QuickPoseSimulatedCamera.swift */; };
+		CC5ABE8311538BC2EA372906710290DA /* QuickPoseCamera-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8264D26897B77545B0B571E9513E1C12 /* QuickPoseCamera-dummy.m */; };
+		CF1C20C94F3015583964470C2A5DF932 /* QuickPoseCamera-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 38DACB2F708913831F6D73A74EB4DAFF /* QuickPoseCamera-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D17E32C27CD896CF0030F163AAFA4415 /* QuickPoseSimulatedCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E830D181C52C9AD5B0507C9CFFD8AA /* QuickPoseSimulatedCameraView.swift */; };
 		F5E44353AB61AB9824BF034E044B8852 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		F9B268EC47A3C6F8FF44006578FE3DD3 /* Pods-PodsDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8576A77EEAD315264399267C6444BF92 /* Pods-PodsDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FA3B8E1A6BFD418E234D6723E088573D /* QuickPoseCameraRenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABA510FABC338FAD6B2F504AA60A014 /* QuickPoseCameraRenderView.swift */; };
-		FA6F098E3270DAA0AD564A70C88D1913 /* QuickPoseCameraSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F1C8005584A41B66826FC4C02D9DF2 /* QuickPoseCameraSwitchView.swift */; };
+		FA3B8E1A6BFD418E234D6723E088573D /* QuickPoseCameraRenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED8714E5189800FB56CD588392641A9 /* QuickPoseCameraRenderView.swift */; };
+		FA6F098E3270DAA0AD564A70C88D1913 /* QuickPoseCameraSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398EA66ED12010EDB2F4761189A03AC1 /* QuickPoseCameraSwitchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,51 +78,51 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0BD385E6FABA37D8A0CF05A7621D9B3D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		0F9B60EE00B2D832F342B27CFC33F7A8 /* QuickPoseCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QuickPoseCore.debug.xcconfig; sourceTree = "<group>"; };
-		11BD0F072CE45B4E3189EE6C204E063A /* QuickPoseSwiftUI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QuickPoseSwiftUI-prefix.pch"; sourceTree = "<group>"; };
-		1353F6528B10B917BFF4C9BA8DFFEB63 /* QuickPoseCore.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = QuickPoseCore.xcframework; sourceTree = "<group>"; };
-		142CBCC2CD540A3E5E39F94FCB5D4298 /* QuickPoseSimulatedCamera.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickPoseSimulatedCamera.swift; path = Sources/QuickPoseCamera/QuickPoseSimulatedCamera.swift; sourceTree = "<group>"; };
-		14F1C8005584A41B66826FC4C02D9DF2 /* QuickPoseCameraSwitchView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickPoseCameraSwitchView.swift; path = Sources/QuickPoseSwiftUI/QuickPoseCameraSwitchView.swift; sourceTree = "<group>"; };
-		1ABA510FABC338FAD6B2F504AA60A014 /* QuickPoseCameraRenderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickPoseCameraRenderView.swift; path = Sources/QuickPoseSwiftUI/QuickPoseCameraRenderView.swift; sourceTree = "<group>"; };
-		20B04F6572EBE9CA62F664BE4E999161 /* QuickPoseOverlayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickPoseOverlayView.swift; path = Sources/QuickPoseSwiftUI/QuickPoseOverlayView.swift; sourceTree = "<group>"; };
-		296F7FB3C8EB135CB2BC88DF3618300C /* QuickPoseCamera-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QuickPoseCamera-prefix.pch"; sourceTree = "<group>"; };
+		07E1C81986D597E1A48907CE07C053CD /* QuickPoseSwiftUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QuickPoseSwiftUI-umbrella.h"; sourceTree = "<group>"; };
+		0AA1A709221852D3FD7701CFC58EC7B0 /* QuickPoseCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QuickPoseCamera.release.xcconfig; sourceTree = "<group>"; };
+		144B55FDFB589AD95999172EC1CD4550 /* QuickPoseCore-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "QuickPoseCore-xcframeworks.sh"; sourceTree = "<group>"; };
+		1724C1F2F5B7EBD69FC4CB141EEB763C /* QuickPoseCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QuickPoseCore.release.xcconfig; sourceTree = "<group>"; };
+		2011D3ECFAB7F1D061A7C9EDFCB36C11 /* QuickPoseSwiftUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = QuickPoseSwiftUI.modulemap; sourceTree = "<group>"; };
 		2E6BE72A01DA9EE833B4E85842ACB543 /* Pods-PodsDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PodsDemo-Info.plist"; sourceTree = "<group>"; };
-		329860C7DB13DE4F0D28F312F70D2E14 /* QuickPoseCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QuickPoseCamera.debug.xcconfig; sourceTree = "<group>"; };
+		33CE0F4B04DC51FDCB20D7B075A3B2A9 /* QuickPoseCameraView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickPoseCameraView.swift; path = Sources/QuickPoseSwiftUI/QuickPoseCameraView.swift; sourceTree = "<group>"; };
+		33D65D9B9C318BE18DAD995B3EE8F94F /* QuickPoseMP.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = QuickPoseMP.xcframework; sourceTree = "<group>"; };
+		38DACB2F708913831F6D73A74EB4DAFF /* QuickPoseCamera-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QuickPoseCamera-umbrella.h"; sourceTree = "<group>"; };
 		3968C83CA017724261E1D3E36E285A30 /* Pods-PodsDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PodsDemo-frameworks.sh"; sourceTree = "<group>"; };
-		45BF80328D1A61C78AA0E37EA42AA6CC /* QuickPoseCore-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "QuickPoseCore-xcframeworks.sh"; sourceTree = "<group>"; };
-		4DD591F71BB07337FC7A096462C8A4B9 /* QuickPoseAssetRenderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickPoseAssetRenderView.swift; path = Sources/QuickPoseSwiftUI/QuickPoseAssetRenderView.swift; sourceTree = "<group>"; };
-		5AF6A2C716335476E9F6DA03BE5936AF /* QuickPoseSimulatedCameraView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickPoseSimulatedCameraView.swift; path = Sources/QuickPoseSwiftUI/QuickPoseSimulatedCameraView.swift; sourceTree = "<group>"; };
-		5C94E5AA05D892DD29E265DE9B0340C7 /* QuickPoseSwiftUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QuickPoseSwiftUI-dummy.m"; sourceTree = "<group>"; };
-		5D480DF904A14782AEFA120FF7131A64 /* QuickPoseSwiftUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QuickPoseSwiftUI-umbrella.h"; sourceTree = "<group>"; };
-		684394F2C3673F9A5B958F22AA5C983E /* QuickPoseSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QuickPoseSwiftUI.debug.xcconfig; sourceTree = "<group>"; };
+		398EA66ED12010EDB2F4761189A03AC1 /* QuickPoseCameraSwitchView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickPoseCameraSwitchView.swift; path = Sources/QuickPoseSwiftUI/QuickPoseCameraSwitchView.swift; sourceTree = "<group>"; };
+		466C4ED2E255DFA9B8F4300183992EF6 /* QuickPoseCore.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = QuickPoseCore.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4CB0FEEDEAB41853EDCEAF1F72F916D1 /* QuickPoseSwiftUI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QuickPoseSwiftUI-prefix.pch"; sourceTree = "<group>"; };
+		4D648B197B12D3644FECF92789C82A53 /* QuickPoseSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QuickPoseSwiftUI.release.xcconfig; sourceTree = "<group>"; };
+		5E2F9BFCA5C62CB610F9525D287D5FE0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		635516009C9B3EF39561C55346DE4366 /* QuickPoseOverlayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickPoseOverlayView.swift; path = Sources/QuickPoseSwiftUI/QuickPoseOverlayView.swift; sourceTree = "<group>"; };
 		68F9EB4A00B0E667AA73959D6DBAD641 /* QuickPoseSwiftUI */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = QuickPoseSwiftUI; path = QuickPoseSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		69C0D39000BD21C3B8C158D98A9DCA9E /* QuickPoseSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QuickPoseSwiftUI.release.xcconfig; sourceTree = "<group>"; };
-		69ECB30CB5C9F065059FD34D9F431B68 /* QuickPoseSwiftUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "QuickPoseSwiftUI-Info.plist"; sourceTree = "<group>"; };
-		6F186AE6002059D4AB96EB527A709278 /* QuickPoseCore.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = QuickPoseCore.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		70D673A42C15CDCB082ECC79C2ADC1A0 /* QuickPoseCamera-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QuickPoseCamera-dummy.m"; sourceTree = "<group>"; };
+		6C4154F7AE5CB54F9D6B4E782FA87B16 /* QuickPoseCamera-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "QuickPoseCamera-Info.plist"; sourceTree = "<group>"; };
+		6E28485D208E3FBB6895CC71C8B66623 /* QuickPoseCamera.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = QuickPoseCamera.modulemap; sourceTree = "<group>"; };
+		6F8D3C309166C74E02C18114D1BB958A /* QuickPoseCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QuickPoseCamera.debug.xcconfig; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		75355F7E12942DF647459CD015C1AAFE /* Pods-PodsDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PodsDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		7627899F176718CF9211238857DA2452 /* QuickPoseSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QuickPoseSwiftUI.debug.xcconfig; sourceTree = "<group>"; };
+		76E830D181C52C9AD5B0507C9CFFD8AA /* QuickPoseSimulatedCameraView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickPoseSimulatedCameraView.swift; path = Sources/QuickPoseSwiftUI/QuickPoseSimulatedCameraView.swift; sourceTree = "<group>"; };
+		77D10EC4B8925872019CD8ACD11CF751 /* QuickPoseSimulatedCamera.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickPoseSimulatedCamera.swift; path = Sources/QuickPoseCamera/QuickPoseSimulatedCamera.swift; sourceTree = "<group>"; };
+		8264D26897B77545B0B571E9513E1C12 /* QuickPoseCamera-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QuickPoseCamera-dummy.m"; sourceTree = "<group>"; };
 		839A42A516BBE7E4B0B26E31B73E63CE /* Pods-PodsDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PodsDemo.modulemap"; sourceTree = "<group>"; };
 		84E8E499F6F5BD046A985F62CFF2E72D /* Pods-PodsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PodsDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		8576A77EEAD315264399267C6444BF92 /* Pods-PodsDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PodsDemo-umbrella.h"; sourceTree = "<group>"; };
-		89C5244E8D110C10EC9E1138E02BE474 /* QuickPoseCamera-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "QuickPoseCamera-Info.plist"; sourceTree = "<group>"; };
+		890CA7D6C704995ABBE1F5C3AC17809C /* QuickPoseCamera.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickPoseCamera.swift; path = Sources/QuickPoseCamera/QuickPoseCamera.swift; sourceTree = "<group>"; };
+		8C66326673709C370EF13DF0DB4019DF /* QuickPoseSwiftUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QuickPoseSwiftUI-dummy.m"; sourceTree = "<group>"; };
+		8ED8714E5189800FB56CD588392641A9 /* QuickPoseCameraRenderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickPoseCameraRenderView.swift; path = Sources/QuickPoseSwiftUI/QuickPoseCameraRenderView.swift; sourceTree = "<group>"; };
+		8F8B1FAA1480473F24B16AE658243851 /* QuickPoseCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QuickPoseCore.debug.xcconfig; sourceTree = "<group>"; };
+		968C1D1E8F03BB183808D8E9E2E398F7 /* QuickPoseAssetRenderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickPoseAssetRenderView.swift; path = Sources/QuickPoseSwiftUI/QuickPoseAssetRenderView.swift; sourceTree = "<group>"; };
+		9D7428B98CBF03BAF0B8DF49FC207939 /* QuickPoseCamera-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QuickPoseCamera-prefix.pch"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9FB692D7B4FC224867BA4A369DAC2D61 /* QuickPoseSwiftUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = QuickPoseSwiftUI.modulemap; sourceTree = "<group>"; };
-		AD5173C6C751B8F0C8843B25E5083E9A /* QuickPoseCamera.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickPoseCamera.swift; path = Sources/QuickPoseCamera/QuickPoseCamera.swift; sourceTree = "<group>"; };
-		CA89A38A43F78942D49C92D046A3C3EF /* QuickPoseCamera.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = QuickPoseCamera.modulemap; sourceTree = "<group>"; };
-		CF6A33B82C4B3C513C1B615A7A9151F9 /* QuickPoseCamera.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = QuickPoseCamera.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		D053D3FB9F9BE8A9F279857E282603E7 /* QuickPoseSwiftUI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = QuickPoseSwiftUI.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BF66DC0BC3E0061753D039666EC2D186 /* QuickPoseSwiftUI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = QuickPoseSwiftUI.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D192D39A5981B7F18B6B9F2445F31484 /* Pods-PodsDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PodsDemo-dummy.m"; sourceTree = "<group>"; };
-		D5F6DF26CB5A10BFCB2D081F9BE8B0F6 /* QuickPoseMP.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = QuickPoseMP.xcframework; sourceTree = "<group>"; };
-		DF80D6C6D313E880B7D8CCDAED718050 /* QuickPoseCamera-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QuickPoseCamera-umbrella.h"; sourceTree = "<group>"; };
-		EAFEFD83F5F05DFC9AE6530A9C00DA5B /* QuickPoseCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QuickPoseCamera.release.xcconfig; sourceTree = "<group>"; };
+		D3B338001F435C28E919C343EA05CDB3 /* QuickPoseCamera.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = QuickPoseCamera.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E3CF2C8197A7A135D68B334EB7744059 /* QuickPoseCore.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = QuickPoseCore.xcframework; sourceTree = "<group>"; };
 		ED5E7B0E63F36B50A0C4B9382A13027D /* Pods-PodsDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PodsDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EEE54EED9450F5E133C70081B9042492 /* Pods-PodsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PodsDemo.release.xcconfig"; sourceTree = "<group>"; };
-		F1B7EEE7B25611F825F04A88633225A2 /* QuickPoseCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QuickPoseCore.release.xcconfig; sourceTree = "<group>"; };
 		F3E7384F65BBA7DBD1F88E45D7DB4411 /* Pods-PodsDemo */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-PodsDemo"; path = Pods_PodsDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F868D4328B19EB2C96C4E45BEBA3C07E /* QuickPoseCamera */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = QuickPoseCamera; path = QuickPoseCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FFADB394C6A025BD7B5B78DBC1A8F5DB /* QuickPoseCameraView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickPoseCameraView.swift; path = Sources/QuickPoseSwiftUI/QuickPoseCameraView.swift; sourceTree = "<group>"; };
+		FAA35446CA24642D9BEFDFABA9B06955 /* QuickPoseSwiftUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "QuickPoseSwiftUI-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,15 +153,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		08034D47F7474D984DB88B45DF1C2CDC /* Camera */ = {
-			isa = PBXGroup;
-			children = (
-				AD5173C6C751B8F0C8843B25E5083E9A /* QuickPoseCamera.swift */,
-				142CBCC2CD540A3E5E39F94FCB5D4298 /* QuickPoseSimulatedCamera.swift */,
-			);
-			name = Camera;
-			sourceTree = "<group>";
-		};
 		08A9E2A7F34F5E3B5069D364177A8740 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,10 +161,32 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		545B814F35A85CB5088FF20C3A4A9631 /* Pod */ = {
+		0D68B62F2450CE34BFD39195F4DCCF46 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D053D3FB9F9BE8A9F279857E282603E7 /* QuickPoseSwiftUI.podspec */,
+				144B55FDFB589AD95999172EC1CD4550 /* QuickPoseCore-xcframeworks.sh */,
+				8F8B1FAA1480473F24B16AE658243851 /* QuickPoseCore.debug.xcconfig */,
+				1724C1F2F5B7EBD69FC4CB141EEB763C /* QuickPoseCore.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "SampleApps/Cocoapods/PodsDemo/Pods/Target Support Files/QuickPoseCore";
+			sourceTree = "<group>";
+		};
+		48FCA73892C20CCC51BCEB346104D50A /* QuickPoseCore */ = {
+			isa = PBXGroup;
+			children = (
+				CB32E8C12BF122D4550D5E2BDE895C2D /* Core */,
+				5070614C5AA1316534B8DD547CFCD6A9 /* Pod */,
+				0D68B62F2450CE34BFD39195F4DCCF46 /* Support Files */,
+			);
+			name = QuickPoseCore;
+			path = ../../../..;
+			sourceTree = "<group>";
+		};
+		5070614C5AA1316534B8DD547CFCD6A9 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				466C4ED2E255DFA9B8F4300183992EF6 /* QuickPoseCore.podspec */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -186,33 +199,64 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		5B09830C02846BEFA4616F4597698F4F /* Core */ = {
+		74E93135E2DFECEFFCBDFF3B9C2448F0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BAAD239A409A21B5A30E44F590A8177D /* Frameworks */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		759835DC10C50D7627F7EB15F0A2FF4F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				45BF80328D1A61C78AA0E37EA42AA6CC /* QuickPoseCore-xcframeworks.sh */,
-				0F9B60EE00B2D832F342B27CFC33F7A8 /* QuickPoseCore.debug.xcconfig */,
-				F1B7EEE7B25611F825F04A88633225A2 /* QuickPoseCore.release.xcconfig */,
+				6E28485D208E3FBB6895CC71C8B66623 /* QuickPoseCamera.modulemap */,
+				8264D26897B77545B0B571E9513E1C12 /* QuickPoseCamera-dummy.m */,
+				6C4154F7AE5CB54F9D6B4E782FA87B16 /* QuickPoseCamera-Info.plist */,
+				9D7428B98CBF03BAF0B8DF49FC207939 /* QuickPoseCamera-prefix.pch */,
+				38DACB2F708913831F6D73A74EB4DAFF /* QuickPoseCamera-umbrella.h */,
+				6F8D3C309166C74E02C18114D1BB958A /* QuickPoseCamera.debug.xcconfig */,
+				0AA1A709221852D3FD7701CFC58EC7B0 /* QuickPoseCamera.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "SampleApps/SwiftUI/PodsDemo/Pods/Target Support Files/QuickPoseCore";
+			path = "SampleApps/Cocoapods/PodsDemo/Pods/Target Support Files/QuickPoseCamera";
 			sourceTree = "<group>";
 		};
-		84BE759661E1CF0E23A43FD45AADEBE7 /* QuickPoseSwiftUI */ = {
+		74EE8E729D7EC3C27075CF7C792B4711 /* QuickPoseSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				545B814F35A85CB5088FF20C3A4A9631 /* Pod */,
-				DFCC2D557EDAC659CD5093271A4C9DAC /* Support Files */,
-				B3432F3FA70A8D3588FC41282FD1635B /* SwiftUI */,
+				F81CC6F453E177FAB0C19EFE3C3E6434 /* Pod */,
+				79C36F76E8C5EBDA72080E3EE4773F54 /* Support Files */,
+				FF4936DA30BEFF9CCD61526805A58BA6 /* SwiftUI */,
 			);
 			name = QuickPoseSwiftUI;
+			path = ../../../..;
+			sourceTree = "<group>";
+		};
+		7968C0AF168FF3B4E72A7B218E9FF9F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3CF2C8197A7A135D68B334EB7744059 /* QuickPoseCore.xcframework */,
+				33D65D9B9C318BE18DAD995B3EE8F94F /* QuickPoseMP.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79C36F76E8C5EBDA72080E3EE4773F54 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2011D3ECFAB7F1D061A7C9EDFCB36C11 /* QuickPoseSwiftUI.modulemap */,
+				8C66326673709C370EF13DF0DB4019DF /* QuickPoseSwiftUI-dummy.m */,
+				FAA35446CA24642D9BEFDFABA9B06955 /* QuickPoseSwiftUI-Info.plist */,
+				4CB0FEEDEAB41853EDCEAF1F72F916D1 /* QuickPoseSwiftUI-prefix.pch */,
+				07E1C81986D597E1A48907CE07C053CD /* QuickPoseSwiftUI-umbrella.h */,
+				7627899F176718CF9211238857DA2452 /* QuickPoseSwiftUI.debug.xcconfig */,
+				4D648B197B12D3644FECF92789C82A53 /* QuickPoseSwiftUI.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "SampleApps/Cocoapods/PodsDemo/Pods/Target Support Files/QuickPoseSwiftUI";
+			sourceTree = "<group>";
+		};
+		85A6448CC7CBD968A7EE946440EE5DF7 /* QuickPoseCamera */ = {
+			isa = PBXGroup;
+			children = (
+				FFEEA1FA5C0F27FEA4B45837130953F8 /* Camera */,
+				9E25B1224EEF8A488D03AE0AA554F179 /* Pod */,
+				74E93135E2DFECEFFCBDFF3B9C2448F0 /* Support Files */,
+			);
+			name = QuickPoseCamera;
 			path = ../../../..;
 			sourceTree = "<group>";
 		};
@@ -226,11 +270,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		979F0DA2126F6E02246875FFE16F6F6F /* Pod */ = {
+		9E25B1224EEF8A488D03AE0AA554F179 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				0BD385E6FABA37D8A0CF05A7621D9B3D /* LICENSE */,
-				CF6A33B82C4B3C513C1B615A7A9151F9 /* QuickPoseCamera.podspec */,
+				5E2F9BFCA5C62CB610F9525D287D5FE0 /* LICENSE */,
+				D3B338001F435C28E919C343EA05CDB3 /* QuickPoseCamera.podspec */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -252,52 +296,12 @@
 			path = "Target Support Files/Pods-PodsDemo";
 			sourceTree = "<group>";
 		};
-		B3432F3FA70A8D3588FC41282FD1635B /* SwiftUI */ = {
+		CB32E8C12BF122D4550D5E2BDE895C2D /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				4DD591F71BB07337FC7A096462C8A4B9 /* QuickPoseAssetRenderView.swift */,
-				1ABA510FABC338FAD6B2F504AA60A014 /* QuickPoseCameraRenderView.swift */,
-				14F1C8005584A41B66826FC4C02D9DF2 /* QuickPoseCameraSwitchView.swift */,
-				FFADB394C6A025BD7B5B78DBC1A8F5DB /* QuickPoseCameraView.swift */,
-				20B04F6572EBE9CA62F664BE4E999161 /* QuickPoseOverlayView.swift */,
-				5AF6A2C716335476E9F6DA03BE5936AF /* QuickPoseSimulatedCameraView.swift */,
+				7968C0AF168FF3B4E72A7B218E9FF9F0 /* Frameworks */,
 			);
-			name = SwiftUI;
-			sourceTree = "<group>";
-		};
-		BAAD239A409A21B5A30E44F590A8177D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1353F6528B10B917BFF4C9BA8DFFEB63 /* QuickPoseCore.xcframework */,
-				D5F6DF26CB5A10BFCB2D081F9BE8B0F6 /* QuickPoseMP.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C8E13176BD6DA627A9128AFC862D0372 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				CA89A38A43F78942D49C92D046A3C3EF /* QuickPoseCamera.modulemap */,
-				70D673A42C15CDCB082ECC79C2ADC1A0 /* QuickPoseCamera-dummy.m */,
-				89C5244E8D110C10EC9E1138E02BE474 /* QuickPoseCamera-Info.plist */,
-				296F7FB3C8EB135CB2BC88DF3618300C /* QuickPoseCamera-prefix.pch */,
-				DF80D6C6D313E880B7D8CCDAED718050 /* QuickPoseCamera-umbrella.h */,
-				329860C7DB13DE4F0D28F312F70D2E14 /* QuickPoseCamera.debug.xcconfig */,
-				EAFEFD83F5F05DFC9AE6530A9C00DA5B /* QuickPoseCamera.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "SampleApps/SwiftUI/PodsDemo/Pods/Target Support Files/QuickPoseCamera";
-			sourceTree = "<group>";
-		};
-		CCAD6ABEDC83F728176F86C679E6DF29 /* QuickPoseCore */ = {
-			isa = PBXGroup;
-			children = (
-				5B09830C02846BEFA4616F4597698F4F /* Core */,
-				EDC7744F197807F6A952B9816BAAEF32 /* Pod */,
-				759835DC10C50D7627F7EB15F0A2FF4F /* Support Files */,
-			);
-			name = QuickPoseCore;
-			path = ../../../..;
+			name = Core;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -319,36 +323,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DFCC2D557EDAC659CD5093271A4C9DAC /* Support Files */ = {
+		F81CC6F453E177FAB0C19EFE3C3E6434 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				9FB692D7B4FC224867BA4A369DAC2D61 /* QuickPoseSwiftUI.modulemap */,
-				5C94E5AA05D892DD29E265DE9B0340C7 /* QuickPoseSwiftUI-dummy.m */,
-				69ECB30CB5C9F065059FD34D9F431B68 /* QuickPoseSwiftUI-Info.plist */,
-				11BD0F072CE45B4E3189EE6C204E063A /* QuickPoseSwiftUI-prefix.pch */,
-				5D480DF904A14782AEFA120FF7131A64 /* QuickPoseSwiftUI-umbrella.h */,
-				684394F2C3673F9A5B958F22AA5C983E /* QuickPoseSwiftUI.debug.xcconfig */,
-				69C0D39000BD21C3B8C158D98A9DCA9E /* QuickPoseSwiftUI.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "SampleApps/SwiftUI/PodsDemo/Pods/Target Support Files/QuickPoseSwiftUI";
-			sourceTree = "<group>";
-		};
-		E14EA9F42FB3854A76024F6E2D6D68E5 /* QuickPoseCamera */ = {
-			isa = PBXGroup;
-			children = (
-				08034D47F7474D984DB88B45DF1C2CDC /* Camera */,
-				979F0DA2126F6E02246875FFE16F6F6F /* Pod */,
-				C8E13176BD6DA627A9128AFC862D0372 /* Support Files */,
-			);
-			name = QuickPoseCamera;
-			path = ../../../..;
-			sourceTree = "<group>";
-		};
-		EDC7744F197807F6A952B9816BAAEF32 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				6F186AE6002059D4AB96EB527A709278 /* QuickPoseCore.podspec */,
+				BF66DC0BC3E0061753D039666EC2D186 /* QuickPoseSwiftUI.podspec */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -356,11 +334,33 @@
 		F831949BC8EEFF238326A6282B0A3CEA /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E14EA9F42FB3854A76024F6E2D6D68E5 /* QuickPoseCamera */,
-				CCAD6ABEDC83F728176F86C679E6DF29 /* QuickPoseCore */,
-				84BE759661E1CF0E23A43FD45AADEBE7 /* QuickPoseSwiftUI */,
+				85A6448CC7CBD968A7EE946440EE5DF7 /* QuickPoseCamera */,
+				48FCA73892C20CCC51BCEB346104D50A /* QuickPoseCore */,
+				74EE8E729D7EC3C27075CF7C792B4711 /* QuickPoseSwiftUI */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		FF4936DA30BEFF9CCD61526805A58BA6 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				968C1D1E8F03BB183808D8E9E2E398F7 /* QuickPoseAssetRenderView.swift */,
+				8ED8714E5189800FB56CD588392641A9 /* QuickPoseCameraRenderView.swift */,
+				398EA66ED12010EDB2F4761189A03AC1 /* QuickPoseCameraSwitchView.swift */,
+				33CE0F4B04DC51FDCB20D7B075A3B2A9 /* QuickPoseCameraView.swift */,
+				635516009C9B3EF39561C55346DE4366 /* QuickPoseOverlayView.swift */,
+				76E830D181C52C9AD5B0507C9CFFD8AA /* QuickPoseSimulatedCameraView.swift */,
+			);
+			name = SwiftUI;
+			sourceTree = "<group>";
+		};
+		FFEEA1FA5C0F27FEA4B45837130953F8 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				890CA7D6C704995ABBE1F5C3AC17809C /* QuickPoseCamera.swift */,
+				77D10EC4B8925872019CD8ACD11CF751 /* QuickPoseSimulatedCamera.swift */,
+			);
+			name = Camera;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -458,8 +458,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 14.0";
@@ -597,7 +597,7 @@
 /* Begin XCBuildConfiguration section */
 		0EDF52DBE10B169C6388EA4B62450EE9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EAFEFD83F5F05DFC9AE6530A9C00DA5B /* QuickPoseCamera.release.xcconfig */;
+			baseConfigurationReference = 0AA1A709221852D3FD7701CFC58EC7B0 /* QuickPoseCamera.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -633,7 +633,7 @@
 		};
 		1C2CDA3B5F2EA2313F46B1F1DBCAB5BB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F1B7EEE7B25611F825F04A88633225A2 /* QuickPoseCore.release.xcconfig */;
+			baseConfigurationReference = 1724C1F2F5B7EBD69FC4CB141EEB763C /* QuickPoseCore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -689,7 +689,7 @@
 		};
 		295B0545B60BE5EDCEB0339F057B2294 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F9B60EE00B2D832F342B27CFC33F7A8 /* QuickPoseCore.debug.xcconfig */;
+			baseConfigurationReference = 8F8B1FAA1480473F24B16AE658243851 /* QuickPoseCore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -772,7 +772,7 @@
 		};
 		48616C028894C17E82B3D8969264AE27 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 684394F2C3673F9A5B958F22AA5C983E /* QuickPoseSwiftUI.debug.xcconfig */;
+			baseConfigurationReference = 7627899F176718CF9211238857DA2452 /* QuickPoseSwiftUI.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -906,7 +906,7 @@
 		};
 		997536BB0754F68D329E5C6D3E7C5723 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 329860C7DB13DE4F0D28F312F70D2E14 /* QuickPoseCamera.debug.xcconfig */;
+			baseConfigurationReference = 6F8D3C309166C74E02C18114D1BB958A /* QuickPoseCamera.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -941,7 +941,7 @@
 		};
 		AED1A867C0D2E1B8463E3DD23995A003 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69C0D39000BD21C3B8C158D98A9DCA9E /* QuickPoseSwiftUI.release.xcconfig */;
+			baseConfigurationReference = 4D648B197B12D3644FECF92789C82A53 /* QuickPoseSwiftUI.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

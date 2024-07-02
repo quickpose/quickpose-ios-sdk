@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = 'QuickPoseSwiftUI'
-s.version = '1.2.8'
+s.version = '1.2.9'
 s.summary          = 'QuickPoseSwiftUI'
 s.homepage         = 'https://quickpose.ai'
 s.authors          = 'QuickPose.ai'
@@ -19,8 +19,6 @@ s.cocoapods_version = '>= 1.4.0'
 s.swift_version = '5.3'
 
 s.default_subspecs = 'SwiftUI'
-
-s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
 
 s.subspec 'SwiftUI' do |ss|

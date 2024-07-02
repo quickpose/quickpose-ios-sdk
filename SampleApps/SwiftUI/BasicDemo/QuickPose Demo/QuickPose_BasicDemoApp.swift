@@ -12,9 +12,13 @@ import AVFoundation
 struct QuickPose_DemoApp: App {
     var body: some Scene {
         WindowGroup {
-            DemoAppView()
-                .edgesIgnoringSafeArea(.all)
+            #if !targetEnvironment(simulator)
+            DemoAppView().edgesIgnoringSafeArea(.all)
                 .background(Color("AccentColor"))
+            #else
+            Text("QuickPose.ai requires a native arm64 device to run")
+                .font(.system(size: 42, weight: .semibold)).foregroundColor(.red)
+            #endif
         }
     }
 }

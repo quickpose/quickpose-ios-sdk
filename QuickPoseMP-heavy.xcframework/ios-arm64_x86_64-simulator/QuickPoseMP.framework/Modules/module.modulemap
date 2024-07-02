@@ -1,0 +1,6 @@
+framework module QuickPoseMP {
+  umbrella header "QuickPoseMP.h"
+  export *
+
+  module * { export * }
+}
