@@ -82,7 +82,7 @@ Supported Platforms
 
 | iOS Device | Silicon Mac (M1, M2, etc) | iOS Simulator x86_64 | iOS Simulator arm64  | 
 | ----------:| -------------------------:|---------------------:|---------------------:|
-| ✅ Runs    |                   ✅ Runs |          ⚙ Compiles |        ⚙ Known Issue |
+| ✅ Runs    |                   ✅ Runs |          ⚙ Compiles |        ⚙ Compiles  |
 
 Requirements
 ------------------
@@ -108,7 +108,10 @@ __Step 4__: Choose all modules and click add package.
 | Module        | Description         |
 | --------------|--------------------:|
 | QuickPoseCore | Core SDK (required) |
-| QuickPoseMP   | Mediapipe Library (required) |
+| QuickPoseMP   | Mediapipe Library with all models (one QuickPoseMP variant is required)  |
+| QuickPoseMP-lite   | Mediapipe Lite Library  |
+| QuickPoseMP-full   | Mediapipe Full Library  |
+| QuickPoseMP-heavy   | Mediapipe Heavy Library |
 | QuickPoseCamera | Utility Class for Integration  (optional, recommended) |
 | QuickPoseSwiftUI | Utility Classes for SwiftUI Integration  (optional, recommended)|
 
@@ -237,10 +240,3 @@ Xcode reports error no such module `QuickPoseCore` or no such module `QuickPoseS
 
 ![xcode troubleshooting no such module guide](docs/img/xcode-troubleshooting-no-such-module-fix.png)
 
-### Cannot find type 'QuickPoseCaptureAVAssetOutputSampleBufferDelegate' in scope
-
-Xcode reports error `Cannot find type 'QuickPoseCaptureAVAssetOutputSampleBufferDelegate' in scope`
-
-> This happens as our builds are not compatible with the arm64 simulator. To fix run as `My Mac (Designed for iPhone)`
-
-![xcode troubleshooting cannot find type](docs/img/xcode-troubleshooting-cannot-find-type-arm64.png)
