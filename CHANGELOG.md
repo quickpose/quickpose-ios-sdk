@@ -4,13 +4,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.2.10 - 2025-01-28
+
+### Fixed
+- Measuring line feature output
+
 ## v1.2.9 - 2024-06-25
 
 ### Fixed
 - arm64/x86_64 Simulator compile
 - Cocoapods arm64/x86_64 simulator
 - Reduce bundle size with selecting a model complexity
-
 
 ## v1.2.8 - 2024-06-24
 
