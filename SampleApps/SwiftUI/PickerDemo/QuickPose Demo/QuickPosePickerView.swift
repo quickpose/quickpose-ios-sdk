@@ -330,6 +330,10 @@ struct QuickPosePickerView: View {
                     lastLag = performance.latency*1000
                     self.lastDebugResult = nil
 
+                    if let landmarks {
+                        print(landmarks.allLandmarksForBody()[0])
+                    }
+                    
                     if case .rangeOfMotion = selectedFeatures.first, let result = features[selectedFeatures.first!] {
                         lastResult = result.stringValue
 //                        lastResultImage = cameraImage

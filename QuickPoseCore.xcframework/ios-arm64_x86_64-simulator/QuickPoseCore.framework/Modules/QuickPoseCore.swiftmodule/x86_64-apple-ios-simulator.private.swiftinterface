@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name QuickPoseCore
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AVFoundation
 import AVKit
 import CoreGraphics
@@ -74,9 +75,6 @@ public class QuickPoseDoubleUnchangedDetector {
 }
 extension CoreFoundation.CGPoint : Swift.Hashable {
   public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
 }
 public protocol QuickPoseCaptureAVAssetOutputSampleBufferDelegate : ObjectiveC.NSObjectProtocol {
   func captureAVOutput(didOutput sampleBuffer: CoreVideo.CVBuffer, timestamp: CoreMedia.CMTime, isFrontCamera: Swift.Bool)
@@ -483,40 +481,56 @@ public class QuickPoseThresholdTimer {
   @objc deinit
 }
 extension QuickPoseCore.QuickPoseThresholdCounter.CountState : Swift.Sendable {}
+extension QuickPoseCore.QuickPoseThresholdCounter.CountState : Swift.BitwiseCopyable {}
 extension QuickPoseCore.QuickPose.Side : Swift.Sendable {}
+extension QuickPoseCore.QuickPose.Side : Swift.BitwiseCopyable {}
 extension QuickPoseCore.QuickPose.RangeOfMotion : Swift.Sendable {}
+extension QuickPoseCore.QuickPose.RangeOfMotion : Swift.BitwiseCopyable {}
 extension QuickPoseCore.QuickPose.FitnessFeature : Swift.Sendable {}
+extension QuickPoseCore.QuickPose.FitnessFeature : Swift.BitwiseCopyable {}
 extension QuickPoseCore.QuickPose.BodyPose : Swift.Equatable {}
 extension QuickPoseCore.QuickPose.BodyPose : Swift.Hashable {}
 extension QuickPoseCore.QuickPose.BodyPose : Swift.Sendable {}
+extension QuickPoseCore.QuickPose.BodyPose : Swift.BitwiseCopyable {}
 extension QuickPoseCore.QuickPose.BodyFeedback : Swift.Equatable {}
 extension QuickPoseCore.QuickPose.BodyFeedback : Swift.Hashable {}
 extension QuickPoseCore.QuickPose.BodyFeedback : Swift.RawRepresentable {}
 extension QuickPoseCore.QuickPose.BodyFeedback : Swift.Sendable {}
+extension QuickPoseCore.QuickPose.BodyFeedback : Swift.BitwiseCopyable {}
 extension QuickPoseCore.QuickPose.PoseFeedback : Swift.Sendable {}
+extension QuickPoseCore.QuickPose.PoseFeedback : Swift.BitwiseCopyable {}
 extension QuickPoseCore.QuickPose.PoseFeedback.ActionChange : Swift.Equatable {}
 extension QuickPoseCore.QuickPose.PoseFeedback.ActionChange : Swift.Hashable {}
 extension QuickPoseCore.QuickPose.PoseFeedback.ActionChange : Swift.RawRepresentable {}
 extension QuickPoseCore.QuickPose.PoseFeedback.ActionChange : Swift.Sendable {}
+extension QuickPoseCore.QuickPose.PoseFeedback.ActionChange : Swift.BitwiseCopyable {}
 extension QuickPoseCore.QuickPose.PoseFeedback.DirectionChange : Swift.Equatable {}
 extension QuickPoseCore.QuickPose.PoseFeedback.DirectionChange : Swift.Hashable {}
 extension QuickPoseCore.QuickPose.PoseFeedback.DirectionChange : Swift.RawRepresentable {}
 extension QuickPoseCore.QuickPose.PoseFeedback.DirectionChange : Swift.Sendable {}
+extension QuickPoseCore.QuickPose.PoseFeedback.DirectionChange : Swift.BitwiseCopyable {}
 extension QuickPoseCore.QuickPose.Status : Swift.Sendable {}
+extension QuickPoseCore.QuickPose.Status : Swift.BitwiseCopyable {}
 extension QuickPoseCore.QuickPose.ModelConfig.ModelComplexity : Swift.Equatable {}
 extension QuickPoseCore.QuickPose.ModelConfig.ModelComplexity : Swift.Hashable {}
 extension QuickPoseCore.QuickPose.ModelConfig.ModelComplexity : Swift.Sendable {}
+extension QuickPoseCore.QuickPose.ModelConfig.ModelComplexity : Swift.BitwiseCopyable {}
 extension QuickPoseCore.QuickPose.Landmarks.Group : Swift.Sendable {}
+extension QuickPoseCore.QuickPose.Landmarks.Group : Swift.BitwiseCopyable {}
 extension QuickPoseCore.QuickPose.Landmarks.Face : Swift.Equatable {}
 extension QuickPoseCore.QuickPose.Landmarks.Face : Swift.Hashable {}
 extension QuickPoseCore.QuickPose.Landmarks.Face : Swift.RawRepresentable {}
 extension QuickPoseCore.QuickPose.Landmarks.Face : Swift.Sendable {}
+extension QuickPoseCore.QuickPose.Landmarks.Face : Swift.BitwiseCopyable {}
 extension QuickPoseCore.QuickPose.Landmarks.Body : Swift.Sendable {}
+extension QuickPoseCore.QuickPose.Landmarks.Body : Swift.BitwiseCopyable {}
 extension QuickPoseCore.QuickPose.Landmarks.HandGroup : Swift.Equatable {}
 extension QuickPoseCore.QuickPose.Landmarks.HandGroup : Swift.Hashable {}
 extension QuickPoseCore.QuickPose.Landmarks.HandGroup : Swift.RawRepresentable {}
 extension QuickPoseCore.QuickPose.Landmarks.HandGroup : Swift.Sendable {}
+extension QuickPoseCore.QuickPose.Landmarks.HandGroup : Swift.BitwiseCopyable {}
 extension QuickPoseCore.QuickPose.Landmarks.Hand : Swift.Equatable {}
 extension QuickPoseCore.QuickPose.Landmarks.Hand : Swift.Hashable {}
 extension QuickPoseCore.QuickPose.Landmarks.Hand : Swift.RawRepresentable {}
 extension QuickPoseCore.QuickPose.Landmarks.Hand : Swift.Sendable {}
+extension QuickPoseCore.QuickPose.Landmarks.Hand : Swift.BitwiseCopyable {}
