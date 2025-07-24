@@ -9,13 +9,13 @@
 	<key>CFBundleIdentifier</key>
 	<string>com.slicedbackhand.QuickPoseMP</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.2.11</string>
+	<string>1.2.12</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>iPhoneOS</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1.2.11</string>
+	<string>1.2.12</string>
 	<key>CameraPosition</key>
 	<string>back</string>
 	<key>DTCompiler</key>

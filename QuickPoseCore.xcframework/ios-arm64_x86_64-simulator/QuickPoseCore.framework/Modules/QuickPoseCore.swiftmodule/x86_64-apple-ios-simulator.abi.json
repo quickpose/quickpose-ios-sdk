@@ -16396,280 +16396,280 @@
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 12356,
+      "offset": 12645,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 12767,
+      "offset": 13056,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 13033,
+      "offset": 13322,
       "length": 38,
       "value": "\"Failed to create the pixelBufferPool\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 13267,
+      "offset": 13556,
       "length": 34,
       "value": "\"Failed to create the PixelBuffer\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 13405,
+      "offset": 13694,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 13697,
+      "offset": 13986,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 13870,
+      "offset": 14159,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 13873,
+      "offset": 14162,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 13876,
+      "offset": 14165,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 13879,
+      "offset": 14168,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 13883,
+      "offset": 14172,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 13959,
+      "offset": 14248,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 13966,
+      "offset": 14255,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 13972,
+      "offset": 14261,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 13978,
+      "offset": 14267,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 14011,
+      "offset": 14300,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 14292,
+      "offset": 14581,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 14333,
+      "offset": 14622,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 14368,
+      "offset": 14657,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 14496,
+      "offset": 14785,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "FloatLiteral",
-      "offset": 14665,
+      "offset": 14954,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 14802,
+      "offset": 15091,
       "length": 7,
       "value": "\"ERROR\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "Array",
-      "offset": 15031,
+      "offset": 15320,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 15100,
+      "offset": 15389,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 15122,
+      "offset": 15411,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 15151,
+      "offset": 15440,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 15174,
+      "offset": 15463,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 15318,
+      "offset": 15607,
       "length": 14,
       "value": "\"QuickPose.ai\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "Array",
-      "offset": 15436,
+      "offset": 15725,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 15505,
+      "offset": 15794,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 15528,
+      "offset": 15817,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 15557,
+      "offset": 15846,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 15601,
+      "offset": 15890,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 15746,
+      "offset": 16035,
       "length": 17,
       "value": "\"SDK Key Invalid\""
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "Array",
-      "offset": 15867,
+      "offset": 16156,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 15936,
+      "offset": 16225,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 15959,
+      "offset": 16248,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 15988,
+      "offset": 16277,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 16053,
+      "offset": 16342,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
-      "offset": 16204,
+      "offset": 16493,
       "length": 1,
       "value": "0"
     },
