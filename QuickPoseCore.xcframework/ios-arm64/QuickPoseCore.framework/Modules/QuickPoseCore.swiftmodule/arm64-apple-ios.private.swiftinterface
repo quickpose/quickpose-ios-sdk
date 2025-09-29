@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name QuickPoseCore
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name QuickPoseCore
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import AVFoundation
 import AVKit
 import CoreGraphics
@@ -31,7 +31,9 @@ public class QuickPoseThresholdCounter {
   final public let exitThreshold: Swift.Double
   public var state: QuickPoseCore.QuickPoseThresholdCounter.CountState
   public init(enterThreshold: Swift.Double = 0.6, exitThreshold: Swift.Double = 0.3)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func count(_ value: Swift.Double, onChange: ((QuickPoseCore.QuickPoseThresholdCounter.CountState) -> ())? = nil) -> QuickPoseCore.QuickPoseThresholdCounter.CountState
+  #endif
   public func reset()
   @objc deinit
 }
@@ -43,12 +45,20 @@ public class QuickPosePostProcessor {
     public let darkenOutput: CoreFoundation.CGFloat
     public let startTime: CoreMedia.CMTime
     public let endTime: CoreMedia.CMTime?
+    #if compiler(>=5.3) && $NonescapableTypes
     public init(input: Foundation.URL, output: Foundation.URL, outputType: AVFoundation.AVFileType, darkenOutput: CoreFoundation.CGFloat = 0.1, startTime: CoreMedia.CMTime = CMTimeMakeWithSeconds(0, preferredTimescale:1000), endTime: CoreMedia.CMTime? = nil)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     public init(bundleFilename: Swift.String, output: Foundation.URL, outputType: AVFoundation.AVFileType, darkenOutput: CoreFoundation.CGFloat = 0.1, startTime: CoreMedia.CMTime = CMTimeMakeWithSeconds(0, preferredTimescale:1000), endTime: CoreMedia.CMTime? = nil)
+    #endif
   }
   public init(sdkKey: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func update(features: [QuickPoseCore.QuickPose.Feature], modelConfig: QuickPoseCore.QuickPose.ModelConfig? = nil)
-  public func process(features: [QuickPoseCore.QuickPose.Feature], modelConfig: QuickPoseCore.QuickPose.ModelConfig = QuickPose.ModelConfig(), isFrontCamera: Swift.Bool, request: QuickPoseCore.QuickPosePostProcessor.Request, onFrame: @escaping ((Swift.Double, Swift.Double, QuickPoseCore.QuickPose.Status, UIKit.UIImage?, [QuickPoseCore.QuickPose.Feature : QuickPoseCore.QuickPose.FeatureResult], [QuickPoseCore.QuickPose.Feature : QuickPoseCore.QuickPose.PoseFeedback], QuickPoseCore.QuickPose.Landmarks?) -> ())) throws
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func process(features: [QuickPoseCore.QuickPose.Feature], modelConfig: QuickPoseCore.QuickPose.ModelConfig = QuickPose.ModelConfig(), isFrontCamera: Swift.Bool, request: QuickPoseCore.QuickPosePostProcessor.Request, onFrame: @escaping (Swift.Double, Swift.Double, QuickPoseCore.QuickPose.Status, UIKit.UIImage?, [QuickPoseCore.QuickPose.Feature : QuickPoseCore.QuickPose.FeatureResult], [QuickPoseCore.QuickPose.Feature : QuickPoseCore.QuickPose.PoseFeedback], QuickPoseCore.QuickPose.Landmarks?) -> ()) throws
+  #endif
   @objc deinit
 }
 public class QuickPoseClassifierSmoother {
@@ -61,7 +71,9 @@ public class QuickPoseDoubleAndStateUnchangedDetector {
   public var similarDuration: Foundation.TimeInterval
   public var leniency: Swift.Double
   public init(similarDuration: Foundation.TimeInterval, leniency: Swift.Double = 0.05)
-  public func count(result: (value: Swift.Double, state: Swift.String), timestamp: Foundation.Date = Date(), minValue: Swift.Double? = nil, maxValue: Swift.Double? = nil, onChange: (() -> ()))
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func count(result: (value: Swift.Double, state: Swift.String), timestamp: Foundation.Date = Date(), minValue: Swift.Double? = nil, maxValue: Swift.Double? = nil, onChange: () -> ())
+  #endif
   public func reset()
   @objc deinit
 }
@@ -70,7 +82,9 @@ public class QuickPoseDoubleUnchangedDetector {
   public var similarDuration: Foundation.TimeInterval
   public var leniency: Swift.Double
   public init(similarDuration: Foundation.TimeInterval, leniency: Swift.Double = 0.05)
-  public func count(result: Swift.Double, timestamp: Foundation.Date = Date(), minValue: Swift.Double? = nil, maxValue: Swift.Double? = nil, onChange: (() -> ()))
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func count(result: Swift.Double, timestamp: Foundation.Date = Date(), minValue: Swift.Double? = nil, maxValue: Swift.Double? = nil, onChange: () -> ())
+  #endif
   public func reset()
   @objc deinit
 }
@@ -83,16 +97,20 @@ public protocol QuickPoseCaptureAVAssetOutputSampleBufferDelegate : ObjectiveC.N
 extension QuickPoseCore.QuickPose {
   public struct Style : Swift.Hashable {
     public struct ConditionalColor : Swift.Hashable {
+      #if compiler(>=5.3) && $NonescapableTypes
       public init(min: Swift.Double?, max: Swift.Double?, color: UIKit.UIColor)
-      public func hash(into hasher: inout Swift.Hasher)
+      #endif
       public static func == (a: QuickPoseCore.QuickPose.Style.ConditionalColor, b: QuickPoseCore.QuickPose.Style.ConditionalColor) -> Swift.Bool
+      public func hash(into hasher: inout Swift.Hasher)
       public var hashValue: Swift.Int {
         get
       }
     }
+    #if compiler(>=5.3) && $NonescapableTypes
     public init(hidden: Swift.Bool = false, relativeFontSize: Swift.Double = 1, relativeArcSize: Swift.Double = 1, relativeLineWidth: Swift.Double = 1, cornerRadius: Swift.Double = 0, color: UIKit.UIColor = UIColor.white, conditionalColors: [QuickPoseCore.QuickPose.Style.ConditionalColor]? = nil)
-    public func hash(into hasher: inout Swift.Hasher)
+    #endif
     public static func == (a: QuickPoseCore.QuickPose.Style, b: QuickPoseCore.QuickPose.Style) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
@@ -159,8 +177,8 @@ extension QuickPoseCore.QuickPose {
     public var longDisplayTitle: Swift.String {
       get
     }
-    public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: QuickPoseCore.QuickPose.RangeOfMotion, b: QuickPoseCore.QuickPose.RangeOfMotion) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
@@ -191,8 +209,8 @@ extension QuickPoseCore.QuickPose {
     public var displayTitle: Swift.String {
       get
     }
-    public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: QuickPoseCore.QuickPose.FitnessFeature, b: QuickPoseCore.QuickPose.FitnessFeature) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
@@ -221,7 +239,9 @@ extension QuickPoseCore.QuickPose {
     case floorSideOnWithBackOffTheGround
     case floorWithBackOffTheGround
     case floorSideOnWithBackOnTheGround
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
@@ -236,7 +256,9 @@ extension QuickPoseCore.QuickPose {
       case lower
       case place
       case bend
+      #if compiler(>=5.3) && $NonescapableTypes
       public init?(rawValue: Swift.String)
+      #endif
       public typealias RawValue = Swift.String
       public var rawValue: Swift.String {
         get
@@ -253,7 +275,9 @@ extension QuickPoseCore.QuickPose {
       case intoView
       case intoBox
       case onFloor
+      #if compiler(>=5.3) && $NonescapableTypes
       public init?(rawValue: Swift.String)
+      #endif
       public typealias RawValue = Swift.String
       public var rawValue: Swift.String {
         get
@@ -295,12 +319,18 @@ extension QuickPoseCore.QuickPose {
         get
       }
     }
+    #if compiler(>=5.3) && $NonescapableTypes
     public init(detailedFaceTracking: Swift.Bool = true, detailedHandTracking: Swift.Bool = true, modelComplexity: QuickPoseCore.QuickPose.ModelConfig.ModelComplexity? = nil, rotationDegrees: Swift.Int? = nil)
+    #endif
   }
-  public func start(features: [QuickPoseCore.QuickPose.Feature], modelConfig: QuickPoseCore.QuickPose.ModelConfig = ModelConfig(), onStart: (() -> ())? = nil, onFrame: @escaping ((QuickPoseCore.QuickPose.Status, UIKit.UIImage?, [QuickPoseCore.QuickPose.Feature : QuickPoseCore.QuickPose.FeatureResult], [QuickPoseCore.QuickPose.Feature : QuickPoseCore.QuickPose.PoseFeedback], QuickPoseCore.QuickPose.Landmarks?) -> ()))
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func start(features: [QuickPoseCore.QuickPose.Feature], modelConfig: QuickPoseCore.QuickPose.ModelConfig = ModelConfig(), onStart: (() -> ())? = nil, onFrame: @escaping (QuickPoseCore.QuickPose.Status, UIKit.UIImage?, [QuickPoseCore.QuickPose.Feature : QuickPoseCore.QuickPose.FeatureResult], [QuickPoseCore.QuickPose.Feature : QuickPoseCore.QuickPose.PoseFeedback], QuickPoseCore.QuickPose.Landmarks?) -> ())
+  #endif
   public func disableLogging()
   public func enableLogging()
+  #if compiler(>=5.3) && $NonescapableTypes
   public func update(features: [QuickPoseCore.QuickPose.Feature], modelConfig: QuickPoseCore.QuickPose.ModelConfig? = nil)
+  #endif
   public func stop()
   public func libVersion() -> Swift.String
   public func modelWeight() -> Swift.String
@@ -328,13 +358,19 @@ extension QuickPoseCore.QuickPose {
   public struct Landmarks {
     public func landmark(forBody joint: QuickPoseCore.QuickPose.Landmarks.Body) -> QuickPoseCore.QuickPose.Point3d
     public func worldLandmark(forBody joint: QuickPoseCore.QuickPose.Landmarks.Body) -> QuickPoseCore.QuickPose.Point3d
+    #if compiler(>=5.3) && $NonescapableTypes
     public func landmark(forFace joint: QuickPoseCore.QuickPose.Landmarks.Face) -> QuickPoseCore.QuickPose.Point3d?
+    #endif
     public func allLandmarksForFace() -> [QuickPoseCore.QuickPose.Point3d]
     public func allWorldLandmarksForBody() -> [QuickPoseCore.QuickPose.Point3d]
     public func allLandmarksForBody() -> [QuickPoseCore.QuickPose.Point3d]
     public func allLandmarksForHand(side: QuickPoseCore.QuickPose.Side) -> [QuickPoseCore.QuickPose.Point3d]
+    #if compiler(>=5.3) && $NonescapableTypes
     public func landmark(forLeftHand joint: QuickPoseCore.QuickPose.Landmarks.Hand) -> QuickPoseCore.QuickPose.Point3d?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     public func landmark(forRightHand joint: QuickPoseCore.QuickPose.Landmarks.Hand) -> QuickPoseCore.QuickPose.Point3d?
+    #endif
     public var closestSide: QuickPoseCore.QuickPose.Side {
       get
     }
@@ -371,8 +407,12 @@ extension QuickPoseCore.QuickPose {
       case faceLeftEar
       case faceRightEar
       case faceNose
+      #if compiler(>=5.3) && $NonescapableTypes
       public static func parse(rawValue: Swift.String) -> QuickPoseCore.QuickPose.Landmarks.Face?
+      #endif
+      #if compiler(>=5.3) && $NonescapableTypes
       public init?(rawValue: Swift.Int)
+      #endif
       public typealias RawValue = Swift.Int
       public var rawValue: Swift.Int {
         get
@@ -398,11 +438,17 @@ extension QuickPoseCore.QuickPose {
       case ankle(side: QuickPoseCore.QuickPose.Side)
       case heel(side: QuickPoseCore.QuickPose.Side)
       case footIndex(side: QuickPoseCore.QuickPose.Side)
+      #if compiler(>=5.3) && $NonescapableTypes
       public static func toHumanReadableString(_ body: QuickPoseCore.QuickPose.Landmarks.Body) -> Swift.String?
+      #endif
+      #if compiler(>=5.3) && $NonescapableTypes
       public static func toString(_ body: QuickPoseCore.QuickPose.Landmarks.Body) -> Swift.String?
+      #endif
+      #if compiler(>=5.3) && $NonescapableTypes
       public static func parse(rawValue: Swift.String) -> QuickPoseCore.QuickPose.Landmarks.Body?
-      public func hash(into hasher: inout Swift.Hasher)
+      #endif
       public static func == (a: QuickPoseCore.QuickPose.Landmarks.Body, b: QuickPoseCore.QuickPose.Landmarks.Body) -> Swift.Bool
+      public func hash(into hasher: inout Swift.Hasher)
       public var hashValue: Swift.Int {
         get
       }
@@ -411,9 +457,13 @@ extension QuickPoseCore.QuickPose {
       case none
       case hand
       case fingers
+      #if compiler(>=5.3) && $NonescapableTypes
       public static func parse(_ rawValue: Swift.String?) -> QuickPoseCore.QuickPose.Landmarks.HandGroup
+      #endif
       public func toJoints() -> [[QuickPoseCore.QuickPose.Landmarks.Hand]]
+      #if compiler(>=5.3) && $NonescapableTypes
       public init?(rawValue: Swift.Int)
+      #endif
       public typealias RawValue = Swift.Int
       public var rawValue: Swift.Int {
         get
@@ -441,8 +491,12 @@ extension QuickPoseCore.QuickPose {
       case PINKY_FINGER_PIP
       case PINKY_FINGER_DIP
       case PINKY_FINGER_TIP
+      #if compiler(>=5.3) && $NonescapableTypes
       public static func parse(rawValue: Swift.String) -> QuickPoseCore.QuickPose.Landmarks.Hand?
+      #endif
+      #if compiler(>=5.3) && $NonescapableTypes
       public init?(rawValue: Swift.Int)
+      #endif
       public typealias RawValue = Swift.Int
       public var rawValue: Swift.Int {
         get
@@ -454,9 +508,11 @@ public class QuickPoseThresholdTimer {
   @frozen public enum TimerState {
     public struct Stats : Swift.CustomStringConvertible {
       public let minValue: Swift.Double?
+      #if compiler(>=5.3) && $NonescapableTypes
       public var averageValue: Swift.Double? {
         get
       }
+      #endif
       public let maxValue: Swift.Double?
       public var description: Swift.String {
         get
@@ -477,7 +533,9 @@ public class QuickPoseThresholdTimer {
   final public let threshold: Swift.Double
   public var state: QuickPoseCore.QuickPoseThresholdTimer.TimerState
   public init(threshold: Swift.Double = 0.6, windowSize: Swift.Int = 10)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func time(_ value: Swift.Double, onChange: ((QuickPoseCore.QuickPoseThresholdTimer.TimerState) -> ())? = nil) -> QuickPoseCore.QuickPoseThresholdTimer.TimerState
+  #endif
   public func stop()
   @objc deinit
 }
