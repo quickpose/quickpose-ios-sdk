@@ -10,11 +10,11 @@
 		</data>
 		<key>Headers/QuickPoseCore-Swift.h</key>
 		<data>
-		5jMzBJOJKBSxWBaneTfnOnA+uZI=
+		d4ACJKKeucJNe/j71DQcygA5cS4=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		NJzR0KePaZS6oZv8l1yMKqzxg10=
+		qRJrQXKbVt3NbwCGucuXjSDPo2M=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -22,19 +22,19 @@
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		AhRV5jfaZMnSvnz+u8TeLLntgjc=
+		FzrcFT8fCQyRmo4tRm2gglJWMhI=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		TjyWp9Zm5qDlIcKGBDto22U8G/o=
+		nsj2D1w0b3n1x48Y/OU/4LXJdV0=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		AhRV5jfaZMnSvnz+u8TeLLntgjc=
+		FzrcFT8fCQyRmo4tRm2gglJWMhI=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		WvZN8dfEb8lwly/NfFH7sPMSnVY=
+		bKdWHdGG6RDTwH6FuOxPlvSIwPY=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -42,19 +42,19 @@
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		3gmd2l9Kgf+z10DLM59iUaT2ma0=
+		KTds44abz437eMqDN8KXcFbOZv8=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		UcFYkRplZ1zee2XF7w+3zvyOA8M=
+		2uWRgB8Vfojau+jkS0lfP0ucngA=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		3gmd2l9Kgf+z10DLM59iUaT2ma0=
+		KTds44abz437eMqDN8KXcFbOZv8=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		M4RGXGn9UjnwzaiKr2wFlxKkcS0=
+		qMQb3S5cR8nVBGJiqWcXbF7yolE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -170,7 +170,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0s9xCcpRJM3leFDOMsf5kYkZH9zu3cL9QtIS9CDzhwg=
+			DaOtXTu6fuyBsbfRfjpwhFZMCkVoGgUbcGbaWE/cHXQ=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -184,28 +184,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CDNlOW1/kbkfjzcultQlSZXLtmHPUEi79JybU6KyxlA=
+			jpApf/6i5hK9RJiKCCzuBdWUEshjWzu2kx6vE2YkT8g=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ensod07h8gUPcejDya3NNdu88ZqI2U1wPalf+0h4CKg=
+			AmIdyEYD/Vu9gdiDotP1Ti5bKjSrncJqhabUjLc2ex0=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CDNlOW1/kbkfjzcultQlSZXLtmHPUEi79JybU6KyxlA=
+			jpApf/6i5hK9RJiKCCzuBdWUEshjWzu2kx6vE2YkT8g=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BCxVfUtlHG6R/6glCy7zeYdgs45gZvOFmZHBK3nf8Qw=
+			PAn7XWjywZBtZrnI7KR+wMjMlepnEj6YIew2xgU/kbY=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -219,28 +219,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1+tNSxhcMolXwpLlCQw5Z3NJ6rGeusTOtq9ZagUPr/E=
+			UM2EH9h8Qdp7ybyPXeaI00DaqopymRwSGfcLig8gROE=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FDUd8dgHUt/37JtL603KTITp70NxD11y1PyudmesUd4=
+			TZYDUq2E5eXKEE1fu0JLzEJp/BzvLurKu8EV8oFn0pY=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1+tNSxhcMolXwpLlCQw5Z3NJ6rGeusTOtq9ZagUPr/E=
+			UM2EH9h8Qdp7ybyPXeaI00DaqopymRwSGfcLig8gROE=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gQ+XMCcDwoShnj+aMY/pSWxa6ONV4AX6JGCghIs97Uc=
+			B0fniTIGeZoGztX7f9ikux6jEI4sLT4F0ijAqIV3JpU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
