@@ -230,7 +230,16 @@ struct QuickPosePickerView: View {
                     .background(RoundedRectangle(cornerRadius: 44/2).foregroundColor(Color("AccentColor").opacity(0.8)))
                 
                 Spacer()
-                
+
+                Button(action: {
+                    shareScreenshot()
+                }) {
+                    Text(Image(systemName: "square.and.arrow.up"))
+                        .font(.system(size: 20, weight: .semibold)).foregroundColor(.white)
+                        .padding(8)
+                        .background(Circle().foregroundColor(Color("AccentColor").opacity(0.8)))
+                }.frame(alignment: .trailing)
+
                 Button(action: {
                     useFrontCamera.toggle()
                 }) {
@@ -321,7 +330,8 @@ struct QuickPosePickerView: View {
         }
         
         .onAppear {
-            quickPose.start(features: selectedFeatures, modelConfig: performance == "Normal" ? QuickPose.ModelConfig() : QuickPose.ModelConfig(detailedFaceTracking: false, detailedHandTracking: false), onStart: {
+            let featuresWithBg = selectedFeatures + [.overlayHasCameraAsBackground(darkenCamera: 0)]
+            quickPose.start(features: featuresWithBg, modelConfig: performance == "Normal" ? QuickPose.ModelConfig() : QuickPose.ModelConfig(detailedFaceTracking: false, detailedHandTracking: false), onStart: {
                 withAnimation { cameraViewOpacity = 1.0 } // unhide the camera when loaded
             }, onFrame: { status, image, features, feedback, landmarks in
                 overlayImage = image
@@ -390,7 +400,23 @@ struct QuickPosePickerView: View {
         .edgesIgnoringSafeArea(.all)
         .opacity(cameraViewOpacity)
         .background(Color.black)
-        
+
+    }
+
+    private func shareScreenshot() {
+        guard let image = overlayImage, let data = image.jpegData(compressionQuality: 0.95) else { return }
+        let url = FileManager.default.temporaryDirectory.appendingPathComponent("quickpose_screenshot.jpg")
+        try? data.write(to: url)
+        let vc = UIActivityViewController(activityItems: [url], applicationActivities: nil)
+        guard let root = UIApplication.shared.windows.first(where: { $0.isKeyWindow })?.rootViewController else { return }
+        var presenter = root
+        while let presented = presenter.presentedViewController { presenter = presented }
+        if let pop = vc.popoverPresentationController {
+            pop.sourceView = presenter.view
+            pop.sourceRect = CGRect(x: presenter.view.bounds.midX, y: 64, width: 0, height: 0)
+            pop.permittedArrowDirections = .up
+        }
+        presenter.present(vc, animated: true)
     }
 }
 
