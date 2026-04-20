@@ -1,0 +1,4 @@
+*.swift filter=quickpose
+*.kt    filter=quickpose
+*.java  filter=quickpose
+*.m     filter=quickpose
