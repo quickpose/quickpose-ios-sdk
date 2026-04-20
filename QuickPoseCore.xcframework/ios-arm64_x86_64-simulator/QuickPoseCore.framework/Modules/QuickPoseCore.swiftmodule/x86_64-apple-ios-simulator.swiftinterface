@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name QuickPoseCore
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import AVFoundation
 import AVKit
 import CoreGraphics
@@ -202,6 +202,8 @@ extension QuickPoseCore.QuickPose {
     case sideLunges(side: QuickPoseCore.QuickPose.Side)
     case bicepCurls
     case bicepCurlsSingleArm(side: QuickPoseCore.QuickPose.Side)
+    case overarmReachBilateral
+    case kneeRaisesBilateral
     public var id: Swift.String {
       get
     }
@@ -306,6 +308,14 @@ extension QuickPoseCore.QuickPose {
   }
 }
 @objc public class QuickPose : ObjectiveC.NSObject, AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate, QuickPoseCore.QuickPoseCaptureAVAssetOutputSampleBufferDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var latestCameraImage: UIKit.UIImage? {
+    get
+  }
+  #endif
+  public var latestIsFrontCamera: Swift.Bool {
+    get
+  }
   public init(sdkKey: Swift.String)
   public struct ModelConfig {
     @frozen public enum ModelComplexity {
