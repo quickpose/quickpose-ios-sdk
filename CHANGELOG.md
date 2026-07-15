@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.3.0 - 2026-07-15
+
+### Added
+- Overlay styling options on `QuickPose.Style`:
+  - `lineCap` — `.round` (default), `.butt`, `.square`
+  - `linePattern` — `.solid`, `.dashed`, `.dotted`
+  - `shadow` — drop shadow behind lines, points and labels; a zero-offset shadow in the line's own color renders as a glow
+  - `outline` — contrasting border behind lines and points, keeping the overlay legible on any background
+  - `imageFill` — reveals a supplied `UIImage` through the skeleton's lines, points and labels
+  - `font` — custom `UIFont` for measurement labels
+  - `letterSpacing` — label letter spacing in ems
+- Front Pushups fitness exercise
+- Styling Demo sample app — live menu for every overlay style option
+
+### Changed
+- Overlay lines now use round caps and joins by default (previously butt caps). Set `lineCap: .butt` to restore the previous look.
+
 ## v1.2.14 - 2026-04-20
 
 ### Added
