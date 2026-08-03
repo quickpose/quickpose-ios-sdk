@@ -225,6 +225,11 @@ extension QuickPoseCore.QuickPose {
     case bicepCurlsSingleArm(side: QuickPoseCore.QuickPose.Side)
     case overarmReachBilateral
     case kneeRaisesBilateral
+    case burpees
+    case shoulderTaps
+    case highKneeTaps
+    case mountainClimbers
+    case boxing
     public var id: Swift.String {
       get
     }

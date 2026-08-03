@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		M8LAG0B/IU6sHSGKuZF2FBLKyzs=
+		9Bq0y6so+Llob/kKnmNQKjNAbi8=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		aCVsk9LLipnI4Q9ZVyugttV1ce0=
+		7ahip+23hPTv3pH54XJTOeIhknM=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		aCVsk9LLipnI4Q9ZVyugttV1ce0=
+		7ahip+23hPTv3pH54XJTOeIhknM=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		0L4t3Z5Y1oatLXMY8ME34G6g+1w=
+		/fnjNe18l8HUqnW4snE94N4JQ7Q=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		M8LAG0B/IU6sHSGKuZF2FBLKyzs=
+		9Bq0y6so+Llob/kKnmNQKjNAbi8=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		z4GyU3SM58uqrbYIS5uaLdo/jl8=
+		5zgjkne6BL9F6XNUgBhIq0MoKsU=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		z4GyU3SM58uqrbYIS5uaLdo/jl8=
+		5zgjkne6BL9F6XNUgBhIq0MoKsU=
 		</data>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		7EKtIfbeMiQTN+VOLXK8dKlHjgA=
+		jSR1GLC2EYM/TAPtSuBFzYhl3No=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -177,14 +177,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aY+TG/V8BT24+kKKZLfQQkkouzuWbMcx7/pfCItP6hM=
+			iHx7ZI426Z3FajlXZ5pZ1bWFy5tgSzS0aYTfpztbJw8=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4VI04lQFF7Y/nnSKlPz5pMjPz5FNhDf0rY4uVzGukKc=
+			L/v4QXpAoDQImEwefRpmOa/u7/trN4jUKfzuf6czNMU=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -198,28 +198,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4VI04lQFF7Y/nnSKlPz5pMjPz5FNhDf0rY4uVzGukKc=
+			L/v4QXpAoDQImEwefRpmOa/u7/trN4jUKfzuf6czNMU=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yfzs7CYsiM3adspj3ABA3H1dOO8Bvd6hV5/iorMn/kc=
+			IXqysCjelx0JcIf/GFvVtSE+4ofpGAoPjh/N7Dt0GIM=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aY+TG/V8BT24+kKKZLfQQkkouzuWbMcx7/pfCItP6hM=
+			iHx7ZI426Z3FajlXZ5pZ1bWFy5tgSzS0aYTfpztbJw8=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5eKCftcZydhxWccEiThlxx5WQVE6pKTAXoL+UvYW2r0=
+			BOvAD675fKXiC7q4Yo0b0mGbyrG6Mv4lyFyBy9MvSW4=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -233,14 +233,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5eKCftcZydhxWccEiThlxx5WQVE6pKTAXoL+UvYW2r0=
+			BOvAD675fKXiC7q4Yo0b0mGbyrG6Mv4lyFyBy9MvSW4=
 			</data>
 		</dict>
 		<key>Modules/QuickPoseCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			g64emCHLNyb3xROYf9jMGBLqRmEAs6+thpj2UBFjrj8=
+			auiCWmXw3vjQEekpbZJ/7uX8E/NNmcNeOdUSNtjWh1I=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
