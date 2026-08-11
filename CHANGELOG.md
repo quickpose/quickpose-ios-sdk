@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.5.0 - 2026-08-11
+
+### Changed
+- `QuickPoseCamera` now defaults to the widest field of view the selected camera offers — typically the sensor-native 4:3 format (e.g. 1440×1080) instead of a 16:9 centre crop. Apps see noticeably more of the scene (on front cameras this matches the stock Camera app's "zoomed out" selfie framing), and the capture aspect ratio changes from 16:9 to 4:3
+- Frame rate is unaffected: with no requested `frameRate` the previous device default (typically 30fps) is kept; an explicit `setFrameRate(...)` now selects the widest format that supports the requested rate
+
 ## v1.4.0 - 2026-08-02
 
 ### Added
