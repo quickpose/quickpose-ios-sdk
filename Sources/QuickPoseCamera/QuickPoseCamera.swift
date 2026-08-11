@@ -96,7 +96,7 @@ public class QuickPoseCamera {
             session.addInput(input)
             session.addOutput(output)
             initialFrameRate = device.activeVideoMaxFrameDuration.timescale
-            device.setFrameRate(frameRate)
+            device.selectFormat(frameRate: frameRate ?? Double(initialFrameRate)) // only the field of view should change: without a requested frame rate, keep the device's default
             
             if session.connections[0].isVideoOrientationSupported, let videoOrientation = AVCaptureVideoOrientation(rawValue: UIDevice.current.orientation.rawValue) {
                 
@@ -141,30 +141,31 @@ public class QuickPoseCamera {
     public func setFrameRate(_ frameRate: Double?) {
         qpProcessingQueue.async {
             self.session?.stopRunning()
-            self.device?.setFrameRate(frameRate == nil ? Double(self.initialFrameRate) : frameRate)
+            self.device?.selectFormat(frameRate: frameRate ?? Double(self.initialFrameRate))
             self.session?.startRunning()
         }
     }
 }
 
 extension AVCaptureDevice {
-    fileprivate func setFrameRate(_ frameRate: Double?) {
-        
-        guard let frameRate = frameRate else { return } // if possible avoid changing
+    /// Single format policy: the widest field of view the lens offers, at the smallest
+    /// resolution with a short side of at least 1080 (larger buffers only slow inference),
+    /// running at the requested frame rate. 16:9 video formats are a centre crop of the
+    /// sensor, so this typically selects a sensor-native 4:3 format.
+    fileprivate func selectFormat(frameRate: Double) {
         var selectedFormat: AVCaptureDevice.Format? = nil
-        let activeDimensions = CMVideoFormatDescriptionGetDimensions(activeFormat.formatDescription);
         for format in formats {
-            guard selectedFormat == nil else { break }
-            for range in format.videoSupportedFrameRateRanges {
-                let dimensions = CMVideoFormatDescriptionGetDimensions(format.formatDescription);
-                //print(dimensions, range.maxFrameRate)
-                if (range.minFrameRate <= frameRate && frameRate <= range.maxFrameRate && dimensions.width == activeDimensions.width && dimensions.height == activeDimensions.height) {
-                    selectedFormat = format
-                    break
-                }
+            let dimensions = CMVideoFormatDescriptionGetDimensions(format.formatDescription)
+            if dimensions.height < 1080 { continue }
+            if !format.videoSupportedFrameRateRanges.contains(where: { $0.minFrameRate <= frameRate && frameRate <= $0.maxFrameRate }) { continue }
+            if let best = selectedFormat {
+                let bestDimensions = CMVideoFormatDescriptionGetDimensions(best.formatDescription)
+                if format.videoFieldOfView < best.videoFieldOfView { continue }
+                if format.videoFieldOfView == best.videoFieldOfView && dimensions.width * dimensions.height >= bestDimensions.width * bestDimensions.height { continue }
             }
+            selectedFormat = format
         }
-        
+
         if let selectedFormat = selectedFormat {
             do {
                 try lockForConfiguration()
@@ -172,11 +173,14 @@ extension AVCaptureDevice {
                 activeVideoMinFrameDuration = CMTimeMake(value: 1, timescale: Int32(frameRate))
                 activeVideoMaxFrameDuration = CMTimeMake(value: 1, timescale: Int32(frameRate))
                 unlockForConfiguration()
+                let dimensions = CMVideoFormatDescriptionGetDimensions(selectedFormat.formatDescription)
+                print("QuickPose camera format \(dimensions.width)x\(dimensions.height), fov \(selectedFormat.videoFieldOfView), \(Int(frameRate))fps")
             } catch {
                 print("LockForConfiguration failed with error: \(error.localizedDescription)")
             }
         } else {
-            print("QuickPose couldn't set frameRate to \(frameRate)fps at \(activeDimensions), continuing with \(String(format:"%d",activeVideoMaxFrameDuration.timescale))fps")
+            let activeDimensions = CMVideoFormatDescriptionGetDimensions(activeFormat.formatDescription)
+            print("QuickPose couldn't select a format for \(frameRate)fps, continuing with \(activeDimensions.width)x\(activeDimensions.height) at \(String(format:"%d",activeVideoMaxFrameDuration.timescale))fps")
         }
     }
 }
