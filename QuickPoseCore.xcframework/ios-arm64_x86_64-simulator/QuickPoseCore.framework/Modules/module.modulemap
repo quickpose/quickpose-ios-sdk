@@ -1,3 +1,4 @@
 framework module QuickPoseCore {
   header "QuickPoseCore-Swift.h"
+  requires objc
 }

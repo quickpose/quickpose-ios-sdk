@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.5.1 - 2026-08-12
+
+### Fixed
+- `.fitness(.frontPushUps)` now counts reps when filmed head-on: the posture gate wrongly returned 0 for every front-facing frame (it tested for a side-on horizontal torso), and a full elbow bend never projected down to the 90° bottom angle, stalling legitimate reps below the rep-counting threshold. The gate now tests directly for an upright body, and the bottom angle accounts for head-on foreshortening
+- Corrected the `.frontPushUps` display title typo
+
 ## v1.5.0 - 2026-08-11
 
 ### Changed
