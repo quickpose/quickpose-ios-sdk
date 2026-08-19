@@ -3171,17 +3171,17 @@
                   },
                   {
                     "kind": "Conformance",
-                    "name": "Escapable",
-                    "printedName": "Escapable",
-                    "usr": "s:s9EscapableP",
-                    "mangledName": "$ss9EscapableP"
-                  },
-                  {
-                    "kind": "Conformance",
                     "name": "Equatable",
                     "printedName": "Equatable",
                     "usr": "s:SQ",
                     "mangledName": "$sSQ"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
                   },
                   {
                     "kind": "Conformance",
@@ -4173,17 +4173,17 @@
                   },
                   {
                     "kind": "Conformance",
-                    "name": "Escapable",
-                    "printedName": "Escapable",
-                    "usr": "s:s9EscapableP",
-                    "mangledName": "$ss9EscapableP"
-                  },
-                  {
-                    "kind": "Conformance",
                     "name": "Equatable",
                     "printedName": "Equatable",
                     "usr": "s:SQ",
                     "mangledName": "$sSQ"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
                   },
                   {
                     "kind": "Conformance",
@@ -4425,17 +4425,17 @@
                   },
                   {
                     "kind": "Conformance",
-                    "name": "Escapable",
-                    "printedName": "Escapable",
-                    "usr": "s:s9EscapableP",
-                    "mangledName": "$ss9EscapableP"
-                  },
-                  {
-                    "kind": "Conformance",
                     "name": "Equatable",
                     "printedName": "Equatable",
                     "usr": "s:SQ",
                     "mangledName": "$sSQ"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
                   },
                   {
                     "kind": "Conformance",
@@ -4815,7 +4815,7 @@
               {
                 "kind": "Constructor",
                 "name": "init",
-                "printedName": "init(hidden:relativeFontSize:relativeArcSize:relativeLineWidth:cornerRadius:color:conditionalColors:lineCap:linePattern:shadow:outline:imageFill:font:letterSpacing:)",
+                "printedName": "init(hidden:relativeFontSize:relativeArcSize:relativeLineWidth:relativePointSize:cornerRadius:color:conditionalColors:lineCap:linePattern:shadow:outline:imageFill:font:letterSpacing:)",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -4829,6 +4829,13 @@
                     "printedName": "Swift.Bool",
                     "hasDefaultArg": true,
                     "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "hasDefaultArg": true,
+                    "usr": "s:Sd"
                   },
                   {
                     "kind": "TypeNominal",
@@ -4971,8 +4978,8 @@
                   }
                 ],
                 "declKind": "Constructor",
-                "usr": "s:13QuickPoseCore0aB0C5StyleV6hidden16relativeFontSize0f3ArcH00F9LineWidth12cornerRadius5color17conditionalColors7lineCap0Q7Pattern6shadow7outline9imageFill4font13letterSpacingAESb_S4dSo7UIColorCSayAE16ConditionalColorVGSgAE0jR0OAE0jS0OAE6ShadowVSgAE7OutlineVSgSo7UIImageCSgSo6UIFontCSgSdtcfc",
-                "mangledName": "$s13QuickPoseCore0aB0C5StyleV6hidden16relativeFontSize0f3ArcH00F9LineWidth12cornerRadius5color17conditionalColors7lineCap0Q7Pattern6shadow7outline9imageFill4font13letterSpacingAESb_S4dSo7UIColorCSayAE16ConditionalColorVGSgAE0jR0OAE0jS0OAE6ShadowVSgAE7OutlineVSgSo7UIImageCSgSo6UIFontCSgSdtcfc",
+                "usr": "s:13QuickPoseCore0aB0C5StyleV6hidden16relativeFontSize0f3ArcH00F9LineWidth0f5PointH012cornerRadius5color17conditionalColors7lineCap0R7Pattern6shadow7outline9imageFill4font13letterSpacingAESb_S5dSo7UIColorCSayAE16ConditionalColorVGSgAE0jS0OAE0jT0OAE6ShadowVSgAE7OutlineVSgSo7UIImageCSgSo6UIFontCSgSdtcfc",
+                "mangledName": "$s13QuickPoseCore0aB0C5StyleV6hidden16relativeFontSize0f3ArcH00F9LineWidth0f5PointH012cornerRadius5color17conditionalColors7lineCap0R7Pattern6shadow7outline9imageFill4font13letterSpacingAESb_S5dSo7UIColorCSayAE16ConditionalColorVGSgAE0jS0OAE0jT0OAE6ShadowVSgAE7OutlineVSgSo7UIImageCSgSo6UIFontCSgSdtcfc",
                 "moduleName": "QuickPoseCore",
                 "declAttributes": [
                   "AccessControl"
@@ -6770,17 +6777,17 @@
               },
               {
                 "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
                 "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
               },
               {
                 "kind": "Conformance",
@@ -9210,17 +9217,17 @@
               },
               {
                 "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
                 "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
               },
               {
                 "kind": "Conformance",
@@ -9686,17 +9693,17 @@
               },
               {
                 "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
                 "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
               },
               {
                 "kind": "Conformance",
@@ -10112,17 +10119,17 @@
                   },
                   {
                     "kind": "Conformance",
-                    "name": "Escapable",
-                    "printedName": "Escapable",
-                    "usr": "s:s9EscapableP",
-                    "mangledName": "$ss9EscapableP"
-                  },
-                  {
-                    "kind": "Conformance",
                     "name": "Equatable",
                     "printedName": "Equatable",
                     "usr": "s:SQ",
                     "mangledName": "$sSQ"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
                   },
                   {
                     "kind": "Conformance",
@@ -10647,17 +10654,17 @@
                   },
                   {
                     "kind": "Conformance",
-                    "name": "Escapable",
-                    "printedName": "Escapable",
-                    "usr": "s:s9EscapableP",
-                    "mangledName": "$ss9EscapableP"
-                  },
-                  {
-                    "kind": "Conformance",
                     "name": "Equatable",
                     "printedName": "Equatable",
                     "usr": "s:SQ",
                     "mangledName": "$sSQ"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
                   },
                   {
                     "kind": "Conformance",
@@ -11202,17 +11209,17 @@
               },
               {
                 "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
                 "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
               }
             ]
           },
@@ -13365,17 +13372,17 @@
                   },
                   {
                     "kind": "Conformance",
-                    "name": "Escapable",
-                    "printedName": "Escapable",
-                    "usr": "s:s9EscapableP",
-                    "mangledName": "$ss9EscapableP"
-                  },
-                  {
-                    "kind": "Conformance",
                     "name": "Equatable",
                     "printedName": "Equatable",
                     "usr": "s:SQ",
                     "mangledName": "$sSQ"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
                   },
                   {
                     "kind": "Conformance",
@@ -13717,17 +13724,17 @@
                   },
                   {
                     "kind": "Conformance",
-                    "name": "Escapable",
-                    "printedName": "Escapable",
-                    "usr": "s:s9EscapableP",
-                    "mangledName": "$ss9EscapableP"
-                  },
-                  {
-                    "kind": "Conformance",
                     "name": "Equatable",
                     "printedName": "Equatable",
                     "usr": "s:SQ",
                     "mangledName": "$sSQ"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
                   },
                   {
                     "kind": "Conformance",
@@ -15365,17 +15372,17 @@
                   },
                   {
                     "kind": "Conformance",
-                    "name": "Escapable",
-                    "printedName": "Escapable",
-                    "usr": "s:s9EscapableP",
-                    "mangledName": "$ss9EscapableP"
-                  },
-                  {
-                    "kind": "Conformance",
                     "name": "Equatable",
                     "printedName": "Equatable",
                     "usr": "s:SQ",
                     "mangledName": "$sSQ"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
                   },
                   {
                     "kind": "Conformance",
@@ -16354,17 +16361,17 @@
                   },
                   {
                     "kind": "Conformance",
-                    "name": "Escapable",
-                    "printedName": "Escapable",
-                    "usr": "s:s9EscapableP",
-                    "mangledName": "$ss9EscapableP"
-                  },
-                  {
-                    "kind": "Conformance",
                     "name": "Equatable",
                     "printedName": "Equatable",
                     "usr": "s:SQ",
                     "mangledName": "$sSQ"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
                   },
                   {
                     "kind": "Conformance",
@@ -16458,38 +16465,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -16500,10 +16479,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -16514,10 +16507,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -16807,17 +16814,17 @@
                   },
                   {
                     "kind": "Conformance",
-                    "name": "Escapable",
-                    "printedName": "Escapable",
-                    "usr": "s:s9EscapableP",
-                    "mangledName": "$ss9EscapableP"
-                  },
-                  {
-                    "kind": "Conformance",
                     "name": "CustomStringConvertible",
                     "printedName": "CustomStringConvertible",
                     "usr": "s:s23CustomStringConvertibleP",
                     "mangledName": "$ss23CustomStringConvertibleP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
                   }
                 ]
               },
@@ -17420,14 +17427,60 @@
         "declKind": "Struct",
         "usr": "c:@S@CGPoint",
         "moduleName": "CoreFoundation",
+        "declAttributes": [
+          "SynthesizedProtocol",
+          "Sendable"
+        ],
         "isExternal": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
+          },
           {
             "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           },
           {
             "kind": "Conformance",
@@ -17438,17 +17491,17 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "BitwiseCopyable",
-            "printedName": "BitwiseCopyable",
-            "usr": "s:s15BitwiseCopyableP",
-            "mangledName": "$ss15BitwiseCopyableP"
           },
           {
             "kind": "Conformance",
@@ -17459,10 +17512,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
+            "name": "_CustomPlaygroundQuickLookable",
+            "printedName": "_CustomPlaygroundQuickLookable",
+            "usr": "s:s30_CustomPlaygroundQuickLookableP",
+            "mangledName": "$ss30_CustomPlaygroundQuickLookableP"
           },
           {
             "kind": "Conformance",
@@ -17485,41 +17538,6 @@
             ],
             "usr": "s:s21_ObjectiveCBridgeableP",
             "mangledName": "$ss21_ObjectiveCBridgeableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomReflectable",
-            "printedName": "CustomReflectable",
-            "usr": "s:s17CustomReflectableP",
-            "mangledName": "$ss17CustomReflectableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_CustomPlaygroundQuickLookable",
-            "printedName": "_CustomPlaygroundQuickLookable",
-            "usr": "s:s30_CustomPlaygroundQuickLookableP",
-            "mangledName": "$ss30_CustomPlaygroundQuickLookableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
           },
           {
             "kind": "Conformance",
@@ -17564,1785 +17582,1792 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/QuickPoseThresholdCounter.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/QuickPoseThresholdCounter.swift",
       "kind": "IntegerLiteral",
       "offset": 1542,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/QuickPoseThresholdCounter.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/QuickPoseThresholdCounter.swift",
       "kind": "FloatLiteral",
       "offset": 1645,
       "length": 3,
       "value": "0.6"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/QuickPoseThresholdCounter.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/QuickPoseThresholdCounter.swift",
       "kind": "FloatLiteral",
       "offset": 1674,
       "length": 3,
       "value": "0.3"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/QuickPoseThresholdCounter.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/QuickPoseThresholdCounter.swift",
       "kind": "IntegerLiteral",
       "offset": 1702,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPosePostProcessor.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPosePostProcessor.swift",
       "kind": "FloatLiteral",
       "offset": 528,
       "length": 3,
       "value": "0.1"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPosePostProcessor.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPosePostProcessor.swift",
       "kind": "IntegerLiteral",
       "offset": 575,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPosePostProcessor.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPosePostProcessor.swift",
       "kind": "IntegerLiteral",
       "offset": 597,
       "length": 4,
       "value": "1000"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPosePostProcessor.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPosePostProcessor.swift",
       "kind": "FloatLiteral",
       "offset": 978,
       "length": 3,
       "value": "0.1"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPosePostProcessor.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPosePostProcessor.swift",
       "kind": "IntegerLiteral",
       "offset": 1025,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPosePostProcessor.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPosePostProcessor.swift",
       "kind": "IntegerLiteral",
       "offset": 1047,
       "length": 4,
       "value": "1000"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPosePostProcessor.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPosePostProcessor.swift",
       "kind": "StringLiteral",
       "offset": 1681,
       "length": 18,
       "value": "\"VideoFileReading\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPosePostProcessor.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPosePostProcessor.swift",
       "kind": "StringLiteral",
       "offset": 1788,
       "length": 18,
       "value": "\"VideoFileWriting\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/QuickPoseTimer.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/QuickPoseTimer.swift",
       "kind": "IntegerLiteral",
       "offset": 310,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/FixedSizeRingBuffer.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/FixedSizeRingBuffer.swift",
       "kind": "IntegerLiteral",
       "offset": 238,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/BodyPoseClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/BodyPoseClassifier.swift",
       "kind": "Array",
       "offset": 299,
       "length": 5,
       "value": "[\"x\"]"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/BodyPoseClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/BodyPoseClassifier.swift",
       "kind": "StringLiteral",
       "offset": 643,
       "length": 8,
       "value": "\"var_39\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/BodyPoseClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/BodyPoseClassifier.swift",
       "kind": "FloatLiteral",
       "offset": 1213,
       "length": 3,
       "value": "0.1"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/BodyPoseClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/BodyPoseClassifier.swift",
       "kind": "IntegerLiteral",
       "offset": 1848,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/BodyPoseClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/BodyPoseClassifier.swift",
       "kind": "IntegerLiteral",
       "offset": 3615,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/BodyPoseClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/BodyPoseClassifier.swift",
       "kind": "IntegerLiteral",
       "offset": 3691,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/BodyPoseClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/BodyPoseClassifier.swift",
       "kind": "IntegerLiteral",
       "offset": 3784,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/BodyPoseClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/BodyPoseClassifier.swift",
       "kind": "IntegerLiteral",
       "offset": 3860,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/BodyPoseClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/BodyPoseClassifier.swift",
       "kind": "IntegerLiteral",
       "offset": 4100,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/BodyPoseClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/BodyPoseClassifier.swift",
       "kind": "StringLiteral",
       "offset": 4210,
       "length": 40,
       "value": "\"Unexpected runtime error. MLMultiArray\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/BodyPoseClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/BodyPoseClassifier.swift",
       "kind": "IntegerLiteral",
       "offset": 4747,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/BodyPoseClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/BodyPoseClassifier.swift",
       "kind": "IntegerLiteral",
       "offset": 4962,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/BodyPoseClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/BodyPoseClassifier.swift",
       "kind": "IntegerLiteral",
       "offset": 5028,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/BodyPoseClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/BodyPoseClassifier.swift",
       "kind": "IntegerLiteral",
       "offset": 5094,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/BodyPoseClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/BodyPoseClassifier.swift",
       "kind": "IntegerLiteral",
       "offset": 5180,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/BodyPoseClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/BodyPoseClassifier.swift",
       "kind": "IntegerLiteral",
       "offset": 5265,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/BodyPoseClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/BodyPoseClassifier.swift",
       "kind": "StringLiteral",
       "offset": 5319,
       "length": 20,
       "value": "\"BodyPoseClassifier\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/ThumbsUpDownClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/ThumbsUpDownClassifier.swift",
       "kind": "Array",
       "offset": 326,
       "length": 5,
       "value": "[\"x\"]"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/ThumbsUpDownClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/ThumbsUpDownClassifier.swift",
       "kind": "StringLiteral",
       "offset": 670,
       "length": 8,
       "value": "\"var_39\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/ThumbsUpDownClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/ThumbsUpDownClassifier.swift",
       "kind": "Array",
       "offset": 1204,
       "length": 37,
       "value": "[\"thumb_up\", \"thumb_down\", \"other\"]"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/QuickPoseClassifierSmoother.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/QuickPoseClassifierSmoother.swift",
       "kind": "FloatLiteral",
       "offset": 306,
       "length": 3,
       "value": "0.9"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/QuickPoseClassifierSmoother.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/QuickPoseClassifierSmoother.swift",
       "kind": "IntegerLiteral",
       "offset": 329,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
       "offset": 295,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
       "offset": 11637,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
       "offset": 12048,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "StringLiteral",
       "offset": 12314,
       "length": 38,
       "value": "\"Failed to create the pixelBufferPool\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "StringLiteral",
       "offset": 12548,
       "length": 34,
       "value": "\"Failed to create the PixelBuffer\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
       "offset": 12686,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
       "offset": 12978,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
       "offset": 13151,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
       "offset": 13154,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
       "offset": 13157,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
       "offset": 13160,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
       "offset": 13164,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
       "offset": 13240,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
       "offset": 13247,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
       "offset": 13253,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
       "offset": 13259,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
       "offset": 13292,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
       "offset": 13573,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
       "offset": 13614,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
       "offset": 13649,
       "length": 2,
       "value": "24"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
       "offset": 13777,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "FloatLiteral",
       "offset": 13946,
       "length": 3,
       "value": "0.8"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "StringLiteral",
       "offset": 14083,
       "length": 7,
       "value": "\"ERROR\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "Array",
       "offset": 14312,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
       "offset": 14381,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
       "offset": 14403,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
       "offset": 14432,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
       "offset": 14455,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "StringLiteral",
       "offset": 14599,
       "length": 14,
       "value": "\"QuickPose.ai\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "Array",
       "offset": 14717,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
       "offset": 14786,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
       "offset": 14809,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
       "offset": 14838,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
       "offset": 14882,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "StringLiteral",
       "offset": 15027,
       "length": 17,
       "value": "\"SDK Key Invalid\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "Array",
       "offset": 15148,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
       "offset": 15217,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
       "offset": 15240,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
       "offset": 15269,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
       "offset": 15334,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/OverlayGenerator.swift",
       "kind": "IntegerLiteral",
       "offset": 15485,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Measures.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Measures.swift",
       "kind": "BooleanLiteral",
       "offset": 37132,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Measures.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Measures.swift",
       "kind": "BooleanLiteral",
       "offset": 37183,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Measures.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Measures.swift",
       "kind": "BooleanLiteral",
       "offset": 37239,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/QuickPoseDoubleAndStateUnchangedDetector.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/QuickPoseDoubleAndStateUnchangedDetector.swift",
       "kind": "FloatLiteral",
       "offset": 424,
       "length": 4,
       "value": "0.05"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/QuickPoseDoubleUnchangedDetector.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/QuickPoseDoubleUnchangedDetector.swift",
       "kind": "FloatLiteral",
       "offset": 398,
       "length": 4,
       "value": "0.05"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/MeasuringArc.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/MeasuringArc.swift",
       "kind": "BooleanLiteral",
       "offset": 648,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/MeasuringArc.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/MeasuringArc.swift",
       "kind": "StringLiteral",
       "offset": 672,
       "length": 8,
       "value": "\"%.0f°\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/MeasuringArc.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/MeasuringArc.swift",
       "kind": "FloatLiteral",
       "offset": 759,
       "length": 3,
       "value": "0.6"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/MeasuringArc.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Overlays\/MeasuringArc.swift",
       "kind": "IntegerLiteral",
       "offset": 4602,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 4238,
+      "offset": 4469,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 4259,
+      "offset": 4490,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 4280,
+      "offset": 4511,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "FloatLiteral",
-      "offset": 4938,
+      "offset": 5169,
       "length": 4,
       "value": "0.25"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "BooleanLiteral",
-      "offset": 6106,
+      "offset": 6558,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 6140,
+      "offset": 6592,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 6169,
+      "offset": 6621,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 6200,
+      "offset": 6652,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 6226,
+      "offset": 6683,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6709,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 6489,
+      "offset": 6972,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 7825,
+      "offset": 8363,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 7907,
+      "offset": 8445,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "FloatLiteral",
-      "offset": 8610,
+      "offset": 9148,
       "length": 3,
       "value": "0.5"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "FloatLiteral",
-      "offset": 8697,
+      "offset": 9235,
       "length": 3,
       "value": "0.5"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "FloatLiteral",
-      "offset": 8790,
+      "offset": 9328,
       "length": 3,
       "value": "0.5"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 41696,
+      "offset": 42234,
       "length": 21,
       "value": "\"Stand facing camera\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 41743,
+      "offset": 42281,
       "length": 19,
       "value": "\"Sit facing camera\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 41799,
+      "offset": 42337,
       "length": 38,
       "value": "\"Sit facing camera, with crossed legs\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 41865,
+      "offset": 42403,
       "length": 15,
       "value": "\"Stand side on\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 41914,
+      "offset": 42452,
       "length": 10,
       "value": "\"Stand up\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 41952,
+      "offset": 42490,
       "length": 34,
       "value": "\"Get on your front, facing camera\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 42034,
+      "offset": 42572,
       "length": 28,
       "value": "\"Get on your front, side on\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 42104,
+      "offset": 42642,
       "length": 14,
       "value": "\"Get on floor\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 42165,
+      "offset": 42703,
       "length": 27,
       "value": "\"Get on your back, side on\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 42314,
+      "offset": 42852,
       "length": 6,
       "value": "\"move\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 42345,
+      "offset": 42883,
       "length": 6,
       "value": "\"lean\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 42382,
+      "offset": 42920,
       "length": 12,
       "value": "\"straighten\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 42420,
+      "offset": 42958,
       "length": 7,
       "value": "\"raise\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 42453,
+      "offset": 42991,
       "length": 7,
       "value": "\"lower\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 42486,
+      "offset": 43024,
       "length": 7,
       "value": "\"place\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 42518,
+      "offset": 43056,
       "length": 6,
       "value": "\"bend\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 42620,
+      "offset": 43158,
       "length": 4,
       "value": "\"up\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 42649,
+      "offset": 43187,
       "length": 6,
       "value": "\"down\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 42680,
+      "offset": 43218,
       "length": 6,
       "value": "\"left\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 42712,
+      "offset": 43250,
       "length": 7,
       "value": "\"right\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 42748,
+      "offset": 43286,
       "length": 9,
       "value": "\"forward\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 42782,
+      "offset": 43320,
       "length": 6,
       "value": "\"back\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 42814,
+      "offset": 43352,
       "length": 7,
       "value": "\"apart\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 42850,
+      "offset": 43388,
       "length": 11,
       "value": "\"into view\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 42889,
+      "offset": 43427,
       "length": 10,
       "value": "\"into box\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 42928,
+      "offset": 43466,
       "length": 10,
       "value": "\"on floor\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "Array",
-      "offset": 52167,
+      "offset": 52705,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "BooleanLiteral",
-      "offset": 52202,
+      "offset": 52740,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "BooleanLiteral",
-      "offset": 52247,
+      "offset": 52785,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "BooleanLiteral",
-      "offset": 52285,
+      "offset": 52823,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "BooleanLiteral",
-      "offset": 52329,
+      "offset": 52867,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "Array",
-      "offset": 52385,
+      "offset": 52923,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "BooleanLiteral",
-      "offset": 52416,
+      "offset": 52954,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 52666,
+      "offset": 53204,
       "length": 16,
       "value": "\"QPLockingQueue\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "BooleanLiteral",
-      "offset": 52735,
+      "offset": 53273,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "BooleanLiteral",
-      "offset": 53966,
+      "offset": 54504,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "BooleanLiteral",
-      "offset": 54001,
+      "offset": 54539,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 54964,
+      "offset": 55502,
       "length": 4,
       "value": "\"ht\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 54969,
+      "offset": 55507,
       "length": 6,
       "value": "\"tps:\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 54976,
+      "offset": 55514,
       "length": 4,
       "value": "\"\/\/\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 54981,
+      "offset": 55519,
       "length": 3,
       "value": "\"a\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 54985,
+      "offset": 55523,
       "length": 8,
       "value": "\"pi.qui\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 54994,
+      "offset": 55532,
       "length": 14,
       "value": "\"ckpose.ai\/sd\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 55009,
+      "offset": 55547,
       "length": 7,
       "value": "\"k\/v1\/\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 55786,
+      "offset": 56324,
       "length": 56,
       "value": "\"QuickPose \""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 55818,
+      "offset": 56356,
       "length": 7,
       "value": "\" started multiple times\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "BooleanLiteral",
-      "offset": 55888,
+      "offset": 56426,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "BooleanLiteral",
-      "offset": 55928,
+      "offset": 56466,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "BooleanLiteral",
-      "offset": 55961,
+      "offset": 56499,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 56493,
+      "offset": 57031,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "BooleanLiteral",
-      "offset": 56615,
+      "offset": 57153,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 56866,
+      "offset": 57404,
       "length": 113,
       "value": "\"QuickPose \""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 56903,
+      "offset": 57441,
       "length": 8,
       "value": "\" starting with MediaPipe version \""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 56956,
+      "offset": 57494,
       "length": 1,
       "value": "\" \""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 56978,
+      "offset": 57516,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 57120,
+      "offset": 57658,
       "length": 112,
       "value": "\"QuickPose \""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 57157,
+      "offset": 57695,
       "length": 7,
       "value": "\" started with MediaPipe version \""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 57209,
+      "offset": 57747,
       "length": 1,
       "value": "\" \""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 57231,
+      "offset": 57769,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "FloatLiteral",
-      "offset": 57324,
+      "offset": 57862,
       "length": 3,
       "value": "0.2"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "BooleanLiteral",
-      "offset": 57416,
+      "offset": 57954,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 57730,
+      "offset": 58268,
       "length": 13,
       "value": "\"no bundleID\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 57783,
+      "offset": 58321,
       "length": 5,
       "value": "\"IOS\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 57880,
+      "offset": 58418,
       "length": 18,
       "value": "\"waiting for uuid\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 58154,
+      "offset": 58692,
       "length": 3,
       "value": "\"v\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 58158,
+      "offset": 58696,
       "length": 3,
       "value": "\"a\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 58162,
+      "offset": 58700,
       "length": 3,
       "value": "\"l\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 58166,
+      "offset": 58704,
       "length": 3,
       "value": "\"i\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 58170,
+      "offset": 58708,
       "length": 7,
       "value": "\"date-\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 58178,
+      "offset": 58716,
       "length": 3,
       "value": "\"k\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 58182,
+      "offset": 58720,
       "length": 3,
       "value": "\"e\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 58186,
+      "offset": 58724,
       "length": 3,
       "value": "\"y\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 58258,
+      "offset": 58796,
       "length": 4,
       "value": "\"PO\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 58263,
+      "offset": 58801,
       "length": 4,
       "value": "\"ST\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 58300,
+      "offset": 58838,
       "length": 9,
       "value": "\"applica\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 58310,
+      "offset": 58848,
       "length": 9,
       "value": "\"tion\/js\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 58320,
+      "offset": 58858,
       "length": 4,
       "value": "\"on\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "StringLiteral",
-      "offset": 58346,
+      "offset": 58884,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "BooleanLiteral",
-      "offset": 84855,
+      "offset": 85497,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 85673,
+      "offset": 86315,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 85690,
+      "offset": 86332,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 85743,
+      "offset": 86385,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 85760,
+      "offset": 86402,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 85804,
+      "offset": 86446,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 85843,
+      "offset": 86485,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 86124,
+      "offset": 86766,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 86168,
+      "offset": 86810,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 86449,
+      "offset": 87091,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 86493,
+      "offset": 87135,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 98955,
+      "offset": 99597,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 98986,
+      "offset": 99628,
       "length": 3,
       "value": "152"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 99021,
+      "offset": 99663,
       "length": 2,
       "value": "93"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 99056,
+      "offset": 99698,
       "length": 3,
       "value": "323"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 99088,
+      "offset": 99730,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 108962,
+      "offset": 109604,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 108984,
+      "offset": 109626,
       "length": 7,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 111021,
+      "offset": 111663,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 111052,
+      "offset": 111694,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 111083,
+      "offset": 111725,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 111113,
+      "offset": 111755,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 111144,
+      "offset": 111786,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 111182,
+      "offset": 111824,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 111220,
+      "offset": 111862,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 111258,
+      "offset": 111900,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 111296,
+      "offset": 111938,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 111335,
+      "offset": 111977,
       "length": 1,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 111374,
+      "offset": 112016,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 111414,
+      "offset": 112056,
       "length": 2,
       "value": "11"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 111454,
+      "offset": 112096,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 111492,
+      "offset": 112134,
       "length": 2,
       "value": "13"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 111530,
+      "offset": 112172,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 111568,
+      "offset": 112210,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 111606,
+      "offset": 112248,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 111645,
+      "offset": 112287,
       "length": 2,
       "value": "17"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 111684,
+      "offset": 112326,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 111723,
+      "offset": 112365,
       "length": 2,
       "value": "19"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/QuickPose.swift",
       "kind": "IntegerLiteral",
-      "offset": 111762,
+      "offset": 112404,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
       "kind": "Array",
       "offset": 333,
       "length": 9,
       "value": "[\"input\"]"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
       "kind": "StringLiteral",
       "offset": 679,
       "length": 6,
       "value": "\"pose\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
       "kind": "StringLiteral",
       "offset": 722,
       "length": 18,
       "value": "\"classProbability\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
       "kind": "IntegerLiteral",
       "offset": 2009,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
       "kind": "IntegerLiteral",
       "offset": 4036,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
       "kind": "IntegerLiteral",
       "offset": 4112,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
       "kind": "IntegerLiteral",
       "offset": 4205,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
       "kind": "IntegerLiteral",
       "offset": 4281,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
       "kind": "IntegerLiteral",
       "offset": 4374,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
       "kind": "IntegerLiteral",
       "offset": 4450,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
       "kind": "IntegerLiteral",
       "offset": 4705,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
       "kind": "StringLiteral",
       "offset": 4815,
       "length": 40,
       "value": "\"Unexpected runtime error. MLMultiArray\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
       "kind": "StringLiteral",
       "offset": 5308,
       "length": 14,
       "value": "\"jumping_jack\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
       "kind": "StringLiteral",
       "offset": 5376,
       "length": 7,
       "value": "\"plank\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
       "kind": "StringLiteral",
       "offset": 5437,
       "length": 9,
       "value": "\"push_up\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
       "kind": "StringLiteral",
       "offset": 5500,
       "length": 5,
       "value": "\"sit\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
       "kind": "StringLiteral",
       "offset": 5559,
       "length": 7,
       "value": "\"stand\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
       "kind": "IntegerLiteral",
       "offset": 5624,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
       "kind": "StringLiteral",
       "offset": 5827,
       "length": 14,
       "value": "\"jumping_jack\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
       "kind": "IntegerLiteral",
       "offset": 5857,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
       "kind": "StringLiteral",
       "offset": 5877,
       "length": 7,
       "value": "\"plank\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
       "kind": "IntegerLiteral",
       "offset": 5900,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
       "kind": "StringLiteral",
       "offset": 5920,
       "length": 9,
       "value": "\"push_up\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
       "kind": "IntegerLiteral",
       "offset": 5945,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
       "kind": "StringLiteral",
       "offset": 5965,
       "length": 5,
       "value": "\"sit\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
       "kind": "IntegerLiteral",
       "offset": 5986,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
       "kind": "StringLiteral",
       "offset": 6006,
       "length": 7,
       "value": "\"stand\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
       "kind": "IntegerLiteral",
       "offset": 6029,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/FitnessClassifier.swift",
       "kind": "StringLiteral",
       "offset": 6096,
       "length": 19,
       "value": "\"FitnessClassifier\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/QuickPoseThresholdTimer.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/QuickPoseThresholdTimer.swift",
       "kind": "IntegerLiteral",
       "offset": 2398,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/QuickPoseThresholdTimer.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/QuickPoseThresholdTimer.swift",
       "kind": "IntegerLiteral",
       "offset": 2467,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/QuickPoseThresholdTimer.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/QuickPoseThresholdTimer.swift",
       "kind": "IntegerLiteral",
       "offset": 2477,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/QuickPoseThresholdTimer.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/QuickPoseThresholdTimer.swift",
       "kind": "FloatLiteral",
       "offset": 2522,
       "length": 3,
       "value": "0.6"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/QuickPoseThresholdTimer.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Features\/Helpers\/QuickPoseThresholdTimer.swift",
       "kind": "IntegerLiteral",
       "offset": 2545,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/RaisedFingersClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/RaisedFingersClassifier.swift",
       "kind": "Array",
       "offset": 345,
       "length": 9,
       "value": "[\"input\"]"
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/RaisedFingersClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/RaisedFingersClassifier.swift",
       "kind": "StringLiteral",
       "offset": 691,
       "length": 6,
       "value": "\"pose\""
     },
     {
-      "filePath": "\/Users\/peter\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/RaisedFingersClassifier.swift",
+      "filePath": "\/Users\/peternash\/40love\/quickpose-ios-sdk-private\/Private\/QuickPose\/Classifiers\/RaisedFingersClassifier.swift",
       "kind": "StringLiteral",
       "offset": 734,
       "length": 18,
