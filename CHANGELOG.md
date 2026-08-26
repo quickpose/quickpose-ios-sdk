@@ -8,7 +8,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Frame pipelining in the bundled MediaPipe graph: the next camera frame is held ready while inference runs (FlowLimiter `max_in_queue: 1`, upstream's live-camera configuration) instead of the graph idling until the next camera callback. Landmark output is byte-identical; frames in flight stay capped at two
-- `QuickPoseMP` rebuilt from source with Xcode 26, including the hand-model preload fix: `hand_landmark_full.tflite` is loaded once and shared by both hand subgraphs instead of being opened twice at startup
 
 ## v1.6.0 - 2026-08-19
 
