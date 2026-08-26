@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = 'QuickPoseSwiftUI'
-s.version = '1.6.0'
+s.version = '1.7.0'
 s.summary          = 'QuickPoseSwiftUI'
 s.homepage         = 'https://quickpose.ai'
 s.authors          = 'QuickPose.ai'
