@@ -7,11 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## v1.7.2 - 2026-11-10
 
 ### Fixed
-- `fitness(.frontPushUps)` counts push-ups filmed head-on from above. A posture check treated that camera angle as standing and missed most reps; standing arm-bends are still rejected by the floor-facing body-position check
-
-## v1.7.1 - 2026-11-02
-
-Same binaries as v1.7.0. The front push-up fix announced with this tag ships in v1.7.2
+- `fitness(.frontPushUps)` counts push-ups filmed head-on from above.
 
 ## v1.7.0 - 2026-08-26
 
